@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Linux | Tech Hamlet]]></title>
+  <link href="http://techhamlet.com/categories/linux/atom.xml" rel="self"/>
+  <link href="http://techhamlet.com/"/>
+  <updated>2013-08-02T21:19:46+05:30</updated>
+  <id>http://techhamlet.com/</id>
+  <author>
+    <name><![CDATA[Pubudu Kodikara]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Mac OS X vs Linux : What is The Best Windows Alternative? Mac or Linux]]></title>
+    <link href="http://techhamlet.com/2013/06/mac-os-x-vs-linux/"/>
+    <updated>2013-06-22T19:23:20+05:30</updated>
+    <id>http://techhamlet.com/2013/06/mac-os-x-vs-linux</id>
+    <content type="html"><![CDATA[<p><img src="http://techhamlet.com/wp-content/uploads/2012/12/update_for_your_computer.jpg" alt="Mac OS X vs Linux" /> Mac OS X vs Linux <em>Image source : <a href="http://www.stickycomics.com/computer-update/">Sticky Comics</a></em></p>
+
+<p>Mac OS X vs Linux, this is not an easy debate. Most of us start with Windows because it&rsquo;s the most commonly used OS. But that doesn&rsquo;t mean its the best. Many migrate to other alternatives according to their needs. But the recent the Windows 8 release made some users to <a href="http://techhamlet.com/2013/06/windows-8-is-not-user-friendly/">leave Windows</a>. For some its really good but for some it&rsquo;s not. Windows now have a problem. So, if you ever decide to ditch Windows, what will you pick? Mac or Linux?</p>
+
+<h3>Why Windows is more popular?</h3>
+
+<p>The biggest reason for Windows&rsquo;s popularity is the support from manufacturers! Most of the PCs and Notebooks come with Windows pre-installed! Only an experienced user who have already used a different OS will try to change it. People like Dell and HP have already started to ship Linux pre-installed machines. But still it&rsquo;s not enough to beat Windows. Mac also have their own machines. So, they both stay ahead of Linux. Not good for Mac OS X vs Linux battle.</p>
+
+<h3>Mac and Linux have some similarities&hellip;</h3>
+
+<p>Mac OS X is based on Unix. They take Unix and add their own GUI to it. GNU/Linux is like Unix but it&rsquo;s not Unix. Richard Stalleman wanted to build a free, open sourced and a better system than Unix. So, he built his own system from scratch by looking at Unix. He called it GNU. GNU means, <strong>G</strong>nu <strong>I</strong>s <strong>N</strong>ot <strong>U</strong>nix! After adding the Linux kernel to it, we dropped the word GNU and used Linux. But the OS is GNU.</p>
+
+<h3>They have a lot of differences! So, lets start the debate, Mac OS X vs Linux :</h3>
+
+<h4>Firest of all, Linux is free and open source and Mac OS X is expensive!</h4>
+
+<p>The first reason you might pick Mac over Linux (in the battle of Mac OSX vs Linux) is the price. Mac is expensive. More expensive than Windows. There are many free apps for Windows which might be enough for an average user. But Mac apps are also expensive. You have to pay for most of the stuff!</p>
+
+<p>Mac is completely closed sourced. They take full revenge from those who copy at least a single word from their system. They take patents for every thing including every curve and line in their designs. If anyone copy them, they will go directly to the court.</p>
+
+<p>Linux is completely free. If some one ask to pay you to get a Linux distribution, you can sue him. According to their license, you can&rsquo;t sell it and make profits. You can get money for the service you provide, but can&rsquo;t make a profit.</p>
+
+<p>The Linux code is completely open sourced. You can get it and customize it in any way you want, add your name to it and distribute it to the world.</p>
+
+<h4>Mac OS X won&rsquo;t let you customize their OS&hellip; You can customize every corner of Linux!</h4>
+
+<p>In OS X, you can&rsquo;t customize much. You have to do things in their way. Apple will decide how your desktop will look like and how you will work with it. You must obey them. There&rsquo;s no other choice! If you are a newbie who don&rsquo;t do much with the computer, then OS X will be ok for you!</p>
+
+<p>Linux is open sourced. You can customize every single bit of the OS if you know how to do it. Unlike other operating systems, Linux is built to support third party themes. There are high quality themes that you can use. No hacking needed. It&rsquo;s originally supported. You will also get a lot of options. A lot of different desktop environments, Gnome, XFC, Cinnamon, Unity, KDE, etc&hellip; A lot of different themes&hellip; A lot of different gadgets like docks, widgets, desk lets, etc</p>
+
+<h4>Mac OS X vs Linux Performance&hellip;</h4>
+
+<p>A recent study have revealed that Ubuntu in a Mac can outperform OS X! Beating OS X in its own grounds! The clear winner is Linux&hellip;</p>
+
+<h4>Ease of use, ease of learning and ease of migrating from Windows&hellip;</h4>
+
+<p>I have tried Mac&hellip; If you are moving from Windows to OS X, you might get into trouble. Some shortcuts might not work, it will scroll in the opposite direction, more weird things will happen&hellip; Linux is also different. It have a lot of differences. But its easy to move from Windows. and its easy to learn.<a href="http://www.youtube.com/user/OsFirstTimer?feature=watch"> OsFirstTimer</a> have released several videos on this issues. In these videos, a completely new user will face different operating systems and review them. From the systems she used, she picked Linux as the best :</p>
+
+<h4>Support&hellip;</h4>
+
+<p>When we take support, it&rsquo;s a tie. Apple provide a really good support for their products. Linux have a really good support from thousands of people in the community. So, both have good support.</p>
+
+<h4>Security&hellip;</h4>
+
+<p>Earlier Apple said OS X is completely impenetrable. But recently, a mass malware attack took down thousands of Mac users. It&rsquo;s not completely secure. Same goes to Linux. No mass malware attack took down Linux but still it&rsquo;s not completely secure. It&rsquo;s a tie. But both are better than Windows.</p>
+
+<h4>Mac is boring&hellip; No innovation&hellip;</h4>
+
+<p>People say Apple is innovative. Yes they are innovative. They release completely new awesome products. But after the initial release of the product, no major updates. No major features&hellip; No much changes&hellip; The same boring old thing will get minor updates and bug fixes for the rest of its life. Its old stuff. Boring&hellip;</p>
+
+<p>Linux and Windows do complete re-designs occasionally. Linux know how to do their redesigns without killing the user. It have innovation! Mac OS X vs Linux, who is the best?</p>
+
+<h3>What is the most widely used OS?</h3>
+
+<p>You might say its Windows but it&rsquo;s not. The most widely used OS is Linux! The mobile world is dominated by Android and Android is a Linux distribution. Almost 90% of web servers run Linux. Many embedded systems have Linux, Super computers run on Linux. Linux is the king&hellip;</p>
+
+<h3>Mac OS X vs Linux&hellip; What is the best?</h3>
+
+<p>Clearly, Linux is the better option. Mac users will fire at me but this is the truth. Many people buy Apple products to show that they are rich. Trust me, that&rsquo;s the truth. If not, why spend a lot of money just to buy a boring old product? Their support is extremely good. Is it worth it? Once I tried to buy a new notebook and considered Mac. I was unable to find a powerful enough Mac to replace my existing old notebook! A Mac can&rsquo;t replace its power. You might say you&rsquo;re going for the OS X. But isn&rsquo;t Linux better than OS X? If you want the OS X look, it won&rsquo;t take 30 minutes to transform your Linux desktop into a Mac. But you can never transform Mac into a Linux! That&rsquo;s the difference! Mac users are trapped inside Apple&rsquo;s prison while Linux people are free to do anything! The clear winner in the battle of Mac OS X vs Linux is Linux!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How To Fix Ugly Ubuntu Login Resolution Issues in Multi-Monitor Setups]]></title>
+    <link href="http://techhamlet.com/2013/06/how-to-fix-ugly-ubuntu-login/"/>
+    <updated>2013-06-13T20:08:44+05:30</updated>
+    <id>http://techhamlet.com/2013/06/how-to-fix-ugly-ubuntu-login</id>
+    <content type="html"><![CDATA[<p>If you install Ubuntu in a multi-monitor environment, earlier, you had to face a lot of issues. But now Ubuntu have fixed most of those issues. But one major issues still persists! If you try to login to an Ubuntu machine which have multiple monitors, the Uubntu Greeter (Login Screen) will have a smaller resolution that doesn&rsquo;t fit the monitor. Sometimes it will be stretched or crushed. In simple terms, it will look a lot ugly! Is there a fix for this? Yes!</p>
+
+<p><a href="http://techhamlet.com/wp-content/uploads/2013/06/ubuntu-login-greeter-multi-monitor.jpg"><img src="http://techhamlet.com/wp-content/uploads/2013/06/ubuntu-login-greeter-multi-monitor-550x180.jpg" alt="Fixed Ubuntu Login in a Multi-Monitor Setup" /></a> Fixed Ubuntu Login in a Multi-Monitor Setup</p>
+
+<p>Currently I have a 19 inch and a 23 inch monitor. If I install Ubuntu in my machine, both the monitors will get stretched in the login screen. They won&rsquo;t get the correct resolutions and will look like hell. This bug haunts many people. Many dual monitor setups won&rsquo;t get correct resolutions in the login screen. Actually, it won&rsquo;t give you the correct resolution even in the desktop. But we can fix it simply by changing display settings. But&hellip;</p>
+
+<h3>How to fix the Ubuntu login screen resolution?</h3>
+
+<ul>
+<li>First, open the terminal and run Xrandr and get the ids of the connected monitors :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>xrandr</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li> You will get an output like this :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>pubudu@pc1:~$ xrandr
+</span><span class='line'>Screen 0: minimum 320 x 200, current 3286 x 1080, maximum 32767 x 32767
+</span><span class='line'>VGA1 connected 1366x768+1920+0 (normal left inverted right x axis y axis) 410mm x 230mm
+</span><span class='line'>   1366x768       59.8&lt;em>+
+</span><span class='line'>   1024x768       75.1     70.1     60.0&lt;br/>
+</span><span class='line'>   832x624        74.6&lt;br/>
+</span><span class='line'>   800x600        72.2     75.0     60.3     56.2&lt;br/>
+</span><span class='line'>   640x480        72.8     75.0     66.7     60.0&lt;br/>
+</span><span class='line'>   720x400        70.1&lt;br/>
+</span><span class='line'>HDMI1 connected 1920x1080+0+0 (normal left inverted right x axis y axis) 510mm x 287mm
+</span><span class='line'>   1920x1080      60.0&lt;/em>+   50.0&lt;br/>
+</span><span class='line'>   1680x1050      59.9&lt;br/>
+</span><span class='line'>   1600x900       60.0&lt;br/>
+</span><span class='line'>   1280x1024      75.0     60.0&lt;br/>
+</span><span class='line'>   1440x900       59.9&lt;br/>
+</span><span class='line'>   1280x800       59.9&lt;br/>
+</span><span class='line'>   1152x864       75.0&lt;br/>
+</span><span class='line'>   1280x720       50.0     60.0&lt;br/>
+</span><span class='line'>   1024x768       75.1     70.1     60.0&lt;br/>
+</span><span class='line'>   832x624        74.6&lt;br/>
+</span><span class='line'>   800x600        72.2     75.0     60.3     56.2&lt;br/>
+</span><span class='line'>   720x576        50.0&lt;br/>
+</span><span class='line'>   720x480        59.9&lt;br/>
+</span><span class='line'>   640x480        72.8     75.0     66.7     60.0&lt;br/>
+</span><span class='line'>   720x400        70.1&lt;br/>
+</span><span class='line'>HDMI2 disconnected (normal left inverted right x axis y axis)
+</span><span class='line'>DP1 disconnected (normal left inverted right x axis y axis)
+</span><span class='line'>DP2 disconnected (normal left inverted right x axis y axis)</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li><p>Check the marked lines in the above output (line number 3 and 10). At the start of those lines, you can find the ID of the attached monitors. (In front of attached monitors you will see &ldquo;connected&rdquo;). For me, the IDs of my two monitors are VGA1 and HDMI1. Note them down and also note down the current resolution (in front of the ID and the word &ldquo;connected&rdquo;)</p></li>
+<li><p>Next, you have to create a script. Open the terminal and enter  the following command to create the script file :</p></li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /usr/share/lightdmxrandr.sh</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li> Then paste the following code in the file :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
+</span><span class='line'>
+</span><span class='line'>&lt;h1>!/bin/sh&lt;/h1>
+</span><span class='line'>
+</span><span class='line'>&lt;p>xrandr &mdash;output HDMI1 &mdash;primary &mdash;mode 1920x1080 &mdash;output VGA1 &mdash;mode 1366x768 &mdash;right-of HDMI1</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li><p>Replace &ldquo;HDMI1&rdquo; and &ldquo;VGA1&rdquo; with the IDs of your own monitor IDs. Also replace the resolution with your own values. If  you have more monitors, add another part to the end of the second line like &ldquo;&mdash;output VGA2 &mdash;mode 1366x768 &mdash;right-of VGA1&rdquo;. Change the VGA1, VGA2 and the resolutions accordingly.</p></li>
+<li><p>Now, make the file executable with the following command :</p></li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo chmod a+rx /usr/share/lightdmxrandr.sh</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li> After that, open the lightdm.conf :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /etc/lightdm/lightdm.conf</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li>And add the following line to the end of the file which will make sure that the system will run our script in the login screen :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>display-setup-script=/usr/share/lightdmxrandr.sh</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li>Finally, reboot your system!</li>
+</ul>
+
+
+<p>Got it fixed? Working perfectly? Great! Now, before thanking me, thank <a href="http://www.sudo-juice.com/lightdm-resolution/">sudo-juice.com</a> for coming up with a solution. In the script he used, he only fixed the resolution of the primary monitor. This will work for some but for people like me, it won&rsquo;t. I  had to fix the second monitor as well. The script I have given here can be used for any number of monitors! Hope it fixed your issues. If not, please leave a comment and let us know. We will try our best to fix it!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[How To Install Linux Mint : A Step by Step Guide and a Video Guide]]></title>
+    <link href="http://techhamlet.com/2013/06/how-to-install-linux-mint/"/>
+    <updated>2013-06-06T20:11:53+05:30</updated>
+    <id>http://techhamlet.com/2013/06/how-to-install-linux-mint</id>
+    <content type="html"><![CDATA[<p>First of all, I should mention that this guide is for complete Linux beginners. If you already have Linux experience, then figuring out how to install Linux Mint is a piece of cake. So, now, you are new to Linux. You might be here because Windows didn&rsquo;t match your tastes&hellip; You might be here because Mac doesn&rsquo;t match your tastes&hellip; No matter who you are, I will make sure that your first Linux Mint installation will go extremely smooth&hellip;</p>
+
+<p>Linux Mint is the perfect desktop for beginners. It&rsquo;s not hard to grasp. The UI is extremely user-friendly and a user coming from Mac and Windows will be able to find his way through the new system with ease. So, you made the right decision.</p>
+
+<h3>Questions you might have about installing Linux :</h3>
+
+<p><strong>Will it prevent me from using Windows?</strong></p>
+
+<p>No. If you follow the right steps, it won&rsquo;t harm your Windows installation. You can still use it with Linux.</p>
+
+<p><strong>Will installing both Linux and Windows slow down my machine?</strong></p>
+
+<p>Absolutely NO! You are installing Linux as a separate OS. When you run Linux, it will only load Linux to the memory. It won&rsquo;t even care about Windows. Same thing goes for Windows. They will act separately. So, no slowdowns. The only thing you will lose is disk space.</p>
+
+<p><strong>Will it be hard to learn Linux? Is it ugly when compared to Windows? Do I always have to type commands?</strong></p>
+
+<p>No, no and NO! Sometimes, Linux might be much easier to learn. It depends on the distribution you pick. The Linux Mint we choose is one of the most easiest to learn.</p>
+
+<p>Linux now have the most beautiful interfaces. You can customize them in any way you like.</p>
+
+<p>Many Linux people prefer to do their work using the command line (the terminal). But Linux have GUI tools to do almost anything a normal person wants. You might never touch the terminal. But if you get used to it, you&rsquo;ll feel its power and will always use it.</p>
+
+<h3>Things you&rsquo;ll need to install Linux Mint :</h3>
+
+<ul>
+<li><p>x86 processor (Linux Mint 64-bit requires a 64-bit processor. Linux Mint 32-bit works on both 32-bit and 64-bit processors).</p></li>
+<li><p>512 MB RAM (1GB recommended for a comfortable usage).</p></li>
+<li><p>5 GB of disk space</p></li>
+<li><p>Graphics card capable of 800×600 resolution</p></li>
+<li><p>CD/DVD drive or USB port to install Linux Mint</p></li>
+<li><p>Download the Linux Mint ISO from the official website : <a href="http://www.linuxmint.com/download.php">http://www.linuxmint.com/download.php</a> (Make sure you pick the right image. The Cinnamon version is recommended. If you have a new machine with a 64-bit processor (In Windows, right clicking Computer and checking properties will help you to find this) go for the 64-bit image. If you have an old machine with a 32-bit processor, go for the 32 bit version)</p></li>
+<li><p>After downloading the ISO, burn it to a DVD or to a USB using <a href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/">Pen Drive Linux</a> to install Linux Mint</p></li>
+</ul>
+
+
+<h3>For new machines with UEFI or Windows 8 :</h3>
+
+<p>Before going to install Linux Mint , please read these articles :</p>
+
+<ul>
+<li><p><a href="http://techhamlet.com/2013/04/linux-with-uefi-choose-the-best-notebook/">Linux with UEFI and Windows 8 : How To Choose The Best Notebook to Buy</a></p></li>
+<li><p><a href="http://techhamlet.com/2013/02/do-not-buy-windows-8-machines/">Linux and Windows Users Do Not Buy Windows 8 Machines : UEFI have Bugs</a></p></li>
+</ul>
+
+
+<h3>Now, lets Install Linux Mint &hellip;</h3>
+
+<h4>The video guide :</h4>
+
+<p>The video guide will give you a very good idea on what to do. For some, it will be more useful than the normal detailed guide. But I recommend you to follow both!</p>
+
+<h4>The detailed guide :</h4>
+
+<p><strong>1) Setting up BIOS/UEFI and booting the ISO :</strong></p>
+
+<ul>
+<li><p>First we need to make sure the BIOS will boot our installation media first to install Linux Mint. Insert the USB or the DVD intro the machine and boot it up. Press F2, F1, Delete, F8 or Esc keys during the boot (<strong>If you have a new machine based on the UEFI system, avoid pressing Esc or F8 keys and go to the UEFI system (Some still call it the BIOS)</strong>). To pick which key to press, you need to check your motherboard&rsquo;s manual.</p></li>
+<li><p>If you have a UEFI system, go to the UEFI system and try to pinpoint the option name &ldquo;Secure Boot&rdquo;. If you locate it, disable it or set the option to &ldquo;Other OS&rdquo;. If you can&rsquo;t find it, proceed to install Linux Mint and hope that you don&rsquo;t have it.</p></li>
+<li><p>If you go to the BIOS/UEFI system, go to the Boot menu and put the DVD ROM or the USB to the top of the boot list (Put the UEFI version to the top then the normal USB or the DVD. If the USB fail to boot with the UEFI, put the normal USB to the top and try again). Next, save and exit (Usually, its F10 to save and exit)</p></li>
+<li><p>Now, some people will be taken to a boot menu where they&rsquo;ll see the available devices that can boot. (<strong>If you have a new machine based on the UEFI system, you need to reboot, avoid pressing Esc or F8 keys and go to the UEFI system (Some still call it the BIOS)</strong>) If you were taken to a boot menu, pick DVD ROM or the USB according to what you used. If you see an option called <strong>UEFI</strong> DVD or <strong>UEFI</strong> USB, pick that option (Sometimes, the USB won&rsquo;t boot with UEFI, so if it fail, reboot and pick the non UEFI option).</p></li>
+</ul>
+
+
+<p><strong>2) Testing and starting the installation :</strong></p>
+
+<ul>
+<li><p>If you successfully booted the disk, it will take you straight to the Linux Mint live desktop</p></li>
+<li><p>Use this to test the new OS that you are going to install. Spend some time with it. Make sure you are confident with installing it on your machine</p></li>
+<li><p>After you are completely confident about Linux Mint, click on &ldquo; <strong>Install Linux Mint</strong> &rdquo; icon in the desktop to start the installation wizard</p></li>
+</ul>
+
+
+<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/install-linux-mint-550x309.jpg" alt="Install Linux Mint" /> Install Linux Mint</p>
+
+<p><strong>3) The first steps of the installation wizard to install Linux Mint :</strong></p>
+
+<ul>
+<li><p>First, select your language and hit Continue</p></li>
+<li><p>Next Mint will check whether you have a working internet connection and whether you have enough space on the disks to install Linux Mint</p></li>
+<li><p>If everything is looking good, click continue</p></li>
+</ul>
+
+
+<p><strong>4) Partitioning (The most important part) :</strong></p>
+
+<p>Also please refer to the video guide before attempting to create partitions!</p>
+
+<p>Ok now we have come to the most important part. If you are not patient, if you doesn&rsquo;t have a single idea about what a partition is, please leave this page right now! You can&rsquo;t install Linux Mint without patience! If you are a newbie who don&rsquo;t know about partitions who have a clean system without any other operating system, you can stay! Read all the instructions in the sections before doing anything!</p>
+
+<p><strong>If you have a clean system without any operating system installed :</strong></p>
+
+<ul>
+<li>In the &ldquo;Installation type&rdquo; window, select the default option &ldquo; <strong>Erase disk and install Linux Mint </strong>&rdquo;<strong> </strong>and click &ldquo;Install Now&rdquo; to install Linux Mint. (Next skip all the steps below and head directly to step 5)</li>
+</ul>
+
+
+<p><strong>If you have other operating systems on your machine :</strong></p>
+
+<ul>
+<li>Select &ldquo;Something Else&rdquo; and click &ldquo;Continue&rdquo;</li>
+</ul>
+
+
+<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/install-linux-mint-partitioning-start-550x399.jpg" alt="Installation Type" /> Installation Type</p>
+
+<p><strong>If your system have other partitions and doesn&rsquo;t have any free space :</strong></p>
+
+<p>You can get some space from the last partition to install Linux Mint :</p>
+
+<ul>
+<li><p>To do this, click the last partition and click on &ldquo;Change&rdquo;</p></li>
+<li><p>Now, in the size field, click on the minus button to reduce its space and click OK (<strong>Warning :</strong> to not reduce the size of the disk beyond the used space. If you have used 5GB in the 10GB hard drive. Do not shrink the drive&rsquo;s space to a value equal to or lower than 6GB! 7GB will be safe! Otherwise you will loose all your data!)</p></li>
+<li><p>If it show a warning asking to &ldquo;Write previous changes to disk and continue&rdquo; click &ldquo;Continue&rdquo;</p></li>
+</ul>
+
+
+<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/install-linux-mint-reduce-partition-size-550x422.jpg" alt="Reduce Partition Size" /> Reduce Partition Size</p>
+
+<p>****You can delete the last partition if it doesn&rsquo;t have any stuff to install Linux Mint :</p>
+
+<ul>
+<li>Click on the minus button close to the Change button to delete the partition</li>
+</ul>
+
+
+<p><strong>If you already have free space or if you made some space available with the above methods, lets create the partitions to install Linux Mint :</strong></p>
+
+<p><em>Note : If you have the free space in-between the existing partitions and if it&rsquo;s a new machine with UEFI and a GPT partition tablet, making the Linux partitions in this free space can raise some issues with the existing systems. So be careful.</em></p>
+
+<p>Normally, we create three partitions. The root partition, the home partition and the swap partition. But you are free to create any number of partitions and assign mount points of your own. Today we are going to see how to create the three basic partitions&hellip;</p>
+
+<ul>
+<li>To create a partition, select the free space and click on the &ldquo;+&rdquo; sign</li>
+</ul>
+
+
+<p><strong>For the root partition :</strong></p>
+
+<p>The root partition will hold all the system files and data&hellip;</p>
+
+<ul>
+<li><p>For the size of the root partition, the recommended size is about 10GB. But to be on the safe side, give at least 20GB (which will be nearly 20000MB. The field accept values in MB)</p></li>
+<li><p>Leave the other parameters like the Type and the Location as it is</p></li>
+<li><p>Change the field &ldquo;Use as&rdquo; to &ldquo;Ext4 journaling file system&rdquo;</p></li>
+<li><p>Change the &ldquo;Mount point&rdquo; to &ldquo;<strong>/</strong>&rdquo;</p></li>
+<li><p>Finally, click OK</p></li>
+</ul>
+
+
+<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/install-linux-mint-root-partition-550x420.jpg" alt="Root Partition" /> Root Partition</p>
+
+<p><strong>For the home partition :</strong></p>
+
+<ul>
+<li><p>For the size of the home partition, you can set any amount you like. Its going to hold all your personal data. Downloads, Documents, Videos, Pictures, the Desktop and even software configurations that are specific to you. Because of this, remember to give as much space as possible for this partition.</p></li>
+<li><p>In here also, leave the parameters Type and Location intact and set the &ldquo;Use as&rdquo; field to "Ext4 journaling file system"</p></li>
+<li><p>Now change the &ldquo;Mount point&rdquo; to &ldquo;/home&rdquo;</p></li>
+<li><p>Click OK</p></li>
+</ul>
+
+
+<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/install-linux-mint-home-partition-550x420.jpg" alt="Home Partition" /> Home Partition</p>
+
+<p><strong>For the swap partition :</strong></p>
+
+<p>The swap partition will act as a virtual memory. If your system doesn&rsquo;t have enough physical memory for the running programs, it will move inactive programs from the memory to the swap partition. If your system does a lot of swapping, things can get a bit slow because the hard drive is really slow when compared to the RAM. If your system doesn&rsquo;t have a lot of memory, then you need to pay extra attention to the swap partition. But for those who have a lot of RAM, you can have a small swap partition. I currently have 8GB of RAM in my desktop machine. The swap partition is 4GB. Currently, even though I run heavy applications like virtual box, the system haven&rsquo;t swapped anything.</p>
+
+<ul>
+<li><p>The size you need to give for a swap partition is a bit controversial. There are many theories for it. Some say you need a swap partition with the same size of your physical memory. Some say you need a swap partition double the size of the RAM. What I think is, if you have 4GB or less RAM, try to add the same size or the double if you have enough hard drive space. But if you have more than that, you can safely add the same size or a smaller size for swap. I use 4GB for 8GB of RAM.</p></li>
+<li><p>In here also, leave the parameters Type and Location intact</p></li>
+<li><p>Change the &ldquo;Use as&rdquo; field to &ldquo;swap area&rdquo;</p></li>
+<li><p>And click OK</p></li>
+</ul>
+
+
+<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/install-linux-mint-swap-partition-550x420.jpg" alt="Swap Partition" /> Swap Partition</p>
+
+<p><strong>When you are done setting up the partitions :</strong></p>
+
+<ul>
+<li>Click &ldquo;Install Now&rdquo; to install Linux Mint</li>
+</ul>
+
+
+<p><strong>5) Selecting the time zone :</strong></p>
+
+<ul>
+<li><p>Now if you are connected to the internet, Linux Mint will automatically detect your location and select the time zone accordingly. But if its wrong, you are free to change it.</p></li>
+<li><p>After you are done, click &ldquo;Continue&rdquo;</p></li>
+</ul>
+
+
+<p><strong>6) Select the Keyboard Layout :</strong></p>
+
+<ul>
+<li><p>Now, select the keyboard layout. If you don&rsquo;t know the layout you can use the box &ldquo;Type here to test your keyboard&rdquo; to detect it. For me, its &ldquo;English (US)&rdquo;</p></li>
+<li><p>After you are done, click &ldquo;Continue&rdquo;</p></li>
+</ul>
+
+
+<p><strong>7) Setup your account and install Linux Mint :</strong></p>
+
+<ul>
+<li><p>Now, fill in your name</p></li>
+<li><p>Your computer&rsquo;s name (Any name you like. No spaces, only digits, letters, hyphens and dots)</p></li>
+<li><p>Give a username you want</p></li>
+<li><p>If you don&rsquo;t want to enter the password every time you boot your machine, select &ldquo;Login automatically&rdquo; otherwise keep the default setting &ldquo;Require my password to login&rdquo;</p></li>
+<li><p>If you don&rsquo;t want anyone to read your data without your password, select &ldquo;Encrypt my home folder&rdquo;. If you have any other Linux distribution on your machine, those systems can read your data. If some one take your hard drive and use a Linux Live CD, he can access your data. But if you encrypt it, no one can access them. Normally, I never use this because I need my other operating systems to read my data.</p></li>
+<li><p>When you are done, click &ldquo;Continue&rdquo; to install Linux Mint</p></li>
+</ul>
+
+
+<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/install-linux-mint-setup-account-550x420.jpg" alt="Setup Your Account" /> Setup Your Account</p>
+
+<p><strong>8) After the installation is complete :</strong></p>
+
+<ul>
+<li><p>It will show a message saying the &ldquo;Installation is Complete&rdquo;. In here, click &ldquo;Restart Now&rdquo;</p></li>
+<li><p>Make sure you remove the DVD or the USB that you used to install Linux Mint and hit enter to complete the installation!</p></li>
+</ul>
+
+
+<h3>If you have a new machine based on UEFI, please check these guides after you install Linux Mint :</h3>
+
+<p>If you have other operating systems installed on your machine, you must check both these guides :</p>
+
+<ul>
+<li><p><a href="http://techhamlet.com/2013/05/no-boot-loader-after-installing-ubuntu/">No Boot loader After Installing Ubuntu! Linux with UEFI and Windows 8</a></p></li>
+<li><p><a href="http://techhamlet.com/2013/05/add-windows-to-grub/">Add Windows to Grub Boot Loader : Linux with UEFI and Windows 8</a></p></li>
+</ul>
+
+
+<p><strong>Congratulation!</strong> Now you have installed one of the best Linux distributions on your machine. This might the first time you are using Linux. This might be the first time you are using Linux Mint. Still, I think you will enjoy the newly installed system. Isn&rsquo;t it better than the OS you used before? Share your thoughts with us as comments below. If you doesn&rsquo;t feel comfortable, don&rsquo;t worry, it will take some time to get adjusted to a new home.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Evernote for Linux : How to Use Evernote as a Normal Linux Desktop App]]></title>
+    <link href="http://techhamlet.com/2013/06/evernote-for-linux/"/>
+    <updated>2013-06-03T20:14:50+05:30</updated>
+    <id>http://techhamlet.com/2013/06/evernote-for-linux</id>
+    <content type="html"><![CDATA[<p>Evernote is the king in online note taking apps. It&rsquo;s loved and used by many people around the world every day. Its full of features. You can use it to take simple notes, add to-do lists, save stuff to read leader and read them in a distraction free reader, clip items from the web, save important moments of your life, etc, etc, etc&hellip; Evernote stands out from the rest of the note taking apps because of its ease of use, huge number of features, many number of applications, killer unique features like searching words in the images you upload and the availability in almost any platform. You have Windows, Mac, Android, iOS, Blackberry, Windows Phone and Web apps built by Evernote. Unfortunately, there is no Evernote for Linux ! Linux users need to use the web client. But it can be painful to always go to the browser, enter the url, and then enter the log in information to use the service. But there&rsquo;s a shortcut&hellip;</p>
+
+<p>There are some third-party apps like Everpad which bring Evernote for Linux. But there is a way to get to the official Evernote app right from your OS (With a desktop shortcut or through the system menu). It&rsquo;s a simple trick. But it works for many&hellip;</p>
+
+<h3>How To add Evernote for Linux :</h3>
+
+<p>Before proceeding, I should tell you that this is only a small trick. Sometimes, you might already know this trick. But haven&rsquo;t used it for real. But it will work&hellip;</p>
+
+<p>What we are going to do is, install the Evernote Chrome web app. This will give you a full Evernote experience in Google Chrome. After log in in once, you don&rsquo;t need to log in again. One problem solved. Now we need a way to access it right from the desktop or through the menu without going through the browser. For this, Chrome have a solution! Here&rsquo;s how to get Evernote for Linux &hellip;</p>
+
+<ul>
+<li><p>First, open Google Chrome and install the <a href="https://chrome.google.com/webstore/detail/evernote-web/lbfehkoinhhcknnbdgnnmjhiladcgbol">Evernote web app</a></p></li>
+<li><p>Now open a new tab and go to the web apps</p></li>
+<li><p>Right click on Evernote (you can do this to any app) and select &ldquo;Create Shortcut&rdquo;</p></li>
+</ul>
+
+
+<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/chrome-web-apps-550x312.jpg" alt="Evernote for Linux" /></p>
+
+<ul>
+<li><p>Now tick the places you need the shortcut to be added &ldquo;Desktop&rdquo; or &ldquo;Application Menu&rdquo; and click OK</p></li>
+<li><p>Now you will get an Evernote icon on your desktop. You can use this to go directly to Evernote</p></li>
+</ul>
+
+
+<p>The shortcut will take you to a separate browser window which will open the Evernote web app. You have installed Evernote for Linux ! But this browser window won&rsquo;t have an address bar. Only Evernote. It&rsquo;s like an Evernote native app. But the only issue you will face is the absence of offline access. You need be connected to the Internet in order to use this. But today most of us always have a connection. So, for many this won&rsquo;t be a problem.</p>
+
+<p>This might be the only way to get official app of Evernote for Linux. Lets hope that they&rsquo;ll understand the power of Linux in the future and create a native Linux app. Until then, this might work for you.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Add a Unity Like Dash to Gnome Desktop : No Need to go to the Overview]]></title>
+    <link href="http://techhamlet.com/2013/05/dash-to-gnome-desktop/"/>
+    <updated>2013-05-31T19:47:44+05:30</updated>
+    <id>http://techhamlet.com/2013/05/dash-to-gnome-desktop</id>
+    <content type="html"><![CDATA[<p><img src="http://techhamlet.com/wp-content/uploads/2013/05/dash-to-dock-550x385.jpg" alt="Dash to Gnome" /></p>
+
+<p>One of the biggest annoyances we have in Gnome Shell is the need to go to the overview by hovering the mouse over the top left corner of the screen every time we need to deal with open or new apps. In Unity, we always have the dash. In old systems, we always had the panel. To resolve the common issues in Gnome Shell, we have Shell Extensions. So, is there an extension that can save our lives? There is one good extension that can add a dash to Gnome desktop!</p>
+
+<p>The Gnome Shell extension Dash to Dock will add a cool dash to Gnome desktop. Unlike the dash which comes out when you go to the overview, this dash won&rsquo;t hide itself in the desktop. It will hide only if you open a maximized app. Then it will hide to give space to the window. You also can edit this dash&rsquo;s settings to prevent it from hiding. You can even make it look exactly like Unity! A Unity Dash to Gnome desktop without installing Unity!</p>
+
+<h3>How To add a Dash to Gnome desktop :</h3>
+
+<ul>
+<li><p>Open Chrome or Firefox and visit this URL : <a href="https://extensions.gnome.org/extension/307/dash-to-dock/">https://extensions.gnome.org/extension/307/dash-to-dock/</a></p></li>
+<li><p>Now, simply, put the switch right next to the title of the extension to enable (switch on) the extension</p></li>
+<li><p>To edit the settings of the dash, open the terminal and issue the following command :</p></li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gnome-shell-extension-prefs &lt;a href="&#109;&#x61;&#105;&#x6c;&#x74;&#111;&#58;&#x64;&#97;&#115;&#x68;&#x2d;&#x74;&#111;&#x2d;&#x64;&#111;&#x63;&#x6b;&#64;&#109;&#105;&#x63;&#x78;&#x67;&#120;&#46;&#x67;&#109;&#97;&#105;&#x6c;&#46;&#99;&#111;&#x6d;">&#100;&#97;&#115;&#104;&#45;&#x74;&#111;&#x2d;&#100;&#x6f;&#99;&#107;&#x40;&#x6d;&#105;&#x63;&#120;&#x67;&#120;&#x2e;&#103;&#109;&#97;&#105;&#x6c;&#x2e;&#x63;&#x6f;&#x6d;&lt;/a></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><img src="http://techhamlet.com/wp-content/uploads/2013/05/dash-to-dock-unity-550x309.jpg" alt="Dash to Gnome" /></p>
+
+<p>There are plenty of settings for you to play with. But be careful about what you change. Remember that the Unity like Dash to Gnome is buggy. So, try your best to avoid using it. Most of the Gnome Shell users will gladly accept this Dash because many hate to waste time by always going to the overview. I really hated that and later came back to Ubuntu and Unity! So, try it and let me know what you think about the new Dash to Gnome extension!</p>
+]]></content>
+  </entry>
+  
+</feed>

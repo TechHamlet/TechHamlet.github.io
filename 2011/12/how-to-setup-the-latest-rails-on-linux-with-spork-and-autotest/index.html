@@ -1,0 +1,887 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>How To Setup the Latest Rails on Linux with Spork and Autotest - Tech Hamlet</title>
+  <meta name="author" content="Pubudu Kodikara">
+
+  
+  <meta name="description" content="Recently, I started learning Ruby on Rails and faced several problems while setting it up (Specially while setting up Sport and Autotest). After &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://techhamlet.com/2011/12/how-to-setup-the-latest-rails-on-linux-with-spork-and-autotest">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-9918644-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner" id="main-header"><div id="header-container">
+	<h1 id="main-title"><a href="/">Tech Hamlet</a></h1>
+	<nav role="navigation" id="main-nav"><ul class="main-menu">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/privacy-policy">Privacy Policy</a></li>
+  <li><a href="http://status.techhamlet.com/" target="_blank">Status</a></li>
+</ul>
+
+
+  <form id="site-search" action="http://google.com/search" method="get">
+    <fieldset role="search">
+      <input type="hidden" name="q" value="site:techhamlet.com" />
+      <input class="search" type="text" name="q" placeholder="Search"/>
+    </fieldset>
+  </form>
+
+</nav>
+</div>
+</header>
+
+  <div id="logo-cat">
+
+    <div id="logo-img">
+
+    <img class="logo" src="/images/th-logo.png" alt="Tech Hamlet Logo">
+
+    </div>
+
+    <a href="/categories/android/" class="android cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-android.png" alt="Android">
+        </div>
+        <span class="cat-text">android</span>
+      </div>
+    </a>
+
+    <a href="/" class="all cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-all.png" alt="All">
+        </div>
+        <span class="cat-text">all</span>
+      </div>
+    </a>
+
+    <a href="/categories/windows/" class="windows cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-windows.png" alt="Windows">
+        </div>
+        <span class="cat-text">windows</span>
+      </div>
+    </a>
+
+
+
+
+    <a href="/categories/web/" class="web cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-web.png" alt="Web">
+        </div>
+        <span class="cat-text">web</span>
+      </div>
+    </a>
+
+    <a href="/categories/linux/" class="linux cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+        </div>
+        <span class="cat-text">linux</span>
+      </div>
+    </a>
+
+    <a href="/categories/others/" class="others cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-others.png" alt="Others">
+        </div>
+        <span class="cat-text">others</span>
+      </div>
+    </a>
+  </div>
+
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry post" role="article">
+  
+  <header>
+
+
+
+    
+        <div class='linux cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+            </div>
+            <a href="/categories/linux/"><span class="cat-text">linux</span></a>
+          </div>
+        </div>
+
+      <h1 class="entry-title">How to Setup the Latest Rails on Linux With Spork and Autotest</h1>
+    
+    
+      <p class="meta">
+
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2011-12-08T22:35:25+05:30"  data-updated="true">Dec 8<span>th</span>, 2011</time>
+
+
+        
+         | <a href="#disqus_thread" class="comment-count">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+
+
+
+
+
+<div class="entry-content"><p><img src="http://techhamlet.com/wp-content/uploads/2011/12/rubyonrails-175x125.jpg" alt="Ruby on Rails" />Recently, I started learning Ruby on Rails and faced several problems while setting it up (Specially while setting up Sport and Autotest). After doing some Googling, I found that many people have the same problem. But, non of the solutions worked on my system. Some of them are out of date. So, I did some more research and prepared my own guide&hellip;<!-- more --></p>
+
+<p>I&#8217;m following <a href="http://ruby.railstutorial.org/">Ruby on Rails Tutorial</a> written by Michael Hartl. Michael is using a Mac and have setup Spork and Autotest. <strong>Autotest</strong> will run in the background and help you to test your application in the real-time. So, you don&rsquo;t have to execute rspec  every-time you do a change. Autospec will automatically do the testing and show a nice notification! If you have used Rspec, you might have noticed that it takes some time to load. <strong>Spork</strong> can make it load faster by caching some of the required files in the memory.</p>
+
+<p>I&#8217;m using <a href="http://techhamlet.com/tag/ubuntu/">Ubuntu</a> and the latest version of <a href="http://rubyonrails.org/">Rails</a>. Unfortunately, his guide won&rsquo;t work for me when setting up Spork and Autotest. I think it might be because I&rsquo;m using the latest version of Rails. But fortunately, I managed to set them up. Here&rsquo;s how I did it (<strong>A complete guide to setting up Ruby on Rails</strong>) :</p>
+
+<h2>Install <a href="http://www.ruby-lang.org/en/">Ruby</a> :</h2>
+
+<p>Ubuntu doesn&rsquo;t come with the latest version of Ruby which we need to run Rails 3.1. So, we have to use <a href="http://beginrescueend.com/">RVM</a> to install it :</p>
+
+<ul>
+<li>Open the terminal and issue the following commands to install curl and nodejs :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install curl nodejs</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Next, run the following command to install RVM :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bash &lt; &lt;(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer )</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><p>After you run the above command, it will give you a set of instructions. It will give you a list of packges you need to install before installing Ruby (<strong>Read Carefully!</strong>). Follow those instructions and install those packages. (Copy the entire line starting from <strong>install</strong> and add <strong>sudo apt-get</strong> to the start (In Fedora its <strong>yum</strong> and in Suse its <strong>zypper</strong>))</p></li>
+<li><p>Next, issue the following command to make RVM commands work :</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"' >> ~/.bash_profile</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>In some Linux distributions, this might fail because they don&rsquo;t have a .bashrc file. In my Linux Mint system it failed. To make it work, create a file named <strong>.bashrc</strong> on your home folder and add the following line to it :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><p>Now, everyone, close the terminal and re-open it</p></li>
+<li><p>Next, install Rails 1.9.2 (Version 1.9.3 is out but Rails 3.1 officially supports only upto 1.9.2) with this command (Pick the versions carefully. Refer to the <a href="http://rubyonrails.org/">Rails</a> site to choose) :</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm install 1.9.2</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Finally, tell RVM to use 1.9.2 as the default version. I don&rsquo;t think its necessary if you are installing only one version.</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rvm --default 1.9.2</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Next, Lets Install the latest version of Rails :</h2>
+
+<ul>
+<li>Install Rails with the following command :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install rails</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>To make sure it works, use this command to check the version of Rails :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>rails -v</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>Now, Lets Install some important Gems like SQLite3, Autotest and Spork</h2>
+
+<ul>
+<li>Issue the following command to install SQLite3 :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install sqlite3-ruby</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Next install Autotest and Spork :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem install autotest
+</span><span class='line'>gem install autotest-rails-pure
+</span><span class='line'>gem install ZenTest
+</span><span class='line'>gem install spork</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>We are not done yet. To make Autotest work, create a file named <strong>.autotest</strong> in your home directory and paste the below code into it :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>#!/bin/ruby
+</span><span class='line'>#require 'redgreen'
+</span><span class='line'>require 'autotest/timestamp'
+</span><span class='line'>
+</span><span class='line'>module Autotest::GnomeNotify
+</span><span class='line'>def self.notify title, msg, img
+</span><span class='line'>system "notify-send '#{title}' '#{msg}' -i #{img} -t 3000"
+</span><span class='line'>end
+</span><span class='line'>
+</span><span class='line'>Autotest.add_hook :ran_command do |at|
+</span><span class='line'>image_root = "~/.autotest_images"
+</span><span class='line'>results = [at.results].flatten.join("
+</span><span class='line'>")
+</span><span class='line'>results.gsub!(/e[d+m/,'')
+</span><span class='line'>output = results.slice(/(d+)sexamples?,s(d+)sfailures?(,s(d+)spending?|)/)
+</span><span class='line'>full_sentence, green, failures, garbage, pending = $~.to_a.map(&:to_i)
+</span><span class='line'>if output
+</span><span class='line'>if failures > 0
+</span><span class='line'>notify "FAIL", "#{output}", "#{image_root}/fail.png"
+</span><span class='line'>elsif pending > 0
+</span><span class='line'>notify "Pending", "#{output}", "#{image_root}/pending.png"
+</span><span class='line'>else
+</span><span class='line'>notify "Pass", "#{output}", "#{image_root}/pass.png"
+</span><span class='line'>end
+</span><span class='line'>end
+</span><span class='line'>end
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Next, download and extract the <strong>.autotest_images</strong> folder from one of the following zip files (Use only one) into the home folder. These are the images which will be used for Autotest notifications :</li>
+</ul>
+
+
+<p>Face icon set : <a href="http://thamlet.com/ujOdmK">http://thamlet.com/ujOdmK</a></p>
+
+<p><img src="http://techhamlet.com/wp-content/uploads/2011/12/face-notification.jpg" alt="Face" /></p>
+
+<p>Ruby icon set : <a href="http://thamlet.com/tQ8JsM">http://thamlet.com/tQ8JsM</a></p>
+
+<p><img src="http://techhamlet.com/wp-content/uploads/2011/12/ruby-notification.jpg" alt="Ruby" /></p>
+
+<h2></h2>
+
+<h2> After Creating a new Rails Application :</h2>
+
+<ul>
+<li>Open the <strong>Gemfile</strong> and make sure that it have the following stuff :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>gem 'spork'
+</span><span class='line'>
+</span><span class='line'>#Becareful about the rspec version
+</span><span class='line'>
+</span><span class='line'>group :development do
+</span><span class='line'>
+</span><span class='line'>gem 'rspec-rails', '2.7.0'
+</span><span class='line'>
+</span><span class='line'>end
+</span><span class='line'>
+</span><span class='line'>group :test do
+</span><span class='line'>
+</span><span class='line'>gem 'rspec-rails', '2.7.0'
+</span><span class='line'>
+</span><span class='line'>gem 'webrat'
+</span><span class='line'>
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>After that you can install the gems and rspec (go to the directory of your new Rails app from the terminal and then execute the following commands) :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bundle install
+</span><span class='line'>rails generate rspec:install
+</span><span class='line'>bundle install --binstubs
+</span><span class='line'>bin/rake db:migrate</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Now to setup Spork, run the following command :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>bundle exec spork --bootstrap</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Next, open the file <strong>spec/spec_helper.rb</strong> in your Rails application and make sure it have the following code at the top (Some of them are already there (The spork blocks) replace them with the following code) :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+<span class='line-number'>10</span>
+<span class='line-number'>11</span>
+<span class='line-number'>12</span>
+<span class='line-number'>13</span>
+<span class='line-number'>14</span>
+<span class='line-number'>15</span>
+<span class='line-number'>16</span>
+<span class='line-number'>17</span>
+<span class='line-number'>18</span>
+<span class='line-number'>19</span>
+<span class='line-number'>20</span>
+<span class='line-number'>21</span>
+<span class='line-number'>22</span>
+<span class='line-number'>23</span>
+<span class='line-number'>24</span>
+<span class='line-number'>25</span>
+<span class='line-number'>26</span>
+<span class='line-number'>27</span>
+<span class='line-number'>28</span>
+<span class='line-number'>29</span>
+<span class='line-number'>30</span>
+<span class='line-number'>31</span>
+<span class='line-number'>32</span>
+<span class='line-number'>33</span>
+<span class='line-number'>34</span>
+<span class='line-number'>35</span>
+<span class='line-number'>36</span>
+<span class='line-number'>37</span>
+<span class='line-number'>38</span>
+<span class='line-number'>39</span>
+<span class='line-number'>40</span>
+<span class='line-number'>41</span>
+<span class='line-number'>42</span>
+<span class='line-number'>43</span>
+<span class='line-number'>44</span>
+<span class='line-number'>45</span>
+<span class='line-number'>46</span>
+<span class='line-number'>47</span>
+<span class='line-number'>48</span>
+<span class='line-number'>49</span>
+<span class='line-number'>50</span>
+<span class='line-number'>51</span>
+<span class='line-number'>52</span>
+<span class='line-number'>53</span>
+<span class='line-number'>54</span>
+<span class='line-number'>55</span>
+<span class='line-number'>56</span>
+<span class='line-number'>57</span>
+<span class='line-number'>58</span>
+<span class='line-number'>59</span>
+<span class='line-number'>60</span>
+<span class='line-number'>61</span>
+<span class='line-number'>62</span>
+<span class='line-number'>63</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>require 'spork'
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>Spork.prefork do
+</span><span class='line'>
+</span><span class='line'># Loading more in this block will cause your tests to run faster. However,
+</span><span class='line'>
+</span><span class='line'># if you change any configuration or code from libraries loaded here, you'll
+</span><span class='line'>
+</span><span class='line'># need to restart spork for it take effect.
+</span><span class='line'>
+</span><span class='line'>ENV["RAILS_ENV"] ||= 'test'
+</span><span class='line'>
+</span><span class='line'>require File.expand_path("../../config/environment", __FILE__)
+</span><span class='line'>
+</span><span class='line'>require 'rspec/rails'
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'># Requires supporting files with custom matchers and macros, etc,
+</span><span class='line'>
+</span><span class='line'># in ./support/ and its subdirectories.
+</span><span class='line'>
+</span><span class='line'>Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>RSpec.configure do |config|
+</span><span class='line'>
+</span><span class='line'># == Mock Framework
+</span><span class='line'>
+</span><span class='line'>#
+</span><span class='line'>
+</span><span class='line'># If you prefer to use mocha, flexmock or RR, uncomment the appropriate line:
+</span><span class='line'>
+</span><span class='line'>#
+</span><span class='line'>
+</span><span class='line'># config.mock_with :mocha
+</span><span class='line'>
+</span><span class='line'># config.mock_with :flexmock
+</span><span class='line'>
+</span><span class='line'># config.mock_with :rr
+</span><span class='line'>
+</span><span class='line'>config.mock_with :rspec
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>config.fixture_path = "#{::Rails.root}/spec/fixtures"
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'># If you're not using ActiveRecord, or you'd prefer not to run each of your
+</span><span class='line'>
+</span><span class='line'># examples within a transaction, comment the following line or assign false
+</span><span class='line'>
+</span><span class='line'># instead of true.
+</span><span class='line'>
+</span><span class='line'>config.use_transactional_fixtures = true
+</span><span class='line'>
+</span><span class='line'>end
+</span><span class='line'>
+</span><span class='line'>end
+</span><span class='line'>
+</span><span class='line'>
+</span><span class='line'>Spork.each_run do
+</span><span class='line'>
+</span><span class='line'>end</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li> Finally, you better add the line <strong>/autotest/</strong>* to the <strong>.gitignore</strong> file if you are using Git. (That folder can grow bigger!)</li>
+</ul>
+
+
+<p>Now you are done and ready to go. I first prepared these steps for my self while installing it on Mint. Next, I formated my PC and tried it again. The commands worked. So, if you face any problem, please leave a comment and we&rsquo;ll fix it together!</p>
+
+<p>If you are a beginner, buy the <a href="http://ruby.railstutorial.org/">Ruby on Rails Tutorial</a> screencast and follow it. But if you don&rsquo;t like to spend, that complete guide is also avilable on that site free of charge. I have tried several other books and screencasts and some of them doesn&rsquo;t explain much and some explain too much. There are some books which contain huge essays! I don&rsquo;t like reading much&hellip; They go around your head to catch the nose while you can do it directly. This guide talked to the point! But your taste might be different. So, try some books before you actually spend your money!</p>
+
+<p>Hmm&hellip; A long guide after a long time :)</p>
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <p class="meta auther">
+      <em>~ 
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Pubudu Kodikara</span></span>
+ ~</em>
+    </p>
+
+
+
+
+
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://techhamlet.com/2011/12/how-to-setup-the-latest-rails-on-linux-with-spork-and-autotest/" data-via="TechHamlet" data-counturl="http://techhamlet.com/2011/12/how-to-setup-the-latest-rails-on-linux-with-spork-and-autotest/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2011/12/a-new-era-of-cars-begins/" title="Previous Post: A New Era Of Cars Begins">&laquo; A New Era Of Cars Begins</a>
+      
+      
+        <a class="basic-alignment right" href="/2011/12/3-problems-that-the-wireless-broadband-users-face/" title="Next Post: 3 Problems that the Wireless Broadband users face">3 Problems that the Wireless Broadband users face &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1 class="comments">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Subscribe to us...</h1>
+
+  <a href="/subscribe/" class="social-link" target="_blank">
+	  <div id="mail" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/mail.png" alt="subscribe" class="social-img">
+	  	</div>
+	  	<span class="social-text">email</span>
+	  </div>
+  </a>
+
+</section><section>
+  <h1>Follow us on...</h1>
+
+  <a href="http://www.facebook.com/TechHamlet" class="social-link" target="_blank">
+	  <div id="facebook" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/facebook.png" alt="facebook" class="social-img">
+	  	</div>
+	  	<span class="social-text">facebook</span>
+	  </div>
+  </a>
+
+  <a href="http://plus.google.com/103124674194413904305" class="social-link" target="_blank">
+	  <div id="googleplus" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/googleplus.png" alt="googleplus" class="social-img">
+	  	</div>
+	  	<span class="social-text">google</span>
+	  </div>
+  </a>
+
+  <a href="http://twitter.com/TechHamlet" class="social-link" target="_blank">
+	  <div id="twitter" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/twitter.png" alt="twitter" class="social-img">
+	  	</div>
+	  	<span class="social-text">twitter</span>
+	  </div>
+  </a>
+
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/bitdefender-thumb.jpg" alt="Bitdefender 2014 is Released! Its Faster, Lighter and More Secure!"></div>
+
+
+
+
+        <a href="/2013/06/bitdefender-2014-released/">Bitdefender 2014 Is Released! Its Faster, Lighter and More Secure!</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/software-as-a-service-thumb.jpg" alt="A better understanding of Software as a Service"></div>
+
+
+
+
+        <a href="/2013/06/a-better-understanding-of-software-as-a-service/">A Better Understanding of Software as a Service</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/mac-vs-linux-featured.jpg" alt="Mac OS X vs Linux : What is The Best Windows Alternative? Mac or Linux"></div>
+
+
+
+
+        <a href="/2013/06/mac-os-x-vs-linux/">Mac OS X vs Linux : What Is the Best Windows Alternative? Mac or Linux</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/browser-wars-thumb.jpg" alt="Firefox Beats Chrome In Many Ways"></div>
+
+
+
+
+        <a href="/2013/06/firefox-beats-chrome/">Firefox Beats Chrome in Many Ways</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/octopress-thumb.jpg" alt="Just Moved You Are Curious from Wordpress to Octopress!"></div>
+
+
+
+
+        <a href="/2013/06/wordpress-to-octopress/">Just Moved You Are Curious From Wordpress to Octopress!</a>
+      </li>
+    
+  </ul>
+</section><section>
+  <h1>Recent Comments</h1>
+  <div id="dsq-recentcomments" class="dsq-widget"><script type="text/javascript" src="http://disqus.com/forums/tech-hamlet/recent_comments_widget.js?num_rc-items=3&amp;hide_avatars=0&amp;avatar_size=38&amp;excerpt_length=70;"></script></div>
+</section>
+  
+</aside>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="blog-index">
+
+  
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <footer id="site-footer" role="contentinfo"><div class="container">
+	<div>
+		<p id="links">Our friends : <a href="http://sumagaasapuwa.com/" target="_blank">Sumaga Asapuwa</a> / <a href="http://techlunatic.com/" target="_blank">Tech Lunatic</a> / <a href="http://www.india365.org/" target="_blank">India 365</a> / <a href="http://www.linuxalt.com/" target="_blank">Linux Alternative Project</a>   My Other Site : <a href="http://youarecurio.us/" target="_blank">You Are Curious</a></p>
+	</div>
+
+	<div id="version-copyright">
+		<p id="version">
+			Tech Hamlet (Version 15.0)
+		</p>
+
+		<p>
+		  Copyright &copy; 2009 - 2013 - Tech Hamlet Site Content (All post and page content) -
+		  Sri Lanka (All rights reserved)
+		</p>
+	</div>
+
+
+	<div id="license">
+		<a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="/images/creative-commons.png" /></a><br /><span property="dct:title">Tech Hamlet Site Design</span> by <a target="_blank" href="http://techhamlet.com/" property="cc:attributionName" rel="cc:attributionURL">Tech Hamlet</a> is licensed under a <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br />Powered by <a target="_blank" href="http://octopress.org/" rel="dct:source">Octopress/</a>
+
+
+	</div>
+
+	<br>
+
+	<a href="https://github.com/TechHamlet/TechHamlet.github.io" target="_blank" title="Source"><img src="/images/github.png" alt="Githbu"></a>
+</div>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tech-hamlet';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://techhamlet.com/2011/12/how-to-setup-the-latest-rails-on-linux-with-spork-and-autotest/';
+        var disqus_url = 'http://techhamlet.com/2011/12/how-to-setup-the-latest-rails-on-linux-with-spork-and-autotest/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

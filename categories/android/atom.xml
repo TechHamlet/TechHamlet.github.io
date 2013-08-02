@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Android | Tech Hamlet]]></title>
+  <link href="http://techhamlet.com/categories/android/atom.xml" rel="self"/>
+  <link href="http://techhamlet.com/"/>
+  <updated>2013-08-02T21:19:46+05:30</updated>
+  <id>http://techhamlet.com/</id>
+  <author>
+    <name><![CDATA[Pubudu Kodikara]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Paranoid Android Halo : Taking Android Multi-Tasking To The Next Level]]></title>
+    <link href="http://techhamlet.com/2013/06/paranoid-android-halo/"/>
+    <updated>2013-06-05T21:12:13+05:30</updated>
+    <id>http://techhamlet.com/2013/06/paranoid-android-halo</id>
+    <content type="html"><![CDATA[<p>If you have already used the Paranoid Android ROM, then you already know that its one of the most innovative Android ROMs out there. The PA team have really cool ideas that no other Android ROM have ever thought of. First, they introduced the true hybrid mode. You can switch between, Tablet, Phablet and the Phone UIs without changing the system DPI, adding build.prop hacks or even without rebooting your device. <a href="http://www.paranoid-rom.com/">Paranoid Android</a> allows you to set the mode you want for each app. Each app can have its own mode. You can even change the title bar and nav bar colors for each app. You can also use their famous pie mode to go full screen. No status bar, no nav bar! How cool is that? Now, they are going another step forward by introducing Paranoid Android Halo !</p>
+
+<p>Remember the key feature Facebook introduce with their latest messenger update? The chat heads? Chat heads will allow you to chat with your friends even while you are running another app. Without closing the existing app! Paranoid Android Halo is inspired by that. But it have more stuff&hellip;</p>
+
+<h3>Paranoid Android Halo is not just for chatting&hellip;</h3>
+
+<p>It will show any notification of any app. If you get a notification Paranoid Android Halo will show a small tooltip and fill its bubble with an image from the app. You don&rsquo;t have to stop the app you are currently working on. You don&rsquo;t have to lose its data. You don&rsquo;t have to stop the game you are playing&hellip; Simply click on Paranoid Android Halo and it will open what ever the app that generated the notification, let it be Gmail, Google Talk, Facebook, or any other app in a mini window in front of the existing app. The full app will be shown! after you are done dealing with the notification, you can click on the background and Halo will disappear! Android multi tasking to the next level! Check the video review created by <a href="http://www.youtube.com/user/oode?feature=watch">oode</a></p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Advanced Mobile Care-A Must to Secure Your Android]]></title>
+    <link href="http://techhamlet.com/2013/06/advanced-mobile-care-a-must-to-secure-your-android/"/>
+    <updated>2013-06-04T08:05:22+05:30</updated>
+    <id>http://techhamlet.com/2013/06/advanced-mobile-care-a-must-to-secure-your-android</id>
+    <content type="html"><![CDATA[<p>Advanced Mobile Care is an all-in-one Android security and performance optimization app that performs real-time virus scans while also featuring a brand new Anti-theft, powerful Game Speeder, Battery Saver, Call Blocker, App Manager, Task Killer, Privacy Locker, Privacy Advisor and Cloud Backup. Remember the world famous Advanced System care which take of your PC? Which clean, tweak, optimize and secure your PC? Advanced Mobile care is its Android version! A well trusted utility suit for Android.</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Install Ubuntu Touch in Android : For Both Nexus and Non Nexus Devices]]></title>
+    <link href="http://techhamlet.com/2013/05/ubuntu-touch-in-android/"/>
+    <updated>2013-05-09T20:43:13+05:30</updated>
+    <id>http://techhamlet.com/2013/05/ubuntu-touch-in-android</id>
+    <content type="html"><![CDATA[<p><img src="http://techhamlet.com/wp-content/uploads/2013/01/ubuntu-phone-550x385.jpg" alt="Ubuntu Touch in Android" /> Ubuntu Touch in Android</p>
+
+<p>In January, Canonical revealed the details of their next big project&hellip; <a href="http://techhamlet.com/2013/01/ubuntu-for-phones/">Ubuntu on mobile devices</a>&hellip; For Smart Phones and Tablets! The company is planing to release Ubuntu Phone based devices to the public at the end of this year. But do we have to wait till the end of the year? Can&rsquo;t we install Ubuntu Touch in Android devices? Yes we can!</p>
+
+<p>Android is the leading mobile OS in the world. It&rsquo;s a big success. People say Linux is not that popular. But they are wrong&hellip; If we look carefully, Android is a Linux distribution! It runs on Linux! So, can&rsquo;t we install another Linux distribution on a device built for Android? Yes we can!</p>
+
+<p>Ubuntu have officially released guides and ROMs to install <a href="https://wiki.ubuntu.com/Touch/Install">Ubuntu Touch in Android Nexus</a> devices. So, only Nexus devices can have Ubuntu Touch? Wrong! Many developers from the community have joined Ubuntu to make Ubuntu Touch work in other Android devices. These ROMs are not officially supported. But if you have the guts, you can try them.</p>
+
+<h3>Ubuntu Touch for Android is still a baby&hellip;</h3>
+
+<p>I do not recommend normal users to try this because Ubuntu Touch is still under development and may contain a lot of bugs. It can be really unstable. So, make sure you know what you are doing!</p>
+
+<h3>How To Install Ubuntu Touch in Android :</h3>
+
+<p><em><strong>Note :</strong></em> If you are not an advanced user who don&rsquo;t know about rooting, please leave this guide now!</p>
+
+<p><em><strong>Before starting :</strong></em> Please note that this procedure will make you loose all your data in the device.</p>
+
+<p><strong>Things you need :</strong></p>
+
+<ul>
+<li><p>You&rsquo;ll need a rooted Android device. Check <a href="http://forum.xda-developers.com/">XDA Developers</a> or <a href="http://rootzwiki.com/index">RootzWiki</a> for the required guides</p></li>
+<li><p>You need to have <a href="http://www.clockworkmod.com/rommanager">Clock Work Recovery</a> installed</p></li>
+</ul>
+
+
+<p><strong>Where to find the right guide :</strong></p>
+
+<ul>
+<li><p>Go to Ubuntu Touch devices page and select your device&rsquo;s status page : <a href="https://wiki.ubuntu.com/Touch/Devices">https://wiki.ubuntu.com/Touch/Devices</a></p></li>
+<li><p>Once in the status page, follow the URL to  "Install instructions" which might sometimes point to XDA developers</p></li>
+</ul>
+
+
+<p>I can&rsquo;t post the exact steps in here because they change from device to device. Its not harder than normal rooting. You just have to boot into the Clock Work recovery and install the ROM just like you install a normal Android ROM. Again I&rsquo;m telling&hellip; Do not try this if you are new to rooting!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Smart Launcher : A Simple, Fast and a Unique Launcher for Android]]></title>
+    <link href="http://techhamlet.com/2013/04/smart-launcher/"/>
+    <updated>2013-04-17T18:31:19+05:30</updated>
+    <id>http://techhamlet.com/2013/04/smart-launcher</id>
+    <content type="html"><![CDATA[<p><img src="http://techhamlet.com/wp-content/uploads/2013/04/smart-launcher-550x322.jpg" alt="Smart Launcher" /></p>
+
+<p>Most of us choose custom launchers for our Android devices rather than the one shipped by default. There are many launchers for us to choose. Many have the same layout and work in the same way. The difference is with features and customizability. But the Smart Launcher is completely different!</p>
+
+<p>A normal launcher will have several home screens. You can add widgets and customize your home screens. If you need to select an app, you have to go to the app drawer which will open in front of the home screen or you can use a shortcut placed in the home screen. But the Smart Launcher acts in a different way. There are no multiple home screens and no widgets (Widgets are available only in the PRO version). The home screen have the clock and some shortcuts nicely organized in a circle.</p>
+
+<h3>The home screen of the Smart Launcher :</h3>
+
+<p><img src="http://techhamlet.com/wp-content/uploads/2013/04/smart-launcher-home-550x322.jpg" alt="Smart Launcher Home" /> Smart Launcher Home</p>
+
+<p>Remember the <a href="http://techhamlet.com/2013/01/ubuntu-for-phones/">Ubuntu phone</a>? It have a bar in the left side which will have the shortcuts. It will appear only if you swipe from the left edge towards the center. Smart Launcher also have a similar feature. It doesn&rsquo;t have shortcuts. The left bar has several categories which it have grouped your apps. According to the developers this is the only launcher which can group your apps according to their functionalities.</p>
+
+<p>You can also access the app drawer by selecting the 6 squares in the bottom left corner. If you drag your finger across the categories, it will move really fast. The launcher is really fast!</p>
+
+<h3>The app drawer of Smart Launcher :</h3>
+
+<p><img src="http://techhamlet.com/wp-content/uploads/2013/04/smart-launcher-app-drawer-550x322.jpg" alt="Smart Launcher App Drawer" /> Smart Launcher App Drawer</p>
+
+<p>According to the developers, the Smart Launcher is very light on memory. It is very lighter than most of the other launchers. But it&rsquo;s not that light as the apex launcher. A tiny difference which you will never notice.</p>
+
+<p>The launcher is free but you can upgrade to the PRO version for $3.49. The PRO version will allow you to add widgets to the home screen. But widgets can make things slow. They consume more memory. I don&rsquo;t know about you but I can live without any widgets!</p>
+
+<p>So, what do you think? The launcher is completely different and have attracted the attention of many users. Give <a href="https://play.google.com/store/apps/details?id=ginlemon.flowerfree">Smart Launcher</a> a try and feel the difference!</p>
+]]></content>
+  </entry>
+  
+  <entry>
+    <title type="html"><![CDATA[Advanced Mobile Care 3 Comes With Tablet Support, Anti Theft and More]]></title>
+    <link href="http://techhamlet.com/2013/04/advanced-mobile-care-3/"/>
+    <updated>2013-04-01T21:31:28+05:30</updated>
+    <id>http://techhamlet.com/2013/04/advanced-mobile-care-3</id>
+    <content type="html"><![CDATA[<p><img src="http://techhamlet.com/wp-content/uploads/2013/04/advanced-mobile-care-3-550x268.jpg" alt="Advanced Mobile Care" /></p>
+
+<p>On November last year, IObit released the <a href="http://techhamlet.com/2012/11/advanced-mobile-care/">first version of Advanced Mobile Care</a>&hellip; One big utility suit which can take care of your whole Android device! It can scan your system for malware, it can optimize your system for best performance, it can clean out junk from your system, it can backup your important data, it can help you to manage your apps, it can help you to protect your privacy and perform more useful tasks that can help you to maintain a healthy device&hellip;</p>
+
+<p>Initially, they released Advanced Mobile Care only for phones. But the 3rd version that they just released bring support for tablets as well! Now you don&rsquo;t need to pay for any untrusted apps to maintain your Android tablet&hellip; Advanced Mobile Care Can help you for free. All the cool features we have in the phone version can be now used on tablets.</p>
+
+<p>One very important feature you need to have in a mobile device is a way to find your device if its lost. The new Advanced Mobile Care 3 have this feature. If you lose your device, now you can sound an alarm, lock and get the location of your lost device.</p>
+
+<p>If you are getting too many nuisance calls&hellip; If you only want your contacts to call you, you can now use the new Call Blocker feature in Advanced Mobile Care 3 to enjoy a peaceful life! You can block individual numbers or simply block all the numbers which are not in your contact list! Simple!</p>
+
+<p>Apart from these new features, there are a lot of core improvements added to this new version. So, if you already have this app, you might have already updated it. But if you don&rsquo;t have it, why not try something which can maintain a fast and healthy device for you? <a href="https://play.google.com/store/apps/details?id=com.iobit.mobilecare&amp;hl=en">Download advanced Mobile Care</a> today!</p>
+]]></content>
+  </entry>
+  
+</feed>

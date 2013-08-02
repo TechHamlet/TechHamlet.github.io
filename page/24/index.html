@@ -1,0 +1,1303 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Tech Hamlet</title>
+  <meta name="author" content="Pubudu Kodikara">
+
+  
+  <meta name="description" content="linux How to Install Additional Drivers in Ubuntu 12.10? Oct 19th, 2012 | Comments If you need better graphics and better performance, you might &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://techhamlet.com/page/24">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-9918644-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner" id="main-header"><div id="header-container">
+	<h1 id="main-title"><a href="/">Tech Hamlet</a></h1>
+	<nav role="navigation" id="main-nav"><ul class="main-menu">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/privacy-policy">Privacy Policy</a></li>
+  <li><a href="http://status.techhamlet.com/" target="_blank">Status</a></li>
+</ul>
+
+
+  <form id="site-search" action="http://google.com/search" method="get">
+    <fieldset role="search">
+      <input type="hidden" name="q" value="site:techhamlet.com" />
+      <input class="search" type="text" name="q" placeholder="Search"/>
+    </fieldset>
+  </form>
+
+</nav>
+</div>
+</header>
+
+  <div id="logo-cat">
+
+    <div id="logo-img">
+
+    <img class="logo" src="/images/th-logo.png" alt="Tech Hamlet Logo">
+
+    </div>
+
+    <a href="/categories/android/" class="android cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-android.png" alt="Android">
+        </div>
+        <span class="cat-text">android</span>
+      </div>
+    </a>
+
+    <a href="/" class="all cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-all.png" alt="All">
+        </div>
+        <span class="cat-text">all</span>
+      </div>
+    </a>
+
+    <a href="/categories/windows/" class="windows cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-windows.png" alt="Windows">
+        </div>
+        <span class="cat-text">windows</span>
+      </div>
+    </a>
+
+
+
+
+    <a href="/categories/web/" class="web cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-web.png" alt="Web">
+        </div>
+        <span class="cat-text">web</span>
+      </div>
+    </a>
+
+    <a href="/categories/linux/" class="linux cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+        </div>
+        <span class="cat-text">linux</span>
+      </div>
+    </a>
+
+    <a href="/categories/others/" class="others cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-others.png" alt="Others">
+        </div>
+        <span class="cat-text">others</span>
+      </div>
+    </a>
+  </div>
+
+  <div id="main">
+    <div id="content">
+      <div class="blog-index">
+  
+  
+  
+    <article>
+      
+  <header>
+
+
+
+    
+
+
+        <div class='linux cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+            </div>
+            <span class="cat-text">linux</span>
+          </div>
+        </div>
+
+      
+
+        <h1 class="entry-title"><a href="/2012/10/additional-drivers-in-ubuntu-12-10/">How to Install Additional Drivers in Ubuntu 12.10?</a></h1>
+
+      
+      
+    
+    
+      <p class="meta">
+
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-19T22:39:19+05:30"  data-updated="true">Oct 19<span>th</span>, 2012</time>
+
+
+        
+         | <a href="/2012/10/additional-drivers-in-ubuntu-12-10/#disqus_thread" class="comment-count">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+     <p class="excerpt">If you need better graphics and better performance, you might want to install Proprietary Additional Drivers in Ubuntu. They are not installed by default because they are not open source. Earlier, &hellip;</p>
+
+      <footer>
+        <a class="read-on" href="/2012/10/additional-drivers-in-ubuntu-12-10/">Read on &rarr;</a>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+
+
+
+    
+
+
+        <div class='linux cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+            </div>
+            <span class="cat-text">linux</span>
+          </div>
+        </div>
+
+      
+
+        <h1 class="entry-title"><a href="/2012/10/how-to-turn-of-online-search-results-in-dash/">Ubuntu 12.10 : How to Turn of Online Search Results in the Dash?</a></h1>
+
+      
+      
+    
+    
+      <p class="meta">
+
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-19T21:41:53+05:30"  data-updated="true">Oct 19<span>th</span>, 2012</time>
+
+
+        
+         | <a href="/2012/10/how-to-turn-of-online-search-results-in-dash/#disqus_thread" class="comment-count">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+     <p class="excerpt">Image Source : Joe Duty Ubuntu 12.10 comes with a controversial new feature called the online search. Canonical decided to deeply integrate Amazon into Quantal Quetzal. As a result, we got the shopping lens which &hellip;</p>
+
+      <footer>
+        <a class="read-on" href="/2012/10/how-to-turn-of-online-search-results-in-dash/">Read on &rarr;</a>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+
+
+
+    
+
+
+        <div class='web cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-web.png" alt="Web">
+            </div>
+            <span class="cat-text">web</span>
+          </div>
+        </div>
+
+      
+
+        <h1 class="entry-title"><a href="/2012/10/how-to-maximize-the-speed-of-your-internet-connection/">How to Maximize the Speed of Your Internet Connection</a></h1>
+
+      
+      
+    
+    
+      <p class="meta">
+
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-19T20:56:10+05:30"  data-updated="true">Oct 19<span>th</span>, 2012</time>
+
+
+        
+         | <a href="/2012/10/how-to-maximize-the-speed-of-your-internet-connection/#disqus_thread" class="comment-count">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+     <p class="excerpt">Are you getting average browsing speed from your internet connection as promised by your Internet Service Provider? I bet in most of the cases it won’t happen, but luckily there &hellip;</p>
+
+      <footer>
+        <a class="read-on" href="/2012/10/how-to-maximize-the-speed-of-your-internet-connection/">Read on &rarr;</a>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+
+
+
+    
+
+
+        <div class='linux cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+            </div>
+            <span class="cat-text">linux</span>
+          </div>
+        </div>
+
+      
+
+        <h1 class="entry-title"><a href="/2012/10/ubuntu-12-10-released/">Ubuntu 12.10 Is Released and Ready to Attack Windows 8! (Download Now)</a></h1>
+
+      
+      
+    
+    
+      <p class="meta">
+
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-18T22:49:32+05:30"  data-updated="true">Oct 18<span>th</span>, 2012</time>
+
+
+        
+         | <a href="/2012/10/ubuntu-12-10-released/#disqus_thread" class="comment-count">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+     <p class="excerpt">Canonical have just released the final stable version of Ubuntu 12.10 and its going against Windows 8 from the start! Windows 8 is scheduled to be released at the end &hellip;</p>
+
+      <footer>
+        <a class="read-on" href="/2012/10/ubuntu-12-10-released/">Read on &rarr;</a>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+
+
+
+    
+
+
+        <div class='linux cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+            </div>
+            <span class="cat-text">linux</span>
+          </div>
+        </div>
+
+      
+
+        <h1 class="entry-title"><a href="/2012/10/ubuntu-tweak-new-apps/">Ubuntu Tweak 0.8.0 Combines App Center and the Source Center</a></h1>
+
+      
+      
+    
+    
+      <p class="meta">
+
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-12T21:10:11+05:30"  data-updated="true">Oct 12<span>th</span>, 2012</time>
+
+
+        
+         | <a href="/2012/10/ubuntu-tweak-new-apps/#disqus_thread" class="comment-count">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+     <p class="excerpt">Ubuntu Tweak 0.8.0 The most widely used features of Ubuntu Tweak are the App Center and the Source Center. These two made it easy for us to install well-known third-party apps in &hellip;</p>
+
+      <footer>
+        <a class="read-on" href="/2012/10/ubuntu-tweak-new-apps/">Read on &rarr;</a>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+
+
+
+    
+
+
+        <div class='others cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-others.png" alt="Others">
+            </div>
+            <span class="cat-text">others</span>
+          </div>
+        </div>
+
+      
+
+        <h1 class="entry-title"><a href="/2012/10/top-wireless-printers-in-india/">Top Wireless Printers in India</a></h1>
+
+      
+      
+    
+    
+      <p class="meta">
+
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-09T21:18:29+05:30"  data-updated="true">Oct 9<span>th</span>, 2012</time>
+
+
+        
+         | <a href="/2012/10/top-wireless-printers-in-india/#disqus_thread" class="comment-count">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+     <p class="excerpt">Are you annoyed of the wiring in your table from the traditional printers you installed long back? There are plenty of wireless printers introduced in market nowadays which can help &hellip;</p>
+
+      <footer>
+        <a class="read-on" href="/2012/10/top-wireless-printers-in-india/">Read on &rarr;</a>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+
+
+
+    
+
+
+        <div class='others cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-others.png" alt="Others">
+            </div>
+            <span class="cat-text">others</span>
+          </div>
+        </div>
+
+      
+
+        <h1 class="entry-title"><a href="/2012/10/october-5-today-is-the-day-steve-left-us/">October 5 : Today Is the Day Steve Left Us&#8230;</a></h1>
+
+      
+      
+    
+    
+      <p class="meta">
+
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-05T21:38:46+05:30"  data-updated="true">Oct 5<span>th</span>, 2012</time>
+
+
+        
+         | <a href="/2012/10/october-5-today-is-the-day-steve-left-us/#disqus_thread" class="comment-count">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+     <p class="excerpt">Last year, on the 5th of October, Steve Jobs left us. He was one of the top brains in the world. A genius who always wanted to do something different. &hellip;</p>
+
+      <footer>
+        <a class="read-on" href="/2012/10/october-5-today-is-the-day-steve-left-us/">Read on &rarr;</a>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+
+
+
+    
+
+
+        <div class='others cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-others.png" alt="Others">
+            </div>
+            <span class="cat-text">others</span>
+          </div>
+        </div>
+
+      
+
+        <h1 class="entry-title"><a href="/2012/10/lost-device-procedure/">What to Do if You Lost Your Mobile Device? Thank the PC God?</a></h1>
+
+      
+      
+    
+    
+      <p class="meta">
+
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-10-04T09:09:06+05:30"  data-updated="true">Oct 4<span>th</span>, 2012</time>
+
+
+        
+         | <a href="/2012/10/lost-device-procedure/#disqus_thread" class="comment-count">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+     <p class="excerpt">What will you do if you lost your device? Scream? Turn your house upside down? Curse everyone? Become a rampaging monster who desperately looks for her baby? Call 911? Most probably, you&rsquo;ll &hellip;</p>
+
+      <footer>
+        <a class="read-on" href="/2012/10/lost-device-procedure/">Read on &rarr;</a>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+
+
+
+    
+
+
+        <div class='windows cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-windows.png" alt="Windows">
+            </div>
+            <span class="cat-text">windows</span>
+          </div>
+        </div>
+
+      
+
+        <h1 class="entry-title"><a href="/2012/09/startmenu8/">IObit Start Menu 8 Brings Back the Old Start Menu to Windows 8</a></h1>
+
+      
+      
+    
+    
+      <p class="meta">
+
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-30T22:25:49+05:30"  data-updated="true">Sep 30<span>th</span>, 2012</time>
+
+
+        
+         | <a href="/2012/09/startmenu8/#disqus_thread" class="comment-count">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+     <p class="excerpt">The dreaded serial killer Windows 8, brutally killed our beloved &ldquo;Start Menu&rdquo;. The Start Menu managed to survive even with severe injuries for several months. But the heartless Windows 8 &hellip;</p>
+
+      <footer>
+        <a class="read-on" href="/2012/09/startmenu8/">Read on &rarr;</a>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+    </article>
+  
+  
+    <article>
+      
+  <header>
+
+
+
+    
+
+
+        <div class='windows cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-windows.png" alt="Windows">
+            </div>
+            <span class="cat-text">windows</span>
+          </div>
+        </div>
+
+      
+
+        <h1 class="entry-title"><a href="/2012/09/android-apps-inside-windows/">Blue Stacks : Play With Your Android Apps Inside Windows and Mac</a></h1>
+
+      
+      
+    
+    
+      <p class="meta">
+
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-09-30T21:52:31+05:30"  data-updated="true">Sep 30<span>th</span>, 2012</time>
+
+
+        
+         | <a href="/2012/09/android-apps-inside-windows/#disqus_thread" class="comment-count">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+
+
+
+
+
+
+
+
+
+     <p class="excerpt">If you are an Android user, you might have wished to use your apps in your PC. Android have thousands of apps in their store. It might be easy to &hellip;</p>
+
+      <footer>
+        <a class="read-on" href="/2012/09/android-apps-inside-windows/">Read on &rarr;</a>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+    </article>
+  
+  <div class="pagination">
+    
+      <a class="prev" href="/page/25/">&larr; Older</a>
+    
+    <a href="/blog/archives">Blog Archives</a>
+    
+    <a class="next" href="/page/23/">Newer &rarr;</a>
+    
+  </div>
+</div>
+<aside class="sidebar">
+  
+    <section>
+  <h1>Subscribe to us&#8230;</h1>
+
+  <a href="/subscribe/" class="social-link" target="_blank">
+	  <div id="mail" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/mail.png" alt="subscribe" class="social-img">
+	  	</div>
+	  	<span class="social-text">email</span>
+	  </div>
+  </a>
+
+</section><section>
+  <h1>Follow us on&#8230;</h1>
+
+  <a href="http://www.facebook.com/TechHamlet" class="social-link" target="_blank">
+	  <div id="facebook" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/facebook.png" alt="facebook" class="social-img">
+	  	</div>
+	  	<span class="social-text">facebook</span>
+	  </div>
+  </a>
+
+  <a href="http://plus.google.com/103124674194413904305" class="social-link" target="_blank">
+	  <div id="googleplus" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/googleplus.png" alt="googleplus" class="social-img">
+	  	</div>
+	  	<span class="social-text">google</span>
+	  </div>
+  </a>
+
+  <a href="http://twitter.com/TechHamlet" class="social-link" target="_blank">
+	  <div id="twitter" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/twitter.png" alt="twitter" class="social-img">
+	  	</div>
+	  	<span class="social-text">twitter</span>
+	  </div>
+  </a>
+
+</section><section>
+  <h1>Recent Comments</h1>
+  <div id="dsq-recentcomments" class="dsq-widget"><script type="text/javascript" src="http://disqus.com/forums/tech-hamlet/recent_comments_widget.js?num_rc-items=3&amp;hide_avatars=0&amp;avatar_size=38&amp;excerpt_length=70;"></script></div>
+</section>
+  
+</aside>
+
+
+
+
+
+
+
+
+
+<!-- <div class="blog-index">
+
+  
+      
+      <ul>
+          <li><a href="/2012/10/additional-drivers-in-ubuntu-12-10/" class="old">How To Install Additional Drivers in Ubuntu 12.10?</a></li>
+      </ul>
+
+          
+      
+  
+      
+      <ul>
+          <li><a href="/2012/10/how-to-turn-of-online-search-results-in-dash/" class="old">Ubuntu 12.10 : How To Turn of Online Search Results in the Dash?</a></li>
+      </ul>
+
+          
+      
+  
+      
+      <ul>
+          <li><a href="/2012/10/how-to-maximize-the-speed-of-your-internet-connection/" class="old">How to Maximize the Speed of your Internet Connection</a></li>
+      </ul>
+
+          
+      
+  
+      
+      <ul>
+          <li><a href="/2012/10/ubuntu-12-10-released/" class="old">Ubuntu 12.10 is Released and Ready to Attack Windows 8! (Download Now)</a></li>
+      </ul>
+
+          
+      
+  
+      
+      <ul>
+          <li><a href="/2012/10/ubuntu-tweak-new-apps/" class="old">Ubuntu Tweak 0.8.0 Combines App Center and the Source Center</a></li>
+      </ul>
+
+          
+      
+  
+      
+      <ul>
+          <li><a href="/2012/10/top-wireless-printers-in-india/" class="old">Top Wireless Printers in India</a></li>
+      </ul>
+
+          
+      
+  
+      
+      <ul>
+          <li><a href="/2012/10/october-5-today-is-the-day-steve-left-us/" class="old">October 5 : Today is The Day Steve Left Us...</a></li>
+      </ul>
+
+          
+      
+  
+      
+      <ul>
+          <li><a href="/2012/10/lost-device-procedure/" class="old">What To Do if You Lost Your Mobile Device? Thank the PC God?</a></li>
+      </ul>
+
+          
+      
+  
+      
+      <ul>
+          <li><a href="/2012/09/startmenu8/" class="old">IObit Start Menu 8 Brings Back the Old Start Menu to Windows 8</a></li>
+      </ul>
+
+          
+      
+  
+      
+      <ul>
+          <li><a href="/2012/09/android-apps-inside-windows/" class="old">Blue Stacks : Play with your Android Apps inside Windows and Mac</a></li>
+      </ul>
+
+          
+      
+  
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <footer id="site-footer" role="contentinfo"><div class="container">
+	<div>
+		<p id="links">Our friends : <a href="http://sumagaasapuwa.com/" target="_blank">Sumaga Asapuwa</a> / <a href="http://techlunatic.com/" target="_blank">Tech Lunatic</a> / <a href="http://www.india365.org/" target="_blank">India 365</a> / <a href="http://www.linuxalt.com/" target="_blank">Linux Alternative Project</a>   My Other Site : <a href="http://youarecurio.us/" target="_blank">You Are Curious</a></p>
+	</div>
+
+	<div id="version-copyright">
+		<p id="version">
+			Tech Hamlet (Version 15.0)
+		</p>
+
+		<p>
+		  Copyright &copy; 2009 - 2013 - Tech Hamlet Site Content (All post and page content) -
+		  Sri Lanka (All rights reserved)
+		</p>
+	</div>
+
+
+	<div id="license">
+		<a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="/images/creative-commons.png" /></a><br /><span property="dct:title">Tech Hamlet Site Design</span> by <a target="_blank" href="http://techhamlet.com/" property="cc:attributionName" rel="cc:attributionURL">Tech Hamlet</a> is licensed under a <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br />Powered by <a target="_blank" href="http://octopress.org/" rel="dct:source">Octopress/</a>
+
+
+	</div>
+
+	<br>
+
+	<a href="https://github.com/TechHamlet/TechHamlet.github.io" target="_blank" title="Source"><img src="/images/github.png" alt="Githbu"></a>
+</div>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tech-hamlet';
+      
+        
+        var disqus_script = 'count.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

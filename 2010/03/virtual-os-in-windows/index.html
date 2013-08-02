@@ -1,0 +1,578 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Install Another OS Inside Windows and Use it Like a Software - Tech Hamlet</title>
+  <meta name="author" content="Pubudu Kodikara">
+
+  
+  <meta name="description" content="Do you know that you can install any number of operating systems inside your own desktop and you can minimize and keep them just as normal programs? &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://techhamlet.com/2010/03/virtual-os-in-windows">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-9918644-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner" id="main-header"><div id="header-container">
+	<h1 id="main-title"><a href="/">Tech Hamlet</a></h1>
+	<nav role="navigation" id="main-nav"><ul class="main-menu">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/privacy-policy">Privacy Policy</a></li>
+  <li><a href="http://status.techhamlet.com/" target="_blank">Status</a></li>
+</ul>
+
+
+  <form id="site-search" action="http://google.com/search" method="get">
+    <fieldset role="search">
+      <input type="hidden" name="q" value="site:techhamlet.com" />
+      <input class="search" type="text" name="q" placeholder="Search"/>
+    </fieldset>
+  </form>
+
+</nav>
+</div>
+</header>
+
+  <div id="logo-cat">
+
+    <div id="logo-img">
+
+    <img class="logo" src="/images/th-logo.png" alt="Tech Hamlet Logo">
+
+    </div>
+
+    <a href="/categories/android/" class="android cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-android.png" alt="Android">
+        </div>
+        <span class="cat-text">android</span>
+      </div>
+    </a>
+
+    <a href="/" class="all cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-all.png" alt="All">
+        </div>
+        <span class="cat-text">all</span>
+      </div>
+    </a>
+
+    <a href="/categories/windows/" class="windows cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-windows.png" alt="Windows">
+        </div>
+        <span class="cat-text">windows</span>
+      </div>
+    </a>
+
+
+
+
+    <a href="/categories/web/" class="web cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-web.png" alt="Web">
+        </div>
+        <span class="cat-text">web</span>
+      </div>
+    </a>
+
+    <a href="/categories/linux/" class="linux cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+        </div>
+        <span class="cat-text">linux</span>
+      </div>
+    </a>
+
+    <a href="/categories/others/" class="others cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-others.png" alt="Others">
+        </div>
+        <span class="cat-text">others</span>
+      </div>
+    </a>
+  </div>
+
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry post" role="article">
+  
+  <header>
+
+
+
+    
+        <div class='linux cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+            </div>
+            <a href="/categories/linux/"><span class="cat-text">linux</span></a>
+          </div>
+        </div>
+
+      <h1 class="entry-title">Install Another OS Inside Windows and Use It Like a Software</h1>
+    
+    
+      <p class="meta">
+
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-03-21T12:00:29+05:30"  data-updated="true">Mar 21<span>st</span>, 2010</time>
+
+
+        
+         | <a href="#disqus_thread" class="comment-count">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+
+
+
+
+
+<div class="entry-content"><p><a href="http://www.techhamlet.com/wp-content/uploads/2010/03/virtualbox_icon.png"><img src="http://www.techhamlet.com/wp-content/uploads/2010/03/virtualbox_icon-100x100.png" alt="VirtualBox" /></a>Do you know that you can install any number of <a href="http://en.wikipedia.org/wiki/Operating_system">operating systems</a> inside your own desktop and you can minimize and keep them just as normal programs? If not&hellip; its time to learn! Today, we&rsquo;ll see step by step, how to install and run another operating system right inside your windows desktop!<!-- more --></p>
+
+<p>Virtual means not real! I hope all of you know that! Today, what we are going to do is, install a virtual OS inside windows! To do this, we are going to use a software called <a href="http://www.virtualbox.org/">VirtualBox</a>, which will help us to make a virtual environment to install our guest OS. In this environment, we can install <a href="http://en.wikipedia.org/wiki/Linux">Linux</a>, Windows, BSD or <a href="http://www.sun.com/solaris/">Sun Solaris</a>!</p>
+
+<p><strong>Why Do We Use this?</strong></p>
+
+<ul>
+<li><p>To test an OS before actually installing it.</p></li>
+<li><p>For learning purposes. If you want to learn how to configure a <a href="http://en.wikipedia.org/wiki/Web_server">web server</a>, without buying a separate machine for that, we can use a virtual OS. You can also create a virtual network of computers.</p></li>
+<li><p>To test our software. (For big software, better not to use this)</p></li>
+<li><p>Finally, to show your friends that your a geek!</p></li>
+</ul>
+
+
+<p><strong>Enough talking&hellip; Lets see how to do this :</strong></p>
+
+<ul>
+<li><p>First, <a href="http://www.microsoft.com/windows/windows-7/default.aspx">Download</a> and Install Virtual Box (Download link : <a href="http://www.virtualbox.org/wiki/Downloads">http://www.virtualbox.org/wiki/Downloads</a>)</p></li>
+<li><p>Next, open VirtualBox</p></li>
+<li><p>Now, to start creating a <a href="http://en.wikipedia.org/wiki/Virtual_machine">virtual machine</a>, click on &ldquo;New&rdquo; as shown in the image :</p></li>
+</ul>
+
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2010/03/virtualbox-new.jpg"><img src="http://www.techhamlet.com/wp-content/uploads/2010/03/virtualbox-new-300x225.jpg" alt="Virtualbox (New)" /></a></p>
+
+<ul>
+<li><p>First, you&rsquo;ll see a welcome message (which most of you will ignore). Click on &ldquo;Next&rdquo;</p></li>
+<li><p>Now, you&rsquo;ll see a screen as below :</p></li>
+</ul>
+
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2010/03/virtualbox-vm-name-and-os-type.jpg"><img src="http://www.techhamlet.com/wp-content/uploads/2010/03/virtualbox-vm-name-and-os-type-300x220.jpg" alt="VM Name and OS Type" /></a></p>
+
+<ul>
+<li><p>In here, first give any name to your Virtual Machine.</p></li>
+<li><p>Next, select what your going to install. For example, in the above screen-shot, we have selected, &ldquo;<a href="http://www.microsoft.com">Microsoft</a> Windows&rdquo; as the operating system and &ldquo;Windows <a href="http://www.microsoft.com/windows/windows-xp/default.aspx">XP</a>&rdquo; as the version.</p></li>
+<li><p>After your done, click &ldquo;Next&rdquo;</p></li>
+<li><p>Next, you need to give the maximum amount of Memory that your going to allocate for your Virtual Machine. (Do not use too-much, try to use a middle amount). After your done, select, &ldquo;Next&rdquo;</p></li>
+<li><p>Now, we need to create a new &ldquo;Virtual&rdquo; hard disk. In here, make sure &ldquo;Boot Hard Disk (Primary Master)&rdquo; is ticked. Then select &ldquo;Create new hard disk&rdquo; and click on &ldquo;Next&rdquo;</p></li>
+<li><p>After that, you&rsquo;ll be greeted by a welcome message. Click on &ldquo;Next&rdquo;</p></li>
+<li><p>Select, &ldquo;Fixed-size storage&rdquo; and click &ldquo;Next&rdquo;</p></li>
+<li><p>Now, you&rsquo;ll see a screen as below :</p></li>
+</ul>
+
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2010/03/virtualbox-create-new-virtual-disk.jpg"><img src="http://www.techhamlet.com/wp-content/uploads/2010/03/virtualbox-create-new-virtual-disk-300x221.jpg" alt="Create new Virtual Disk" /></a></p>
+
+<ul>
+<li><p>Give the location which you need to place your Virtual Disk (need to have a lot of space)</p></li>
+<li><p>Next, give the amount of hard disk space which your going to allocate for this disk. (10 GB is good for any OS, But for Windows 7, you&rsquo;ll need about 20 or 25)</p></li>
+<li><p>After your done, click &ldquo;Next&rdquo;. Now, click on &ldquo;Finish&rdquo;.</p></li>
+<li><p>Now, it will create your Virtual Disks (which will take some time) and give you a final summary. In here, click on &ldquo;Finish&rdquo;</p></li>
+<li><p>First, you need to install the guest OS. To do this, you need to have an <a href="http://en.wikipedia.org/wiki/Installation_%28computer_programs%29">installation CD</a> or an <a href="http://en.wikipedia.org/wiki/ISO_image">ISO image</a> of that OS.</p></li>
+<li><p>To add the installation CD, In Virtual Box, select the created Virtual Machine and click on &ldquo;Settings&rdquo;.</p></li>
+<li><p>In the Settings <a href="http://www.microsoft.com/WINDOWS">window</a> :</p></li>
+</ul>
+
+
+<p>1) Go to &ldquo;Storage&rdquo;</p>
+
+<p>2) Select &ldquo;Empty&rdquo; under &ldquo;IDE Controller&rdquo;.</p>
+
+<p>3.1) Now, if you want to use a CD in your CD drive, select &ldquo;Host Drive&rdquo; under &ldquo;CD/DVD Device&rdquo;</p>
+
+<p>3.2) If you want to add an ISO image, click on the icon shown as &ldquo;3.2&#8221;  in the image below. After that, click on &#8220;Add&rdquo; and give the path to your ISO image, finally click on &ldquo;select&rdquo;</p>
+
+<ul>
+<li>After your done, click &ldquo;OK&rdquo;</li>
+</ul>
+
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2010/03/virtualbox-settings.jpg"><img src="http://www.techhamlet.com/wp-content/uploads/2010/03/virtualbox-settings-300x216.jpg" alt="VirtualBox Settings" /></a></p>
+
+<ul>
+<li>Now your ready to go&hellip; Select your virtual OS and select &ldquo;Start&rdquo;. Now you can install and use your Virtual OS!</li>
+</ul>
+
+
+<p>If you want to learn how to install an OS, you can refer to the following posts :</p>
+
+<ul>
+<li><p><a href="http://www.techhamlet.com/2009/12/how-to-install-ubuntu">Step by Step How to Install Ubuntu 9.10 in Your System</a></p></li>
+<li><p><a href="http://www.techhamlet.com/2009/12/how-to-install-windows-7">Step by Step How To Install Windows 7</a></p></li>
+</ul>
+
+
+<p>Now you know how to install several Operating Systems right in your desktop! Now, What do you think about, what you learned? For what will you use this? Please feel free to share your ideas with us!</p>
+
+<p><img src="http://www.techhamlet.com/wp-content/uploads/2010/03/54e6a3db43b098ecbf5db09e027cb1c1161.png" alt="Reblog this post [with Zemanta]" /></p>
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <p class="meta auther">
+      <em>~ 
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Pubudu Kodikara</span></span>
+ ~</em>
+    </p>
+
+
+
+
+
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://techhamlet.com/2010/03/virtual-os-in-windows/" data-via="TechHamlet" data-counturl="http://techhamlet.com/2010/03/virtual-os-in-windows/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2010/03/techhamlet-contest-updated-2/" title="Previous Post: Contest Updated : Win a (BitDefender Internet Security 2010) + (WinX DVD Ripper Platinum) + ($15 in Cash or A Copy of 31 Days to Build a Better Blog)">&laquo; Contest Updated : Win a (BitDefender Internet Security 2010) + (WinX DVD Ripper Platinum) + ($15 in Cash or A Copy of 31 Days to Build a Better Blog)</a>
+      
+      
+        <a class="basic-alignment right" href="/2010/03/registry-defrag/" title="Next Post: Why Not Defrag Your Registry for Ultimate Performance?">Why Not Defrag Your Registry for Ultimate Performance? &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1 class="comments">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Subscribe to us...</h1>
+
+  <a href="/subscribe/" class="social-link" target="_blank">
+	  <div id="mail" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/mail.png" alt="subscribe" class="social-img">
+	  	</div>
+	  	<span class="social-text">email</span>
+	  </div>
+  </a>
+
+</section><section>
+  <h1>Follow us on...</h1>
+
+  <a href="http://www.facebook.com/TechHamlet" class="social-link" target="_blank">
+	  <div id="facebook" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/facebook.png" alt="facebook" class="social-img">
+	  	</div>
+	  	<span class="social-text">facebook</span>
+	  </div>
+  </a>
+
+  <a href="http://plus.google.com/103124674194413904305" class="social-link" target="_blank">
+	  <div id="googleplus" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/googleplus.png" alt="googleplus" class="social-img">
+	  	</div>
+	  	<span class="social-text">google</span>
+	  </div>
+  </a>
+
+  <a href="http://twitter.com/TechHamlet" class="social-link" target="_blank">
+	  <div id="twitter" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/twitter.png" alt="twitter" class="social-img">
+	  	</div>
+	  	<span class="social-text">twitter</span>
+	  </div>
+  </a>
+
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/bitdefender-thumb.jpg" alt="Bitdefender 2014 is Released! Its Faster, Lighter and More Secure!"></div>
+
+
+
+
+        <a href="/2013/06/bitdefender-2014-released/">Bitdefender 2014 Is Released! Its Faster, Lighter and More Secure!</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/software-as-a-service-thumb.jpg" alt="A better understanding of Software as a Service"></div>
+
+
+
+
+        <a href="/2013/06/a-better-understanding-of-software-as-a-service/">A Better Understanding of Software as a Service</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/mac-vs-linux-featured.jpg" alt="Mac OS X vs Linux : What is The Best Windows Alternative? Mac or Linux"></div>
+
+
+
+
+        <a href="/2013/06/mac-os-x-vs-linux/">Mac OS X vs Linux : What Is the Best Windows Alternative? Mac or Linux</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/browser-wars-thumb.jpg" alt="Firefox Beats Chrome In Many Ways"></div>
+
+
+
+
+        <a href="/2013/06/firefox-beats-chrome/">Firefox Beats Chrome in Many Ways</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/octopress-thumb.jpg" alt="Just Moved You Are Curious from Wordpress to Octopress!"></div>
+
+
+
+
+        <a href="/2013/06/wordpress-to-octopress/">Just Moved You Are Curious From Wordpress to Octopress!</a>
+      </li>
+    
+  </ul>
+</section><section>
+  <h1>Recent Comments</h1>
+  <div id="dsq-recentcomments" class="dsq-widget"><script type="text/javascript" src="http://disqus.com/forums/tech-hamlet/recent_comments_widget.js?num_rc-items=3&amp;hide_avatars=0&amp;avatar_size=38&amp;excerpt_length=70;"></script></div>
+</section>
+  
+</aside>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="blog-index">
+
+  
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <footer id="site-footer" role="contentinfo"><div class="container">
+	<div>
+		<p id="links">Our friends : <a href="http://sumagaasapuwa.com/" target="_blank">Sumaga Asapuwa</a> / <a href="http://techlunatic.com/" target="_blank">Tech Lunatic</a> / <a href="http://www.india365.org/" target="_blank">India 365</a> / <a href="http://www.linuxalt.com/" target="_blank">Linux Alternative Project</a>   My Other Site : <a href="http://youarecurio.us/" target="_blank">You Are Curious</a></p>
+	</div>
+
+	<div id="version-copyright">
+		<p id="version">
+			Tech Hamlet (Version 15.0)
+		</p>
+
+		<p>
+		  Copyright &copy; 2009 - 2013 - Tech Hamlet Site Content (All post and page content) -
+		  Sri Lanka (All rights reserved)
+		</p>
+	</div>
+
+
+	<div id="license">
+		<a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="/images/creative-commons.png" /></a><br /><span property="dct:title">Tech Hamlet Site Design</span> by <a target="_blank" href="http://techhamlet.com/" property="cc:attributionName" rel="cc:attributionURL">Tech Hamlet</a> is licensed under a <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br />Powered by <a target="_blank" href="http://octopress.org/" rel="dct:source">Octopress/</a>
+
+
+	</div>
+
+	<br>
+
+	<a href="https://github.com/TechHamlet/TechHamlet.github.io" target="_blank" title="Source"><img src="/images/github.png" alt="Githbu"></a>
+</div>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tech-hamlet';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://techhamlet.com/2010/03/virtual-os-in-windows/';
+        var disqus_url = 'http://techhamlet.com/2010/03/virtual-os-in-windows/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

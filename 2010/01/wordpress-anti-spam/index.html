@@ -1,0 +1,575 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>How Are You Going to Stop Spam on Your Wordpress Blog? - Tech Hamlet</title>
+  <meta name="author" content="Pubudu Kodikara">
+
+  
+  <meta name="description" content="Spam comments had become a  great headache for us bloggers! Earlier I used to face tons of spam comments every day ruining my blog. So , do you know &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://techhamlet.com/2010/01/wordpress-anti-spam">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-9918644-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner" id="main-header"><div id="header-container">
+	<h1 id="main-title"><a href="/">Tech Hamlet</a></h1>
+	<nav role="navigation" id="main-nav"><ul class="main-menu">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/privacy-policy">Privacy Policy</a></li>
+  <li><a href="http://status.techhamlet.com/" target="_blank">Status</a></li>
+</ul>
+
+
+  <form id="site-search" action="http://google.com/search" method="get">
+    <fieldset role="search">
+      <input type="hidden" name="q" value="site:techhamlet.com" />
+      <input class="search" type="text" name="q" placeholder="Search"/>
+    </fieldset>
+  </form>
+
+</nav>
+</div>
+</header>
+
+  <div id="logo-cat">
+
+    <div id="logo-img">
+
+    <img class="logo" src="/images/th-logo.png" alt="Tech Hamlet Logo">
+
+    </div>
+
+    <a href="/categories/android/" class="android cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-android.png" alt="Android">
+        </div>
+        <span class="cat-text">android</span>
+      </div>
+    </a>
+
+    <a href="/" class="all cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-all.png" alt="All">
+        </div>
+        <span class="cat-text">all</span>
+      </div>
+    </a>
+
+    <a href="/categories/windows/" class="windows cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-windows.png" alt="Windows">
+        </div>
+        <span class="cat-text">windows</span>
+      </div>
+    </a>
+
+
+
+
+    <a href="/categories/web/" class="web cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-web.png" alt="Web">
+        </div>
+        <span class="cat-text">web</span>
+      </div>
+    </a>
+
+    <a href="/categories/linux/" class="linux cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+        </div>
+        <span class="cat-text">linux</span>
+      </div>
+    </a>
+
+    <a href="/categories/others/" class="others cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-others.png" alt="Others">
+        </div>
+        <span class="cat-text">others</span>
+      </div>
+    </a>
+  </div>
+
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry post" role="article">
+  
+  <header>
+
+
+
+    
+        <div class='web cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-web.png" alt="Web">
+            </div>
+            <a href="/categories/web/"><span class="cat-text">web</span></a>
+          </div>
+        </div>
+
+      <h1 class="entry-title">How Are You Going to Stop Spam on Your Wordpress Blog?</h1>
+    
+    
+      <p class="meta">
+
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-01-14T12:00:05+05:30"  data-updated="true">Jan 14<span>th</span>, 2010</time>
+
+
+        
+         | <a href="#disqus_thread" class="comment-count">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+
+
+
+
+
+<div class="entry-content"><p><img src="http://www.techhamlet.com/wp-content/uploads/2010/01/earth-alert-100x100.png" alt="Spam" />Spam comments had become a  great headache for us bloggers! Earlier I used to face tons of spam comments every day ruining my blog. So , do you know the cure for this headache? Is your cure strong enough to stop all the comments? Or are you still getting some spam?  If so, lets see how to get a complete cure for this problem!<!-- more --></p>
+
+<p><strong>What is Spam in Blogs ?</strong></p>
+
+<p><strong>According to <a href="http://www.wikipedia.org/">WikiPedia</a> :</strong></p>
+
+<blockquote><p><a href="http://en.wikipedia.org/wiki/Spam_%28electronic%29">Spamming</a> is done by automatically posting random comments or promoting commercial services to blogs, wikis, guestbooks, or other publicly accessible online discussion boards. Adding links that point to the spammer&rsquo;s web site artificially increases the site&rsquo;s <a href="http://en.wikipedia.org/wiki/Web_search_engine">search engine</a> ranking. An increased ranking often results in the spammer&rsquo;s commercial site being listed ahead of other sites for certain searches, increasing the number of potential visitors and paying customers.</p></blockquote>
+
+<p><strong>How can we stop Spam?</strong></p>
+
+<p>There are some methods that we can use to stop spam :</p>
+
+<ol>
+<li><p> We can use Captcha systems to prevent bots from injecting spam into our blogs! Actually most of the visitors don&rsquo;t like this method.</p></li>
+<li><p> We can use .htaccess file to stop spam.</p></li>
+<li><p> We can use <a href="http://en.wikipedia.org/wiki/JavaScript">JavaScript</a> and cookies to detect and prevent spam.</p></li>
+</ol>
+
+
+<p>Don&rsquo;t worry, as wordpress users, you don&rsquo;t need to know about these methods. All you have to know is, what is the best plugin to use for your blog! So lets see what are the options we have :</p>
+
+<p><strong>Wordpress <a href="http://www.vircom.com/en/products/modusgate/">Anti Spam</a> Plugins :</strong></p>
+
+<p><strong><a href="http://wordpress.org/extend/plugins/akismet/">Akismet</a> </strong></p>
+
+<p><a href="http://akismet.com">Akismet</a> checks your comments against the Akismet web service to see if they look like spam or not and lets you review the spam it catches under your blog&rsquo;s &ldquo;Comments&rdquo; admin screen.</p>
+
+<p><strong><a href="http://wordpress.org/extend/plugins/si-captcha-for-wordpress/">SI CAPTCHA Anti-Spam</a></strong></p>
+
+<p>Adds CAPTCHA anti-spam methods to <a href="http://wordpress.org">WordPress</a> on the comment form, registration form, login, or all. In order to post comments or regiser, users will have to type in the phrase shown on the image. This prevents spam from automated bots. Adds security. Works great with Akismet. Also is fully WPMU and <a href="http://buddypress.org/">BuddyPress</a> compatible.</p>
+
+<p>Features:</p>
+
+<ul>
+<li><p>Configure from Admin panel</p></li>
+<li><p>JavaScript is not required</p></li>
+<li><p>Valid HTML</p></li>
+<li><p>Section 508 and WAI Accessibility Validation.</p></li>
+<li><p>Allows Trackbacks and Pingbacks</p></li>
+<li><p>Setting to hide the CAPTCHA from logged in users and or admins</p></li>
+<li><p>Setting to show the CAPTCHA on the comment form, registration form, login, or all.</p></li>
+<li><p>I18n language translation support (see FAQ)</p></li>
+</ul>
+
+
+<p><strong><a href="http://wordpress.org/extend/plugins/wp-spamfree/">WP-SpamFree Anti-Spam</a></strong></p>
+
+<p>An extremely powerful WordPress anti-spam plugin that eliminates blog <a href="http://en.wikipedia.org/wiki/Spam_in_blogs">comment spam</a>, including trackback and pingback spam. Finally, you can enjoy a spam-free WordPress blog! Includes spam-free contact form feature as well.</p>
+
+<p>Key Features :</p>
+
+<ul>
+<li><p>Virtually eliminates automated comment spam from bots. It works like a firewall to ensure that your commenters are in fact, human.</p></li>
+<li><p>A counter on your dashboard to keep track of all the spam it&rsquo;s blocking. The numbers will show how effective this plugin is.</p></li>
+<li><p>No CAPTCHA&rsquo;s, challenge questions or other inconvenience to site visitors &ndash; it works silently in the background.</p></li>
+<li><p>Includes drop-in spam-free contact form. Easy to use &ndash; no configuration necessary.</p></li>
+<li><p>No false positives, which leads to fewer frustrated readers, and less work for you.</p></li>
+<li><p>You won&rsquo;t have to waste valuable time sifting through a spam queue anymore, because there won&rsquo;t be much there, if anything.</p></li>
+<li><p>Powerful trackback and pingback spam protection.</p></li>
+<li><p>Easy to install &ndash; truly plug and play. Just upload and activate. (Installation Status on the plugin admin page to let you know if plugin is installed correctly.)</p></li>
+<li><p>The beauty of this plugin is the methods of blocking spam. It takes a different approach than most and stops spam at the door.</p></li>
+<li><p>The code has an extremely low bandwidth overhead and won&rsquo;t slow down your blog (very light database access), unlike some other anti-spam plugins.</p></li>
+<li><p>Completely compatible with all cache plugins, including WP Cache and WP Super Cache. Not all anti-spam plugins can say that.</p></li>
+<li><p>Display your blocked spam stats on your blog.</p></li>
+<li><p>Helps keep your database slimmer and more efficient.</p></li>
+<li><p>Works in WordPress MU as well.</p></li>
+<li><p>No cost, no hidden fees. Free for both Commercial and Personal use.</p></li>
+</ul>
+
+
+<p><strong>What&rsquo;s my choice?</strong></p>
+
+<p>I have never used SI CAPTCHA Anti-Spam because I don&rsquo;t like the idea of giving more trouble for my visitors by filling up the CAPTCHA!</p>
+
+<p>Akismet is my first choice. Because it came with wordpress by default, I thought of giving it a shot. But unfortunately it was unable to block all the spam comments which are directed at my blog! So I thought of searching for more plugins.</p>
+
+<p>Then I found WP-SpamFree Anti-Spam, which I installed parallely with Akismet. This combination blocked all of my spam comments, so I never faced any spamming problem in my blog. But recently I removed Akismet and left WP-SpamFree Anti-Spam to do the job by him self. Actually he did it! Until today WP-SpamFree Anti-Spam was able to  block all of my spam comments and make me forget about spam! So my choice is WP-SpamFree Anti-Spam.</p>
+
+<p><strong>But, there are lots of more plugins out there which I never even heard of! So, What is your Choice?</strong></p>
+
+<p>What is your current solution for spam? Does it really work? What do you think about this list? Have you ever tried them? If not, try them now, and give us the feed back!</p>
+
+<p><strong>
+</strong></p>
+
+<p>[polldaddy poll=2514949]</p>
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <p class="meta auther">
+      <em>~ 
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Pubudu Kodikara</span></span>
+ ~</em>
+    </p>
+
+
+
+
+
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://techhamlet.com/2010/01/wordpress-anti-spam/" data-via="TechHamlet" data-counturl="http://techhamlet.com/2010/01/wordpress-anti-spam/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2010/01/ubuntu-tweak-0-5-0/" title="Previous Post: The Great Ubuntu Tweak 0.5.0 is Finally Ready">&laquo; The Great Ubuntu Tweak 0.5.0 is Finally Ready</a>
+      
+      
+        <a class="basic-alignment right" href="/2010/01/advanced-system-protector/" title="Next Post: Advanced System Protector : A Must Have, Free Anti Malware Scanner">Advanced System Protector : A Must Have, Free Anti Malware Scanner &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1 class="comments">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Subscribe to us...</h1>
+
+  <a href="/subscribe/" class="social-link" target="_blank">
+	  <div id="mail" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/mail.png" alt="subscribe" class="social-img">
+	  	</div>
+	  	<span class="social-text">email</span>
+	  </div>
+  </a>
+
+</section><section>
+  <h1>Follow us on...</h1>
+
+  <a href="http://www.facebook.com/TechHamlet" class="social-link" target="_blank">
+	  <div id="facebook" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/facebook.png" alt="facebook" class="social-img">
+	  	</div>
+	  	<span class="social-text">facebook</span>
+	  </div>
+  </a>
+
+  <a href="http://plus.google.com/103124674194413904305" class="social-link" target="_blank">
+	  <div id="googleplus" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/googleplus.png" alt="googleplus" class="social-img">
+	  	</div>
+	  	<span class="social-text">google</span>
+	  </div>
+  </a>
+
+  <a href="http://twitter.com/TechHamlet" class="social-link" target="_blank">
+	  <div id="twitter" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/twitter.png" alt="twitter" class="social-img">
+	  	</div>
+	  	<span class="social-text">twitter</span>
+	  </div>
+  </a>
+
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/bitdefender-thumb.jpg" alt="Bitdefender 2014 is Released! Its Faster, Lighter and More Secure!"></div>
+
+
+
+
+        <a href="/2013/06/bitdefender-2014-released/">Bitdefender 2014 Is Released! Its Faster, Lighter and More Secure!</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/software-as-a-service-thumb.jpg" alt="A better understanding of Software as a Service"></div>
+
+
+
+
+        <a href="/2013/06/a-better-understanding-of-software-as-a-service/">A Better Understanding of Software as a Service</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/mac-vs-linux-featured.jpg" alt="Mac OS X vs Linux : What is The Best Windows Alternative? Mac or Linux"></div>
+
+
+
+
+        <a href="/2013/06/mac-os-x-vs-linux/">Mac OS X vs Linux : What Is the Best Windows Alternative? Mac or Linux</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/browser-wars-thumb.jpg" alt="Firefox Beats Chrome In Many Ways"></div>
+
+
+
+
+        <a href="/2013/06/firefox-beats-chrome/">Firefox Beats Chrome in Many Ways</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/octopress-thumb.jpg" alt="Just Moved You Are Curious from Wordpress to Octopress!"></div>
+
+
+
+
+        <a href="/2013/06/wordpress-to-octopress/">Just Moved You Are Curious From Wordpress to Octopress!</a>
+      </li>
+    
+  </ul>
+</section><section>
+  <h1>Recent Comments</h1>
+  <div id="dsq-recentcomments" class="dsq-widget"><script type="text/javascript" src="http://disqus.com/forums/tech-hamlet/recent_comments_widget.js?num_rc-items=3&amp;hide_avatars=0&amp;avatar_size=38&amp;excerpt_length=70;"></script></div>
+</section>
+  
+</aside>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="blog-index">
+
+  
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <footer id="site-footer" role="contentinfo"><div class="container">
+	<div>
+		<p id="links">Our friends : <a href="http://sumagaasapuwa.com/" target="_blank">Sumaga Asapuwa</a> / <a href="http://techlunatic.com/" target="_blank">Tech Lunatic</a> / <a href="http://www.india365.org/" target="_blank">India 365</a> / <a href="http://www.linuxalt.com/" target="_blank">Linux Alternative Project</a>   My Other Site : <a href="http://youarecurio.us/" target="_blank">You Are Curious</a></p>
+	</div>
+
+	<div id="version-copyright">
+		<p id="version">
+			Tech Hamlet (Version 15.0)
+		</p>
+
+		<p>
+		  Copyright &copy; 2009 - 2013 - Tech Hamlet Site Content (All post and page content) -
+		  Sri Lanka (All rights reserved)
+		</p>
+	</div>
+
+
+	<div id="license">
+		<a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="/images/creative-commons.png" /></a><br /><span property="dct:title">Tech Hamlet Site Design</span> by <a target="_blank" href="http://techhamlet.com/" property="cc:attributionName" rel="cc:attributionURL">Tech Hamlet</a> is licensed under a <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br />Powered by <a target="_blank" href="http://octopress.org/" rel="dct:source">Octopress/</a>
+
+
+	</div>
+
+	<br>
+
+	<a href="https://github.com/TechHamlet/TechHamlet.github.io" target="_blank" title="Source"><img src="/images/github.png" alt="Githbu"></a>
+</div>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tech-hamlet';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://techhamlet.com/2010/01/wordpress-anti-spam/';
+        var disqus_url = 'http://techhamlet.com/2010/01/wordpress-anti-spam/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

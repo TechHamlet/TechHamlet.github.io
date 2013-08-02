@@ -1,0 +1,620 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Step by Step How To Install Ubuntu 10.04 - Tech Hamlet</title>
+  <meta name="author" content="Pubudu Kodikara">
+
+  
+  <meta name="description" content="Last month Canonical have released the latest version of the Ubuntu family called Lucid Lynx (Ubuntu 10.04). Ubuntu is the most famous Linux system &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://techhamlet.com/2010/05/how-to-install-ubuntu-10-04">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-9918644-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner" id="main-header"><div id="header-container">
+	<h1 id="main-title"><a href="/">Tech Hamlet</a></h1>
+	<nav role="navigation" id="main-nav"><ul class="main-menu">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/privacy-policy">Privacy Policy</a></li>
+  <li><a href="http://status.techhamlet.com/" target="_blank">Status</a></li>
+</ul>
+
+
+  <form id="site-search" action="http://google.com/search" method="get">
+    <fieldset role="search">
+      <input type="hidden" name="q" value="site:techhamlet.com" />
+      <input class="search" type="text" name="q" placeholder="Search"/>
+    </fieldset>
+  </form>
+
+</nav>
+</div>
+</header>
+
+  <div id="logo-cat">
+
+    <div id="logo-img">
+
+    <img class="logo" src="/images/th-logo.png" alt="Tech Hamlet Logo">
+
+    </div>
+
+    <a href="/categories/android/" class="android cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-android.png" alt="Android">
+        </div>
+        <span class="cat-text">android</span>
+      </div>
+    </a>
+
+    <a href="/" class="all cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-all.png" alt="All">
+        </div>
+        <span class="cat-text">all</span>
+      </div>
+    </a>
+
+    <a href="/categories/windows/" class="windows cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-windows.png" alt="Windows">
+        </div>
+        <span class="cat-text">windows</span>
+      </div>
+    </a>
+
+
+
+
+    <a href="/categories/web/" class="web cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-web.png" alt="Web">
+        </div>
+        <span class="cat-text">web</span>
+      </div>
+    </a>
+
+    <a href="/categories/linux/" class="linux cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+        </div>
+        <span class="cat-text">linux</span>
+      </div>
+    </a>
+
+    <a href="/categories/others/" class="others cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-others.png" alt="Others">
+        </div>
+        <span class="cat-text">others</span>
+      </div>
+    </a>
+  </div>
+
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry post" role="article">
+  
+  <header>
+
+
+
+    
+        <div class='linux cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+            </div>
+            <a href="/categories/linux/"><span class="cat-text">linux</span></a>
+          </div>
+        </div>
+
+      <h1 class="entry-title">Step by Step How to Install Ubuntu 10.04</h1>
+    
+    
+      <p class="meta">
+
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-05-10T22:07:56+05:30"  data-updated="true">May 10<span>th</span>, 2010</time>
+
+
+        
+         | <a href="#disqus_thread" class="comment-count">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+
+
+
+
+
+<div class="entry-content"><p><a href="http://www.techhamlet.com/wp-content/uploads/2010/04/ubuntu-lucid-lynx.png"><img src="http://www.techhamlet.com/wp-content/uploads/2010/04/ubuntu-lucid-lynx-300x184.png" alt="Lucid Lynx" /></a>Last month Canonical have released the latest version of the Ubuntu family called Lucid Lynx (Ubuntu 10.04). Ubuntu is the most famous Linux system in the planet. Not only that, recently, it started its journey to become the famous operating system in the world by beating Microsoft Windows! But, there are many people around the world who don&rsquo;t know how to install Ubuntu on their systems. So, today we are going to show them how to safely install Ubuntu in their machines!<!-- more --></p>
+
+<p><strong>First, What do we need to start?</strong></p>
+
+<ul>
+<li><p>1 GHz x86 Processor</p></li>
+<li><p>You must have at least 512 MB of RAM to run the alternate install CD (384MB of RAM is required to use the live CD based installer).</p></li>
+<li><p>Install requires at least 5 GB of disk space.</p></li>
+<li><p>You will also need to have an Ubuntu CD image which you can get from the <a href="http://www.ubuntu.com/getubuntu/download"><strong>Ubuntu Download page</strong></a><strong>.</strong></p></li>
+<li><p>After you download it burn it to a CD.</p></li>
+</ul>
+
+
+<p><strong>Now, Lets See How to Install Ubuntu 10 :</strong></p>
+
+<p><strong>
+</strong></p>
+
+<p><strong>1)</strong>As the first step we need to set-up your BIOS settings. This is a bit hard to explain but easy to do. Its hard to explain because different people have different versions of BIOS in their systems. So I&rsquo;ll explain it briefly :</p>
+
+<ul>
+<li><p>Login to your BIOS. To do this you have to press DEL or F1 or F2, this may differ according to your own version. When booting up it will show you what key to press, so keep your eyes open!</p></li>
+<li><p>Once you login, go to the section which will allow you to change the boot settings, and set CD-ROM or Removable Media as the first boot device.</p></li>
+<li><p>After that press F10 (or any other key specified by the system) to save and exit.</p></li>
+</ul>
+
+
+<p><strong>2)</strong> Next put your Ubuntu CD into the system and boot it. Then you&rsquo;ll see a screen as follows :</p>
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2009/12/ubuntu-install-welcome.jpg"><img src="http://www.techhamlet.com/wp-content/uploads/2009/12/ubuntu-install-welcome-300x224.jpg" alt="Ubuntu Install - Welcome" /></a></p>
+
+<ul>
+<li><p>First select your language from the list shown in the left side of the screen.</p></li>
+<li><p>And select &ldquo;Install Ubuntu 10.04 LTS&rdquo; as shown in the image above.</p></li>
+</ul>
+
+
+<p><strong>3)</strong> Next you have to select your time zone. Select your region from the left drop down list and select your zone from the right drop down list. Or you can simply select your country from the map. Unlike the other versions, Ubuntu 10.04 will try to automatically determine your location. For me, it automatically detected that im on Sri Lanka and have set the appropriate location automatically. After your done, click on &ldquo;Forward&rdquo;</p>
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-time.jpg"><img src="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-time-300x225.jpg" alt="Ubuntu Install - Time" /></a></p>
+
+<p><strong>4) </strong>After that you have to select your keyboard layout. For most of us its suggested by Ubuntu, but if thats not your layout&hellip;. you can select it from the list.</p>
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-keyboard-layout.jpg"><img src="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-keyboard-layout-300x224.jpg" alt="Ubuntu Install - Keyboard Layout" /></a></p>
+
+<p><strong>5)</strong> Next thing is the most important task so follow the instructions carefully! In the next page it will ask you what to do with the partitions :</p>
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-prepare-disk-space.jpg"><img src="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-prepare-disk-space-300x225.jpg" alt="Ubuntu Install - Prepare Disk Space" /></a></p>
+
+<ul>
+<li><p>In here I have no partitions previously defined, so if thats the case you can continue with the layout that is suggested by ubuntu &ldquo;Erase and use the entire disk&rdquo;. But you also can do it manually. For people who already have other operating systems or other partitions, Im recommending to do it manually!</p></li>
+<li><p>So in here I have selected &ldquo;Specify Partitions Manually&rdquo;. After that click &ldquo;Forward&rdquo;</p></li>
+</ul>
+
+
+<p><strong>6)</strong> Now, if you don&rsquo;t have any partitions, if the hard disk is brand new, then click on &ldquo;New Partition Table&rdquo;. Then they&rsquo;ll warn you about the risks&hellip;. now click &ldquo;Continue&rdquo;.</p>
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-new-partition-table.jpg"><img src="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-new-partition-table-300x225.jpg" alt="Ubuntu Install - New Partition Table" /></a></p>
+
+<p><strong>7)</strong> Next we need to create the partitions. Select the free space and click on &ldquo;Add&rdquo; :</p>
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-add-partition.jpg"><img src="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-add-partition-300x223.jpg" alt="Ubuntu Install - Add New Partition" /></a></p>
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-set-new-partition.jpg"><img src="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-set-new-partition-300x223.jpg" alt="Ubuntu Install - Set The New Partition" /></a></p>
+
+<ol>
+<li><p> Now first you have to select what type of partition you want.</p></li>
+<li><p> Then give the amount of space you need to give for it.</p></li>
+<li><p> Next, the location for the new partition. leave it in its default settings.</p></li>
+<li><p> After that you have to specify the format of the partition.</p></li>
+<li><p> Finally you have to give the mount point.</p></li>
+</ol>
+
+
+<p><strong>If you don&rsquo;t have any partitions, If your hard disk is new :</strong></p>
+
+<ul>
+<li><p>Create one primary partition with about : 30% of the free space, Partition format Ext4, Mount point &ldquo;/&rdquo;. (if you want, you can make a primary partition with the mount point &ldquo;/boot&rdquo; (with about 1 GB) first,  if you do that do not make the root partition (partition with the mount point &ldquo;/&rdquo;) primary, make it logical.)</p></li>
+<li><p>Create one logical partition with about 5 GB space (This partition should be double the amount of your memory. If you have 1 GB of memory, make this partition 2 GB. But its not compulsory to do like that) , Partition format : Swap.</p></li>
+<li><p>Create one logical partition with the rest of the free space, Partition format Ext4, Mount point &ldquo;/home&rdquo;.</p></li>
+</ul>
+
+
+<p><strong>
+</strong></p>
+
+<p><strong>If you have an operating system installed :</strong></p>
+
+<ul>
+<li><p>First make some free space (if you don&rsquo;t have any). Select an existing partition and click on &ldquo;Change&rdquo; and then reduce the size of that partition.</p></li>
+<li><p>After that create one logical partition with about : 30% of the free space, Partition format Ext4, Mount point &ldquo;/&rdquo;.</p></li>
+<li><p>Create one logical partition with about 5 GB space (This partition should be double the amount of your memory. If you have 1 GB of memory, make this partition 2 GB. But its not compulsory to do like that) , Partition format : Swap.</p></li>
+<li><p>Create one logical partition with the rest of the free space, Partition format Ext4, Mount point &ldquo;/home&rdquo;.</p></li>
+</ul>
+
+
+<p><strong>Note :</strong> Its not compulsory to crate two partitions with mount points &ldquo;/&rdquo; and &ldquo;/home&rdquo;. You can make only the root (&ldquo;/&rdquo;) partition.</p>
+
+<p><strong>8) </strong>After you finish setting up the partitions click &ldquo;Forward&rdquo;</p>
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-finish-partitioning.jpg"><img src="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-finish-partitioning-300x224.jpg" alt="Ubuntu Install - Finished Partitioning" /></a></p>
+
+<p><strong>9)</strong> Next you have to give your details :</p>
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-your-details.jpg"><img src="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-your-details-300x223.jpg" alt="Ubuntu Install - Your Details" /></a></p>
+
+<ul>
+<li><p>Give your Name, User name, A strong password, A computer name and the login method.</p></li>
+<li><p>You may have noticed that Ubuntu 10 will warn you if your password is weak. So, take their advice and use a strong password!</p></li>
+<li><p>If you don&rsquo;t want Ubuntu to prompt you for user-name and password each time you login, click on &ldquo;Log in automatically&rdquo;</p></li>
+<li><p>But if you want it to ask, select &ldquo;Require my password to login&rdquo;</p></li>
+<li><p>If you want to encrypt the home folder select &ldquo;Require my password to login and decrypt my home folder&rdquo;.</p></li>
+<li><p>After you set everything up, click on forward.</p></li>
+</ul>
+
+
+<p><strong>10) </strong>Now Ubnutu will show you the settings which you have specified throughout the process. Go through it (If you want). And click on &ldquo;Install&rdquo;. After that Ubuntu will start installing&hellip;</p>
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-ready-to-install.jpg"><img src="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-ready-to-install-300x224.jpg" alt="Ubuntu Install - Ready to Install" /></a></p>
+
+<p><strong>11)</strong> During the installation it will start to download the language packs. Now this may take some time, so if you think you are wasting your time, you can skip it.</p>
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-language-packs.jpg"><img src="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-language-packs-300x225.jpg" alt="Ubuntu Install - Language Packs" /></a></p>
+
+<p><strong>12)</strong> When the installation is over, you&rsquo;ll be asked to restart the machine. Click on &ldquo;Restart Now&rdquo;. Finally the system will eject the CD. Take the CD out and press enter.</p>
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-restart-now.jpg"><img src="http://www.techhamlet.com/wp-content/uploads/2010/05/ubuntu-install-restart-now-300x225.jpg" alt="Ubuntu Install - Restart Now" /></a></p>
+
+<p>After the re-start, you should be greeted by the login screen of your new Ubuntu system! Use the login details you provided during the installation and start to feel the power of Ubuntu!</p>
+
+<p>Are you new to Ubuntu? Don&rsquo;t you have any idea about what to do next? Then you&rsquo;ll better see this tutorial : <strong><a href="http://www.techhamlet.com/2010/03/after-installing-ubuntu/">OK, I installed Ubuntu! now what?</a></strong></p>
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <p class="meta auther">
+      <em>~ 
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Pubudu Kodikara</span></span>
+ ~</em>
+    </p>
+
+
+
+
+
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://techhamlet.com/2010/05/how-to-install-ubuntu-10-04/" data-via="TechHamlet" data-counturl="http://techhamlet.com/2010/05/how-to-install-ubuntu-10-04/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2010/05/advertise-space/" title="Previous Post: Advertise Space : Sell Your Ad-space for the Best Advertisers!">&laquo; Advertise Space : Sell Your Ad-space for the Best Advertisers!</a>
+      
+      
+        <a class="basic-alignment right" href="/2010/05/vulnerable-anti-virus-systems/" title="Next Post: Most of Our Anti Virus Systems are Vulnerable?">Most of Our Anti Virus Systems are Vulnerable? &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1 class="comments">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Subscribe to us...</h1>
+
+  <a href="/subscribe/" class="social-link" target="_blank">
+	  <div id="mail" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/mail.png" alt="subscribe" class="social-img">
+	  	</div>
+	  	<span class="social-text">email</span>
+	  </div>
+  </a>
+
+</section><section>
+  <h1>Follow us on...</h1>
+
+  <a href="http://www.facebook.com/TechHamlet" class="social-link" target="_blank">
+	  <div id="facebook" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/facebook.png" alt="facebook" class="social-img">
+	  	</div>
+	  	<span class="social-text">facebook</span>
+	  </div>
+  </a>
+
+  <a href="http://plus.google.com/103124674194413904305" class="social-link" target="_blank">
+	  <div id="googleplus" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/googleplus.png" alt="googleplus" class="social-img">
+	  	</div>
+	  	<span class="social-text">google</span>
+	  </div>
+  </a>
+
+  <a href="http://twitter.com/TechHamlet" class="social-link" target="_blank">
+	  <div id="twitter" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/twitter.png" alt="twitter" class="social-img">
+	  	</div>
+	  	<span class="social-text">twitter</span>
+	  </div>
+  </a>
+
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/bitdefender-thumb.jpg" alt="Bitdefender 2014 is Released! Its Faster, Lighter and More Secure!"></div>
+
+
+
+
+        <a href="/2013/06/bitdefender-2014-released/">Bitdefender 2014 Is Released! Its Faster, Lighter and More Secure!</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/software-as-a-service-thumb.jpg" alt="A better understanding of Software as a Service"></div>
+
+
+
+
+        <a href="/2013/06/a-better-understanding-of-software-as-a-service/">A Better Understanding of Software as a Service</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/mac-vs-linux-featured.jpg" alt="Mac OS X vs Linux : What is The Best Windows Alternative? Mac or Linux"></div>
+
+
+
+
+        <a href="/2013/06/mac-os-x-vs-linux/">Mac OS X vs Linux : What Is the Best Windows Alternative? Mac or Linux</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/browser-wars-thumb.jpg" alt="Firefox Beats Chrome In Many Ways"></div>
+
+
+
+
+        <a href="/2013/06/firefox-beats-chrome/">Firefox Beats Chrome in Many Ways</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/octopress-thumb.jpg" alt="Just Moved You Are Curious from Wordpress to Octopress!"></div>
+
+
+
+
+        <a href="/2013/06/wordpress-to-octopress/">Just Moved You Are Curious From Wordpress to Octopress!</a>
+      </li>
+    
+  </ul>
+</section><section>
+  <h1>Recent Comments</h1>
+  <div id="dsq-recentcomments" class="dsq-widget"><script type="text/javascript" src="http://disqus.com/forums/tech-hamlet/recent_comments_widget.js?num_rc-items=3&amp;hide_avatars=0&amp;avatar_size=38&amp;excerpt_length=70;"></script></div>
+</section>
+  
+</aside>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="blog-index">
+
+  
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <footer id="site-footer" role="contentinfo"><div class="container">
+	<div>
+		<p id="links">Our friends : <a href="http://sumagaasapuwa.com/" target="_blank">Sumaga Asapuwa</a> / <a href="http://techlunatic.com/" target="_blank">Tech Lunatic</a> / <a href="http://www.india365.org/" target="_blank">India 365</a> / <a href="http://www.linuxalt.com/" target="_blank">Linux Alternative Project</a>   My Other Site : <a href="http://youarecurio.us/" target="_blank">You Are Curious</a></p>
+	</div>
+
+	<div id="version-copyright">
+		<p id="version">
+			Tech Hamlet (Version 15.0)
+		</p>
+
+		<p>
+		  Copyright &copy; 2009 - 2013 - Tech Hamlet Site Content (All post and page content) -
+		  Sri Lanka (All rights reserved)
+		</p>
+	</div>
+
+
+	<div id="license">
+		<a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="/images/creative-commons.png" /></a><br /><span property="dct:title">Tech Hamlet Site Design</span> by <a target="_blank" href="http://techhamlet.com/" property="cc:attributionName" rel="cc:attributionURL">Tech Hamlet</a> is licensed under a <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br />Powered by <a target="_blank" href="http://octopress.org/" rel="dct:source">Octopress/</a>
+
+
+	</div>
+
+	<br>
+
+	<a href="https://github.com/TechHamlet/TechHamlet.github.io" target="_blank" title="Source"><img src="/images/github.png" alt="Githbu"></a>
+</div>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tech-hamlet';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://techhamlet.com/2010/05/how-to-install-ubuntu-10-04/';
+        var disqus_url = 'http://techhamlet.com/2010/05/how-to-install-ubuntu-10-04/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

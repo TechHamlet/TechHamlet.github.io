@@ -1,0 +1,790 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Linux: 25+ Ways to Get System Information - Tech Hamlet</title>
+  <meta name="author" content="Pubudu Kodikara">
+
+  
+  <meta name="description" content="There are a whole bunch of Linux commands to various things on our PC. Normally, we use only a handful of commands without knowing that there are &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://techhamlet.com/2010/12/25-ways-to-get-linux-system-information">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-9918644-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner" id="main-header"><div id="header-container">
+	<h1 id="main-title"><a href="/">Tech Hamlet</a></h1>
+	<nav role="navigation" id="main-nav"><ul class="main-menu">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/privacy-policy">Privacy Policy</a></li>
+  <li><a href="http://status.techhamlet.com/" target="_blank">Status</a></li>
+</ul>
+
+
+  <form id="site-search" action="http://google.com/search" method="get">
+    <fieldset role="search">
+      <input type="hidden" name="q" value="site:techhamlet.com" />
+      <input class="search" type="text" name="q" placeholder="Search"/>
+    </fieldset>
+  </form>
+
+</nav>
+</div>
+</header>
+
+  <div id="logo-cat">
+
+    <div id="logo-img">
+
+    <img class="logo" src="/images/th-logo.png" alt="Tech Hamlet Logo">
+
+    </div>
+
+    <a href="/categories/android/" class="android cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-android.png" alt="Android">
+        </div>
+        <span class="cat-text">android</span>
+      </div>
+    </a>
+
+    <a href="/" class="all cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-all.png" alt="All">
+        </div>
+        <span class="cat-text">all</span>
+      </div>
+    </a>
+
+    <a href="/categories/windows/" class="windows cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-windows.png" alt="Windows">
+        </div>
+        <span class="cat-text">windows</span>
+      </div>
+    </a>
+
+
+
+
+    <a href="/categories/web/" class="web cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-web.png" alt="Web">
+        </div>
+        <span class="cat-text">web</span>
+      </div>
+    </a>
+
+    <a href="/categories/linux/" class="linux cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+        </div>
+        <span class="cat-text">linux</span>
+      </div>
+    </a>
+
+    <a href="/categories/others/" class="others cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-others.png" alt="Others">
+        </div>
+        <span class="cat-text">others</span>
+      </div>
+    </a>
+  </div>
+
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry post" role="article">
+  
+  <header>
+
+
+
+    
+        <div class='linux cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+            </div>
+            <a href="/categories/linux/"><span class="cat-text">linux</span></a>
+          </div>
+        </div>
+
+      <h1 class="entry-title">Linux: 25+ Ways to Get System Information</h1>
+    
+    
+      <p class="meta">
+
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-12-14T18:01:05+05:30"  data-updated="true">Dec 14<span>th</span>, 2010</time>
+
+
+        
+         | <a href="#disqus_thread" class="comment-count">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+
+
+
+
+
+<div class="entry-content"><p><a href="http://www.techhamlet.com/wp-content/uploads/2010/12/thumb1.jpg"><img src="http://www.techhamlet.com/wp-content/uploads/2010/12/thumb1.jpg" alt="Linux Terminal" /></a></p>
+
+<p>There are a whole bunch of Linux commands to various things on our PC. Normally, we use only a handful of commands without knowing that there are many to be discovered, yet useful. Here&rsquo;s a comprehensive list of Linux commands that you can use to get system information ranging from printing the current working directory to dumping kernel messages to avail many useful information.</p>
+
+<!-- more -->
+
+
+<p>How to run these commands?</p>
+
+<p>All you have to do is, just open up a terminal and enter these commands. In order to open up a terminal, you can either go to <strong>Applications→Accessories→Terminal</strong> or you can simply press <strong>Alt+F2</strong> and type <strong>gnome-terminal.</strong></p>
+
+<p>About the Scope</p>
+
+<p>Well, this article is intended for those who love using Linux with experience levels of newbie and average. Not for the so called &ldquo;Advanced Users&rdquo;. Otherwise we&rsquo;ll have to make a never-ending list of commands.</p>
+
+<p>The Command List</p>
+
+<ol>
+<li></li>
+</ol>
+
+
+<p>pwd</p>
+
+<p>Prints the current working directory (Print Working Directory)</p>
+
+<ol>
+<li></li>
+</ol>
+
+
+<p>hostname</p>
+
+<p>Print the name of the local host (the machine on which you are working). If you want to change the name of the machine, Use netconf (as root).</p>
+
+<ol>
+<li></li>
+</ol>
+
+
+<p>id username</p>
+
+<p>Print user id (uid) and his/her group id (gid), effective id (if different than the real id) and the supplementary groups.</p>
+
+<ol>
+<li></li>
+</ol>
+
+
+<p>whoami</p>
+
+<pre><code>    Prints your login name.
+</code></pre>
+
+<ol>
+<li></li>
+</ol>
+
+
+<p>date</p>
+
+<pre><code>    Print or change the operating system date and time. If you want to change the date and time to 2010-12-31 23:57 using this command:  
+
+    date 123123572010  
+
+    To set the hardware (BIOS) clock from the system (Linux) clock, use the command (as root) setclock
+</code></pre>
+
+<ol>
+<li></li>
+</ol>
+
+
+<p>who</p>
+
+<pre><code>      Determine the users logged on the machine.
+</code></pre>
+
+<ol>
+<li></li>
+</ol>
+
+
+<p>rwho -a</p>
+
+<pre><code>    (remote who) Determine all users logged on your network. The rwho service must be enabled for this command to run. If it isn't, install "rwho".
+</code></pre>
+
+<ol>
+<li></li>
+</ol>
+
+
+<p>time</p>
+
+<pre><code>    Determine the amount of time that it takes for a process to complete + other info. Don't confuse it with thedate command. E.g. I can find out how long it takes to display a directory content using:  
+
+    time ls
+</code></pre>
+
+<ol>
+<li></li>
+</ol>
+
+
+<p>finger username</p>
+
+<pre><code>    System info about a user. Try: finger root
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>last</p>
+
+<pre><code>    Show listing of users last logged-in on your system.
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>history | more</p>
+
+<pre><code>    Show the last (1000 or so) commands executed from the command line on the current account. The "| more" causes the display to stop after each screenful.
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>uptime</p>
+
+<pre><code>    Show the amount of time since the last reboot.
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>ps</p>
+
+<pre><code>    (Process Status) List the processes currently run by the current user.
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>ps axu | more</p>
+
+<pre><code>    List all the processes currently running, even those without the controlling terminal, together with the name of the user that owns each process.
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>top</p>
+
+<pre><code>    Keep listing the currently running processes, sorted by cpu usage (top users first). In KDE, you can get GUI-based Ktop from "K"menu under "System"-"Task Manager" (or by executing "ktop" in an X-terminal).
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>uname -a</p>
+
+<pre><code>    (Unix Name with option "all") Info on your (local) server. I can also use guname (in X-window terminal) to display the info more nicely.
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>free</p>
+
+<pre><code>    Memory info (in kilobytes).
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>df -h</p>
+
+<pre><code>    (Disk Free) Print disk info about all the filesystems (in human-readable form)
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>du / -bh | more</p>
+
+<pre><code>    (Disk Usage) Print detailed disk usage for each subdirectory starting at the "/" (root) directory (in human legible form).
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>cat /proc/cpuinfo</p>
+
+<pre><code>    Cpu info--it show the content of the file cpuinfo. Note that the files in the /proc directory are not real files--they are hooks to look at information available to the kernel.
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>cat /proc/interrupts</p>
+
+<pre><code>    List the interrupts in use.
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>cat /proc/version</p>
+
+<pre><code>    Linux version and other info
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>cat /proc/filesystems</p>
+
+<pre><code>    Show the types of filesystems currently in use.
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>cat /etc/printcap</p>
+
+<pre><code>    Show the setup of printers.
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>lsmod</p>
+
+<pre><code>    (As root. Use /sbin/lsmod to execute this command when you are a non-root user.) Show the kernel modules currently loaded.
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>set|more</p>
+
+<pre><code>    Show the current user environment.
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>echo $PATH</p>
+
+<pre><code>    Show the content of the environment variable "PATH". This command can be used to show other environment variables as well. Use "set" to see the full environment.
+</code></pre>
+
+<ol>
+<li>.</li>
+</ol>
+
+
+<p>dmesg | less</p>
+
+<pre><code>    Print kernel messages (the content of the so-called kernel ring buffer). Press "q" to quit "less". Use less /var/log/dmesg to see what "dmesg" dumped into this file right after the last system bootup.
+</code></pre>
+
+<p>We hope this post would come in handy!</p>
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <p class="meta auther">
+      <em>~ 
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Sahan Serasinghe</span></span>
+ ~</em>
+    </p>
+
+
+
+
+
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://techhamlet.com/2010/12/25-ways-to-get-linux-system-information/" data-via="TechHamlet" data-counturl="http://techhamlet.com/2010/12/25-ways-to-get-linux-system-information/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2010/12/ad-aware-free/" title="Previous Post: New Ad-Aware Free Comes With Loads of New Security Features!">&laquo; New Ad-Aware Free Comes With Loads of New Security Features!</a>
+      
+      
+        <a class="basic-alignment right" href="/2010/12/gawker-media-attacked/" title="Next Post: Updated: Gawker Media Attacked!">Updated: Gawker Media Attacked! &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1 class="comments">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Subscribe to us...</h1>
+
+  <a href="/subscribe/" class="social-link" target="_blank">
+	  <div id="mail" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/mail.png" alt="subscribe" class="social-img">
+	  	</div>
+	  	<span class="social-text">email</span>
+	  </div>
+  </a>
+
+</section><section>
+  <h1>Follow us on...</h1>
+
+  <a href="http://www.facebook.com/TechHamlet" class="social-link" target="_blank">
+	  <div id="facebook" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/facebook.png" alt="facebook" class="social-img">
+	  	</div>
+	  	<span class="social-text">facebook</span>
+	  </div>
+  </a>
+
+  <a href="http://plus.google.com/103124674194413904305" class="social-link" target="_blank">
+	  <div id="googleplus" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/googleplus.png" alt="googleplus" class="social-img">
+	  	</div>
+	  	<span class="social-text">google</span>
+	  </div>
+  </a>
+
+  <a href="http://twitter.com/TechHamlet" class="social-link" target="_blank">
+	  <div id="twitter" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/twitter.png" alt="twitter" class="social-img">
+	  	</div>
+	  	<span class="social-text">twitter</span>
+	  </div>
+  </a>
+
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/bitdefender-thumb.jpg" alt="Bitdefender 2014 is Released! Its Faster, Lighter and More Secure!"></div>
+
+
+
+
+        <a href="/2013/06/bitdefender-2014-released/">Bitdefender 2014 Is Released! Its Faster, Lighter and More Secure!</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/software-as-a-service-thumb.jpg" alt="A better understanding of Software as a Service"></div>
+
+
+
+
+        <a href="/2013/06/a-better-understanding-of-software-as-a-service/">A Better Understanding of Software as a Service</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/mac-vs-linux-featured.jpg" alt="Mac OS X vs Linux : What is The Best Windows Alternative? Mac or Linux"></div>
+
+
+
+
+        <a href="/2013/06/mac-os-x-vs-linux/">Mac OS X vs Linux : What Is the Best Windows Alternative? Mac or Linux</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/browser-wars-thumb.jpg" alt="Firefox Beats Chrome In Many Ways"></div>
+
+
+
+
+        <a href="/2013/06/firefox-beats-chrome/">Firefox Beats Chrome in Many Ways</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/octopress-thumb.jpg" alt="Just Moved You Are Curious from Wordpress to Octopress!"></div>
+
+
+
+
+        <a href="/2013/06/wordpress-to-octopress/">Just Moved You Are Curious From Wordpress to Octopress!</a>
+      </li>
+    
+  </ul>
+</section><section>
+  <h1>Recent Comments</h1>
+  <div id="dsq-recentcomments" class="dsq-widget"><script type="text/javascript" src="http://disqus.com/forums/tech-hamlet/recent_comments_widget.js?num_rc-items=3&amp;hide_avatars=0&amp;avatar_size=38&amp;excerpt_length=70;"></script></div>
+</section>
+  
+</aside>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="blog-index">
+
+  
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <footer id="site-footer" role="contentinfo"><div class="container">
+	<div>
+		<p id="links">Our friends : <a href="http://sumagaasapuwa.com/" target="_blank">Sumaga Asapuwa</a> / <a href="http://techlunatic.com/" target="_blank">Tech Lunatic</a> / <a href="http://www.india365.org/" target="_blank">India 365</a> / <a href="http://www.linuxalt.com/" target="_blank">Linux Alternative Project</a>   My Other Site : <a href="http://youarecurio.us/" target="_blank">You Are Curious</a></p>
+	</div>
+
+	<div id="version-copyright">
+		<p id="version">
+			Tech Hamlet (Version 15.0)
+		</p>
+
+		<p>
+		  Copyright &copy; 2009 - 2013 - Tech Hamlet Site Content (All post and page content) -
+		  Sri Lanka (All rights reserved)
+		</p>
+	</div>
+
+
+	<div id="license">
+		<a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="/images/creative-commons.png" /></a><br /><span property="dct:title">Tech Hamlet Site Design</span> by <a target="_blank" href="http://techhamlet.com/" property="cc:attributionName" rel="cc:attributionURL">Tech Hamlet</a> is licensed under a <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br />Powered by <a target="_blank" href="http://octopress.org/" rel="dct:source">Octopress/</a>
+
+
+	</div>
+
+	<br>
+
+	<a href="https://github.com/TechHamlet/TechHamlet.github.io" target="_blank" title="Source"><img src="/images/github.png" alt="Githbu"></a>
+</div>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tech-hamlet';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://techhamlet.com/2010/12/25-ways-to-get-linux-system-information/';
+        var disqus_url = 'http://techhamlet.com/2010/12/25-ways-to-get-linux-system-information/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

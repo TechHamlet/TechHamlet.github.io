@@ -1,0 +1,645 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>How to Set up Correct File Permission for your WordPress Blog - Tech Hamlet</title>
+  <meta name="author" content="Pubudu Kodikara">
+
+  
+  <meta name="description" content="On computer file systems, different directories and files have “permissions” that describe what and who can read, modify, write and access them.  &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://techhamlet.com/2012/02/how-to-set-up-correct-file-permission-for-your-wordpress-blog">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-9918644-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner" id="main-header"><div id="header-container">
+	<h1 id="main-title"><a href="/">Tech Hamlet</a></h1>
+	<nav role="navigation" id="main-nav"><ul class="main-menu">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/privacy-policy">Privacy Policy</a></li>
+  <li><a href="http://status.techhamlet.com/" target="_blank">Status</a></li>
+</ul>
+
+
+  <form id="site-search" action="http://google.com/search" method="get">
+    <fieldset role="search">
+      <input type="hidden" name="q" value="site:techhamlet.com" />
+      <input class="search" type="text" name="q" placeholder="Search"/>
+    </fieldset>
+  </form>
+
+</nav>
+</div>
+</header>
+
+  <div id="logo-cat">
+
+    <div id="logo-img">
+
+    <img class="logo" src="/images/th-logo.png" alt="Tech Hamlet Logo">
+
+    </div>
+
+    <a href="/categories/android/" class="android cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-android.png" alt="Android">
+        </div>
+        <span class="cat-text">android</span>
+      </div>
+    </a>
+
+    <a href="/" class="all cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-all.png" alt="All">
+        </div>
+        <span class="cat-text">all</span>
+      </div>
+    </a>
+
+    <a href="/categories/windows/" class="windows cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-windows.png" alt="Windows">
+        </div>
+        <span class="cat-text">windows</span>
+      </div>
+    </a>
+
+
+
+
+    <a href="/categories/web/" class="web cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-web.png" alt="Web">
+        </div>
+        <span class="cat-text">web</span>
+      </div>
+    </a>
+
+    <a href="/categories/linux/" class="linux cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+        </div>
+        <span class="cat-text">linux</span>
+      </div>
+    </a>
+
+    <a href="/categories/others/" class="others cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-others.png" alt="Others">
+        </div>
+        <span class="cat-text">others</span>
+      </div>
+    </a>
+  </div>
+
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry post" role="article">
+  
+  <header>
+
+
+
+    
+        <div class='web cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-web.png" alt="Web">
+            </div>
+            <a href="/categories/web/"><span class="cat-text">web</span></a>
+          </div>
+        </div>
+
+      <h1 class="entry-title">How to Set Up Correct File Permission for Your WordPress Blog</h1>
+    
+    
+      <p class="meta">
+
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-02-16T08:03:39+05:30"  data-updated="true">Feb 16<span>th</span>, 2012</time>
+
+
+        
+         | <a href="#disqus_thread" class="comment-count">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+
+
+
+
+
+<div class="entry-content"><p><a href="http://techhamlet.com/wp-content/uploads/2011/12/wordpress.jpg"><img src="http://techhamlet.com/wp-content/uploads/2011/12/wordpress-175x115.jpg" alt="Wordpress" /></a></p>
+
+<p>On computer file systems, different directories and files have “permissions” that describe what and who can read, modify, write and access them.  This proves necessary because WordPress might need to write to files in the wp-content directory to activate certain functions.<!-- more --></p>
+
+<p><strong>Permission Modes</strong></p>
+
+<p><strong>  7       5     5</strong></p>
+
+<p><strong>user   group  world</strong></p>
+
+<p><strong> r+w+x  r+x    r+x</strong></p>
+
+<p><strong> 4+2+1  4+0+1  4+0+1  = 755</strong></p>
+
+<p>The computation for permission mode is by adding the following values for the file group, user and everyone else.</p>
+
+<ul>
+<li><p>e<strong>X</strong>ecute1 – Read/write/delete/modify/directory</p></li>
+<li><p><strong>R</strong>ead 4 – Allow to read files</p></li>
+<li><p><strong>W</strong>rite 2 – Allow to write/modify files</p></li>
+</ul>
+
+
+<p><strong>  </strong></p>
+
+<p><strong>7       4      4</strong><strong>user   group  world</strong><strong> r+w+x    r      r</strong><strong> 4+2+1  4+0+0  4+0+0  = 744</strong></p>
+
+<p><strong>
+</strong></p>
+
+<h3><strong>WordPress and permission schemes</strong></h3>
+
+<p>Permissions will determine different depending on the host, so this guide will only involve general principals.  There is no way possible to cover all bases when it comes to permission schemes. They are different from host to host, so this article only details general principles. It cannot cover all cases.</p>
+
+<p>Generally speaking, all files should be owned by the user (ftp) account on your web server, and it should be writable on the account.  Shared host files should never be owned by the web server processes.  A file that needs to write access from WordPress should always be group-owned or individually owned by the user account from WordPress. The folders and files permissions of WordPress should always be the same for nearly all users, depending on the type of installation that was performed and the umask settings of a systems environment when the installation occurs.</p>
+
+<h3><strong>Important note</strong></h3>
+
+<p>If you installed WordPress by yourself, you probably will not need to modify the file permissions.  If you are having problems with permission errors, or to modify permissions, you should probably not mess with it.</p>
+
+<p>Generally, all core WordPress files should be writable by the httpd account or the user account.  If you use mod_rewrite Permalinks or other .htaccess features it proves vital to ensure that WordPress can write to your /.htaccess file.  If you want the built-in theme editor, all the files need to be grouped as writable.  Before you modify file permissions, try using it first, to see if it works.</p>
+
+<p>Sometimes, plugins need the /wp-content/folder to be made writable but sometimes, they will not let you know during the installation process.  Sometimes, this might involve assigning 755 permissions.  The same applies for /wp-content/cache and /wp-content/uploads/.  Other directories under /wp-content/should always be documented by what the plugin/theme requires.  The permissions will always vary.</p>
+
+<p>/</p>
+
+<p>|&ndash; index.php</p>
+
+<p>|&ndash; wp-admin</p>
+
+<p>|   `&ndash; wp-admin.css</p>
+
+<p>|&ndash; wp-blog-header.php</p>
+
+<p>|&ndash; wp-comments-post.php</p>
+
+<p>|&ndash; wp-commentsrss2.php</p>
+
+<p>|&ndash; wp-config.php</p>
+
+<p>|&ndash; wp-content</p>
+
+<p>|   |&ndash; cache</p>
+
+<p>|   |&ndash; plugins</p>
+
+<p>|   |&ndash; themes</p>
+
+<p>|   `&ndash; uploads</p>
+
+<p>|&ndash; wp-cron.php</p>
+
+<p>|&ndash; wp-includes</p>
+
+<p>`&ndash; xmlrpc.php</p>
+
+<p>&ldquo;Changing File Permissions « WordPress Codex.&#8221;Insert Name of Site in Italics. N.p., n.d. Web. 10 Feb. 2012 <a href="http://codex.wordpress.org/Changing_File_Permissions">http://codex.wordpress.org/Changing_File_Permissions</a>.****</p>
+
+<h3><strong>Shared hosting with suexec</strong></h3>
+
+<p>This approach proves popular and is used by various web hosts that use suexec for running PHP binaries. These systems the php process funs as the owner of the php files themselves, therefore allowing a more secure environment and a simpler configuration for certain cases of shared hosting.</p>
+
+<p><strong>Important note</strong></p>
+
+<p>Suexec should not be used on single-site server configurations.  They are more reliable for certain cases of shared hosting.</p>
+
+<p> <strong>The correct permissions scheme for a suexec configuration proves straightforward.</strong></p>
+
+<ul>
+<li><p>Files should be owned by the existing user account, not the account used for the httpd process.</p></li>
+<li><p>Directories should be 750 or 755</p></li>
+<li><p>Group ownership does not matter, unless there is a particular group requirement for the web server process permissions.</p></li>
+<li><p>Files should be 640 or 644. There is always one exception to the rule, and that is wp-config.php, and it is placed at 600 in order to prevent others on the server from reading it.</p></li>
+<li><p>Directories should never be given 777, not even to upload directories. The reasoning for this is because the php process is running as the file owner and it gains the owners permissions and writes to even a 755 directory.</p></li>
+</ul>
+
+
+<p>WordPress will recognize that it can create files with appropriate ownership with this type of setup.  It will not ask for FTP credentials when installing or upgrading plugins.</p>
+
+<h3><strong>Using FTP clients</strong></h3>
+
+<p>FTP clients allow you set permissions for directories and files on the remote host. This is called “set permissions” or “chmod” in the program menu. During a WordPress install, there are two files that you will need to modify, and they are the css (the layout) and the index page.</p>
+
+<p><strong>The following is how you can change index.php:</strong></p>
+
+<p>Please look at the screen shot below. The final column shows permissions. It might seem confusing, but let us simply note the order of letters.</p>
+
+<p> Initial permissions</p>
+
+<p><img src="data:image/png;base64,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" alt="" /></p>
+
+<pre><code>Initial Permission
+</code></pre>
+
+<p>Right-click &lsquo;index.php&rsquo; and select &lsquo;File Permissions&rsquo;
+A popup screen will appear.</p>
+
+<p>&ldquo;Changing File Permissions « WordPress Codex.&#8221;Insert Name of Site in Italics. N.p., n.d. Web. 10 Feb. 2012 <a href="http://codex.wordpress.org/Changing_File_Permissions">http://codex.wordpress.org/Changing_File_Permissions</a>.</p>
+
+<p><img src="data:image/png;base64,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" alt="" /></p>
+
+<p> Altering file permissions</p>
+
+<p>Do not worry about the boxes you see that are checked. Simply delete the “Numeric value:’ and enter the number needed. In our case, the number is 666. Click OK.</p>
+
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAZQAAAAvCAIAAABL3av1AAAf+UlEQVR4nO19f4wi153n7K5PbKSTrPxz7MpapCCZO7SoxywRWbTCpzrn8JKEc0KOyHXesoSMVNpKateYiBAjdnPoiGMSbrneZc0Rk57DRm6TmoGk8bGsWYSZoXFYcizuwSG4j1UTjDHBSzdbYdpgePfH1/Ou0j/xTM+M462PSq0GXlW9qvfe5733fd/v551DIkSIEPEriHN3OgMiRIgQcSN4n7zcbjdJksIfro16e29u7r25+YvhG/M7kTMRIkSIOAHvk9dXv/o1s9mMv7026u0Un25lvt7KfP21Hzx+9UcbvEhgIkSI+DDhCPJ6711+p/j03pubi/eacPyflPuVZz//2g8ef+0Hj//4Rdtbr6dvBZW1Wq1IJHLcr5lMJpvN3oLbijgDBIPB4XD4Qc/ied7v9+OP/X5/dXX1TPN14wiFQp1O59Rk4XC43W7fhvzccaTT6Xw+f6dz8Us4grx+MXzjJ5xhcS2Lrn0bjZ5C1769uJZ96/X0z7cLP98uvPaDx0Nf+4Mfv/bGDdyMpunRaHTcr4VCwWQyHfer1+v1+Xw3cFMRZ4taraZSqXQ6nVqtpmk6nU5zHGcymY5rw1arVa1W63Q6pVJZLpeFPw2HQ41Ggz82Gg2CIG5t7gVYXV1NJBIIoe3t7fMrKzqdTqvV4lZgMBgajUar1VKpVCqVqtVqIYTy+bxSqdRqtYPBAJIZjcZqtdput8+vrKhUqnq9jhDa3NxUKpUajabX6yGEOI5TKBR6vX4ymcBZs9mMoqhlMtnr9Wiahv+n0ylBEAqFIh6PC9O43W4oEYVCkbx0ETKvUCii0ehNv6Rfuouwp/kw4Ajyujbq/YQzoNFT2/+bqj3/UO35h+ov/OerF+kfv2j78Yu2V579fDq4kg6uvPF6FSE0Go3G4z2EEJTTYDDgeX5nZ6dWq1Wr1d3dXeHNarXaZDJptVq1Wq1Wq02nUzilUqm0Wq18Pg954Hke/kJn3mg02u22zWaDd1ev1yuVCtSe2WwGNzqBE0WcLTiOA/PoeLy3v7/f6/XG4z2CIHZ2diaTSbVardVq+/v7OL1Wq221WjzPj8d78/l8Pp/jujEe7wF5dbvdWq3GcRyQV7vdhiqBrtco+P8MUa1WJRJJLBZDCBUKBaPRCE/U7/chgdlszufzBoNhNBqNRiODwZDNZk0mE1RvvV4PySwWS6FQoChqMBjM53O9Xp/NZo1GI8/zvV7PYDCk02mSJCeTSbPZhLPG4z2z2SyVSpfJp16v12q1+E1CD0FRFNAu5NZoNOZyuel0Co3CarXWajWEkM1mgwe8STQajZ2dHavVGgwGp9PpeLy3s7MzGo14np/NZpCHfr8vLCYo8eFw2Ov1hG2z3W5D6x4MBv1+Hwp3e3sbJ4CLI4Tm8/mphX4sefXSn3vr9TRC/QPH4lp2cS37yrOff/JJJ0LI5XIFg0GEENRCiqKSyaRCoSAIQq/XBwKB2WyGb6bX6/P5vEQiMZlMBEGkUqn9/X2Px6PT6SwWSzabpWnabrcnk0mEUCwWY1m21+uZTCaDwSCVSiORyNbWFkVRZrPZ5/PxPJ/JZMxms1qtLhQKN1dAIpZFOp3WaDQcx0UikUKhEAqF/H6/2WxutVrRaNRisZAkCU0LoNVq/X7/2tpaKBTq9/uZTIYgCJ1O5/f7+/2+Xq+fTqcsy+r1+vMrK8AOLMuazWaapofDodVqtVqtDMOc+YM4nU6oupubmyqViuO4tbU1oF2WZdfW1nie1+l0kFiv129sbOCZgVqthisI57nVapWiqEKhYDAY8FmY6+Fqk8nEbrdXq1V85ZPR6XRwSq/XGwqF4vG43W5vNBqdTgfY0GQyOZ3OaDRaLBYh5Xi8d+HCBbjRTb6lSqWCG2A8HjcYDHa7PRwOsyybSqVwHoBASZKs1Wr1ep0kyWKxqFarWZbFuULX5088z9M0nclkTCYTy7IulwsnqNfrZrO51+ttbGycOjg9mrwaz6l76c8Nm0+g+V8cOOY/88x/5kkHV1x2GiHkcrnghTocjmKxSNM0x3G4XzIYDKUrl+12O0VRV69eNRqNwhqg1+sTiQTOYqFQOEBeHo+HoijoRqDkDAYDy7J+v1+hUKTTaZVKdbZjYxGnIpvNymQyp9NJ03QoFALyslgsuVxOLpf7fD6v1yuXy/HgS6vVUhTFsqzVam21Wjqdbj6fI4RMJhNUhkgk4na7EUKNRsNisQQCAYIggBCdTqfD4TAYDMIu8KyAyWswGDgcDoZhGIYJBALoKPLS6XTNZhOemqZpuVyOfpm8yuWy2WzudrvNZhNPfg+QF0EQiURCrVa73W6JRAJ3PxlC8orH4wzD0DTtcrkGgwEwFEKI4ziapuGnSqWCEBoOhzabzel0LmO2OxkEQWxtbSGE3G53OBzW6/VOpxMhRFEUx3GhUMjhcNRqNbPZXKvV+v0+y7Iw5mi32xKJBEYV4MwAXZrP52MYZm1tDd6PzWZDCGUyGZIk7XY7Qqh05TLDMHa7Hc+yj8Ox5NXh/nDYfOJ9s5fgGDafOEBekUjEZDKlUimaph0OxwHyKpfL6+vr4XB4MBgYDIZUKgVDdLQ0eUHvAeRlNBpXV1djsRjHcbu7u+Vy2e/3n19ZEUdetw0cxwm7xGAwCOSVzWZVKlUqlYrFYrlcDifQarV4LoYQUqvVmLxSqdRh8vL7/dAwYrHYaDSiKCqTydyKB8HkhTGdTmFIdZi8tFrtaDTqdDrRaDQWiymVSiQgL8g5zHfq9fpx5KXVanmej8fja2trMplsmQUoIXlhW5vVal1fXz+c2O/3ezwe/BFzxM3gAHkZDAYw5sDU1WQyxeNxt9tNURTwJvReCKFqtYpHoBzHhcNhSDAajbChU6/Xw5yxXq+Hw+F4PL5YLBBCFotlmUI/grxG7wz+P3mNnoKhFhxo9NQ//71VSF7oeheKEPJ6vQ6HAyF0fmUFZsUmkwmeHOd1Y2NDSF4wONzd3e33+/l83mazeb3eaDQK61Aej4dhmHQ6DVOJUChEkmSz2ZzP516vN5/Pz2azwWAADeAmCkjEB8AJ5GUymebz+Xi8Z7VahSMvIXnp9fpWq7W7u2s2m+EUmAeBEcBisQSDwVAohBDKZrPhcJim6Vu0ymyz2aCp12o1m802Go1arRbwDsuy6+vrk8mEIIjBYDAYDAiCGI1G0+l0f3+fYRjoUB0OB7CDWq2u1+uDwaDT6TQaDaPRCExnNBphTDEe721tbQmXI4AlT0WlUjm/sgIDT4PBUK1Wx+M9IPR+vw+TGJZlM5nMeLzn8XgikYjdbq9UKuPxns1mE87fbwxQTDDRi0QimLwQQnq9HviIYRiwR6dSKbfb7fF4NjY26vU6Ji+M8XiPJEmO42DAhclLCL/fHw6HbTYbrH6cgCPIazzeqz3/UOM5dbvw+X/+e+s7uYeEB3wf8z2IycvpdMLMDkZYCCGpVKrX61UqlXC6ixBiWbZUKsGwEyEED5BIJJRKpdForFQq0AMzDKPRaFQqFdQMi8Wi1WpVKhWQscFgUCqVYIk0mUwqlQpuKuL2oFAoCJd9E4nE+vq62+0ej/eq1apKpdJoNMLZCpiu8MfRaKTT6VQqFYzOYCktGAyqVCq1Wg2dn8vlUiqVUD08Hg+0kLNFrVY7v7Ki0WjABJ7JZFQqFcwYYrEYNrE1Go3zKytqtRqMx4VCQSaTQX4SiYTVakUIAcfpr2M+n1cqFZVKhVk7eemiUqkkCEI4D4KnOxUWi0WpVMJkdjabQeWH1cZOp4PzSZKkUqmEcpnP50ajUalU3vywC2A2m6HIisWiw+GABTqEEE3T3W4XIRQMBpPJ5HQ6xQ/FMIywpWO4XC7MFfF43OPxwEIfBiaByWQCr/cEHO2k+sbr1ZjvwW889rvCw/WIHB9/9KXPfu9C/MgrzmazJXsVESI+hFhbW1tmfQCTl4g7haPJazZHjZ+++f1U9rgjl8sNf/72kVdcLBaiN6mIX12Ao8apyTqdzgG3NRG3GUeT1wmYzWaj0ehWrP6IECFCxPL4YOQ1R+j7zz5LrawkX3jhFmdMhAgRIk7CByOvP/tvf/0nX3oYxf7XD7/whdGbb97ivIkQIULEsfgA5PXd0Heeefpj//2ZbwX/+MsXPvUpkbxEiBBxB7EseX039B3ue+cQ+vXGc+rzKyv/4y//Gr6fTqcn2L9Ylm02mzeQre3t7VsREfIvE+D4hxCaTCY8z0NIKf4oLL7FYoETn4DpdMrzPCz8C09ZXMeBGx04C9cZiqLwuvvthzDnOG/Ym4FhGHCP4Hme53lwrJ3P55AMn2i328Ed6YRks9kMvy4MSLkMhCkPFxk8COQc/3Rkso8eliIvzFzvvfEb3J/+2rPREP4pEolwHHfcieBWdwPZOuDRJ+KGEY/HoWTb7TZBEHK5HLxvdnZ2tFqtXC4HHyIASZIQcXICisWiRCLRarVarXY4HIbDYezVvb6+7vV6WZaVyWQKhQKiPQCpVArOUiqVdrs9kUhAkOMdjKinKAp8m+v1ukQiAVcmHLtmMBi2trby+bxCoVAqleCVFovF5HL5+ZUVXKvBPzGbzSqVSghZQwglEgm5XK5SqWDVcnV1VS6XazQaHGncbDaFchonIJvN4obQbrd1Op1cLj+g7kBRlEwm02g0Mpkseelir9eDZB95FZZTyGt+iLkSz/+S4lKz2ex0OhCgGwgEcC8EQTwKhaLZbO7u7gaDQZB8Gg6HUMAIoUQigXuw+XwOoVKQrN1uy+XyWCy2uroKggQQ2RsOhw/05yJOQPLSRYh2Rgg5nU5wyDwc5wHdj8/nk0gkB+RWjrwmeNiD1kIkEsGBtbFY7ECkCG4/4PmNL9JsNgeDAQQqt1qtQCAQCoVOjWU7QzQaDaGqxIHKDyom5XIZB7rp9XoIZoKP4MnY6XRAwgF8a9H1oJHjArPhrGq1ajKZZDLZMvk0mUxCVQkcHgSu8xAVZzQahU4bdrsdkp1JeBAGiLuk0+lut7u5uQl339/f73Q6wgFKs9nEyUpXLiOEisUiz/P9fl/ogNJqtVqtViaT6Xa74MpeunJ5PN4bDAbLO6AcQV77v0AvvLQX+lsU+lv0wkt7zzz9MWCurdWHHyXjL7y09+TX/NipH2IbCYKw2Wx2u51hmJ2dHb/fz7Ks2+2WyWTVahVCySHoqdvtkiRZKBQikQgucoTQeLwH4b52u93tdtfrdZlM5nK5WJYNBALg2ex2uyEq+4YL4F8UkpcuejyecrmM2xLP8xRFORyO4XCo1+uF5OX3+7PZrNvthtCcE4DDg4C81tfX5XI5y7IMw6jVaohMPExe8XhcJpOxLEtR1NramtfrjUQiRqOx0Wg4nU6oG7e5ZHFsY6VSkUqlLMvabDYQbLkxVYlYLOZyuSqVynHkBaFR0EYwJZ0MYWwjRNVQFOV2u0ejUbvdBm41m80EQcCLhZSDwYAkSZfLJQzMukmAGoLX68W6e3q9fjAYrK+vC6MFQqGQXC73eDybm5vwHgiCADoTRpVFo1G5XA6vC4aWIKBWKBQsFsuSWTqCvN5+Z34fjX7zz9899zT6cnRr8ncPzDfPba0+bHli8Tt/hX7zz9/9t5/90X/6w2/802iIrpMXyB6h6y0B91cglCGVSkmSJElSKpXyPD8ajaxWq9frFU7mh8MhLk6CIE7tvkScClAB1Gg0EokE4nj39/c5jnM6nYVCAeKHDQaDRCLJ5XIqlQpEpmQy2ck1HkSNCIIgCKLRaEDpp9PpZDIJxWqz2RQKhVarZRgGC7pduHCBIIh0Oh2LxWq1GkThmUymbDYrlUopijKZTCDVcNuAyWsymWxsbMTj8VgsBk7zR6pK9Pv9YDCo0Wj0ej2Mm4Tklbx00WazTadToaTiYVWJ5KWLUqnUaDRKJBLhUPQ4CMnL7XZHo1GO4+x2e61WWywWEGrTaDTi8Th8DwXN83wikbDb7TfvRut0OpVKpdfrDQaDwFnlcpmiqFgs5vf74Y7wHpRKpdPphPqAEKrVahaLZX19HYYyHMexLBuJRMBuAPUBRLvMZnPy0kWfz8ey7MbGBk3TEPp+YFeNwziavO53oftd6K5n0L9mvvc3Tz78QuDr94RHdz2DzsXQuRj6vW9O7lY8BquNp5JXOp3W6XQ8z4PoIBAWNjcghMbjvclkMhqNRPI6W4CuG8dx8GJ7vR4ES2NJTAgkhg4GCshqtQplCY4EzJ6GwyFYcILB4OFpI8dx29vbQhIEBSj8EYuRQEHPZrNer3crYhhPACav6XQKtfdkVYnBYACCf4VCAb7H5JXL5TATnaAqAXaudrvdbDYVCsUyejUnq0rARBsixhFCfr/f6/ViU/2ZTBu73W6j0ZhMJh6PB6pNpVKhaZpl2WQyaTKZotGoy+UC1gY9BVCV2NrastlsIDNjNpvX1tbsdvt8Pm80GuPxHq42rVaLoiiXywXGWQgshWSn6msfQV69t4b3fm79fhe6/yvod/7qiMPyxOLRf9d+9W966CjySl66yDBMPB4Hva1isWi1WlOpVCqVAsFJu93OcZzH44GAapfLBTUARGzBpHJA0Q0E8NLp9Nra2pIRrSIAWJnEbrcHg8FUKsUwDKiApNNph8MhFNu02+3LTxsBR5LXYRqKRCJHkhd04xsbG+vr67czVHAymRgMBqCVZrNJkmQymYzFYjabbTabMQyTz+en0ylIIAAB7e/vd7tdEHEC3VS73Z7JZGazmUKhSKVS6+vriUQCWmPy0kWYT1UqFavVmkwmD1TdJfvgaDQqk8kajQZCCHQdUqmU1WqtVCpYCNDlcvn9/lQqZbfb0+m0y+UKh8OpVMpms52hVJRQBhoXOpaHxcCSOEhQ6LDUIEx2oNpAfH6/319yNg04grw6O22JRKL8g+/f/xVkeWJx+HjoIfTQQ+jBh/4RIZTJZCqVSjQahU4gkUg0m02e50EAk2VZnuc7nQ5JkhRFdbvdbreLRZTgITOZzObm5mw2k0qlDMOQJNlut0ejER6aRaNRmHuyLEvT9O00634E0O12sV6j0+m0WCxgkgcZ9QNSQul0+tSJxtWrV4VCK6Url7H0Uq1Wy2aziUTi8JiiXC4DYwJwtYGfLBaLzWa7nW4TjUbDZrPZbDbQRcB5QL+sKtFut6HqglYX2NqBSnBg9nQ6dTqdVqsVLjifz69evQpngVUR7Dg0TQvVsZfcasTtdttsNlxkDMOA+hBCaDAY4OJzu90WiwWPs1iWtVgswhd+88hms1gkBhe6MA+AQqGA9+moVCqQh9FodED65UC1Aen98Xjv1L5TiKNXG51OJ/DXfTQ67rjfdcwlbwhCm9dhbGxsnDoBFiHiTCCqSvyq4FhXCbvdLpFIPn7PfcJDdu/vw/Hxe+5TffIs/bDm8/kJJgBYaj3D24kQcRxgwf7UZGAlvA35EXEcjiWv+Xw+nU7fe5dfvPcuQrAsOB/+/O1C4dWXX768u7t7/UsRIkSIuANYysO+2Wz+z++++OTX/A9bvvhF411fNN717W86wSNGhAgRIu4IjiUvnuer1arH47FYLJ954N6vPvZrzzz9sR8+f/d7/d/u/fTf3P+p33r55ct3IsMiRIgQgdBx5JVIJAiC+OyDn37qv/7Zo49Y7v/Ub33lj36d+9659974DbT47R8+f7dMJhM37BFxJoCdaO90Lg5iNpstE6O+ZDIRtwJHu0qoPkk88dxP3Mm3ni3tvf3OvF5v+r4ZfPQRy2ceuPcbj/+rLxrv+vR/NF29evWE6w4Gg8M+Zu12+yMf6f4hx3i8h7c8AC8W+H86nZZKpUKhINws4wS0Wq1isVgsFm9+L+vV1VWv19vv94WeBLcBg8EA+6bWarXSlculUgmH6cHGV9PpFB4TjCTD4bBQKJRKJRxgazabwfUakoG3x2g0KhQKpSuX4Yn6/X6hUCiXy0KOPtUDEzCdTsFLAyG0WCzK5XKhUDiwaUWv19vc3ITig3WtSqVSKBRuftPGDzmO3vpM9Uni3APBc/Qb5x559TN/8QY/R4v33m389M2/u3L1O996SiqVYgeZ41AqlQ5vNX5gFywRtxnz+ZwkSeEWL7jQV1dXjUYjQRA+n+/U0PdGo0GSpMFg0Ov1Nx+QGAgEfD5fJBK5nYt3o9FIrVaDj1K1WpVIJBaLxWAwYO8HEEQBB2yIP59MJj6fjyAIo9GIw9dNJlOxWAwEApAsFArt7+/7/X6cjOd5t9sNH1OpFJzFcdySsVB+vx+7EKXTadhq3ul04rgrhJDZbIbwe71en8vlYCdqgiAgiPWs3tiHEEdPG6s/Kil+9/eAvz7h/IfBBFU2X9HpdNRz74SyTYVC4fF4oFcpFosQtwhhJfF4vFarBQKBRqNRKpUSiQRJkhAcgBDSaDRQwMIcZLNZ2NsdIbS5uWk2mymKAk8/s9lMkqS4IH1WgFaEyctisUChLxYL7DkMGi8nXKTdbuNtzDF8Pp/JZMLqOk6nExe61+s1mUzgkxkIBEwmE47WdrvdVqtVoVAEg8FcLrezswOR27jQQe+BoqgzV3fp9XpyuRy8ZA+rSmQyGafT2Wg0TlaVyOfzDoej2+3iKr2MqgTEEigUimXy6XA4jlOV2N/fh/seUJUIhUJAbWerKpHJZMrlcjAY3NragvcGii+1Wk3otJzL5UpXLgcCgSPFjtbW1ur1+lmV5rEG+8rmK8Bfn3D+Az9HxZdfkkql5x559dwDwfMrK+ARixDyeDwkSeZyOb/fHwqFPB6PVCrN5/OwKRtUu2w2y7JsLpcjCCIUCglfdLlctlqt6XQ6nU7X63WSJDOZTDqd3t7etlgs6XQ6eemiuKx5JmBZNh6PC919i8Uibo2AcDiMYzuOw4HwIEA+n+c4zu12x2Ixn88XCAQ4jgN9EZ/Px3EcFlFJJBKwr3AgEPD7/blcjiTJ1dVVvOd2NpvlOA4iYCiKglhulUp1dm/ifeDYRhh5wd6LMO87TlUC9kteLBZHqkr4fL5wOCyUojusKpHP5ymKgt2zl7H0CWMbK5WKXq9Xq9VQRtvb21hVAlTGMCn0ej2lUunxeG5eP2qxWEA+A4EARPiXSqUjVSUgWTgclkgkkUgEtB7n8zn8hV9JkpTL5eBbj7+Ef27AdHiSq0Rl8xXZvb//CfIvheR1t+Kxzz74aYiQQAi5XC6oAYVCwWazOZ1O6A1isRiQFxgRvF5vKBQyGo0Hpo3CllCr1SQSydra2mKx2NnZkUgkwWBwOp2KBtEzgdlsViqVcrlcIpFAfMkB8jogUnQcDpPXbDazWq06nU4qlYKEgFqtBoMLjmVBCC0WC4ZhIBmIT0C4SSAQCAQCEM5yYMwC6ii3KBofkxdCaDQabW9vC3fMPhyYPR7vwXRPp9MdVpXA+j8nkBfoakilUq1WK5FIYLZxMoTkZTKZarXa7u4uTdPQ/oGbwMF7OBx6PB68Pe1wOGRZFg8ybhgMw4BWVSAQgOpRKpWsVqvb7Ybo1Hg87nQ6/X4/SB6FQiGIZ+x2u1DfKpWKxWKRyWQg2gEz7kwmAwKKzWbz/MqKTCbDQUXL4xQ/r9KVyxqN5sVLL71WfVUqlZ57OP3xe+6z2Wx4KneAvBwORzKZREuQF8xNDreEeDwukUgg2cbGhkQiuTEhaRFHIplMHjnyggHRMleoVqskSQptxljOEEfYTqdTjUbjdDoZhsHkBVInCCGQ5blh8uJ5Hg/eISoWIVSv1z+oORWTFxjU0RKqEvB/LpeDSovJKxKJYB48QVVC+BRL0vFxqhIwU4NGlM/n4XsY51YqFZisnO20EQdmt1otu93ucDjK5bLdbocpF04mDMw+DJPJdIZeCqc7qRaLRYIgnF/9U7lcfu6BoEwmw2HYkNfzKysOh4Om6dKVyzRNH0degUAAIvLBSqrX69vtdq/XAx07p9O5s7Njs9lcLhdoFtI07XQ6QXftrJ5WBNZBRQhZLBapVApEoFAo3G43wzA0TZ9qZIS5D8uyVquV47hSqUTTtN1u1+l0Ho8H9AycTmcul8vn8zRNQ38LUip2u12v1zscjmKxSNO0w+E4v7ISiUQOkJdWq22321A3bDabUqnEd8fTJYSQRqMB+w5FUVDxlkSn0wHRMawFBPcKhULtdhsL2MM7YRgGTLq1Wo2iKFAH6HQ6DMM0Go39/X2ZTOb1ehmGYVm21+sBazMM4/f7u90uXJlhGExwaGnycjgcEokELP2hUIimabhLt9vd2dmB9xCJRKxWK5Rdo9EIhUI2mw3uePNrwRg3oCpxGLebvBBChUJBqVR+/J777lY8plari8Ui9ngAc2wsFoO+t1arQQfY6XSazSaMctF11VeEUCQSATnwUqkE/cPW1lYwGIzFYoPBIBQKhUKhwWCwv78fDodXV1fxOrGIM0G/3wdb+3w+B/k9+JjJZCKRSCQSCYfDy6g7gPB3KBSC0f7GxkYoFIpEIjs7O8ViMRgMYipJJpNgj4e7QDIwO4DwdzQa7fV61Wq13+/jIRVU8VarBVkS2rx4ngd9YYRQsViEqROueEui2+1euHDhwoULsB7XarVWV1ehW71w4QIOzMZ1EpK1222/3w+jThyYPZ/Pk8lk5DoWi0Wn01ldXcVvstForK6uRqNRoQVqyTacSCRisRgMUefz+draWjAYxGLrpVIJJwsGg/iasVgsGAweWFS5STSbTayf3G63oQSFeQDgln4kKpXKGS6ALrt7UL1e/y+PPvbv/4MhEAjgZ0DX54NnlRsRIoTY2Ng4v7JCEMQZjiBORTweX8b2l0wmxQ2u7iw+wL6N/zQattvtj7bniIgPFUAdQNxyRcSR+GA7ZiOE/rH9f7/zrac+8s67IkSI+JDjg5FX9+23/+RLD//wC18I/vGXYQMOESJEiLgjeJ+83G73qVKls9nMbDb7fL5uIPCzhx++NuqdnF6ECBEibh3O3ekMiBAhQsSNQCQvESJE/Eri/wGLO5CVxfNhxwAAAABJRU5ErkJggg==" alt="" /></p>
+
+<p> Permissions have been altered</p>
+
+<p>You can now see where the file permissions have been changed.</p>
+
+<p><strong>Unhide hidden files</strong></p>
+
+<p>By default, FTP clients keep hidden files that begin with a period (.), from being seen.  At some point, you might want to see the hidden files, so you can modify the permissions on a file. To show hidden files in FileZilla, it proves necessary to select “View” from the menu at the top.  Choose “Show hidden files”. The screen will display the files and they will refresh, and a hidden file should easily come to view.</p>
+
+<p><strong>Chmod</strong></p>
+
+<p>Chmod is a UNIX command that means “Changed mode” on files. The –R flag means to implement changes to every directory and file inside of wp-content.  766 is the mode that is used in changing the directory to, it simply means that the directory is writable and readable by WordPress and other users on your system. Lastly, if 766 does not work, and then try 777 which make all folders and files readable, executable and writable by all groups, processes and users.</p>
+
+<p>If you are using Permalinks, you should change permissions of .htaccess to ensure that WordPress can upgrade when you change the settings such as redirect, category or adding a new page etc&hellip; This requires an update to the .htaccess file when mod-rewrite Permalinks are used.</p>
+
+<ol>
+<li><p> Go to WordPress main directory</p></li>
+<li><p> Enter chmod –v 666 .htaccess</p></li>
+</ol>
+
+
+<p><strong>Finding a workaround</strong></p>
+
+<p>It proves easy to have the enhanced features of WordPress plugins. This decreases the chances of placing yourself at risk. Contact your server support or the Plugin author to request a workaround.</p>
+
+<p><strong>Conclusion</strong></p>
+
+<p>The .htaccess file is a file that is accessed by the owner. If you set the permissions too low, your server cannot access files and will cause errors. This is why it proves essential to get the most secure settings.  Always begin restrictive with increasing permissions until it works.</p>
+
+<p>This awesome article is written by: <strong>Alfred Richards,</strong> Alfred blogs for <a href="http://www.ivpn.net/">VPN Service</a> and <a href="http://www.ivpn.net/">iVPN.net</a> and likes to research and discuss about web hosting, web marketing and web designing.</p>
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <p class="meta auther">
+      <em>~ 
+  
+
+<span class="byline author vcard">Posted by <span class="fn">A Guest Author</span></span>
+ ~</em>
+    </p>
+
+
+
+
+
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://techhamlet.com/2012/02/how-to-set-up-correct-file-permission-for-your-wordpress-blog/" data-via="TechHamlet" data-counturl="http://techhamlet.com/2012/02/how-to-set-up-correct-file-permission-for-your-wordpress-blog/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2012/02/introducing-the-new-ashampoo-winoptimizer-9-giveaway/" title="Previous Post: Finished : Introducing the New Ashampoo WinOptimizer 9 (Giveaway : 10 Keys)">&laquo; Finished : Introducing the New Ashampoo WinOptimizer 9 (Giveaway : 10 Keys)</a>
+      
+      
+        <a class="basic-alignment right" href="/2012/02/five-important-steps-to-secure-your-word-press/" title="Next Post: Five Important Steps to secure your Word press">Five Important Steps to secure your Word press &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1 class="comments">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Subscribe to us...</h1>
+
+  <a href="/subscribe/" class="social-link" target="_blank">
+	  <div id="mail" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/mail.png" alt="subscribe" class="social-img">
+	  	</div>
+	  	<span class="social-text">email</span>
+	  </div>
+  </a>
+
+</section><section>
+  <h1>Follow us on...</h1>
+
+  <a href="http://www.facebook.com/TechHamlet" class="social-link" target="_blank">
+	  <div id="facebook" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/facebook.png" alt="facebook" class="social-img">
+	  	</div>
+	  	<span class="social-text">facebook</span>
+	  </div>
+  </a>
+
+  <a href="http://plus.google.com/103124674194413904305" class="social-link" target="_blank">
+	  <div id="googleplus" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/googleplus.png" alt="googleplus" class="social-img">
+	  	</div>
+	  	<span class="social-text">google</span>
+	  </div>
+  </a>
+
+  <a href="http://twitter.com/TechHamlet" class="social-link" target="_blank">
+	  <div id="twitter" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/twitter.png" alt="twitter" class="social-img">
+	  	</div>
+	  	<span class="social-text">twitter</span>
+	  </div>
+  </a>
+
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/bitdefender-thumb.jpg" alt="Bitdefender 2014 is Released! Its Faster, Lighter and More Secure!"></div>
+
+
+
+
+        <a href="/2013/06/bitdefender-2014-released/">Bitdefender 2014 Is Released! Its Faster, Lighter and More Secure!</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/software-as-a-service-thumb.jpg" alt="A better understanding of Software as a Service"></div>
+
+
+
+
+        <a href="/2013/06/a-better-understanding-of-software-as-a-service/">A Better Understanding of Software as a Service</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/mac-vs-linux-featured.jpg" alt="Mac OS X vs Linux : What is The Best Windows Alternative? Mac or Linux"></div>
+
+
+
+
+        <a href="/2013/06/mac-os-x-vs-linux/">Mac OS X vs Linux : What Is the Best Windows Alternative? Mac or Linux</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/browser-wars-thumb.jpg" alt="Firefox Beats Chrome In Many Ways"></div>
+
+
+
+
+        <a href="/2013/06/firefox-beats-chrome/">Firefox Beats Chrome in Many Ways</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/octopress-thumb.jpg" alt="Just Moved You Are Curious from Wordpress to Octopress!"></div>
+
+
+
+
+        <a href="/2013/06/wordpress-to-octopress/">Just Moved You Are Curious From Wordpress to Octopress!</a>
+      </li>
+    
+  </ul>
+</section><section>
+  <h1>Recent Comments</h1>
+  <div id="dsq-recentcomments" class="dsq-widget"><script type="text/javascript" src="http://disqus.com/forums/tech-hamlet/recent_comments_widget.js?num_rc-items=3&amp;hide_avatars=0&amp;avatar_size=38&amp;excerpt_length=70;"></script></div>
+</section>
+  
+</aside>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="blog-index">
+
+  
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <footer id="site-footer" role="contentinfo"><div class="container">
+	<div>
+		<p id="links">Our friends : <a href="http://sumagaasapuwa.com/" target="_blank">Sumaga Asapuwa</a> / <a href="http://techlunatic.com/" target="_blank">Tech Lunatic</a> / <a href="http://www.india365.org/" target="_blank">India 365</a> / <a href="http://www.linuxalt.com/" target="_blank">Linux Alternative Project</a>   My Other Site : <a href="http://youarecurio.us/" target="_blank">You Are Curious</a></p>
+	</div>
+
+	<div id="version-copyright">
+		<p id="version">
+			Tech Hamlet (Version 15.0)
+		</p>
+
+		<p>
+		  Copyright &copy; 2009 - 2013 - Tech Hamlet Site Content (All post and page content) -
+		  Sri Lanka (All rights reserved)
+		</p>
+	</div>
+
+
+	<div id="license">
+		<a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="/images/creative-commons.png" /></a><br /><span property="dct:title">Tech Hamlet Site Design</span> by <a target="_blank" href="http://techhamlet.com/" property="cc:attributionName" rel="cc:attributionURL">Tech Hamlet</a> is licensed under a <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br />Powered by <a target="_blank" href="http://octopress.org/" rel="dct:source">Octopress/</a>
+
+
+	</div>
+
+	<br>
+
+	<a href="https://github.com/TechHamlet/TechHamlet.github.io" target="_blank" title="Source"><img src="/images/github.png" alt="Githbu"></a>
+</div>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tech-hamlet';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://techhamlet.com/2012/02/how-to-set-up-correct-file-permission-for-your-wordpress-blog/';
+        var disqus_url = 'http://techhamlet.com/2012/02/how-to-set-up-correct-file-permission-for-your-wordpress-blog/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

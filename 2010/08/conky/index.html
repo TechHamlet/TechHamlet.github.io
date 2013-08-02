@@ -1,0 +1,649 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Updated : Give a New Look to Your Ubuntu Desktop with Conky - Tech Hamlet</title>
+  <meta name="author" content="Pubudu Kodikara">
+
+  
+  <meta name="description" content="Earlier we talked about a very easy way to customize your desktop with screenlets and avant window navigator. But today we are going for a more &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://techhamlet.com/2010/08/conky">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-9918644-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner" id="main-header"><div id="header-container">
+	<h1 id="main-title"><a href="/">Tech Hamlet</a></h1>
+	<nav role="navigation" id="main-nav"><ul class="main-menu">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/privacy-policy">Privacy Policy</a></li>
+  <li><a href="http://status.techhamlet.com/" target="_blank">Status</a></li>
+</ul>
+
+
+  <form id="site-search" action="http://google.com/search" method="get">
+    <fieldset role="search">
+      <input type="hidden" name="q" value="site:techhamlet.com" />
+      <input class="search" type="text" name="q" placeholder="Search"/>
+    </fieldset>
+  </form>
+
+</nav>
+</div>
+</header>
+
+  <div id="logo-cat">
+
+    <div id="logo-img">
+
+    <img class="logo" src="/images/th-logo.png" alt="Tech Hamlet Logo">
+
+    </div>
+
+    <a href="/categories/android/" class="android cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-android.png" alt="Android">
+        </div>
+        <span class="cat-text">android</span>
+      </div>
+    </a>
+
+    <a href="/" class="all cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-all.png" alt="All">
+        </div>
+        <span class="cat-text">all</span>
+      </div>
+    </a>
+
+    <a href="/categories/windows/" class="windows cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-windows.png" alt="Windows">
+        </div>
+        <span class="cat-text">windows</span>
+      </div>
+    </a>
+
+
+
+
+    <a href="/categories/web/" class="web cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-web.png" alt="Web">
+        </div>
+        <span class="cat-text">web</span>
+      </div>
+    </a>
+
+    <a href="/categories/linux/" class="linux cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+        </div>
+        <span class="cat-text">linux</span>
+      </div>
+    </a>
+
+    <a href="/categories/others/" class="others cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-others.png" alt="Others">
+        </div>
+        <span class="cat-text">others</span>
+      </div>
+    </a>
+  </div>
+
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry post" role="article">
+  
+  <header>
+
+
+
+    
+        <div class='linux cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+            </div>
+            <a href="/categories/linux/"><span class="cat-text">linux</span></a>
+          </div>
+        </div>
+
+      <h1 class="entry-title">Updated : Give a New Look to Your Ubuntu Desktop With Conky</h1>
+    
+    
+      <p class="meta">
+
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2010-08-15T09:16:28+05:30"  data-updated="true">Aug 15<span>th</span>, 2010</time>
+
+
+        
+         | <a href="#disqus_thread" class="comment-count">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+
+
+
+
+
+<div class="entry-content"><p><a href="http://www.techhamlet.com/wp-content/uploads/2010/08/conky.jpg"><img src="http://www.techhamlet.com/wp-content/uploads/2010/08/conky-180x157.jpg" alt="Conky" /></a></p>
+
+<p>Earlier we talked about a very easy way to customize your desktop with <a href="http://www.techhamlet.com/2009/12/ubuntu-customization-guide-purple-boy/"><strong>screenlets and avant window navigator</strong></a>. But today we are going for a more advanced method! Today we are going to see how to install and configure conky on your Ubuntu system! Don&rsquo;t you want to add beautiful system monitors integrated to your own desktop? And to show that your a geek to your friends? Then.. conky is your answer!</p>
+
+<!-- more -->
+
+
+<p><strong>What is <a href="http://conky.sourceforge.net/">Conky</a>?</strong></p>
+
+<p>Conky is a free, open source and light system monitor which can show any information on your desktop. According to Conky :</p>
+
+<p>Conky can display just about anything, either on your root desktop or in its own window. Not only does Conky have many built-in objects, it can also display just about any piece of information by using scripts and other external programs.</p>
+
+<p><strong>How to install Conky?</strong></p>
+
+<p>To make things a bit easier, we are going to install conky with <a href="http://gnome-look.org/content/show.php?content=92328"><strong>conky-colors</strong></a>.</p>
+
+<ul>
+<li>First, open the terminal (In the main menu, Applications > Accessories > Terminal) and execute the following command :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo aptitude install python-statgrab ttf-droid hddtemp curl lm-sensors conky-all</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Then, after some time, you&rsquo;ll see a screen as shown below (<strong>Some times you might not see this in the new versions!</strong>) :</li>
+</ul>
+
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2010/01/configuring-hddtemp.png"><img src="http://www.techhamlet.com/wp-content/uploads/2010/01/configuring-hddtemp-300x191.png" alt="Configuring hddtemp" /></a></p>
+
+<ul>
+<li><p>Select &ldquo;Yes&rdquo; (press the &lsquo;tab&rsquo; key to select) and press enter.</p></li>
+<li><p>Then you&rsquo;ll get the following screen :</p></li>
+</ul>
+
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2010/01/interface-to-listen.png"><img src="http://www.techhamlet.com/wp-content/uploads/2010/01/interface-to-listen-300x192.png" alt="Interface to listen" /></a></p>
+
+<ul>
+<li><p>In here, leave the default settings as it is. (Do not change anything if you don&rsquo;t know!). Select &ldquo;OK&rdquo; (press the &lsquo;tab&rsquo; key to select) and press enter.</p></li>
+<li><p>Next you&rsquo;ll see another screen like this, asking for the &ldquo;port to listen on&rdquo;. Do the same thing for that : Select &ldquo;OK&rdquo; (press the &lsquo;tab&rsquo; key to select) and press enter.</p></li>
+<li><p>Now, enter the following commands in the terminal :</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo chmod u+s /usr/sbin/hddtemp
+</span><span class='line'>
+</span><span class='line'>sudo sensors-detect</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><p>After you enter the last command, they will ask you a series of questions, just enter &ldquo;yes&rdquo; for all of them!</p></li>
+<li><p>Next, restart your session (log-off and log-in, if you want you can even re-start the machine)</p></li>
+<li><p>Now, download and extract <strong><a href="http://gnome-look.org/content/show.php?content=92328">conky-colors</a></strong> to your home folder.</p></li>
+<li><p>Open your terminal again and go to the extracted folder by typing</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd conky_colors</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><p><strong>Note :</strong> This command will only work if you extract the content into a folder called &ldquo;conky_colors&rdquo; inside your &ldquo;home&rdquo; folder (in the main menu Places > Home Folder) , The path to the home folder is usually &ndash; /home/username  (&ldquo;username&rdquo; is your username! not mine!).</p></li>
+<li><p>After that execute the following commands in the terminal one by one:</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>make
+</span><span class='line'>sudo make install</span></code></pre></td></tr></table></div></figure>
+
+
+<p><strong>Great! You have installed Conky on your system! Now, lets see how to configure it :</strong></p>
+
+<p>This is the trickiest part about conky. Its not easy to configure it. I also spent some time to figure it out! Conky is configured mainly by &ldquo;.conkyrc&rdquo; in your home folder. Lets see how to do this :</p>
+
+<ul>
+<li><p>First go to your home folder. (In the main menu, Places > Home folder).</p></li>
+<li><p>To edit this file, you need to unhide the hidden folders. To do that, in the top menu bar, select View > Show Hidden Files. Or just press &ldquo;Ctrl+H&rdquo;</p></li>
+<li><p>Now, you&rsquo;ll see a file called &ldquo;.conkyrc&rdquo;. Open it in your text editor (mostly gedit : In the main menu Applications > Accessories > gedit Text Editor)</p></li>
+</ul>
+
+
+<p>This is the file which contains configuration data of conky! To change how conky looks, you need to edit this file. Lets do a small change and see what is happening :</p>
+
+<ul>
+<li>Go to the end of the file and paste the following code at the end :</li>
+</ul>
+
+
+<p>[text]CPU 1 Temp ${execi 10 sensors | grep &ldquo;Core 0&rdquo; | cut -d &ldquo;+&rdquo; -f2 | cut -c1-6}C</p>
+
+<p>CPU 2 Temp ${execi 10 sensors | grep &ldquo;Core 1&rdquo; | cut -d &ldquo;+&rdquo; -f2 | cut -c1-6}C</p>
+
+<p>160 GB Linux Drive Temp: ${execi 10 hddtemp /dev/sda |cut -c28-40}</p>
+
+<p>500 GB Windows Drive Temp: ${execi 10 hddtemp /dev/sdb |cut -c28-40}</p>
+
+<p>${color 9D875B}Up:${color a4a4a4}${alignr}${upspeed eth0}KB/s</p>
+
+<p>${color 674828}${upspeedgraph eth0 20,85 674828 9D875B}</p>
+
+<p>${color 9D875B}Total: ${color a4a4a4}${totalup eth0}</p>
+
+<p>${color 9D875B}Down:${color a4a4a4}${alignr}${downspeed eth0}KB/s</p>
+
+<p>${color 674828}${downspeedgraph eth0 20,85 674828 9D875B}</p>
+
+<p>${color 9D875B}Total: ${color a4a4a4}${totaldown eth0}[/text]</p>
+
+<ul>
+<li>Now, to test this, first save the file and open the terminal. On the terminal enter the following command :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>conky</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><p>After that you&rsquo;ll see the conky sensors in your desktop!</p></li>
+<li><p>Sometimes you might see something as shown below :</p></li>
+</ul>
+
+
+<p><a href="http://www.techhamlet.com/wp-content/uploads/2010/01/error.png"><img src="http://www.techhamlet.com/wp-content/uploads/2010/01/error-151x300.png" alt="Error" /></a></p>
+
+<ul>
+<li>To correct this, go to the &ldquo;.conkyrc&rdquo;, and you&rsquo;ll see some lines as shown below :</li>
+</ul>
+
+
+<blockquote><p><strong>CPU 1 Temp ${execi 10 sensors | grep &ldquo;Core 0&rdquo; | cut -d &ldquo;+&rdquo; -f2 | cut -c1-6}C</strong></p></blockquote>
+
+<p><strong>CPU 2 Temp ${execi 10 sensors | grep &ldquo;Core 1&rdquo; | cut -d &ldquo;+&rdquo; -f2 | cut -c1-6}C</strong></p>
+
+<hr />
+
+<p><strong>160 GB Linux Drive Temp: ${execi 10 hddtemp /dev/sda |cut -c28-40}</strong></p>
+
+<p><strong>500 GB Windows Drive Temp: ${execi 10 hddtemp /dev/sdb |cut -c28-40}</strong></p>
+
+<ul>
+<li>To fix the problem, you need to edit the numeric values in these sections!</li>
+</ul>
+
+
+<p>OK people, that&rsquo;s it! You have learned the basics of conky! Now to add more functions, go to the extracted conky_colors folder and open the &ldquo;README&rdquo; file (It also says how to set conky to start automatically with your system). It contains everything you need. At the end of that file you&rsquo;ll see a section called  &#8221;+++SCRIPTS+++&ldquo;. This section contains links to some other external scripts which you can use on your system! Use them well and Enjoy!</p>
+
+<p><strong>Update : </strong>I updated the code to install the latest Conky Colors 4.0b2</p>
+
+<p><strong>Update :</strong> Also works for version 5</p>
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <p class="meta auther">
+      <em>~ 
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Pubudu Kodikara</span></span>
+ ~</em>
+    </p>
+
+
+
+
+
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://techhamlet.com/2010/08/conky/" data-via="TechHamlet" data-counturl="http://techhamlet.com/2010/08/conky/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2010/08/tweet-button/" title="Previous Post: The Official Tweet Button is Live! Lets Add Now!">&laquo; The Official Tweet Button is Live! Lets Add Now!</a>
+      
+      
+        <a class="basic-alignment right" href="/2010/08/avoid-becoming-the-tech-guy/" title="Next Post: 5 Ways to Avoid Becoming "The Tech Guy"">5 Ways to Avoid Becoming "The Tech Guy" &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1 class="comments">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Subscribe to us...</h1>
+
+  <a href="/subscribe/" class="social-link" target="_blank">
+	  <div id="mail" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/mail.png" alt="subscribe" class="social-img">
+	  	</div>
+	  	<span class="social-text">email</span>
+	  </div>
+  </a>
+
+</section><section>
+  <h1>Follow us on...</h1>
+
+  <a href="http://www.facebook.com/TechHamlet" class="social-link" target="_blank">
+	  <div id="facebook" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/facebook.png" alt="facebook" class="social-img">
+	  	</div>
+	  	<span class="social-text">facebook</span>
+	  </div>
+  </a>
+
+  <a href="http://plus.google.com/103124674194413904305" class="social-link" target="_blank">
+	  <div id="googleplus" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/googleplus.png" alt="googleplus" class="social-img">
+	  	</div>
+	  	<span class="social-text">google</span>
+	  </div>
+  </a>
+
+  <a href="http://twitter.com/TechHamlet" class="social-link" target="_blank">
+	  <div id="twitter" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/twitter.png" alt="twitter" class="social-img">
+	  	</div>
+	  	<span class="social-text">twitter</span>
+	  </div>
+  </a>
+
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/bitdefender-thumb.jpg" alt="Bitdefender 2014 is Released! Its Faster, Lighter and More Secure!"></div>
+
+
+
+
+        <a href="/2013/06/bitdefender-2014-released/">Bitdefender 2014 Is Released! Its Faster, Lighter and More Secure!</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/software-as-a-service-thumb.jpg" alt="A better understanding of Software as a Service"></div>
+
+
+
+
+        <a href="/2013/06/a-better-understanding-of-software-as-a-service/">A Better Understanding of Software as a Service</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/mac-vs-linux-featured.jpg" alt="Mac OS X vs Linux : What is The Best Windows Alternative? Mac or Linux"></div>
+
+
+
+
+        <a href="/2013/06/mac-os-x-vs-linux/">Mac OS X vs Linux : What Is the Best Windows Alternative? Mac or Linux</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/browser-wars-thumb.jpg" alt="Firefox Beats Chrome In Many Ways"></div>
+
+
+
+
+        <a href="/2013/06/firefox-beats-chrome/">Firefox Beats Chrome in Many Ways</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/octopress-thumb.jpg" alt="Just Moved You Are Curious from Wordpress to Octopress!"></div>
+
+
+
+
+        <a href="/2013/06/wordpress-to-octopress/">Just Moved You Are Curious From Wordpress to Octopress!</a>
+      </li>
+    
+  </ul>
+</section><section>
+  <h1>Recent Comments</h1>
+  <div id="dsq-recentcomments" class="dsq-widget"><script type="text/javascript" src="http://disqus.com/forums/tech-hamlet/recent_comments_widget.js?num_rc-items=3&amp;hide_avatars=0&amp;avatar_size=38&amp;excerpt_length=70;"></script></div>
+</section>
+  
+</aside>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="blog-index">
+
+  
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <footer id="site-footer" role="contentinfo"><div class="container">
+	<div>
+		<p id="links">Our friends : <a href="http://sumagaasapuwa.com/" target="_blank">Sumaga Asapuwa</a> / <a href="http://techlunatic.com/" target="_blank">Tech Lunatic</a> / <a href="http://www.india365.org/" target="_blank">India 365</a> / <a href="http://www.linuxalt.com/" target="_blank">Linux Alternative Project</a>   My Other Site : <a href="http://youarecurio.us/" target="_blank">You Are Curious</a></p>
+	</div>
+
+	<div id="version-copyright">
+		<p id="version">
+			Tech Hamlet (Version 15.0)
+		</p>
+
+		<p>
+		  Copyright &copy; 2009 - 2013 - Tech Hamlet Site Content (All post and page content) -
+		  Sri Lanka (All rights reserved)
+		</p>
+	</div>
+
+
+	<div id="license">
+		<a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="/images/creative-commons.png" /></a><br /><span property="dct:title">Tech Hamlet Site Design</span> by <a target="_blank" href="http://techhamlet.com/" property="cc:attributionName" rel="cc:attributionURL">Tech Hamlet</a> is licensed under a <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br />Powered by <a target="_blank" href="http://octopress.org/" rel="dct:source">Octopress/</a>
+
+
+	</div>
+
+	<br>
+
+	<a href="https://github.com/TechHamlet/TechHamlet.github.io" target="_blank" title="Source"><img src="/images/github.png" alt="Githbu"></a>
+</div>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tech-hamlet';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://techhamlet.com/2010/08/conky/';
+        var disqus_url = 'http://techhamlet.com/2010/08/conky/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>

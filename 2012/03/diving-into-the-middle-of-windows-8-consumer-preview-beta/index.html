@@ -1,0 +1,572 @@
+
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]><html class="no-js iem7"><![endif]-->
+<!--[if lt IE 9]><html class="no-js lte-ie8"><![endif]-->
+<!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <title>Diving into the Middle of Windows 8 Consumer Preview (Beta) - Tech Hamlet</title>
+  <meta name="author" content="Pubudu Kodikara">
+
+  
+  <meta name="description" content="Yesterday night, Microsoft released the Consumer Preview of Windows 8. As promised, this new release comes with a lot of new improvements than the &hellip;">
+  
+
+  <!-- http://t.co/dKP3o1e -->
+  <meta name="HandheldFriendly" content="True">
+  <meta name="MobileOptimized" content="320">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  
+  <link rel="canonical" href="http://techhamlet.com/2012/03/diving-into-the-middle-of-windows-8-consumer-preview-beta">
+  <link href="/favicon.ico" rel="icon">
+  <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
+  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <script src="/javascripts/modernizr-2.0.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script>!window.jQuery && document.write(unescape('%3Cscript src="./javascripts/lib/jquery.min.js"%3E%3C/script%3E'))</script>
+  <script src="/javascripts/octopress.js" type="text/javascript"></script>
+  <!--Fonts from Google"s Web font directory at http://google.com/webfonts -->
+<link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
+  
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-9918644-3']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+
+</head>
+
+<body   >
+  <header role="banner" id="main-header"><div id="header-container">
+	<h1 id="main-title"><a href="/">Tech Hamlet</a></h1>
+	<nav role="navigation" id="main-nav"><ul class="main-menu">
+  <li><a href="/">Home</a></li>
+  <li><a href="/blog/archives">Archives</a></li>
+  <li><a href="/about">About</a></li>
+  <li><a href="/contact">Contact</a></li>
+  <li><a href="/privacy-policy">Privacy Policy</a></li>
+  <li><a href="http://status.techhamlet.com/" target="_blank">Status</a></li>
+</ul>
+
+
+  <form id="site-search" action="http://google.com/search" method="get">
+    <fieldset role="search">
+      <input type="hidden" name="q" value="site:techhamlet.com" />
+      <input class="search" type="text" name="q" placeholder="Search"/>
+    </fieldset>
+  </form>
+
+</nav>
+</div>
+</header>
+
+  <div id="logo-cat">
+
+    <div id="logo-img">
+
+    <img class="logo" src="/images/th-logo.png" alt="Tech Hamlet Logo">
+
+    </div>
+
+    <a href="/categories/android/" class="android cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-android.png" alt="Android">
+        </div>
+        <span class="cat-text">android</span>
+      </div>
+    </a>
+
+    <a href="/" class="all cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-all.png" alt="All">
+        </div>
+        <span class="cat-text">all</span>
+      </div>
+    </a>
+
+    <a href="/categories/windows/" class="windows cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-windows.png" alt="Windows">
+        </div>
+        <span class="cat-text">windows</span>
+      </div>
+    </a>
+
+
+
+
+    <a href="/categories/web/" class="web cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-web.png" alt="Web">
+        </div>
+        <span class="cat-text">web</span>
+      </div>
+    </a>
+
+    <a href="/categories/linux/" class="linux cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+        </div>
+        <span class="cat-text">linux</span>
+      </div>
+    </a>
+
+    <a href="/categories/others/" class="others cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-others.png" alt="Others">
+        </div>
+        <span class="cat-text">others</span>
+      </div>
+    </a>
+  </div>
+
+  <div id="main">
+    <div id="content">
+      <div>
+<article class="hentry post" role="article">
+  
+  <header>
+
+
+
+    
+        <div class='windows cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-windows.png" alt="Windows">
+            </div>
+            <a href="/categories/windows/"><span class="cat-text">windows</span></a>
+          </div>
+        </div>
+
+      <h1 class="entry-title">Diving Into the Middle of Windows 8 Consumer Preview (Beta)</h1>
+    
+    
+      <p class="meta">
+
+
+        
+
+
+
+
+
+
+
+
+  
+
+
+<time datetime="2012-03-01T22:06:39+05:30"  data-updated="true">Mar 1<span>st</span>, 2012</time>
+
+
+        
+         | <a href="#disqus_thread" class="comment-count">Comments</a>
+        
+      </p>
+    
+  </header>
+
+
+
+
+
+
+
+<div class="entry-content"><p><img src="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-550x309.jpg" alt="Windows 8 Beta" /></p>
+
+<p>Yesterday night, Microsoft released the <a href="http://cybergnome.com/2012/02/29/windows-8-consumer-preview-is-available-for-download/">Consumer Preview</a> of Windows 8. As promised, this new release comes with a lot of new improvements than the previous <a href="http://techhamlet.com/2011/09/windows-8/">developer preview</a>&hellip; Yesterday I started downloading it and now I have it installed in my laptop. Now, lets see what we have here&hellip;</p>
+
+<h3></h3>
+
+<h3>Fish in the boot screen&hellip;</h3>
+
+<p>Lets start from the boot screen. Windows 7 have a nice animation where four dots get connected to create the Windows logo. It&rsquo;s a big change compared to the old one they used in Vista and XP. In Windows 8, it&rsquo;s going to change again. Now, we see a logo with a fish! Windows have gone fishing?</p>
+
+<h3></h3>
+
+<h3>Online sign in&hellip;</h3>
+
+<p>After the installation, normally, we have to create an account in Windows. In here, we have to create an online account with our email. Then, Windows will sync the settings and metro apps with this account. So, if you sign-up with this account into another Windows 8 machine, you&rsquo;ll get your old settings and apps back. It&rsquo;s just like signing into your <a href="http://techhamlet.com/tag/android/">Android</a> device with your Google account. Remember, Windows is providing all these settings because 8 will also work on mobile devices like Tablets!</p>
+
+<h3></h3>
+
+<h3>Metro UI and the Old Desktop&hellip;</h3>
+
+<p>When you start your machine, you&rsquo;ll end up in Windows 8&rsquo;s new Metro UI (as shown in the top image). This is something which is totally aimed at mobile devices. All the apps are organized in tiles. You need to get used to it because even though they have the old desktop, this is the start menu. There is no start menu in the desktop.</p>
+
+<p><a href="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-desktop.jpg"><img src="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-desktop-550x309.jpg" alt="The Windows 8 Desktop (No Start Menu)" /></a></p>
+
+<h3></h3>
+
+<h3>Metro apps&hellip;</h3>
+
+<p>In <a href="http://techhamlet.com/tag/windows-8/">Windows 8</a>, you have two types of apps. The old kind of apps which we install and run in our desktop and the new ones which are called Metro Apps. They have their own UI. A different kind of buttons, menus, icons&hellip; Simply, those apps were to work in both desktop and mobile environments. To tell you the truth, they are really cool! For example, check out this News republic app :</p>
+
+<p><a href="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-news-republic-metro-app.jpg"><img src="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-news-republic-metro-app-550x309.jpg" alt="News Republic Metro App" /></a></p>
+
+<p>But there&rsquo;s one problem&hellip; There&rsquo;s no close, minimize or maximize buttons! You have to use <strong>Alt+Tab</strong> or <strong>Window key + Tab</strong> to switch between apps. If you want to close them, you have to press <strong>Alt + F4</strong> or they&rsquo;ll be still running when you start your machine next time! How can it be? As we discussed earlier, Windows 8 won&rsquo;t completely shutdown your machine. It will save some of the files in the memory to the hard drive and then turn it off. When you start, it will load faster than before by loading those files into the memory. It&rsquo;s a half hibernate half shutdown. If you want to shut it down completely, go to <strong>&ldquo;Control Panel > Hardware and Sound > Power Options > Choose what power button does&rdquo;</strong> and untick &ldquo;Turn on fast startup&rdquo; (To untick this, you have to click on &ldquo;Change settings that are currently unavailable&rdquo; at the top). If you can&rsquo;t find the control panel, simply press the &ldquo;<strong>Window</strong>&rdquo; key and go to the start menu. Now, start typing &ldquo;<strong>Control Panel</strong>&rdquo; and you&rsquo;ll get what you want&hellip; Search any file, app or a setting in this way!</p>
+
+<p><a href="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-turn-off-fast-startup.jpg"><img src="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-turn-off-fast-startup-550x291.jpg" alt="Turn off fast start-up" /></a></p>
+
+<h3></h3>
+
+<h3>The App Store&hellip;</h3>
+
+<p>In the previous developer preview, Windows had a tile for the App Store but it didn&rsquo;t work. Now they have their app store working on the consumer preview. If you are a Linux user, you might be familiar with this. One single place to choose,install,update and remove apps. Android and iOS also have this feature. I&rsquo;m not sure whether Microsoft copied it from Linux or did it to make things easier in mobile devices. But if im correct, Linux used this concept before anyone else and it make things a lot easier and secure.</p>
+
+<p><a href="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-store.jpg"><img src="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-store-550x309.jpg" alt="Store" /></a></p>
+
+<p><a href="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-installing-apps.jpg"><img src="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-installing-apps-550x309.jpg" alt="Installing Apps" /></a></p>
+
+<h3></h3>
+
+<h3>Some default Metro Apps&hellip;</h3>
+
+<p>Ah, Internet Explorer 10 is now available as a Metro App&hellip; Earlier, <a href="http://techhamlet.com/tag/google-chrome/">Google Chrome</a> started a revolution by taking off the title bar and providing much space as possible for browsing. IE 10 Metro App have gone to the limits. You&rsquo;ll get the address bar at the bottom and when the page is loading, the address bar will auto hide giving all the space to the website. You&rsquo;ll see only a faint scroll bar. If you move your mouse to the left and right corners, you&rsquo;ll see a faint forward and backward buttons. A completely new UI! To get the address bar, simply right-click on the site. But still, as a web developer, I hate Internet Explorer!</p>
+
+<p><a href="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-ie-10-metro.jpg"><img src="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-ie-10-metro-550x309.jpg" alt="IE 10" /></a></p>
+
+<p>Now Windows 8 comes with a cool default Mail App. Since I logged in to Windows using my Gmail address as the live ID, the mail app automatically picked it as the default account. The best part is, it support Gmail without any extra configurations. I just have to give the mail address and the password! It looks like Microsoft is not that evil after all&hellip;</p>
+
+<p><a href="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-mail.jpg"><img src="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-mail-550x309.jpg" alt="Mail" /></a></p>
+
+<p>There are more very useful apps coming installed by default with 8. For example, now you don&rsquo;t have to search for PDF readers&hellip; Windows 8 have its own reader which can be used as a great distraction free e-book reader! I really like that app&hellip;</p>
+
+<p><a href="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-reader.jpg"><img src="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-reader-550x309.jpg" alt="Reader" /></a></p>
+
+<h3></h3>
+
+<h3>The Ribbon&hellip;</h3>
+
+<p>Remember Microsoft introduced a new menu system called Ribbon in Office? Well, now its there in Windows 8&rsquo;s Explorer. Rather than the traditional menus, Ribbon can make things easier to find and it organize things better. I didn&rsquo;t like it in Office because it&rsquo;s so big. But in Windows 8&rsquo;s explorer, its collapsed. It will expand only when you click on it.</p>
+
+<p><a href="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-ribbon.jpg"><img src="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-ribbon-550x309.jpg" alt="Ribbon" /></a></p>
+
+<h3></h3>
+
+<h3>New file copy&hellip;</h3>
+
+<p>As we already know, the Windows file copy have also improved. Now its a bit faster than before on my laptop. But when I test the developer preview on my PC, it performed really fast! That&rsquo;s not all, now you can even pause and resume the file copying process. If they can also add a feature to check the copied files for with the original file to see whether it have been copied correctly, I can safely forget about Terra Copy!</p>
+
+<p><a href="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-file-copy.jpg"><img src="http://techhamlet.com/wp-content/uploads/2012/03/windows-8-file-copy-550x309.jpg" alt="File Copy" /></a></p>
+
+<p>That&rsquo;s only a small summary compared to all the new features which they have introduced in Windows 8. You must <a href="http://cybergnome.com/2012/02/29/windows-8-consumer-preview-is-available-for-download/">try it out yourself </a>to feel the power. But do not replace your existing OS with it and use this as the primary option. This is a beta version so things can break! Try in a virtual machine or install alongside your existing OS.</p>
+
+<p>Now there&rsquo;s a battle going on. Ubuntu also have a lot of new features ready for their upcoming release. They also did a big change to their UI earlier. They also have plans for mobile devices&hellip; So, at the end, who will win?</p>
+
+<p>Once, Linus Torvalds said that Gnome 3 had too many &ldquo;Scary changes&rdquo;. One can say the same thing about Windows 8. Its going to change how you work with the OS. A huge update! Will the users accept it? What do you say? Leave a comment and let us know what you think about this new OS!</p>
+</div>
+
+  
+
+
+
+
+
+
+
+
+
+
+  <footer>
+    <p class="meta auther">
+      <em>~ 
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Pubudu Kodikara</span></span>
+ ~</em>
+    </p>
+
+
+
+
+
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://techhamlet.com/2012/03/diving-into-the-middle-of-windows-8-consumer-preview-beta/" data-via="TechHamlet" data-counturl="http://techhamlet.com/2012/03/diving-into-the-middle-of-windows-8-consumer-preview-beta/" >Tweet</a>
+  
+  
+  <div class="g-plusone" data-size="medium"></div>
+  
+  
+    <div class="fb-like" data-send="true" data-width="450" data-show-faces="false"></div>
+  
+</div>
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/2012/02/myunity-3/" title="Previous Post: MyUnity 3 Comes with a Redesign, New Features and Precise Support">&laquo; MyUnity 3 Comes with a Redesign, New Features and Precise Support</a>
+      
+      
+        <a class="basic-alignment right" href="/2012/03/linus-comments-on-opensuses-security-policy-hes-furious/" title="Next Post: Linus Comments on OpenSUSE's Security Policy! He's Furious!">Linus Comments on OpenSUSE's Security Policy! He's Furious! &raquo;</a>
+      
+    </p>
+  </footer>
+</article>
+
+  <section>
+    <h1 class="comments">Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
+
+</div>
+
+<aside class="sidebar">
+  
+    <section>
+  <h1>Subscribe to us...</h1>
+
+  <a href="/subscribe/" class="social-link" target="_blank">
+	  <div id="mail" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/mail.png" alt="subscribe" class="social-img">
+	  	</div>
+	  	<span class="social-text">email</span>
+	  </div>
+  </a>
+
+</section><section>
+  <h1>Follow us on...</h1>
+
+  <a href="http://www.facebook.com/TechHamlet" class="social-link" target="_blank">
+	  <div id="facebook" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/facebook.png" alt="facebook" class="social-img">
+	  	</div>
+	  	<span class="social-text">facebook</span>
+	  </div>
+  </a>
+
+  <a href="http://plus.google.com/103124674194413904305" class="social-link" target="_blank">
+	  <div id="googleplus" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/googleplus.png" alt="googleplus" class="social-img">
+	  	</div>
+	  	<span class="social-text">google</span>
+	  </div>
+  </a>
+
+  <a href="http://twitter.com/TechHamlet" class="social-link" target="_blank">
+	  <div id="twitter" class="social-box">
+	  	<div class="social-inbox">
+	  		<img src="/images/social/twitter.png" alt="twitter" class="social-img">
+	  	</div>
+	  	<span class="social-text">twitter</span>
+	  </div>
+  </a>
+
+</section><section>
+  <h1>Recent Posts</h1>
+  <ul id="recent_posts">
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/bitdefender-thumb.jpg" alt="Bitdefender 2014 is Released! Its Faster, Lighter and More Secure!"></div>
+
+
+
+
+        <a href="/2013/06/bitdefender-2014-released/">Bitdefender 2014 Is Released! Its Faster, Lighter and More Secure!</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/software-as-a-service-thumb.jpg" alt="A better understanding of Software as a Service"></div>
+
+
+
+
+        <a href="/2013/06/a-better-understanding-of-software-as-a-service/">A Better Understanding of Software as a Service</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/mac-vs-linux-featured.jpg" alt="Mac OS X vs Linux : What is The Best Windows Alternative? Mac or Linux"></div>
+
+
+
+
+        <a href="/2013/06/mac-os-x-vs-linux/">Mac OS X vs Linux : What Is the Best Windows Alternative? Mac or Linux</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/browser-wars-thumb.jpg" alt="Firefox Beats Chrome In Many Ways"></div>
+
+
+
+
+        <a href="/2013/06/firefox-beats-chrome/">Firefox Beats Chrome in Many Ways</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
+          <div class="post-image"><img width="32px" height="32px" src="/images/post-images/2013/06/octopress-thumb.jpg" alt="Just Moved You Are Curious from Wordpress to Octopress!"></div>
+
+
+
+
+        <a href="/2013/06/wordpress-to-octopress/">Just Moved You Are Curious From Wordpress to Octopress!</a>
+      </li>
+    
+  </ul>
+</section><section>
+  <h1>Recent Comments</h1>
+  <div id="dsq-recentcomments" class="dsq-widget"><script type="text/javascript" src="http://disqus.com/forums/tech-hamlet/recent_comments_widget.js?num_rc-items=3&amp;hide_avatars=0&amp;avatar_size=38&amp;excerpt_length=70;"></script></div>
+</section>
+  
+</aside>
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="blog-index">
+
+  
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <footer id="site-footer" role="contentinfo"><div class="container">
+	<div>
+		<p id="links">Our friends : <a href="http://sumagaasapuwa.com/" target="_blank">Sumaga Asapuwa</a> / <a href="http://techlunatic.com/" target="_blank">Tech Lunatic</a> / <a href="http://www.india365.org/" target="_blank">India 365</a> / <a href="http://www.linuxalt.com/" target="_blank">Linux Alternative Project</a>   My Other Site : <a href="http://youarecurio.us/" target="_blank">You Are Curious</a></p>
+	</div>
+
+	<div id="version-copyright">
+		<p id="version">
+			Tech Hamlet (Version 15.0)
+		</p>
+
+		<p>
+		  Copyright &copy; 2009 - 2013 - Tech Hamlet Site Content (All post and page content) -
+		  Sri Lanka (All rights reserved)
+		</p>
+	</div>
+
+
+	<div id="license">
+		<a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="/images/creative-commons.png" /></a><br /><span property="dct:title">Tech Hamlet Site Design</span> by <a target="_blank" href="http://techhamlet.com/" property="cc:attributionName" rel="cc:attributionURL">Tech Hamlet</a> is licensed under a <a target="_blank" rel="license" href="http://creativecommons.org/licenses/by-nc-sa/3.0/deed.en_US">Creative Commons Attribution-NonCommercial-ShareAlike 3.0 Unported License</a>.<br />Powered by <a target="_blank" href="http://octopress.org/" rel="dct:source">Octopress/</a>
+
+
+	</div>
+
+	<br>
+
+	<a href="https://github.com/TechHamlet/TechHamlet.github.io" target="_blank" title="Source"><img src="/images/github.png" alt="Githbu"></a>
+</div>
+</footer>
+  
+
+<script type="text/javascript">
+      var disqus_shortname = 'tech-hamlet';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://techhamlet.com/2012/03/diving-into-the-middle-of-windows-8-consumer-preview-beta/';
+        var disqus_url = 'http://techhamlet.com/2012/03/diving-into-the-middle-of-windows-8-consumer-preview-beta/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) {return;}
+  js = d.createElement(s); js.id = id; js.async = true;
+  js.src = "//connect.facebook.net/en_US/all.js#appId=212934732101925&xfbml=1";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+
+
+  <script type="text/javascript">
+    (function() {
+      var script = document.createElement('script'); script.type = 'text/javascript'; script.async = true;
+      script.src = 'https://apis.google.com/js/plusone.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(script, s);
+    })();
+  </script>
+
+
+
+  <script type="text/javascript">
+    (function(){
+      var twitterWidgets = document.createElement('script');
+      twitterWidgets.type = 'text/javascript';
+      twitterWidgets.async = true;
+      twitterWidgets.src = '//platform.twitter.com/widgets.js';
+      document.getElementsByTagName('head')[0].appendChild(twitterWidgets);
+    })();
+  </script>
+
+
+
+
+
+</body>
+</html>
