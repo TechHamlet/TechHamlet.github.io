@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | Tech Hamlet]]></title>
   <link href="http://techhamlet.com/categories/linux/atom.xml" rel="self"/>
   <link href="http://techhamlet.com/"/>
-  <updated>2013-08-03T17:28:16+05:30</updated>
+  <updated>2013-08-03T18:18:22+05:30</updated>
   <id>http://techhamlet.com/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
@@ -98,70 +98,45 @@
 </ul>
 
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>xrandr</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+xrandr
+{% endcodeblock %}</p>
 
 <ul>
 <li> You will get an output like this :</li>
 </ul>
 
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>pubudu@pc1:~$ xrandr
-</span><span class='line'>Screen 0: minimum 320 x 200, current 3286 x 1080, maximum 32767 x 32767
-</span><span class='line'>VGA1 connected 1366x768+1920+0 (normal left inverted right x axis y axis) 410mm x 230mm
-</span><span class='line'>   1366x768       59.8&lt;em>+
-</span><span class='line'>   1024x768       75.1     70.1     60.0&lt;br/>
-</span><span class='line'>   832x624        74.6&lt;br/>
-</span><span class='line'>   800x600        72.2     75.0     60.3     56.2&lt;br/>
-</span><span class='line'>   640x480        72.8     75.0     66.7     60.0&lt;br/>
-</span><span class='line'>   720x400        70.1&lt;br/>
-</span><span class='line'>HDMI1 connected 1920x1080+0+0 (normal left inverted right x axis y axis) 510mm x 287mm
-</span><span class='line'>   1920x1080      60.0&lt;/em>+   50.0&lt;br/>
-</span><span class='line'>   1680x1050      59.9&lt;br/>
-</span><span class='line'>   1600x900       60.0&lt;br/>
-</span><span class='line'>   1280x1024      75.0     60.0&lt;br/>
-</span><span class='line'>   1440x900       59.9&lt;br/>
-</span><span class='line'>   1280x800       59.9&lt;br/>
-</span><span class='line'>   1152x864       75.0&lt;br/>
-</span><span class='line'>   1280x720       50.0     60.0&lt;br/>
-</span><span class='line'>   1024x768       75.1     70.1     60.0&lt;br/>
-</span><span class='line'>   832x624        74.6&lt;br/>
-</span><span class='line'>   800x600        72.2     75.0     60.3     56.2&lt;br/>
-</span><span class='line'>   720x576        50.0&lt;br/>
-</span><span class='line'>   720x480        59.9&lt;br/>
-</span><span class='line'>   640x480        72.8     75.0     66.7     60.0&lt;br/>
-</span><span class='line'>   720x400        70.1&lt;br/>
-</span><span class='line'>HDMI2 disconnected (normal left inverted right x axis y axis)
-</span><span class='line'>DP1 disconnected (normal left inverted right x axis y axis)
-</span><span class='line'>DP2 disconnected (normal left inverted right x axis y axis)</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+pubudu@pc1:~$ xrandr
+Screen 0: minimum 320 x 200, current 3286 x 1080, maximum 32767 x 32767
+VGA1 connected 1366x768+1920+0 (normal left inverted right x axis y axis) 410mm x 230mm
+   1366x768       59.8<em>+
+   1024x768       75.1     70.1     60.0<br/>
+   832x624        74.6<br/>
+   800x600        72.2     75.0     60.3     56.2<br/>
+   640x480        72.8     75.0     66.7     60.0<br/>
+   720x400        70.1<br/>
+HDMI1 connected 1920x1080+0+0 (normal left inverted right x axis y axis) 510mm x 287mm
+   1920x1080      60.0</em>+   50.0<br/>
+   1680x1050      59.9<br/>
+   1600x900       60.0<br/>
+   1280x1024      75.0     60.0<br/>
+   1440x900       59.9<br/>
+   1280x800       59.9<br/>
+   1152x864       75.0<br/>
+   1280x720       50.0     60.0<br/>
+   1024x768       75.1     70.1     60.0<br/>
+   832x624        74.6<br/>
+   800x600        72.2     75.0     60.3     56.2<br/>
+   720x576        50.0<br/>
+   720x480        59.9<br/>
+   640x480        72.8     75.0     66.7     60.0<br/>
+   720x400        70.1<br/>
+HDMI2 disconnected (normal left inverted right x axis y axis)
+DP1 disconnected (normal left inverted right x axis y axis)
+DP2 disconnected (normal left inverted right x axis y axis)
+{% endcodeblock %}</p>
 
 <ul>
 <li><p>Check the marked lines in the above output (line number 3 and 10). At the start of those lines, you can find the ID of the attached monitors. (In front of attached monitors you will see &ldquo;connected&rdquo;). For me, the IDs of my two monitors are VGA1 and HDMI1. Note them down and also note down the current resolution (in front of the ID and the word &ldquo;connected&rdquo;)</p></li>
@@ -169,24 +144,21 @@
 </ul>
 
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /usr/share/lightdmxrandr.sh</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+sudo gedit /usr/share/lightdmxrandr.sh
+{% endcodeblock %}</p>
 
 <ul>
 <li> Then paste the following code in the file :</li>
 </ul>
 
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;h1>!/bin/sh&lt;/h1>
-</span><span class='line'>
-</span><span class='line'>&lt;p>xrandr &mdash;output HDMI1 &mdash;primary &mdash;mode 1920x1080 &mdash;output VGA1 &mdash;mode 1366x768 &mdash;right-of HDMI1</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}</p>
+
+<h1>!/bin/sh</h1>
+
+<p>xrandr &mdash;output HDMI1 &mdash;primary &mdash;mode 1920x1080 &mdash;output VGA1 &mdash;mode 1366x768 &mdash;right-of HDMI1
+{% endcodeblock %}</p>
 
 <ul>
 <li><p>Replace &ldquo;HDMI1&rdquo; and &ldquo;VGA1&rdquo; with the IDs of your own monitor IDs. Also replace the resolution with your own values. If  you have more monitors, add another part to the end of the second line like &ldquo;&mdash;output VGA2 &mdash;mode 1366x768 &mdash;right-of VGA1&rdquo;. Change the VGA1, VGA2 and the resolutions accordingly.</p></li>
@@ -194,24 +166,27 @@
 </ul>
 
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo chmod a+rx /usr/share/lightdmxrandr.sh</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+sudo chmod a+rx /usr/share/lightdmxrandr.sh
+{% endcodeblock %}</p>
 
 <ul>
 <li> After that, open the lightdm.conf :</li>
 </ul>
 
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /etc/lightdm/lightdm.conf</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+sudo gedit /etc/lightdm/lightdm.conf
+{% endcodeblock %}</p>
 
 <ul>
 <li>And add the following line to the end of the file which will make sure that the system will run our script in the login screen :</li>
 </ul>
 
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>display-setup-script=/usr/share/lightdmxrandr.sh</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+display-setup-script=/usr/share/lightdmxrandr.sh
+{% endcodeblock %}</p>
 
 <ul>
 <li>Finally, reboot your system!</li>
@@ -519,8 +494,9 @@
 </ul>
 
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gnome-shell-extension-prefs &lt;a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#58;&#100;&#97;&#115;&#104;&#45;&#x74;&#111;&#x2d;&#x64;&#x6f;&#x63;&#107;&#64;&#109;&#105;&#99;&#x78;&#103;&#x78;&#46;&#x67;&#109;&#97;&#x69;&#108;&#x2e;&#99;&#111;&#109;">&#100;&#97;&#x73;&#104;&#x2d;&#x74;&#111;&#45;&#100;&#x6f;&#x63;&#x6b;&#64;&#x6d;&#x69;&#99;&#x78;&#x67;&#120;&#x2e;&#x67;&#109;&#97;&#x69;&#108;&#x2e;&#x63;&#111;&#109;&lt;/a></span></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p>{% codeblock %}
+gnome-shell-extension-prefs <a href="&#109;&#97;&#105;&#x6c;&#116;&#x6f;&#x3a;&#100;&#x61;&#115;&#x68;&#45;&#116;&#111;&#45;&#x64;&#111;&#x63;&#107;&#64;&#x6d;&#105;&#x63;&#120;&#x67;&#120;&#46;&#x67;&#109;&#97;&#x69;&#108;&#46;&#x63;&#111;&#109;">&#100;&#x61;&#115;&#x68;&#45;&#116;&#111;&#45;&#100;&#111;&#x63;&#x6b;&#x40;&#x6d;&#x69;&#99;&#x78;&#103;&#x78;&#46;&#103;&#x6d;&#x61;&#105;&#x6c;&#46;&#x63;&#x6f;&#x6d;</a>
+{% endcodeblock %}</p>
 
 <p><img src="http://techhamlet.com/wp-content/uploads/2013/05/dash-to-dock-unity-550x309.jpg" alt="Dash to Gnome" /></p>
 

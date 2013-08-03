@@ -4,7 +4,8 @@
   <title><![CDATA[Tech Hamlet]]></title>
   <link href="http://techhamlet.com/atom.xml" rel="self"/>
   <link href="http://techhamlet.com/"/>
-  <updated>2013-08-03T17:28:16+05:30</updated>
+  <link href="http://techhamlet.superfeedr.com/" rel="hub"/>
+  <updated>2013-08-03T18:06:52+05:30</updated>
   <id>http://techhamlet.com/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
