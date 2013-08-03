@@ -24,7 +24,7 @@ This is the source code for [TechHamlet.com](http://techhamlet.com). It is built
 
 You can edit and share the design (with the layout) or even use it on your own site. But you have to link back to [Tech Hamlet](http://techhamlet.com/) and give some credit to us.
 
-**Tech Hamlet Site Content (All post and page content)** are copy protected! **Copyright © 2009 - 2013 Tech Hamlet - Sri Lanka (All rights reserved)**. You are not allowed to copy any posts from our site. If you do so, Google will immediately add penalties for you (for posting duplicate content) and your web site will go down! So, be-careful!
+**Tech Hamlet Site Content (All post and page content (the original mark down versions))** are copy protected! **Copyright © 2009 - 2013 Tech Hamlet - Sri Lanka (All rights reserved)**. (Don't worry, they are not uploaded to Github. Everything in this Github repository is open and use the above mentioned Creative Commons license!) You are not allowed to copy any posts from our site. If you do so, Google will immediately add penalties for you (for posting duplicate content) and your web site will go down! So, be-careful!
 
 ___
 
