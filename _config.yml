@@ -99,3 +99,6 @@ google_analytics_tracking_id: UA-9918644-3
 
 # Facebook Like
 facebook_like: true
+
+# pubsubhubbub
+hub_url: http://techhamlet.superfeedr.com/

@@ -221,6 +221,19 @@ task :deploy do
 
   Rake::Task[:copydot].invoke(source_dir, public_dir)
   Rake::Task["#{deploy_default}"].execute
+
+
+  # pubsubhubbub ping
+  require 'net/http'
+  require 'uri'
+  hub_url = "http://techhamlet.superfeedr.com" # <--- replace this with your hub
+  atom_url = "http://techhamlet.com/atom.xml" # <--- replace this with your full feed url
+  resp, data = Net::HTTP.post_form(URI.parse(hub_url),
+      {'hub.mode' => 'publish',
+      'hub.url' => atom_url})
+  raise "!! Hub notification error: #{resp.code} #{resp.msg}, #{data}" unless resp.code == "204"
+  puts "## Notified hub (" + hub_url + ") that feed #{atom_url} has been updated"
+  # pubsubhubbub ping end
 end
 
 desc "Generate website and deploy"
