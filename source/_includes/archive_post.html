@@ -11,12 +11,12 @@
 
 	        {% if post.featured == true %}
 
-	          <div class="featured-post-image"><img width="890px" height="280px" src="{{ post.fimage }}" alt="{{ post.title }}"></div>
+	          <div class="featured-post-image"><img width="890" height="280" src="{{ post.fimage }}" alt="{{ post.title }}"></div>
 	          <h1 class="featured entry-title"><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
 
 	        {% else %}
 
-	          <div class="post-image"><img width="204px" height="126px" src="{{ post.fimage }}" alt="{{ post.title }}"></div>
+	          <div class="post-image"><img width="204" height="126" src="{{ post.fimage }}" alt="{{ post.title }}"></div>
 	          <h1 class="entry-title"><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
 
 
