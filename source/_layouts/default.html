@@ -1,0 +1,133 @@
+{% capture root_url %}{{ site.root | strip_slash }}{% endcapture %}
+{% include head.html %}
+<body {% if page.body_id %} id="{{ page.body_id }}" {% endif %} {% if page.sidebar == false %} class="no-sidebar" {% endif %} {% if page.sidebar == 'collapse' or site.sidebar == 'collapse' %} class="collapse-sidebar sidebar-footer" {% endif %}>
+  <header role="banner" id="main-header">{% include header.html %}</header>
+
+  <div id="logo-cat">
+
+    <div id="logo-img">
+
+    <img class="logo" src="/images/th-logo.png" alt="Tech Hamlet Logo">
+
+    </div>
+
+    <a href="/categories/android/" class="android cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-android.png" alt="Android">
+        </div>
+        <span class="cat-text">android</span>
+      </div>
+    </a>
+
+    <a href="/" class="all cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-all.png" alt="All">
+        </div>
+        <span class="cat-text">all</span>
+      </div>
+    </a>
+
+    <a href="/categories/windows/" class="windows cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-windows.png" alt="Windows">
+        </div>
+        <span class="cat-text">windows</span>
+      </div>
+    </a>
+
+
+
+
+    <a href="/categories/web/" class="web cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-web.png" alt="Web">
+        </div>
+        <span class="cat-text">web</span>
+      </div>
+    </a>
+
+    <a href="/categories/linux/" class="linux cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-linux.png" alt="Linux">
+        </div>
+        <span class="cat-text">linux</span>
+      </div>
+    </a>
+
+    <a href="/categories/others/" class="others cat-link">
+      <div class="cat-box">
+        <div class="cat-inbox">
+          <img class="cat-img" src="/images/cat/cat-others.png" alt="Others">
+        </div>
+        <span class="cat-text">others</span>
+      </div>
+    </a>
+  </div>
+
+  <div id="main">
+    <div id="content">
+      {{ content | expand_urls: root_url }}
+
+
+
+
+
+
+
+
+<!-- <div class="blog-index">
+
+  {% for post in paginator.posts %}
+      {% if post.tags contains 'old' %}
+      <ul>
+          <li><a href="{{ post.url }}" class="old">{{ post.title }}</a></li>
+      </ul>
+
+          
+      {% else %}
+
+
+
+
+      <article>
+      	<header>
+      <h1 class="entry-title"><a href="{{ post.url }}" >{{ post.title }}</a></li></h1>
+		<p class="meta"></p> 
+</header>
+          
+<div class="entry-content">
+{{ post.content }}
+</div>
+</article>
+
+
+
+
+      {% endif %}
+  {% endfor %}
+</div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+  </div>
+  <footer id="site-footer" role="contentinfo">{% include footer.html %}</footer>
+  {% include after_footer.html %}
+</body>
+</html>

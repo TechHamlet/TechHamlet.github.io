@@ -1,0 +1,106 @@
+{% unless page.no_header %}
+  <header>
+
+
+
+    {% if index %}
+
+
+        <div class='{{ post.categories | downcase | remove:'["' | remove:'"]' }} cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-{{ post.categories | downcase | remove:'["' | remove:'"]' }}.png" alt="{{ post.categories }}">
+            </div>
+            <span class="cat-text">{{ post.categories | downcase | remove:'["' | remove:'"]' }}</span>
+          </div>
+        </div>
+
+      {% if post.fimage contains '/' %}
+
+        {% if post.featured == true %}
+
+          <div class="featured-post-image"><img width="890px" height="280px" src="{{ post.fimage }}" alt="{{ post.title }}"></div>
+          <h1 class="featured entry-title"><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
+
+        {% else %}
+
+          <div class="post-image"><img width="204px" height="126px" src="{{ post.fimage }}" alt="{{ post.title }}"></div>
+          <h1 class="entry-title"><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
+
+
+        {% endif %}
+
+        
+        
+
+      {% else %}
+
+        <h1 class="entry-title"><a href="{{ root_url }}{{ post.url }}">{% if site.titlecase %}{{ post.title | titlecase }}{% else %}{{ post.title }}{% endif %}</a></h1>
+
+      {% endif %}
+      
+    {% else %}
+        <div class='{{ page.categories | downcase | remove:'["' | remove:'"]' }} cat-link post'>
+          <div class="cat-box">
+            <div class="cat-inbox">
+              <img class="cat-img" src="/images/cat/cat-{{ page.categories | downcase | remove:'["' | remove:'"]' }}.png" alt="{{ page.categories }}">
+            </div>
+            <a href="/categories/{{ page.categories | downcase | remove:'["' | remove:'"]' }}/"><span class="cat-text">{{ page.categories | downcase | remove:'["' | remove:'"]' }}</span></a>
+          </div>
+        </div>
+
+      <h1 class="entry-title">{% if site.titlecase %}{{ page.title | titlecase }}{% else %}{{ page.title }}{% endif %}</h1>
+    {% endif %}
+    {% unless page.meta == false %}
+      <p class="meta">
+
+
+        {% include post/date.html %}{{ time }}
+
+
+        {% if site.disqus_short_name and page.comments != false and post.comments != false and site.disqus_show_comment_count == true %}
+         | <a href="{% if index %}{{ root_url }}{{ post.url }}{% endif %}#disqus_thread" class="comment-count">Comments</a>
+        {% endif %}
+      </p>
+    {% endunless %}
+  </header>
+{% endunless %}
+
+
+
+
+
+{% if index %}
+
+
+
+
+     <p class="excerpt">{{ post.content | strip_html | truncatewords: 30 }}</p>
+
+      <footer>
+        <a class="read-on" href="{{ root_url }}{{ post.url }}">{{ site.excerpt_link }}</a>
+      </footer>
+
+
+
+
+
+
+
+
+
+
+
+  {% else %}
+<div class="entry-content">{{ content }}</div>
+
+  {% endif %}
+
+
+
+
+
+
+
+
+

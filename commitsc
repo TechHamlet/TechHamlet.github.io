@@ -1,0 +1,81 @@
+#!/bin/bash
+#
+
+if [ -z "$1" ]; then
+	echo "Please add a messege"
+else
+
+	if [ -z "$2" ]; then
+
+		echo "################## Commiting Tech Hamlet Source and Content ##################"
+
+
+		echo "################## / #########################################################"
+		git add --all .
+		git commit -a -m "$1"
+
+
+		echo "################## source/_posts #############################################"
+		cd source/_posts
+		git add --all .
+		git commit -a -m "$1"
+		cd ../..
+
+
+		echo "################## source/images/post-images #################################"
+		cd source/images/post-images
+		git add --all .
+		git commit -a -m "$1"
+		cd ../../..
+
+
+		echo "################## source/wp-content #########################################"
+		cd source/wp-content
+		git add --all .
+		git commit -a -m "$1"
+		cd ../..
+
+
+		echo "################## source/about ##############################################"
+		cd source/about
+		git add --all .
+		git commit -a -m "$1"
+		cd ../..
+
+
+		echo "################## source/contact ############################################"
+		cd source/contact
+		git add --all .
+		git commit -a -m "$1"
+		cd ../..
+
+
+		echo "################## source/privacy-policy #####################################"
+		cd source/privacy-policy
+		git add --all .
+		git commit -a -m "$1"
+		cd ../..
+
+
+		echo "################## source/subscribe ##########################################"
+		cd source/subscribe
+		git add --all .
+		git commit -a -m "$1"
+		cd ../..
+
+
+		echo "################## source/logo ###############################################"
+		cd source/logo
+		git add --all .
+		git commit -a -m "$1"
+		cd ../..
+
+
+		echo "################## Commiting Tech Hamlet Source and Content complete! ########"
+
+	else
+
+		echo "Please add one argument within inverted commas"
+
+	fi
+fi
