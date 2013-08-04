@@ -17,6 +17,10 @@ This is the source code for [TechHamlet.com](http://techhamlet.com). It is built
 
 * The current major problem I'm facing is the long archive pages! Octopress doesn't paginate category and archive pages. In my blog archive, I have nearly 1,500 posts! If any one know how to fix it, [please let me know](http://techhamlet.com/contact/)
 
+###Report any issues :
+
+If you find any issues in our website you can report them here : [https://github.com/TechHamlet/TechHamlet.github.io/issues](https://github.com/TechHamlet/TechHamlet.github.io/issues). Please do not add issues regarding post content like link removal requests and reports about wrong information. For those, you can send us an email (to the above mentioned email). **Only add issues regarding the site layout, design and functionality.**
+
 
 ###License
 
