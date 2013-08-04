@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Web | Tech Hamlet]]></title>
   <link href="http://techhamlet.com/categories/web/atom.xml" rel="self"/>
   <link href="http://techhamlet.com/"/>
-  <updated>2013-08-04T22:09:17+05:30</updated>
+  <updated>2013-08-04T22:45:50+05:30</updated>
   <id>http://techhamlet.com/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
@@ -52,7 +52,8 @@
 </ul>
 
 
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"></pre></td><td class='code'><pre><code class=''></code></pre></td></tr></table></div></figure></notextile></div></p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>post.content | strip_html | truncatewords: 30</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ul>
 <li>One of the best things about Octopress is that you can get free hosting on Github. But there&rsquo;s a problem&hellip; If you upload the source to Github (Free account), anyone can get your posts easily (Thats what I think. Im not sure). You can push the source to a different place like Bitbucket. But it won&rsquo;t make the source open. So, I pushed the posts, pages and their images to my private repository in Bitbucket and left the source in Github. This bring another problem. You need to push the source, pages, posts and images separately to their own origins which can become a big headache. But, I created two scripts to <strong>commit</strong> and <strong>push</strong>. To take care of all the repositories from one script. I will write about it in <a href="http://techhamlet.com/">Tech Hamlet</a> in the near future. (They are not included in the source).</li>
