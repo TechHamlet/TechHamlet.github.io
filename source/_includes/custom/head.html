@@ -3,7 +3,7 @@
 <link href='http://fonts.googleapis.com/css?family=Comfortaa:400,700' rel='stylesheet' type='text/css'>
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
 <meta property="og:type" content="{% if page.title %}{% if page.title contains 'Category' or page.title contains 'Archive' %}website{% else %}article{% endif %}{% else %}website{% endif %}" />
-<meta property="og:image" content="{% if page.fimage %}{{ site.url }}{{ page.fimage }}{% else %}{{ site.url }}/images/th-logo.png{% endif %}" />
+<meta property="og:image" content="{% if page.fimage %}{{ site.url }}{{ page.fimage }}{% else %}{{ site.url }}/images/default-logo.jpg{% endif %}" />
 <meta property="og:url" content="{{ canonical }}" />
 
 {% if page.title %}
