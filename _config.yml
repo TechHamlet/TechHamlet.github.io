@@ -2,7 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-url: http://techhamlet.com
+url: http://techhamlet.com #Do not add the trailing /
 title: Tech Hamlet
 subtitle: Our Big World into a Small Tech Hamlet
 author: Pubudu Kodikara
