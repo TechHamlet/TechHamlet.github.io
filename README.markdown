@@ -11,6 +11,7 @@ This is the source code for [TechHamlet.com](http://techhamlet.com). It is built
 {{ post.content | strip_html | truncatewords: 30 }}
 
 * One of the best things about Octopress is that you can get free hosting on Github. But there's a problem... If you upload the source to Github (Free account), anyone can get your posts easily (Thats what I think. Im not sure). You can push the source to a different place like Bitbucket. But it won't make the source open. So, I pushed the posts, pages and their images to my private repository in Bitbucket and left the source in Github. This bring another problem. You need to push the source, pages, posts and images separately to their own origins which can become a big headache. But, I created two scripts to **commit** and **push**. To take care of all the repositories from one script. I will write about it in [Tech Hamlet](http://techhamlet.com/) in the near future. (They are not included in the source).
+* Auto generated open graph meta tags for each and every page
 * And there are some more tiny things I added...
 
 ####Major problems :
