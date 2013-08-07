@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | Tech Hamlet]]></title>
   <link href="http://techhamlet.com/categories/linux/atom.xml" rel="self"/>
   <link href="http://techhamlet.com/"/>
-  <updated>2013-08-07T20:01:56+05:30</updated>
+  <updated>2013-08-07T21:18:05+05:30</updated>
   <id>http://techhamlet.com/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
@@ -12,6 +12,104 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Get High Quality Font Rendering in Linux with Infinality!]]></title>
+    <link href="http://techhamlet.com/2013/08/infinality-linux-font-rendering/"/>
+    <updated>2013-08-07T20:52:00+05:30</updated>
+    <id>http://techhamlet.com/2013/08/infinality-linux-font-rendering</id>
+    <content type="html"><![CDATA[<p>Several years ago when I was trying Linux for the first time, I faced a hard time staring at the default system fonts. When compare to Windows, they were ugly! I even tried installing Windows fonts on Linux and replacing the default system fonts with the exact same versions used in Windows. But still it looked bad! Then I fiddled with other font settings like font Hinting, Aliasing&hellip; But nothing helped! Why? The problem is not with the fonts, its with the font rendering!</p>
+
+<p><img src="/images/post-images/2013/08/fonts.jpg" alt="Fonts" /></p>
+
+<p>Our operating systems use a separate module to render fonts. Its duty is to get the font file and display it to the user. In many Linux distributions, by default the system doesn&rsquo;t handle font rendering well. We see jagged low quality fonts. If you are coming from Windows, you&rsquo;ll clearly see the difference. If you are coming from Mac, you&rsquo;ll know the difference on the first look! Mac and Windows have very good font rendering systems and.. Linux have solutions for almost any problem!</p>
+
+<p>If you are using Ubuntu or any other distribution base on Ubuntu (like Linux Mint and Elementary OS), you won&rsquo;t feel the difference. Ubuntu apply their own patches to the default font rendering system so their fonts look extremely good. But if you want to improve it further or if you are coming from another Linux distribution, here&rsquo;s a solution&hellip;</p>
+
+<h2>Infinality &hellip;</h2>
+
+<p><a href="http://www.infinality.net/blog/">Infinality</a> is a set of patches made to improve freetype2 font rendering in Linux. It automatically adjust settings like hinting and subpixel rendering to give the best quality fonts for you.</p>
+
+<blockquote><p>The purpose of these patches is to freely provide the nicest font rendering of any operating system. The second goal is to provide customization so that the end user is able to adjust the settings to his or her taste.</p></blockquote>
+
+<h2>How to install Infinality &hellip;</h2>
+
+<h3>On Arch Linux :</h3>
+
+<ul>
+<li>Make sure you have <a href="https://wiki.archlinux.org/index.php/Yaourt">Yaourt</a> installed</li>
+<li>Next install Infinality with the following commands :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo yaourt freetype2-git-infinality
+</span><span class='line'>sudo yaourt fontconfig-infinality-git</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>**If you have a 64bit system, you also have to install this :</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo yaourt lib32-freetype2-git-infinality</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li>Finally, use this command to choose what style you need (choose from debug, Linux, OSx2, OSx, Win98, WinXP, Win7 and Infinality) :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo infctl setstyle</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>On Ubuntu :</h3>
+
+<ul>
+<li>You can install Infinality in Ubuntu with these commands :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo add-apt-repository ppa:no1wantdthisname/ppa
+</span><span class='line'>sudo apt-get update
+</span><span class='line'>sudo apt-get upgrade
+</span><span class='line'>sudo apt-get install fontconfig-infinality</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li>Finally, use this command to select a style :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo bash /etc/fonts/infinality/infctl.sh setstyle</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h3>On Fedora :</h3>
+
+<ul>
+<li>You can find instructions on how to install these patches in Fedora on this <a href="http://www.infinality.net/forum/viewtopic.php?f=2&amp;t=77">page</a></li>
+</ul>
+
+
+<h3>On Debian :</h3>
+
+<ul>
+<li>Here are the instructions <a href="http://forums.debian.net/viewtopic.php?f=16&amp;t=88545">for Debian</a></li>
+</ul>
+
+
+<h3>On all systems&hellip;</h3>
+
+<ul>
+<li>After you are done installing, log off and login for the changes to take effect.</li>
+</ul>
+
+
+<p>Did it work? If not, please let us know!</p>
+
+<p><em><strong>Image Source :</strong></em> <a href="http://www.flickr.com/photos/tarale/2897185492/">Taryn</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Mac OS X vs Linux : What is The Best Windows Alternative? Mac or Linux]]></title>
@@ -496,35 +594,6 @@
 <p>The shortcut will take you to a separate browser window which will open the Evernote web app. You have installed Evernote for Linux ! But this browser window won&rsquo;t have an address bar. Only Evernote. It&rsquo;s like an Evernote native app. But the only issue you will face is the absence of offline access. You need be connected to the Internet in order to use this. But today most of us always have a connection. So, for many this won&rsquo;t be a problem.</p>
 
 <p>This might be the only way to get official app of Evernote for Linux. Lets hope that they&rsquo;ll understand the power of Linux in the future and create a native Linux app. Until then, this might work for you.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Add a Unity Like Dash to Gnome Desktop : No Need to go to the Overview]]></title>
-    <link href="http://techhamlet.com/2013/05/dash-to-gnome-desktop/"/>
-    <updated>2013-05-31T19:47:44+05:30</updated>
-    <id>http://techhamlet.com/2013/05/dash-to-gnome-desktop</id>
-    <content type="html"><![CDATA[<p><img src="http://techhamlet.com/wp-content/uploads/2013/05/dash-to-dock-550x385.jpg" alt="Dash to Gnome" /></p>
-
-<p>One of the biggest annoyances we have in Gnome Shell is the need to go to the overview by hovering the mouse over the top left corner of the screen every time we need to deal with open or new apps. In Unity, we always have the dash. In old systems, we always had the panel. To resolve the common issues in Gnome Shell, we have Shell Extensions. So, is there an extension that can save our lives? There is one good extension that can add a dash to Gnome desktop!</p>
-
-<p>The Gnome Shell extension Dash to Dock will add a cool dash to Gnome desktop. Unlike the dash which comes out when you go to the overview, this dash won&rsquo;t hide itself in the desktop. It will hide only if you open a maximized app. Then it will hide to give space to the window. You also can edit this dash&rsquo;s settings to prevent it from hiding. You can even make it look exactly like Unity! A Unity Dash to Gnome desktop without installing Unity!</p>
-
-<h3>How To add a Dash to Gnome desktop :</h3>
-
-<ul>
-<li><p>Open Chrome or Firefox and visit this URL : <a href="https://extensions.gnome.org/extension/307/dash-to-dock/">https://extensions.gnome.org/extension/307/dash-to-dock/</a></p></li>
-<li><p>Now, simply, put the switch right next to the title of the extension to enable (switch on) the extension</p></li>
-<li><p>To edit the settings of the dash, open the terminal and issue the following command :</p></li>
-</ul>
-
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gnome-shell-extension-prefs &lt;a href="&#109;&#x61;&#x69;&#x6c;&#x74;&#111;&#x3a;&#x64;&#x61;&#x73;&#x68;&#x2d;&#116;&#x6f;&#45;&#x64;&#111;&#x63;&#x6b;&#64;&#109;&#105;&#99;&#x78;&#x67;&#120;&#46;&#x67;&#109;&#97;&#105;&#108;&#x2e;&#x63;&#x6f;&#109;">&#100;&#x61;&#x73;&#x68;&#45;&#x74;&#x6f;&#x2d;&#100;&#x6f;&#99;&#107;&#x40;&#109;&#105;&#x63;&#120;&#x67;&#120;&#x2e;&#x67;&#109;&#x61;&#x69;&#108;&#x2e;&#x63;&#x6f;&#109;&lt;/a></span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<p><img src="http://techhamlet.com/wp-content/uploads/2013/05/dash-to-dock-unity-550x309.jpg" alt="Dash to Gnome" /></p>
-
-<p>There are plenty of settings for you to play with. But be careful about what you change. Remember that the Unity like Dash to Gnome is buggy. So, try your best to avoid using it. Most of the Gnome Shell users will gladly accept this Dash because many hate to waste time by always going to the overview. I really hated that and later came back to Ubuntu and Unity! So, try it and let me know what you think about the new Dash to Gnome extension!</p>
 ]]></content>
   </entry>
   

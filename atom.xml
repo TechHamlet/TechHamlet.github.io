@@ -5,7 +5,7 @@
   <link href="http://techhamlet.com/atom.xml" rel="self"/>
   <link href="http://techhamlet.com/"/>
   <link href="http://techhamlet.superfeedr.com/" rel="hub"/>
-  <updated>2013-08-07T20:01:56+05:30</updated>
+  <updated>2013-08-07T21:18:05+05:30</updated>
   <id>http://techhamlet.com/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
@@ -13,6 +13,109 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Get High Quality Font Rendering in Linux with Infinality!]]></title>
+    <link href="http://techhamlet.com/2013/08/infinality-linux-font-rendering/"/>
+    <updated>2013-08-07T20:52:00+05:30</updated>
+    <id>http://techhamlet.com/2013/08/infinality-linux-font-rendering</id>
+    <content type="html"><![CDATA[<p>Several years ago when I was trying Linux for the first time, I faced a hard time staring at the default system fonts. When compare to Windows, they were ugly! I even tried installing Windows fonts on Linux and replacing the default system fonts with the exact same versions used in Windows. But still it looked bad! Then I fiddled with other font settings like font Hinting, Aliasing&hellip; But nothing helped! Why? The problem is not with the fonts, its with the font rendering!</p>
+
+<p><img src="http://techhamlet.com/images/post-images/2013/08/fonts.jpg" alt="Fonts" /></p>
+
+<p>Our operating systems use a separate module to render fonts. Its duty is to get the font file and display it to the user. In many Linux distributions, by default the system doesn&rsquo;t handle font rendering well. We see jagged low quality fonts. If you are coming from Windows, you&rsquo;ll clearly see the difference. If you are coming from Mac, you&rsquo;ll know the difference on the first look! Mac and Windows have very good font rendering systems and.. Linux have solutions for almost any problem!</p>
+
+<p>If you are using Ubuntu or any other distribution base on Ubuntu (like Linux Mint and Elementary OS), you won&rsquo;t feel the difference. Ubuntu apply their own patches to the default font rendering system so their fonts look extremely good. But if you want to improve it further or if you are coming from another Linux distribution, here&rsquo;s a solution&hellip;</p>
+
+<h2>Infinality &hellip;</h2>
+
+<p><a href="http://www.infinality.net/blog/">Infinality</a> is a set of patches made to improve freetype2 font rendering in Linux. It automatically adjust settings like hinting and subpixel rendering to give the best quality fonts for you.</p>
+
+<blockquote><p>The purpose of these patches is to freely provide the nicest font rendering of any operating system. The second goal is to provide customization so that the end user is able to adjust the settings to his or her taste.</p></blockquote>
+
+<h2>How to install Infinality &hellip;</h2>
+
+<h3>On Arch Linux :</h3>
+
+<ul>
+<li>Make sure you have <a href="https://wiki.archlinux.org/index.php/Yaourt">Yaourt</a> installed</li>
+<li>Next install Infinality with the following commands :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo yaourt freetype2-git-infinality
+</span><span class='line'>sudo yaourt fontconfig-infinality-git</span></code></pre></td></tr></table></div></figure>
+
+
+<p>**If you have a 64bit system, you also have to install this :</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo yaourt lib32-freetype2-git-infinality</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Finally, use this command to choose what style you need (choose from debug, Linux, OSx2, OSx, Win98, WinXP, Win7 and Infinality) :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo infctl setstyle</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>On Ubuntu :</h3>
+
+<ul>
+<li>You can install Infinality in Ubuntu with these commands :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo add-apt-repository ppa:no1wantdthisname/ppa
+</span><span class='line'>sudo apt-get update
+</span><span class='line'>sudo apt-get upgrade
+</span><span class='line'>sudo apt-get install fontconfig-infinality</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Finally, use this command to select a style :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo bash /etc/fonts/infinality/infctl.sh setstyle</span></code></pre></td></tr></table></div></figure>
+
+
+<h3>On Fedora :</h3>
+
+<ul>
+<li>You can find instructions on how to install these patches in Fedora on this <a href="http://www.infinality.net/forum/viewtopic.php?f=2&amp;t=77">page</a></li>
+</ul>
+
+
+<h3>On Debian :</h3>
+
+<ul>
+<li>Here are the instructions <a href="http://forums.debian.net/viewtopic.php?f=16&amp;t=88545">for Debian</a></li>
+</ul>
+
+
+<h3>On all systems&hellip;</h3>
+
+<ul>
+<li>After you are done installing, log off and login for the changes to take effect.</li>
+</ul>
+
+
+<p>Did it work? If not, please let us know!</p>
+
+<p><em><strong>Image Source :</strong></em> <a href="http://www.flickr.com/photos/tarale/2897185492/">Taryn</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Tech Hamlet 15 : No WordPress! Faster... Clean.. And Much Better!]]></title>
@@ -921,37 +1024,6 @@
 <p>Whilst the previous two areas can’t be ignored, at the same time it’s vital for businesses to maintain traditional means of communication, and to do this you need the best connectivity. The fact is, the internet is continually changing, so in order to keep ahead of the curve, you need to look to services that will increase its productivity even further. For example, products such as business broadband and Ethernet are simple ways to get your SME up to speed and performing to the highest quality.</p>
 
 <p>1 Geared for Growth White Paper- <a href="http://www.talktalkbusiness.co.uk/Global/Final-Assets/Collateral/white_papers/Geared%20for%20Growth%20-%20Report.pdf">http://www.talktalkbusiness.co.uk/Global/Final-Assets/Collateral/white_papers/Geared%20for%20Growth%20-%20Report.pdf</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Are Desktop Computers A Dying Tech?]]></title>
-    <link href="http://techhamlet.com/2013/05/are-desktop-computers-a-dying-tech/"/>
-    <updated>2013-05-30T08:25:45+05:30</updated>
-    <id>http://techhamlet.com/2013/05/are-desktop-computers-a-dying-tech</id>
-    <content type="html"><![CDATA[<p>With smart phones and tablets top of consumer wish lists, the decline of desktop computers has spiked since the turn of the year. We all thought it was a slow drop but it’s actually faster than anyone educated guesses. Sales have taken a 14% hit, so that’s it right? The desktop is dying?</p>
-
-<p><img src="http://techhamlet.com/wp-content/uploads/2013/05/desktop-computer-550x366.jpg" alt="Desktop Computers" /> <em>Image source : <a href="http://www.flickr.com/photos/27745117@N00/4319320763/">Hannaford</a></em></p>
-
-<h3>The competition</h3>
-
-<p>In 2013, tablets are due to outsell laptops for the first time in history. Not surprising as they can do both jobs and the desktop is clinging on for dear life. It is the transition to mobile devices that PC developers haven’t been able to understand or leverage. In fact, Windows 8 will probably be remembered as one of the final nails in the coffin of the desktop.</p>
-
-<h3>The problem with Windows 8</h3>
-
-<p>In a desperate effort to join the mobile revolution, radical changes were made as Windows looked to introduce touch base and remove the familiar start button. But, why would a consumer buy an expensive computer when a tablet is sufficient for many of the tasks they will be working on?</p>
-
-<h3>Living together</h3>
-
-<p>While it is obvious that tablets are the main reason for this decline, can we really do everything from there? Sophisticated keyboards mean that emails and even documents can be done on tablets and wireless printers mean we can get copies from anywhere, but there are still more creative, heavy and administrative tasks that we need a PC for. The experts believe that PCs won’t completely disappear but they need to get to flatline point where tablets are the primary consumption and PCs find their market as a shared heavy duty option in some homes – probably significantly cheaper.</p>
-
-<h3>Who’s still buying desktop computers?</h3>
-
-<p>Much like horse and cart to cars between the late 19th and early 20th centuries, desktops and tablets will have a turbulent relationship until ultimately both shares improve in value. Right now it’s quality over quantity for the desktop buyers with people wanting specialist gear for gaming, web development etc.</p>
-
-<h3>Vision for desktops</h3>
-
-<p>If you’re going to <a href="http://www.musicmagpie.co.uk/sell-my-laptop/index_laptop.asp">sell your laptop for cash</a>, it shouldn’t be for a desktop because it is a state of flux that might last for months or years yet. Major efforts need to be made in bringing them to the fore. Cases have to be revamped, towers need to be revitalised while monitors should always be as big as possible. It is all about which visionary can find a way to pair smartphones, tablets and desktops together in order to save and regenerate the market for desktops.</p>
 ]]></content>
   </entry>
   
