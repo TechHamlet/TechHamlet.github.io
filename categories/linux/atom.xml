@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | Tech Hamlet]]></title>
   <link href="http://techhamlet.com/categories/linux/atom.xml" rel="self"/>
   <link href="http://techhamlet.com/"/>
-  <updated>2013-08-07T21:18:05+05:30</updated>
+  <updated>2013-08-14T21:24:30+05:30</updated>
   <id>http://techhamlet.com/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
@@ -12,6 +12,75 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Elementary OS Luna is Released! Fast, Beautiful, Clean and its Linux!]]></title>
+    <link href="http://techhamlet.com/2013/08/elementary-os-luna/"/>
+    <updated>2013-08-14T21:04:00+05:30</updated>
+    <id>http://techhamlet.com/2013/08/elementary-os-luna</id>
+    <content type="html"><![CDATA[<p>After nearly 2 years of development, they have just released the final stable version of Elementary OS Luna ! Its main aim is to build a more beautiful, elegant, consistent, fast, and a stable Linux operating system. I think they have succeeded! Many Linux fans waited anxiously for the release of Elementary OS Luna&hellip;</p>
+
+<p><img src="/images/post-images/2013/08/elementary-os-luna.jpg" alt="My Elementary OS Luna Desktop" /></p>
+
+<h2>Its built on Ubuntu 12.04!</h2>
+
+<p>Elementary team built Luna on Ubuntu 12.04. Why 12.04 and not the latest 13.04? The 12.04 version of Ubuntu is the LTS version. LTS (Long Term Support) releases are the most stable releases of Ubuntu and they are supported for a very long time than the others. Others are considered as experimental builds used by the developers to test new features. The Elementary OS team wanted to make their OS extremely stable. So, they picked <a href="http://techhamlet.com/2012/04/things-to-do-after-installing-ubuntu-12-04-the-start/">Ubuntu 12.04</a>. This will make them very stable but it also have a down side! Ubuntu 12.04 was released on April 2012. Its older than a year and it have pretty old software. Those software receive security updates and bug fixes. But no new features.</p>
+
+<h2>It is really fast&hellip;</h2>
+
+<iframe width="640" height="480" src="http://techhamlet.com//www.youtube.com/embed/3kvmyDR7FCo?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+<p>See? How fast it can get? This is only a beta version. The latest stable version they just released is much better. Elementary team have done a lot of optimizations to bring up the speeds. They did this by their own code and by using several programs like <code>preload</code>. Preload will load your most used programs into the memory so they will load quickly. But there&rsquo;s a catch&hellip; Sometimes your previous work will or will not be saved. The browser might sometimes keep your previous settings but the Terminal sometimes loose them. It even loose the history and the preferences. But you can simply disable preload and things will still work fast!</p>
+
+<h2>Elementary OS Luna have custom built apps&hellip;</h2>
+
+<p>They have a lot of custom built apps to replace the existing ones. For example, there&rsquo;s no Gedit, they use their own app Scratch for note editing. They use their own shell Pantheon, their own dock Plank which is based on Docky, their own settings panel Switchboard, Wing Panel as the top panel, Pantheon Greeter will replace the login screen, their own Pantheon file manager and many more&hellip; These custom apps are more lighter than their counterparts. But sometimes they might lack some important features that we are used to. For example, I like clean and simple apps. Elementary OS Luna &rsquo;s text editor is also elegant and I like it. But still it doesn&rsquo;t have the features I need and I went back to Sublime. I also like their music app Music (Formerly Noise) but I went back to Clementine. But most of the other apps are really cool. Because they are so good, some of them have been already ported to work on other distributions like <a href="http://techhamlet.com/2012/03/install-arch-linux-on-your-machine/">Arch</a> and on latest versions of Ubuntu.</p>
+
+<h2>Great consistent design and a guide for developers on how to keep the consistency!</h2>
+
+<p>Elementary OS Luna have a very consistent design. I think its even better than Apple&rsquo;s consistency (I&rsquo;m not saying Apple have better looks. <a href="http://techhamlet.com/2013/06/mac-os-x-vs-linux/">Mac have old looks</a>). The Elementary team doesn&rsquo;t stop there&hellip; They also want every one who build apps for their OS to follow their designs. They have special guidelines for developers on how to make their user interfaces. But the problem is, many people won&rsquo;t develop apps specifically for Elementary. Its not that popular yet and there are many more popular <a href="http://techhamlet.com/categories/linux/">Linux</a> distributions they have to pass. If they come to the top, their guideline might become a standard. Even without that I think its a good idea if all major Linux distributions get together and define a specific set of UI guidelines. Things are scattered in Linux. Elementary OS Luna is a very good start!</p>
+
+<h2>Less customizeability&hellip;</h2>
+
+<p>Luna is well built and have a very good design. Some people won&rsquo;t need anything beyond it. But some need customization. If we doesn&rsquo;t want customizations and want the same old look, feel, ways, we all might use Mac. But Linux is meant for adventurous people who need innovation and a system built for their own tastes. But Elementary OS Luna is a bit less customizeable. No many settings to change things. You can use the conf editors (<code>dconf</code> or <code>gconf</code>) but its not enough. Elementary is not completely like Mac. Even though they restrict customization, they encourage third-party plugins to do this job. I think its not bad. But since the OS is still new, there are no many plugins available. I think it might be solved soon.</p>
+
+<h2>Final thoughts&hellip;</h2>
+
+<iframe width="640" height="360" src="http://techhamlet.com//www.youtube.com/embed/pWoo4xv-qoA?rel=0" frameborder="0" allowfullscreen></iframe>
+
+
+<p>Elementary OS Luna is a great OS and its a new beginning. A new branch in Linux. Many Linux branches focus on areas like Security, Stability, Being Bleeding edge, Customizeability, etc&hellip; But less people have done so much for the UI&hellip; The design&hellip; Linux is not a developer only OS. Even the most novice users use it because its more user friendly than any other OS in the planet. But many distros doesn&rsquo;t focus on them. Elementary OS Luna is built for both developers and novice users. Out-of the box you&rsquo;ll get what you want. A developer also need an out of the box solution sometimes. Many need them because they don&rsquo;t have time to custom build their systems. They need something that work. Not to spend time hacking! You can hack Elementary OS if you want to&hellip; There&rsquo;s no restriction. So I think its suited for everyone! Here&rsquo;s a quick roundup of Elementary OS Luna :</p>
+
+<p><strong>Pros :</strong></p>
+
+<ul>
+<li>Great design (Clean, Beautiful, etc)</li>
+<li>Consistent</li>
+<li>Fast</li>
+<li>Stable</li>
+<li>Easy to use and learn</li>
+<li>Extremely user friendly</li>
+</ul>
+
+
+<p><strong>Cons :</strong></p>
+
+<ul>
+<li>Old packages (But you are free to use PPAs to get latest versions)</li>
+<li>Less customizeable</li>
+<li>Some annoying default settings like no desktop icons, single click to open files and no minimize button (All can be fixed)</li>
+</ul>
+
+
+<p>Impressed? Then try it, head over to <a href="http://elementaryos.org/">Elementary</a> website and download the stable ISO. Don&rsquo;t let the website fool you. It might show a price tag but its only a donation tag. You can get the OS for free. If you like Elementary OS Luna , leave a comment below and if the demand is good, I might write some tutorials for it!</p>
+
+<p><strong>I think you must watch this Elementary review created by <a href="http://www.youtube.com/user/OhHeyItsLou?feature=watch">Lou</a> :</strong></p>
+
+<iframe width="640" height="360" src="http://techhamlet.com//www.youtube.com/embed/_cia_8OVESA?rel=0" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Get High Quality Font Rendering in Linux with Infinality!]]></title>
@@ -558,42 +627,6 @@
 
 
 <p><strong>Congratulation!</strong> Now you have installed one of the best Linux distributions on your machine. This might the first time you are using Linux. This might be the first time you are using Linux Mint. Still, I think you will enjoy the newly installed system. Isn&rsquo;t it better than the OS you used before? Share your thoughts with us as comments below. If you doesn&rsquo;t feel comfortable, don&rsquo;t worry, it will take some time to get adjusted to a new home.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Evernote for Linux : How to Use Evernote as a Normal Linux Desktop App]]></title>
-    <link href="http://techhamlet.com/2013/06/evernote-for-linux/"/>
-    <updated>2013-06-03T20:14:50+05:30</updated>
-    <id>http://techhamlet.com/2013/06/evernote-for-linux</id>
-    <content type="html"><![CDATA[<p>Evernote is the king in online note taking apps. It&rsquo;s loved and used by many people around the world every day. Its full of features. You can use it to take simple notes, add to-do lists, save stuff to read leader and read them in a distraction free reader, clip items from the web, save important moments of your life, etc, etc, etc&hellip; Evernote stands out from the rest of the note taking apps because of its ease of use, huge number of features, many number of applications, killer unique features like searching words in the images you upload and the availability in almost any platform. You have Windows, Mac, Android, iOS, Blackberry, Windows Phone and Web apps built by Evernote. Unfortunately, there is no Evernote for Linux ! Linux users need to use the web client. But it can be painful to always go to the browser, enter the url, and then enter the log in information to use the service. But there&rsquo;s a shortcut&hellip;</p>
-
-<p>There are some third-party apps like Everpad which bring Evernote for Linux. But there is a way to get to the official Evernote app right from your OS (With a desktop shortcut or through the system menu). It&rsquo;s a simple trick. But it works for many&hellip;</p>
-
-<h3>How To add Evernote for Linux :</h3>
-
-<p>Before proceeding, I should tell you that this is only a small trick. Sometimes, you might already know this trick. But haven&rsquo;t used it for real. But it will work&hellip;</p>
-
-<p>What we are going to do is, install the Evernote Chrome web app. This will give you a full Evernote experience in Google Chrome. After log in in once, you don&rsquo;t need to log in again. One problem solved. Now we need a way to access it right from the desktop or through the menu without going through the browser. For this, Chrome have a solution! Here&rsquo;s how to get Evernote for Linux &hellip;</p>
-
-<ul>
-<li><p>First, open Google Chrome and install the <a href="https://chrome.google.com/webstore/detail/evernote-web/lbfehkoinhhcknnbdgnnmjhiladcgbol">Evernote web app</a></p></li>
-<li><p>Now open a new tab and go to the web apps</p></li>
-<li><p>Right click on Evernote (you can do this to any app) and select &ldquo;Create Shortcut&rdquo;</p></li>
-</ul>
-
-
-<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/chrome-web-apps-550x312.jpg" alt="Evernote for Linux" /></p>
-
-<ul>
-<li><p>Now tick the places you need the shortcut to be added &ldquo;Desktop&rdquo; or &ldquo;Application Menu&rdquo; and click OK</p></li>
-<li><p>Now you will get an Evernote icon on your desktop. You can use this to go directly to Evernote</p></li>
-</ul>
-
-
-<p>The shortcut will take you to a separate browser window which will open the Evernote web app. You have installed Evernote for Linux ! But this browser window won&rsquo;t have an address bar. Only Evernote. It&rsquo;s like an Evernote native app. But the only issue you will face is the absence of offline access. You need be connected to the Internet in order to use this. But today most of us always have a connection. So, for many this won&rsquo;t be a problem.</p>
-
-<p>This might be the only way to get official app of Evernote for Linux. Lets hope that they&rsquo;ll understand the power of Linux in the future and create a native Linux app. Until then, this might work for you.</p>
 ]]></content>
   </entry>
   
