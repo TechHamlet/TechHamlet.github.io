@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Android | Tech Hamlet]]></title>
   <link href="http://techhamlet.com/categories/android/atom.xml" rel="self"/>
   <link href="http://techhamlet.com/"/>
-  <updated>2013-08-14T21:24:30+05:30</updated>
+  <updated>2013-08-15T08:03:47+05:30</updated>
   <id>http://techhamlet.com/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
@@ -12,6 +12,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Killer Android Home Screens : Simple Colors]]></title>
+    <link href="http://techhamlet.com/2013/08/simple-colors-android-home/"/>
+    <updated>2013-08-15T07:54:00+05:30</updated>
+    <id>http://techhamlet.com/2013/08/simple-colors-android-home</id>
+    <content type="html"><![CDATA[<p>Unlike most of the other mobile operating systems, Android is extremely customizeable. Apple&rsquo;s iOS and Microsoft&rsquo;s Windows Phone force us to use the look and feel they choose for us. But Android users are free to do anything with their systems! Why? Mainly because Android is a <a href="http://techhamlet.com/categories/linux/">Linux</a> distribution and Linux is free, open and extremely customizeable! So, today we are going to see how to turn your Android Home screen into this :</p>
+
+<p><img src="/images/post-images/2013/08/simple-colors-android-home.jpg" alt="Simple Colors Android Home Screen" /></p>
+
+<p>This is my tab&rsquo;s current home screen. For some reason, I liked it so much that I wanted to write a post on how to re-create something like this. First of all, if you are an Android user, you should know that you can customize your system in anyway you want. But you also need to be careful when downloading those <em>super cool</em> apps from the <a href="http://techhamlet.com/categories/android/">Android</a> market (Play Store). Many contain malware!</p>
+
+<h3>So, if you are ready, here are the apps I used to customize my Android home screen :</h3>
+
+<ul>
+<li><a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">Nova Launcher (free)</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.launchertheme.kxnt.click">Click UI (Go Apex Nova theme)</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=in.vineetsirohi.customwidget">Ultimate custom widget (UCCW)</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.tung91.uccw.typoclock">UCCW &ndash; Typo Clock</a></li>
+</ul>
+
+
+<p><strong>Nova Launcher</strong> is one of the most popular custom Android launchers out there. Its fast, stable and extremely customizeable. Many people use the Nova Launcher <em>Prime</em> (The paid version) for extensive customizations. But in here, the free version is more than enough. The <strong>Click UI</strong> icon theme is one of the most beautiful icon designs I have ever seen. It have a small price on it&hellip; $1! But I think its fair. The <strong>UCCW</strong> app is really cool. It can be used to build awesome custom widgets for your home screen. If you can&rsquo;t create one, there are many custom build widgets for UCCW that will blow your mind. The <strong>Typo Clock</strong> is one of those cool custom widgets.</p>
+
+<p>Now I have shown you the tools. How you customize your screen is completely up-to you. One thing&hellip; If you need to customize icons in the side dock, press hold an icon and click edit. Then click on that icon and select an icon from the big list. Click UI have 550+ HD icons! So, you might be able to get a custom icon for almost all your apps.</p>
+
+<p>When creating the new <a href="http://techhamlet.com/2013/08/techhamlet-15/">Tech Hamlet 15.0</a>, I created a special category for Android. Earlier it was hidden. Now I&rsquo;m going to write more and more Android posts. If you like customization posts like this, please leave a comment and I might write more!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Paranoid Android Halo : Taking Android Multi-Tasking To The Next Level]]></title>
@@ -108,25 +137,6 @@
 <p>The launcher is free but you can upgrade to the PRO version for $3.49. The PRO version will allow you to add widgets to the home screen. But widgets can make things slow. They consume more memory. I don&rsquo;t know about you but I can live without any widgets!</p>
 
 <p>So, what do you think? The launcher is completely different and have attracted the attention of many users. Give <a href="https://play.google.com/store/apps/details?id=ginlemon.flowerfree">Smart Launcher</a> a try and feel the difference!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Advanced Mobile Care 3 Comes With Tablet Support, Anti Theft and More]]></title>
-    <link href="http://techhamlet.com/2013/04/advanced-mobile-care-3/"/>
-    <updated>2013-04-01T21:31:28+05:30</updated>
-    <id>http://techhamlet.com/2013/04/advanced-mobile-care-3</id>
-    <content type="html"><![CDATA[<p><img src="http://techhamlet.com/wp-content/uploads/2013/04/advanced-mobile-care-3-550x268.jpg" alt="Advanced Mobile Care" /></p>
-
-<p>On November last year, IObit released the <a href="http://techhamlet.com/2012/11/advanced-mobile-care/">first version of Advanced Mobile Care</a>&hellip; One big utility suit which can take care of your whole Android device! It can scan your system for malware, it can optimize your system for best performance, it can clean out junk from your system, it can backup your important data, it can help you to manage your apps, it can help you to protect your privacy and perform more useful tasks that can help you to maintain a healthy device&hellip;</p>
-
-<p>Initially, they released Advanced Mobile Care only for phones. But the 3rd version that they just released bring support for tablets as well! Now you don&rsquo;t need to pay for any untrusted apps to maintain your Android tablet&hellip; Advanced Mobile Care Can help you for free. All the cool features we have in the phone version can be now used on tablets.</p>
-
-<p>One very important feature you need to have in a mobile device is a way to find your device if its lost. The new Advanced Mobile Care 3 have this feature. If you lose your device, now you can sound an alarm, lock and get the location of your lost device.</p>
-
-<p>If you are getting too many nuisance calls&hellip; If you only want your contacts to call you, you can now use the new Call Blocker feature in Advanced Mobile Care 3 to enjoy a peaceful life! You can block individual numbers or simply block all the numbers which are not in your contact list! Simple!</p>
-
-<p>Apart from these new features, there are a lot of core improvements added to this new version. So, if you already have this app, you might have already updated it. But if you don&rsquo;t have it, why not try something which can maintain a fast and healthy device for you? <a href="https://play.google.com/store/apps/details?id=com.iobit.mobilecare&amp;hl=en">Download advanced Mobile Care</a> today!</p>
 ]]></content>
   </entry>
   

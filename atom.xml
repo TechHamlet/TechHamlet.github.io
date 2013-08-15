@@ -5,7 +5,7 @@
   <link href="http://techhamlet.com/atom.xml" rel="self"/>
   <link href="http://techhamlet.com/"/>
   <link href="http://techhamlet.superfeedr.com/" rel="hub"/>
-  <updated>2013-08-14T21:24:30+05:30</updated>
+  <updated>2013-08-15T08:03:47+05:30</updated>
   <id>http://techhamlet.com/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
@@ -13,6 +13,35 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Killer Android Home Screens : Simple Colors]]></title>
+    <link href="http://techhamlet.com/2013/08/simple-colors-android-home/"/>
+    <updated>2013-08-15T07:54:00+05:30</updated>
+    <id>http://techhamlet.com/2013/08/simple-colors-android-home</id>
+    <content type="html"><![CDATA[<p>Unlike most of the other mobile operating systems, Android is extremely customizeable. Apple&rsquo;s iOS and Microsoft&rsquo;s Windows Phone force us to use the look and feel they choose for us. But Android users are free to do anything with their systems! Why? Mainly because Android is a <a href="http://techhamlet.com/categories/linux/">Linux</a> distribution and Linux is free, open and extremely customizeable! So, today we are going to see how to turn your Android Home screen into this :</p>
+
+<p><img src="http://techhamlet.com/images/post-images/2013/08/simple-colors-android-home.jpg" alt="Simple Colors Android Home Screen" /></p>
+
+<p>This is my tab&rsquo;s current home screen. For some reason, I liked it so much that I wanted to write a post on how to re-create something like this. First of all, if you are an Android user, you should know that you can customize your system in anyway you want. But you also need to be careful when downloading those <em>super cool</em> apps from the <a href="http://techhamlet.com/categories/android/">Android</a> market (Play Store). Many contain malware!</p>
+
+<h3>So, if you are ready, here are the apps I used to customize my Android home screen :</h3>
+
+<ul>
+<li><a href="https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher">Nova Launcher (free)</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.launchertheme.kxnt.click">Click UI (Go Apex Nova theme)</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=in.vineetsirohi.customwidget">Ultimate custom widget (UCCW)</a></li>
+<li><a href="https://play.google.com/store/apps/details?id=com.tung91.uccw.typoclock">UCCW &ndash; Typo Clock</a></li>
+</ul>
+
+
+<p><strong>Nova Launcher</strong> is one of the most popular custom Android launchers out there. Its fast, stable and extremely customizeable. Many people use the Nova Launcher <em>Prime</em> (The paid version) for extensive customizations. But in here, the free version is more than enough. The <strong>Click UI</strong> icon theme is one of the most beautiful icon designs I have ever seen. It have a small price on it&hellip; $1! But I think its fair. The <strong>UCCW</strong> app is really cool. It can be used to build awesome custom widgets for your home screen. If you can&rsquo;t create one, there are many custom build widgets for UCCW that will blow your mind. The <strong>Typo Clock</strong> is one of those cool custom widgets.</p>
+
+<p>Now I have shown you the tools. How you customize your screen is completely up-to you. One thing&hellip; If you need to customize icons in the side dock, press hold an icon and click edit. Then click on that icon and select an icon from the big list. Click UI have 550+ HD icons! So, you might be able to get a custom icon for almost all your apps.</p>
+
+<p>When creating the new <a href="http://techhamlet.com/2013/08/techhamlet-15/">Tech Hamlet 15.0</a>, I created a special category for Android. Earlier it was hidden. Now I&rsquo;m going to write more and more Android posts. If you like customization posts like this, please leave a comment and I might write more!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Elementary OS Luna is Released! Fast, Beautiful, Clean and its Linux!]]></title>
@@ -1041,29 +1070,6 @@
 <p><img src="http://techhamlet.com/wp-content/uploads/2013/05/dash-to-dock-unity-550x309.jpg" alt="Dash to Gnome" /></p>
 
 <p>There are plenty of settings for you to play with. But be careful about what you change. Remember that the Unity like Dash to Gnome is buggy. So, try your best to avoid using it. Most of the Gnome Shell users will gladly accept this Dash because many hate to waste time by always going to the overview. I really hated that and later came back to Ubuntu and Unity! So, try it and let me know what you think about the new Dash to Gnome extension!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Linux Mint 15 is Released! The Most Ambitious Release Since the Start!]]></title>
-    <link href="http://techhamlet.com/2013/05/linux-mint-15/"/>
-    <updated>2013-05-30T20:02:44+05:30</updated>
-    <id>http://techhamlet.com/2013/05/linux-mint-15</id>
-    <content type="html"><![CDATA[<p><img src="http://techhamlet.com/wp-content/uploads/2013/05/cinnamon-550x384.jpg" alt="Linux Mint 15" /> Linux Mint 15</p>
-
-<p>The Linux Mint team have just finished building the 15th release of their famous Linux distribution and have finally announced the big release! Most of you waited for this moment since Ubuntu released their latest version in April. Now, Linux Mint 15 comes with more improvements and more new tools to help you!</p>
-
-<p>Some people consider Linux Mint as the most easy to use beginner friendly OS in the planet. Some find it even easier than Windows and Mac. Its built on the famous Ubuntu. But Mint is a lot different from its mother. The Linux Mint team always tried to fix problems in Ubuntu. For example, Mint doesn&rsquo;t have the fancy Unity or Gnome Shell that confuse some users. It have its own desktop named Cinnamon and Mate which offer a much familiar and an easy to use look and feel. With the latest Linux Mint 15, things got even better!</p>
-
-<p>The latest Linux Mint version is named Olivia. According to its developers, the latest Linux Mint 15 &ldquo;<strong><em>is the most ambitious release since the start of the project</em></strong>&rdquo;. The latest release has a lot of improvements to Cinnamon and Mate. Now, it have its own control center which can be used to customize a lot of aspects of your machine. Its more powerful than the default Gnome control center.</p>
-
-<p>Linux Mint 15 also have a new display manager which use HTML5 themes. You can also use older themes but these new themes will be better looking and you can even add animations to them.</p>
-
-<p>Olivia also have a new Software Sources which have more features than the Ubuntu version it used earlier. Now, you can also manage PPAs directly from the sources. Recently, Ubuntu merged the Driver Manager into the Software Sources. Now, Linux Mint 15 have separated them.</p>
-
-<h3>Download Linux Mint 15 Now&hellip;</h3>
-
-<p>Apart from these changes, there are a lot of small features and fixes. I haven&rsquo;t installed it yet. So, I only know what they told us in their official announcement. Now, <a href="http://www.linuxmint.com/download.php">download Linux Mint 15</a> and tell us what you think!</p>
 ]]></content>
   </entry>
   
