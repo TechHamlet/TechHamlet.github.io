@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | Tech Hamlet]]></title>
   <link href="http://techhamlet.com/categories/linux/atom.xml" rel="self"/>
   <link href="http://techhamlet.com/"/>
-  <updated>2013-08-15T08:03:47+05:30</updated>
+  <updated>2013-09-04T12:13:35+05:30</updated>
   <id>http://techhamlet.com/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
@@ -12,6 +12,138 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[3 Cool Ubuntu Plymouth (Boot) Themes : OS X, PAW Ubuntu and PAW Gnome]]></title>
+    <link href="http://techhamlet.com/2013/09/how-to-install-ubuntu-plymouth-themes/"/>
+    <updated>2013-09-04T11:54:00+05:30</updated>
+    <id>http://techhamlet.com/2013/09/how-to-install-ubuntu-plymouth-themes</id>
+    <content type="html"><![CDATA[<p>Ubuntu already have a sleek boot screen. Sometimes you might want to change it to something different. If you are an OS X or a <a href="http://techhamlet.com/categories/windows/">Windows</a> user, you have to put aside your feelings and accept what they give to you. But you are a <a href="http://techhamlet.com/categories/linux/">Linux</a> user&hellip; You can do anything you want! So, why can&rsquo;t we change the boot screen into one of these&hellip;?</p>
+
+<p><img src="/images/post-images/2013/09/paw-ubuntu-plymouth-themes.jpg" alt="Ubuntu Plymouth Themes" /></p>
+
+<p>Today I&rsquo;m going to show you how to install three simple Plymouth (boot) themes on Ubuntu. You can install most of the other plymouth themes out there in the same way. So, stick with us&hellip;</p>
+
+<h2>First, Download the Plymouth Themes :</h2>
+
+<p><a href="http://ubuntuone.com/1f1cEzkl42YhzBFkUwL3Kg">OS X Plymouth Theme</a></p>
+
+<p><a href="http://love2spooge.deviantart.com/art/PAW-Ubuntu-Plymouth-Theme-173974272">PAW-Ubuntu Plymouth Theme</a></p>
+
+<p><a href="http://gnome-look.org/content/show.php/?content=158162">Ubuntu Gnome Paw Plymouth Theme</a></p>
+
+<h2>Before Installing&hellip;</h2>
+
+<p>Before installing the themes, we need to make sure they will be displayed correctly. For that&hellip;</p>
+
+<ul>
+<li>Open the Terminal <code>Ctrl+ALT+T</code> and enter the following commands to create a file called <strong>splash</strong> in <strong>/etc/initramfs-tools/conf.d/</strong> :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /etc/initramfs-tools/conf.d/splash</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li>Next, place the following line in that file and save it :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>FRAMEBUFFER=y</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li>Now run the following commands to update the system :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-initramfs -u;sudo update-alternatives &mdash;config default.plymouth</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>How To Install OS X and PAW-Ubuntu themes :</h2>
+
+<ul>
+<li>Navigate to the download directory and unzip the downloaded files :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd ~/Downloads/
+</span><span class='line'>unzip Paw-OSX.zip
+</span><span class='line'>unzip PAW_OS_X_Plymouth_Theme_by_love2spooge.zip</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li>Now move the files to the Plymouth Themes directory :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo mv Paw-OSX/ /lib/plymouth/themes
+</span><span class='line'>sudo mv Paw-Ubuntu/ /lib/plymouth/themes</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li>Next, install the newly added themes :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-alternatives &mdash;install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/Paw-OSX/paw-osx.plymouth 100
+</span><span class='line'>sudo update-alternatives &mdash;install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/Paw-Ubuntu/paw-ubuntu.plymouth 100</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li>After that, you have to select which plymouth theme you need to use. For that, first issue the following command to bring up the default plymouth chooser :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-alternatives &mdash;config default.plymouth</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li>Next, enter the number of the plymouth theme you need to use. In my case, its 1 for OS X theme and 3 for PAW-Ubuntu</li>
+</ul>
+
+
+<p><img src="/images/post-images/2013/09/choose-plymouth-theme.jpg" alt="Choose Plymouth Theme" /></p>
+
+<ul>
+<li>Finally, enter the following command to update the system :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-initramfs -u</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<h2>How To Install PAW Gnome theme :</h2>
+
+<p>Installing this theme is fairly easy. When downloading, you might have noticed that it comes as a .deb file. We just have to install it and select the theme in the plymouth chooser&hellip;</p>
+
+<ul>
+<li>First, navigate to the download folder and double click on the <code>158162-plymouth-theme-paw_13.04_all.deb</code> file which you just downloaded and install it</li>
+<li>After finishing the installation, open the Terminal <code>Ctrl+ALT+T</code> and enter the following command to open the plymouth chooser :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-alternatives &mdash;config default.plymouth</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li><p>Next select the number of the <code>/lib/plymouth/themes/paw/paw.plymouth</code> theme. (Refer to the screenshot above. In my case its 4 according to the screenshot)</p></li>
+<li><p>Finally, enter the following command to update the system :</p></li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-initramfs -u</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Enjoyed? These are the two popular methods of plymouth theme installation. You can use these methods to install most of the boot themes out there. There were also GUI apps to do this job but they are outdated. But still, it won&rsquo;t kill you if you use the Terminal! Common, its better than the GUI apps!</p>
+
+<p><em>&ndash; Special thanks should go to <a href="http://www.noobslab.com/2013/05/mac-os-x-theme-for-ubuntu-1304-raring.html">noobslab.com</a> for introducing the OS X splash screen</em></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Elementary OS Luna is Released! Fast, Beautiful, Clean and its Linux!]]></title>
@@ -386,247 +518,6 @@
 
 
 <p>Got it fixed? Working perfectly? Great! Now, before thanking me, thank <a href="http://www.sudo-juice.com/lightdm-resolution/">sudo-juice.com</a> for coming up with a solution. In the script he used, he only fixed the resolution of the primary monitor. This will work for some but for people like me, it won&rsquo;t. I  had to fix the second monitor as well. The script I have given here can be used for any number of monitors! Hope it fixed your issues. If not, please leave a comment and let us know. We will try our best to fix it!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How To Install Linux Mint : A Step by Step Guide and a Video Guide]]></title>
-    <link href="http://techhamlet.com/2013/06/how-to-install-linux-mint/"/>
-    <updated>2013-06-06T20:11:53+05:30</updated>
-    <id>http://techhamlet.com/2013/06/how-to-install-linux-mint</id>
-    <content type="html"><![CDATA[<p>First of all, I should mention that this guide is for complete Linux beginners. If you already have Linux experience, then figuring out how to install Linux Mint is a piece of cake. So, now, you are new to Linux. You might be here because Windows didn&rsquo;t match your tastes&hellip; You might be here because Mac doesn&rsquo;t match your tastes&hellip; No matter who you are, I will make sure that your first Linux Mint installation will go extremely smooth&hellip;</p>
-
-<p>Linux Mint is the perfect desktop for beginners. It&rsquo;s not hard to grasp. The UI is extremely user-friendly and a user coming from Mac and Windows will be able to find his way through the new system with ease. So, you made the right decision.</p>
-
-<h3>Questions you might have about installing Linux :</h3>
-
-<p><strong>Will it prevent me from using Windows?</strong></p>
-
-<p>No. If you follow the right steps, it won&rsquo;t harm your Windows installation. You can still use it with Linux.</p>
-
-<p><strong>Will installing both Linux and Windows slow down my machine?</strong></p>
-
-<p>Absolutely NO! You are installing Linux as a separate OS. When you run Linux, it will only load Linux to the memory. It won&rsquo;t even care about Windows. Same thing goes for Windows. They will act separately. So, no slowdowns. The only thing you will lose is disk space.</p>
-
-<p><strong>Will it be hard to learn Linux? Is it ugly when compared to Windows? Do I always have to type commands?</strong></p>
-
-<p>No, no and NO! Sometimes, Linux might be much easier to learn. It depends on the distribution you pick. The Linux Mint we choose is one of the most easiest to learn.</p>
-
-<p>Linux now have the most beautiful interfaces. You can customize them in any way you like.</p>
-
-<p>Many Linux people prefer to do their work using the command line (the terminal). But Linux have GUI tools to do almost anything a normal person wants. You might never touch the terminal. But if you get used to it, you&rsquo;ll feel its power and will always use it.</p>
-
-<h3>Things you&rsquo;ll need to install Linux Mint :</h3>
-
-<ul>
-<li><p>x86 processor (Linux Mint 64-bit requires a 64-bit processor. Linux Mint 32-bit works on both 32-bit and 64-bit processors).</p></li>
-<li><p>512 MB RAM (1GB recommended for a comfortable usage).</p></li>
-<li><p>5 GB of disk space</p></li>
-<li><p>Graphics card capable of 800×600 resolution</p></li>
-<li><p>CD/DVD drive or USB port to install Linux Mint</p></li>
-<li><p>Download the Linux Mint ISO from the official website : <a href="http://www.linuxmint.com/download.php">http://www.linuxmint.com/download.php</a> (Make sure you pick the right image. The Cinnamon version is recommended. If you have a new machine with a 64-bit processor (In Windows, right clicking Computer and checking properties will help you to find this) go for the 64-bit image. If you have an old machine with a 32-bit processor, go for the 32 bit version)</p></li>
-<li><p>After downloading the ISO, burn it to a DVD or to a USB using <a href="http://www.pendrivelinux.com/universal-usb-installer-easy-as-1-2-3/">Pen Drive Linux</a> to install Linux Mint</p></li>
-</ul>
-
-
-<h3>For new machines with UEFI or Windows 8 :</h3>
-
-<p>Before going to install Linux Mint , please read these articles :</p>
-
-<ul>
-<li><p><a href="http://techhamlet.com/2013/04/linux-with-uefi-choose-the-best-notebook/">Linux with UEFI and Windows 8 : How To Choose The Best Notebook to Buy</a></p></li>
-<li><p><a href="http://techhamlet.com/2013/02/do-not-buy-windows-8-machines/">Linux and Windows Users Do Not Buy Windows 8 Machines : UEFI have Bugs</a></p></li>
-</ul>
-
-
-<h3>Now, lets Install Linux Mint &hellip;</h3>
-
-<h4>The video guide :</h4>
-
-<p>The video guide will give you a very good idea on what to do. For some, it will be more useful than the normal detailed guide. But I recommend you to follow both!</p>
-
-<h4>The detailed guide :</h4>
-
-<p><strong>1) Setting up BIOS/UEFI and booting the ISO :</strong></p>
-
-<ul>
-<li><p>First we need to make sure the BIOS will boot our installation media first to install Linux Mint. Insert the USB or the DVD intro the machine and boot it up. Press F2, F1, Delete, F8 or Esc keys during the boot (<strong>If you have a new machine based on the UEFI system, avoid pressing Esc or F8 keys and go to the UEFI system (Some still call it the BIOS)</strong>). To pick which key to press, you need to check your motherboard&rsquo;s manual.</p></li>
-<li><p>If you have a UEFI system, go to the UEFI system and try to pinpoint the option name &ldquo;Secure Boot&rdquo;. If you locate it, disable it or set the option to &ldquo;Other OS&rdquo;. If you can&rsquo;t find it, proceed to install Linux Mint and hope that you don&rsquo;t have it.</p></li>
-<li><p>If you go to the BIOS/UEFI system, go to the Boot menu and put the DVD ROM or the USB to the top of the boot list (Put the UEFI version to the top then the normal USB or the DVD. If the USB fail to boot with the UEFI, put the normal USB to the top and try again). Next, save and exit (Usually, its F10 to save and exit)</p></li>
-<li><p>Now, some people will be taken to a boot menu where they&rsquo;ll see the available devices that can boot. (<strong>If you have a new machine based on the UEFI system, you need to reboot, avoid pressing Esc or F8 keys and go to the UEFI system (Some still call it the BIOS)</strong>) If you were taken to a boot menu, pick DVD ROM or the USB according to what you used. If you see an option called <strong>UEFI</strong> DVD or <strong>UEFI</strong> USB, pick that option (Sometimes, the USB won&rsquo;t boot with UEFI, so if it fail, reboot and pick the non UEFI option).</p></li>
-</ul>
-
-
-<p><strong>2) Testing and starting the installation :</strong></p>
-
-<ul>
-<li><p>If you successfully booted the disk, it will take you straight to the Linux Mint live desktop</p></li>
-<li><p>Use this to test the new OS that you are going to install. Spend some time with it. Make sure you are confident with installing it on your machine</p></li>
-<li><p>After you are completely confident about Linux Mint, click on &ldquo; <strong>Install Linux Mint</strong> &rdquo; icon in the desktop to start the installation wizard</p></li>
-</ul>
-
-
-<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/install-linux-mint-550x309.jpg" alt="Install Linux Mint" /> Install Linux Mint</p>
-
-<p><strong>3) The first steps of the installation wizard to install Linux Mint :</strong></p>
-
-<ul>
-<li><p>First, select your language and hit Continue</p></li>
-<li><p>Next Mint will check whether you have a working internet connection and whether you have enough space on the disks to install Linux Mint</p></li>
-<li><p>If everything is looking good, click continue</p></li>
-</ul>
-
-
-<p><strong>4) Partitioning (The most important part) :</strong></p>
-
-<p>Also please refer to the video guide before attempting to create partitions!</p>
-
-<p>Ok now we have come to the most important part. If you are not patient, if you doesn&rsquo;t have a single idea about what a partition is, please leave this page right now! You can&rsquo;t install Linux Mint without patience! If you are a newbie who don&rsquo;t know about partitions who have a clean system without any other operating system, you can stay! Read all the instructions in the sections before doing anything!</p>
-
-<p><strong>If you have a clean system without any operating system installed :</strong></p>
-
-<ul>
-<li>In the &ldquo;Installation type&rdquo; window, select the default option &ldquo; <strong>Erase disk and install Linux Mint </strong>&rdquo;<strong> </strong>and click &ldquo;Install Now&rdquo; to install Linux Mint. (Next skip all the steps below and head directly to step 5)</li>
-</ul>
-
-
-<p><strong>If you have other operating systems on your machine :</strong></p>
-
-<ul>
-<li>Select &ldquo;Something Else&rdquo; and click &ldquo;Continue&rdquo;</li>
-</ul>
-
-
-<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/install-linux-mint-partitioning-start-550x399.jpg" alt="Installation Type" /> Installation Type</p>
-
-<p><strong>If your system have other partitions and doesn&rsquo;t have any free space :</strong></p>
-
-<p>You can get some space from the last partition to install Linux Mint :</p>
-
-<ul>
-<li><p>To do this, click the last partition and click on &ldquo;Change&rdquo;</p></li>
-<li><p>Now, in the size field, click on the minus button to reduce its space and click OK (<strong>Warning :</strong> to not reduce the size of the disk beyond the used space. If you have used 5GB in the 10GB hard drive. Do not shrink the drive&rsquo;s space to a value equal to or lower than 6GB! 7GB will be safe! Otherwise you will loose all your data!)</p></li>
-<li><p>If it show a warning asking to &ldquo;Write previous changes to disk and continue&rdquo; click &ldquo;Continue&rdquo;</p></li>
-</ul>
-
-
-<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/install-linux-mint-reduce-partition-size-550x422.jpg" alt="Reduce Partition Size" /> Reduce Partition Size</p>
-
-<p>****You can delete the last partition if it doesn&rsquo;t have any stuff to install Linux Mint :</p>
-
-<ul>
-<li>Click on the minus button close to the Change button to delete the partition</li>
-</ul>
-
-
-<p><strong>If you already have free space or if you made some space available with the above methods, lets create the partitions to install Linux Mint :</strong></p>
-
-<p><em>Note : If you have the free space in-between the existing partitions and if it&rsquo;s a new machine with UEFI and a GPT partition tablet, making the Linux partitions in this free space can raise some issues with the existing systems. So be careful.</em></p>
-
-<p>Normally, we create three partitions. The root partition, the home partition and the swap partition. But you are free to create any number of partitions and assign mount points of your own. Today we are going to see how to create the three basic partitions&hellip;</p>
-
-<ul>
-<li>To create a partition, select the free space and click on the &ldquo;+&rdquo; sign</li>
-</ul>
-
-
-<p><strong>For the root partition :</strong></p>
-
-<p>The root partition will hold all the system files and data&hellip;</p>
-
-<ul>
-<li><p>For the size of the root partition, the recommended size is about 10GB. But to be on the safe side, give at least 20GB (which will be nearly 20000MB. The field accept values in MB)</p></li>
-<li><p>Leave the other parameters like the Type and the Location as it is</p></li>
-<li><p>Change the field &ldquo;Use as&rdquo; to &ldquo;Ext4 journaling file system&rdquo;</p></li>
-<li><p>Change the &ldquo;Mount point&rdquo; to &ldquo;<strong>/</strong>&rdquo;</p></li>
-<li><p>Finally, click OK</p></li>
-</ul>
-
-
-<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/install-linux-mint-root-partition-550x420.jpg" alt="Root Partition" /> Root Partition</p>
-
-<p><strong>For the home partition :</strong></p>
-
-<ul>
-<li><p>For the size of the home partition, you can set any amount you like. Its going to hold all your personal data. Downloads, Documents, Videos, Pictures, the Desktop and even software configurations that are specific to you. Because of this, remember to give as much space as possible for this partition.</p></li>
-<li><p>In here also, leave the parameters Type and Location intact and set the &ldquo;Use as&rdquo; field to "Ext4 journaling file system"</p></li>
-<li><p>Now change the &ldquo;Mount point&rdquo; to &ldquo;/home&rdquo;</p></li>
-<li><p>Click OK</p></li>
-</ul>
-
-
-<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/install-linux-mint-home-partition-550x420.jpg" alt="Home Partition" /> Home Partition</p>
-
-<p><strong>For the swap partition :</strong></p>
-
-<p>The swap partition will act as a virtual memory. If your system doesn&rsquo;t have enough physical memory for the running programs, it will move inactive programs from the memory to the swap partition. If your system does a lot of swapping, things can get a bit slow because the hard drive is really slow when compared to the RAM. If your system doesn&rsquo;t have a lot of memory, then you need to pay extra attention to the swap partition. But for those who have a lot of RAM, you can have a small swap partition. I currently have 8GB of RAM in my desktop machine. The swap partition is 4GB. Currently, even though I run heavy applications like virtual box, the system haven&rsquo;t swapped anything.</p>
-
-<ul>
-<li><p>The size you need to give for a swap partition is a bit controversial. There are many theories for it. Some say you need a swap partition with the same size of your physical memory. Some say you need a swap partition double the size of the RAM. What I think is, if you have 4GB or less RAM, try to add the same size or the double if you have enough hard drive space. But if you have more than that, you can safely add the same size or a smaller size for swap. I use 4GB for 8GB of RAM.</p></li>
-<li><p>In here also, leave the parameters Type and Location intact</p></li>
-<li><p>Change the &ldquo;Use as&rdquo; field to &ldquo;swap area&rdquo;</p></li>
-<li><p>And click OK</p></li>
-</ul>
-
-
-<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/install-linux-mint-swap-partition-550x420.jpg" alt="Swap Partition" /> Swap Partition</p>
-
-<p><strong>When you are done setting up the partitions :</strong></p>
-
-<ul>
-<li>Click &ldquo;Install Now&rdquo; to install Linux Mint</li>
-</ul>
-
-
-<p><strong>5) Selecting the time zone :</strong></p>
-
-<ul>
-<li><p>Now if you are connected to the internet, Linux Mint will automatically detect your location and select the time zone accordingly. But if its wrong, you are free to change it.</p></li>
-<li><p>After you are done, click &ldquo;Continue&rdquo;</p></li>
-</ul>
-
-
-<p><strong>6) Select the Keyboard Layout :</strong></p>
-
-<ul>
-<li><p>Now, select the keyboard layout. If you don&rsquo;t know the layout you can use the box &ldquo;Type here to test your keyboard&rdquo; to detect it. For me, its &ldquo;English (US)&rdquo;</p></li>
-<li><p>After you are done, click &ldquo;Continue&rdquo;</p></li>
-</ul>
-
-
-<p><strong>7) Setup your account and install Linux Mint :</strong></p>
-
-<ul>
-<li><p>Now, fill in your name</p></li>
-<li><p>Your computer&rsquo;s name (Any name you like. No spaces, only digits, letters, hyphens and dots)</p></li>
-<li><p>Give a username you want</p></li>
-<li><p>If you don&rsquo;t want to enter the password every time you boot your machine, select &ldquo;Login automatically&rdquo; otherwise keep the default setting &ldquo;Require my password to login&rdquo;</p></li>
-<li><p>If you don&rsquo;t want anyone to read your data without your password, select &ldquo;Encrypt my home folder&rdquo;. If you have any other Linux distribution on your machine, those systems can read your data. If some one take your hard drive and use a Linux Live CD, he can access your data. But if you encrypt it, no one can access them. Normally, I never use this because I need my other operating systems to read my data.</p></li>
-<li><p>When you are done, click &ldquo;Continue&rdquo; to install Linux Mint</p></li>
-</ul>
-
-
-<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/install-linux-mint-setup-account-550x420.jpg" alt="Setup Your Account" /> Setup Your Account</p>
-
-<p><strong>8) After the installation is complete :</strong></p>
-
-<ul>
-<li><p>It will show a message saying the &ldquo;Installation is Complete&rdquo;. In here, click &ldquo;Restart Now&rdquo;</p></li>
-<li><p>Make sure you remove the DVD or the USB that you used to install Linux Mint and hit enter to complete the installation!</p></li>
-</ul>
-
-
-<h3>If you have a new machine based on UEFI, please check these guides after you install Linux Mint :</h3>
-
-<p>If you have other operating systems installed on your machine, you must check both these guides :</p>
-
-<ul>
-<li><p><a href="http://techhamlet.com/2013/05/no-boot-loader-after-installing-ubuntu/">No Boot loader After Installing Ubuntu! Linux with UEFI and Windows 8</a></p></li>
-<li><p><a href="http://techhamlet.com/2013/05/add-windows-to-grub/">Add Windows to Grub Boot Loader : Linux with UEFI and Windows 8</a></p></li>
-</ul>
-
-
-<p><strong>Congratulation!</strong> Now you have installed one of the best Linux distributions on your machine. This might the first time you are using Linux. This might be the first time you are using Linux Mint. Still, I think you will enjoy the newly installed system. Isn&rsquo;t it better than the OS you used before? Share your thoughts with us as comments below. If you doesn&rsquo;t feel comfortable, don&rsquo;t worry, it will take some time to get adjusted to a new home.</p>
 ]]></content>
   </entry>
   

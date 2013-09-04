@@ -5,7 +5,7 @@
   <link href="http://techhamlet.com/atom.xml" rel="self"/>
   <link href="http://techhamlet.com/"/>
   <link href="http://techhamlet.superfeedr.com/" rel="hub"/>
-  <updated>2013-08-15T08:03:47+05:30</updated>
+  <updated>2013-09-04T12:13:35+05:30</updated>
   <id>http://techhamlet.com/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
@@ -13,6 +13,148 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[3 Cool Ubuntu Plymouth (Boot) Themes : OS X, PAW Ubuntu and PAW Gnome]]></title>
+    <link href="http://techhamlet.com/2013/09/how-to-install-ubuntu-plymouth-themes/"/>
+    <updated>2013-09-04T11:54:00+05:30</updated>
+    <id>http://techhamlet.com/2013/09/how-to-install-ubuntu-plymouth-themes</id>
+    <content type="html"><![CDATA[<p>Ubuntu already have a sleek boot screen. Sometimes you might want to change it to something different. If you are an OS X or a <a href="http://techhamlet.com/categories/windows/">Windows</a> user, you have to put aside your feelings and accept what they give to you. But you are a <a href="http://techhamlet.com/categories/linux/">Linux</a> user&hellip; You can do anything you want! So, why can&rsquo;t we change the boot screen into one of these&hellip;?</p>
+
+<p><img src="http://techhamlet.com/images/post-images/2013/09/paw-ubuntu-plymouth-themes.jpg" alt="Ubuntu Plymouth Themes" /></p>
+
+<p>Today I&rsquo;m going to show you how to install three simple Plymouth (boot) themes on Ubuntu. You can install most of the other plymouth themes out there in the same way. So, stick with us&hellip;</p>
+
+<h2>First, Download the Plymouth Themes :</h2>
+
+<p><a href="http://ubuntuone.com/1f1cEzkl42YhzBFkUwL3Kg">OS X Plymouth Theme</a></p>
+
+<p><a href="http://love2spooge.deviantart.com/art/PAW-Ubuntu-Plymouth-Theme-173974272">PAW-Ubuntu Plymouth Theme</a></p>
+
+<p><a href="http://gnome-look.org/content/show.php/?content=158162">Ubuntu Gnome Paw Plymouth Theme</a></p>
+
+<h2>Before Installing&hellip;</h2>
+
+<p>Before installing the themes, we need to make sure they will be displayed correctly. For that&hellip;</p>
+
+<ul>
+<li>Open the Terminal <code>Ctrl+ALT+T</code> and enter the following commands to create a file called <strong>splash</strong> in <strong>/etc/initramfs-tools/conf.d/</strong> :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /etc/initramfs-tools/conf.d/splash</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Next, place the following line in that file and save it :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>FRAMEBUFFER=y</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Now run the following commands to update the system :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-initramfs -u;sudo update-alternatives --config default.plymouth</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>How To Install OS X and PAW-Ubuntu themes :</h2>
+
+<ul>
+<li>Navigate to the download directory and unzip the downloaded files :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd ~/Downloads/
+</span><span class='line'>unzip Paw-OSX.zip
+</span><span class='line'>unzip PAW_OS_X_Plymouth_Theme_by_love2spooge.zip</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Now move the files to the Plymouth Themes directory :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo mv Paw-OSX/ /lib/plymouth/themes
+</span><span class='line'>sudo mv Paw-Ubuntu/ /lib/plymouth/themes</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Next, install the newly added themes :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-alternatives --install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/Paw-OSX/paw-osx.plymouth 100
+</span><span class='line'>sudo update-alternatives --install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/Paw-Ubuntu/paw-ubuntu.plymouth 100</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>After that, you have to select which plymouth theme you need to use. For that, first issue the following command to bring up the default plymouth chooser :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-alternatives --config default.plymouth</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Next, enter the number of the plymouth theme you need to use. In my case, its 1 for OS X theme and 3 for PAW-Ubuntu</li>
+</ul>
+
+
+<p><img src="http://techhamlet.com/images/post-images/2013/09/choose-plymouth-theme.jpg" alt="Choose Plymouth Theme" /></p>
+
+<ul>
+<li>Finally, enter the following command to update the system :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-initramfs -u</span></code></pre></td></tr></table></div></figure>
+
+
+<h2>How To Install PAW Gnome theme :</h2>
+
+<p>Installing this theme is fairly easy. When downloading, you might have noticed that it comes as a .deb file. We just have to install it and select the theme in the plymouth chooser&hellip;</p>
+
+<ul>
+<li>First, navigate to the download folder and double click on the <code>158162-plymouth-theme-paw_13.04_all.deb</code> file which you just downloaded and install it</li>
+<li>After finishing the installation, open the Terminal <code>Ctrl+ALT+T</code> and enter the following command to open the plymouth chooser :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-alternatives --config default.plymouth</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li><p>Next select the number of the <code>/lib/plymouth/themes/paw/paw.plymouth</code> theme. (Refer to the screenshot above. In my case its 4 according to the screenshot)</p></li>
+<li><p>Finally, enter the following command to update the system :</p></li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-initramfs -u</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Enjoyed? These are the two popular methods of plymouth theme installation. You can use these methods to install most of the boot themes out there. There were also GUI apps to do this job but they are outdated. But still, it won&rsquo;t kill you if you use the Terminal! Common, its better than the GUI apps!</p>
+
+<p><em>&ndash; Special thanks should go to <a href="http://www.noobslab.com/2013/05/mac-os-x-theme-for-ubuntu-1304-raring.html">noobslab.com</a> for introducing the OS X splash screen</em></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Killer Android Home Screens : Simple Colors]]></title>
@@ -1040,36 +1182,6 @@
 <p>The shortcut will take you to a separate browser window which will open the Evernote web app. You have installed Evernote for Linux ! But this browser window won&rsquo;t have an address bar. Only Evernote. It&rsquo;s like an Evernote native app. But the only issue you will face is the absence of offline access. You need be connected to the Internet in order to use this. But today most of us always have a connection. So, for many this won&rsquo;t be a problem.</p>
 
 <p>This might be the only way to get official app of Evernote for Linux. Lets hope that they&rsquo;ll understand the power of Linux in the future and create a native Linux app. Until then, this might work for you.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Add a Unity Like Dash to Gnome Desktop : No Need to go to the Overview]]></title>
-    <link href="http://techhamlet.com/2013/05/dash-to-gnome-desktop/"/>
-    <updated>2013-05-31T19:47:44+05:30</updated>
-    <id>http://techhamlet.com/2013/05/dash-to-gnome-desktop</id>
-    <content type="html"><![CDATA[<p><img src="http://techhamlet.com/wp-content/uploads/2013/05/dash-to-dock-550x385.jpg" alt="Dash to Gnome" /></p>
-
-<p>One of the biggest annoyances we have in Gnome Shell is the need to go to the overview by hovering the mouse over the top left corner of the screen every time we need to deal with open or new apps. In Unity, we always have the dash. In old systems, we always had the panel. To resolve the common issues in Gnome Shell, we have Shell Extensions. So, is there an extension that can save our lives? There is one good extension that can add a dash to Gnome desktop!</p>
-
-<p>The Gnome Shell extension Dash to Dock will add a cool dash to Gnome desktop. Unlike the dash which comes out when you go to the overview, this dash won&rsquo;t hide itself in the desktop. It will hide only if you open a maximized app. Then it will hide to give space to the window. You also can edit this dash&rsquo;s settings to prevent it from hiding. You can even make it look exactly like Unity! A Unity Dash to Gnome desktop without installing Unity!</p>
-
-<h3>How To add a Dash to Gnome desktop :</h3>
-
-<ul>
-<li><p>Open Chrome or Firefox and visit this URL : <a href="https://extensions.gnome.org/extension/307/dash-to-dock/">https://extensions.gnome.org/extension/307/dash-to-dock/</a></p></li>
-<li><p>Now, simply, put the switch right next to the title of the extension to enable (switch on) the extension</p></li>
-<li><p>To edit the settings of the dash, open the terminal and issue the following command :</p></li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>gnome-shell-extension-prefs dash-to-dock@micxgx.gmail.com</span></code></pre></td></tr></table></div></figure>
-
-
-<p><img src="http://techhamlet.com/wp-content/uploads/2013/05/dash-to-dock-unity-550x309.jpg" alt="Dash to Gnome" /></p>
-
-<p>There are plenty of settings for you to play with. But be careful about what you change. Remember that the Unity like Dash to Gnome is buggy. So, try your best to avoid using it. Most of the Gnome Shell users will gladly accept this Dash because many hate to waste time by always going to the overview. I really hated that and later came back to Ubuntu and Unity! So, try it and let me know what you think about the new Dash to Gnome extension!</p>
 ]]></content>
   </entry>
   
