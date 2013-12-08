@@ -5,7 +5,7 @@
   <link href="http://techhamlet.com/atom.xml" rel="self"/>
   <link href="http://techhamlet.com/"/>
   <link href="http://techhamlet.superfeedr.com/" rel="hub"/>
-  <updated>2013-12-08T18:37:53+05:30</updated>
+  <updated>2013-12-08T20:30:12+05:30</updated>
   <id>http://techhamlet.com/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
@@ -13,6 +13,27 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Amazon is Going to Deliver Your Packages using Drones... Or Rockets!]]></title>
+    <link href="http://techhamlet.com/2013/12/amazon-drones-and-rockets/"/>
+    <updated>2013-12-08T18:48:00+05:30</updated>
+    <id>http://techhamlet.com/2013/12/amazon-drones-and-rockets</id>
+    <content type="html"><![CDATA[<p>Recently Amazon made an announcements about their latest delivery method. Drones! That&rsquo;s right&hellip; Drones&hellip; Small unmanned air crafts! Most of you might heard of middle East drone killings. Well Amazon will not use those drones! Phew&hellip;</p>
+
+<iframe width="640" height="360" src="http://techhamlet.com//www.youtube.com/embed/98BIu9dpwHU" frameborder="0" allowfullscreen></iframe>
+
+
+<p>Amazon&rsquo;s main target is to deliver the goods faster than ever. Why? The biggest issue that make the normal delivery times long and totally unpredictable is traffic! No matter wherever you live, some one have to use the public roads to reach you. You&rsquo;ll never know how long will it take to reach you. But drones are coming from above. No traffic jams no crazy pedestrians no cops&hellip; They have the sky for themselves!</p>
+
+<p>But drones are not always the best method. If you think about weather they are totally unpredictable. If Amazon is going to use small drones as shown in their video they are going to face a big problem. I&rsquo;m not sure how they will face harsh weather conditions. You don&rsquo;t want your package to get lost in a storm aren&rsquo;t you? There&rsquo;s another problem&hellip;. If we get used to drones hovering over our heads, it will give terrorist groups a good excuse to use their own drones to have a peak inside the white house! A major security issue! Another problem&hellip; You can&rsquo;t say there&rsquo;s no traffic at all&hellip; What about thousands of manned aircrafts flying everyday? OK they fly in a very high altitude so the drones won&rsquo;t meet them unless they decide to pass an airport! The other traffic issue come from birds! Rarely birds hit air crafts and take them down completely (like the famous <a href="http://en.wikipedia.org/wiki/US_Airways_Flight_1549">Hudson river crash</a>). But when they climb to their cruising altitude they are safe. But drones might not go that high. So there&rsquo;s a big threat from nature!</p>
+
+<p>Drones have their advantages and disadvantages. Hope Amazon have considered about all the issues before they made the announcement. Let&rsquo;s put these drones aside for a sec. What do you think about rocket delivery? They can be faster than drones! See for yourself :</p>
+
+<iframe width="640" height="360" src="http://techhamlet.com//www.youtube.com/embed/jHrngvEok9M" frameborder="0" allowfullscreen></iframe>
+
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Ubuntu Won't Detect My Nvidia GPU! How To Install Proprietary Driver? ]]></title>
@@ -1184,15 +1205,6 @@
 <h3>Paranoid Android Halo is not just for chatting&hellip;</h3>
 
 <p>It will show any notification of any app. If you get a notification Paranoid Android Halo will show a small tooltip and fill its bubble with an image from the app. You don&rsquo;t have to stop the app you are currently working on. You don&rsquo;t have to lose its data. You don&rsquo;t have to stop the game you are playing&hellip; Simply click on Paranoid Android Halo and it will open what ever the app that generated the notification, let it be Gmail, Google Talk, Facebook, or any other app in a mini window in front of the existing app. The full app will be shown! after you are done dealing with the notification, you can click on the background and Halo will disappear! Android multi tasking to the next level! Check the video review created by <a href="http://www.youtube.com/user/oode?feature=watch">oode</a></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Advanced Mobile Care-A Must to Secure Your Android]]></title>
-    <link href="http://techhamlet.com/2013/06/advanced-mobile-care-a-must-to-secure-your-android/"/>
-    <updated>2013-06-04T08:05:22+05:30</updated>
-    <id>http://techhamlet.com/2013/06/advanced-mobile-care-a-must-to-secure-your-android</id>
-    <content type="html"><![CDATA[<p>Advanced Mobile Care is an all-in-one Android security and performance optimization app that performs real-time virus scans while also featuring a brand new Anti-theft, powerful Game Speeder, Battery Saver, Call Blocker, App Manager, Task Killer, Privacy Locker, Privacy Advisor and Cloud Backup. Remember the world famous Advanced System care which take of your PC? Which clean, tweak, optimize and secure your PC? Advanced Mobile care is its Android version! A well trusted utility suit for Android.</p>
 ]]></content>
   </entry>
   
