@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | Tech Hamlet]]></title>
   <link href="http://techhamlet.com/categories/linux/atom.xml" rel="self"/>
   <link href="http://techhamlet.com/"/>
-  <updated>2013-09-29T13:29:30+05:30</updated>
+  <updated>2013-12-08T18:37:53+05:30</updated>
   <id>http://techhamlet.com/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
@@ -12,6 +12,47 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu Won't Detect My Nvidia GPU! How To Install Proprietary Driver? ]]></title>
+    <link href="http://techhamlet.com/2013/12/ubuntu-wont-detect-nvidia/"/>
+    <updated>2013-12-08T18:10:00+05:30</updated>
+    <id>http://techhamlet.com/2013/12/ubuntu-wont-detect-nvidia</id>
+    <content type="html"><![CDATA[<p>I just bought a new GT640 Nvidia card. I&rsquo;m running the latest Ubuntu 13.10.  So I thought it will detect my new GPU without any issues. The system booted up and worked fine but unfortunately it didn&rsquo;t detect the card to let me install proprietary Nvidia drivers. So, can we install proper drivers without Ubuntu&rsquo;s support?</p>
+
+<p><img src="/images/post-images/2013/12/nvidia.jpg" alt="Nvidia" /></p>
+
+<p>Its easy. But first of all, you need to make sure that you have an Nvidia card on your machine. I&rsquo;m serious! We are going to add <a href="https://launchpad.net/~xorg-edgers/+archive/ppa">xorg-edgers ppa</a> and install the latest Nvidia graphic drivers. Since these are new and still considered as testing, there&rsquo;s a slight chance of breaking things. So, be careful ! I&rsquo;m using these drivers and they work just fine for me! So let&rsquo;s get started&hellip;</p>
+
+<ul>
+<li>First add the xorg-edgers ppa and update the sources with the following command :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo add-apt-repository ppa:xorg-edgers/ppa
+</span><span class='line'>sudo apt-get update</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li>Next upgrade your system to make sure everything is up-to-date (The new PPA might have some updated xorg packages):</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get dist-upgrade</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<ul>
+<li>Finally install the latest drivers :</li>
+</ul>
+
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install nvidia-331</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p><em>Image source : <a href="http://www.flickr.com/photos/djandywdotcom/10641625834">djandyw.com</a></em></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[3 Cool Ubuntu Plymouth (Boot) Themes : OS X, PAW Ubuntu and PAW Gnome]]></title>
@@ -376,148 +417,6 @@
 <h3>Mac OS X vs Linux&hellip; What is the best?</h3>
 
 <p>Clearly, Linux is the better option. Mac users will fire at me but this is the truth. Many people buy Apple products to show that they are rich. Trust me, that&rsquo;s the truth. If not, why spend a lot of money just to buy a boring old product? Their support is extremely good. Is it worth it? Once I tried to buy a new notebook and considered Mac. I was unable to find a powerful enough Mac to replace my existing old notebook! A Mac can&rsquo;t replace its power. You might say you&rsquo;re going for the OS X. But isn&rsquo;t Linux better than OS X? If you want the OS X look, it won&rsquo;t take 30 minutes to transform your Linux desktop into a Mac. But you can never transform Mac into a Linux! That&rsquo;s the difference! Mac users are trapped inside Apple&rsquo;s prison while Linux people are free to do anything! The clear winner in the battle of Mac OS X vs Linux is Linux!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[How To Fix Ugly Ubuntu Login Resolution Issues in Multi-Monitor Setups]]></title>
-    <link href="http://techhamlet.com/2013/06/how-to-fix-ugly-ubuntu-login/"/>
-    <updated>2013-06-13T20:08:44+05:30</updated>
-    <id>http://techhamlet.com/2013/06/how-to-fix-ugly-ubuntu-login</id>
-    <content type="html"><![CDATA[<p>If you install Ubuntu in a multi-monitor environment, earlier, you had to face a lot of issues. But now Ubuntu have fixed most of those issues. But one major issues still persists! If you try to login to an Ubuntu machine which have multiple monitors, the Uubntu Greeter (Login Screen) will have a smaller resolution that doesn&rsquo;t fit the monitor. Sometimes it will be stretched or crushed. In simple terms, it will look a lot ugly! Is there a fix for this? Yes!</p>
-
-<p><a href="http://techhamlet.com/wp-content/uploads/2013/06/ubuntu-login-greeter-multi-monitor.jpg"><img src="http://techhamlet.com/wp-content/uploads/2013/06/ubuntu-login-greeter-multi-monitor-550x180.jpg" alt="Fixed Ubuntu Login in a Multi-Monitor Setup" /></a> Fixed Ubuntu Login in a Multi-Monitor Setup</p>
-
-<p>Currently I have a 19 inch and a 23 inch monitor. If I install Ubuntu in my machine, both the monitors will get stretched in the login screen. They won&rsquo;t get the correct resolutions and will look like hell. This bug haunts many people. Many dual monitor setups won&rsquo;t get correct resolutions in the login screen. Actually, it won&rsquo;t give you the correct resolution even in the desktop. But we can fix it simply by changing display settings. But&hellip;</p>
-
-<h3>How to fix the Ubuntu login screen resolution?</h3>
-
-<ul>
-<li>First, open the terminal and run Xrandr and get the ids of the connected monitors :</li>
-</ul>
-
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>xrandr</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<ul>
-<li> You will get an output like this :</li>
-</ul>
-
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-<span class='line-number'>6</span>
-<span class='line-number'>7</span>
-<span class='line-number'>8</span>
-<span class='line-number'>9</span>
-<span class='line-number'>10</span>
-<span class='line-number'>11</span>
-<span class='line-number'>12</span>
-<span class='line-number'>13</span>
-<span class='line-number'>14</span>
-<span class='line-number'>15</span>
-<span class='line-number'>16</span>
-<span class='line-number'>17</span>
-<span class='line-number'>18</span>
-<span class='line-number'>19</span>
-<span class='line-number'>20</span>
-<span class='line-number'>21</span>
-<span class='line-number'>22</span>
-<span class='line-number'>23</span>
-<span class='line-number'>24</span>
-<span class='line-number'>25</span>
-<span class='line-number'>26</span>
-<span class='line-number'>27</span>
-<span class='line-number'>28</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>pubudu@pc1:~$ xrandr
-</span><span class='line'>Screen 0: minimum 320 x 200, current 3286 x 1080, maximum 32767 x 32767
-</span><span class='line'>VGA1 connected 1366x768+1920+0 (normal left inverted right x axis y axis) 410mm x 230mm
-</span><span class='line'>   1366x768       59.8&lt;em>+
-</span><span class='line'>   1024x768       75.1     70.1     60.0&lt;br/>
-</span><span class='line'>   832x624        74.6&lt;br/>
-</span><span class='line'>   800x600        72.2     75.0     60.3     56.2&lt;br/>
-</span><span class='line'>   640x480        72.8     75.0     66.7     60.0&lt;br/>
-</span><span class='line'>   720x400        70.1&lt;br/>
-</span><span class='line'>HDMI1 connected 1920x1080+0+0 (normal left inverted right x axis y axis) 510mm x 287mm
-</span><span class='line'>   1920x1080      60.0&lt;/em>+   50.0&lt;br/>
-</span><span class='line'>   1680x1050      59.9&lt;br/>
-</span><span class='line'>   1600x900       60.0&lt;br/>
-</span><span class='line'>   1280x1024      75.0     60.0&lt;br/>
-</span><span class='line'>   1440x900       59.9&lt;br/>
-</span><span class='line'>   1280x800       59.9&lt;br/>
-</span><span class='line'>   1152x864       75.0&lt;br/>
-</span><span class='line'>   1280x720       50.0     60.0&lt;br/>
-</span><span class='line'>   1024x768       75.1     70.1     60.0&lt;br/>
-</span><span class='line'>   832x624        74.6&lt;br/>
-</span><span class='line'>   800x600        72.2     75.0     60.3     56.2&lt;br/>
-</span><span class='line'>   720x576        50.0&lt;br/>
-</span><span class='line'>   720x480        59.9&lt;br/>
-</span><span class='line'>   640x480        72.8     75.0     66.7     60.0&lt;br/>
-</span><span class='line'>   720x400        70.1&lt;br/>
-</span><span class='line'>HDMI2 disconnected (normal left inverted right x axis y axis)
-</span><span class='line'>DP1 disconnected (normal left inverted right x axis y axis)
-</span><span class='line'>DP2 disconnected (normal left inverted right x axis y axis)</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<ul>
-<li><p>Check the marked lines in the above output (line number 3 and 10). At the start of those lines, you can find the ID of the attached monitors. (In front of attached monitors you will see &ldquo;connected&rdquo;). For me, the IDs of my two monitors are VGA1 and HDMI1. Note them down and also note down the current resolution (in front of the ID and the word &ldquo;connected&rdquo;)</p></li>
-<li><p>Next, you have to create a script. Open the terminal and enter  the following command to create the script file :</p></li>
-</ul>
-
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /usr/share/lightdmxrandr.sh</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<ul>
-<li> Then paste the following code in the file :</li>
-</ul>
-
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-<span class='line-number'>5</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>&lt;/p>
-</span><span class='line'>
-</span><span class='line'>&lt;h1>!/bin/sh&lt;/h1>
-</span><span class='line'>
-</span><span class='line'>&lt;p>xrandr &mdash;output HDMI1 &mdash;primary &mdash;mode 1920x1080 &mdash;output VGA1 &mdash;mode 1366x768 &mdash;right-of HDMI1</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<ul>
-<li><p>Replace &ldquo;HDMI1&rdquo; and &ldquo;VGA1&rdquo; with the IDs of your own monitor IDs. Also replace the resolution with your own values. If  you have more monitors, add another part to the end of the second line like &ldquo;&mdash;output VGA2 &mdash;mode 1366x768 &mdash;right-of VGA1&rdquo;. Change the VGA1, VGA2 and the resolutions accordingly.</p></li>
-<li><p>Now, make the file executable with the following command :</p></li>
-</ul>
-
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo chmod a+rx /usr/share/lightdmxrandr.sh</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<ul>
-<li> After that, open the lightdm.conf :</li>
-</ul>
-
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /etc/lightdm/lightdm.conf</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<ul>
-<li>And add the following line to the end of the file which will make sure that the system will run our script in the login screen :</li>
-</ul>
-
-
-<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>display-setup-script=/usr/share/lightdmxrandr.sh</span></code></pre></td></tr></table></div></figure></notextile></div></p>
-
-<ul>
-<li>Finally, reboot your system!</li>
-</ul>
-
-
-<p>Got it fixed? Working perfectly? Great! Now, before thanking me, thank <a href="http://www.sudo-juice.com/lightdm-resolution/">sudo-juice.com</a> for coming up with a solution. In the script he used, he only fixed the resolution of the primary monitor. This will work for some but for people like me, it won&rsquo;t. I  had to fix the second monitor as well. The script I have given here can be used for any number of monitors! Hope it fixed your issues. If not, please leave a comment and let us know. We will try our best to fix it!</p>
 ]]></content>
   </entry>
   

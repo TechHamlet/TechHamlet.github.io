@@ -5,7 +5,7 @@
   <link href="http://techhamlet.com/atom.xml" rel="self"/>
   <link href="http://techhamlet.com/"/>
   <link href="http://techhamlet.superfeedr.com/" rel="hub"/>
-  <updated>2013-09-29T13:29:30+05:30</updated>
+  <updated>2013-12-08T18:37:53+05:30</updated>
   <id>http://techhamlet.com/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
@@ -13,6 +13,50 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Ubuntu Won't Detect My Nvidia GPU! How To Install Proprietary Driver? ]]></title>
+    <link href="http://techhamlet.com/2013/12/ubuntu-wont-detect-nvidia/"/>
+    <updated>2013-12-08T18:10:00+05:30</updated>
+    <id>http://techhamlet.com/2013/12/ubuntu-wont-detect-nvidia</id>
+    <content type="html"><![CDATA[<p>I just bought a new GT640 Nvidia card. I&rsquo;m running the latest Ubuntu 13.10.  So I thought it will detect my new GPU without any issues. The system booted up and worked fine but unfortunately it didn&rsquo;t detect the card to let me install proprietary Nvidia drivers. So, can we install proper drivers without Ubuntu&rsquo;s support?</p>
+
+<p><img src="http://techhamlet.com/images/post-images/2013/12/nvidia.jpg" alt="Nvidia" /></p>
+
+<p>Its easy. But first of all, you need to make sure that you have an Nvidia card on your machine. I&rsquo;m serious! We are going to add <a href="https://launchpad.net/~xorg-edgers/+archive/ppa">xorg-edgers ppa</a> and install the latest Nvidia graphic drivers. Since these are new and still considered as testing, there&rsquo;s a slight chance of breaking things. So, be careful ! I&rsquo;m using these drivers and they work just fine for me! So let&rsquo;s get started&hellip;</p>
+
+<ul>
+<li>First add the xorg-edgers ppa and update the sources with the following command :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo add-apt-repository ppa:xorg-edgers/ppa
+</span><span class='line'>sudo apt-get update</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Next upgrade your system to make sure everything is up-to-date (The new PPA might have some updated xorg packages):</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get dist-upgrade</span></code></pre></td></tr></table></div></figure>
+
+
+<ul>
+<li>Finally install the latest drivers :</li>
+</ul>
+
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install nvidia-331</span></code></pre></td></tr></table></div></figure>
+
+
+<p><em>Image source : <a href="http://www.flickr.com/photos/djandywdotcom/10641625834">djandyw.com</a></em></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[3 Cool Ubuntu Plymouth (Boot) Themes : OS X, PAW Ubuntu and PAW Gnome]]></title>
@@ -940,6 +984,9 @@
 
 <p>The video guide will give you a very good idea on what to do. For some, it will be more useful than the normal detailed guide. But I recommend you to follow both!</p>
 
+<iframe width="640" height="360" src="http://techhamlet.com//www.youtube.com/embed/uGzjjqHGAk8" frameborder="0" allowfullscreen></iframe>
+
+
 <h4>The detailed guide :</h4>
 
 <p><strong>1) Setting up BIOS/UEFI and booting the ISO :</strong></p>
@@ -1146,42 +1193,6 @@
     <updated>2013-06-04T08:05:22+05:30</updated>
     <id>http://techhamlet.com/2013/06/advanced-mobile-care-a-must-to-secure-your-android</id>
     <content type="html"><![CDATA[<p>Advanced Mobile Care is an all-in-one Android security and performance optimization app that performs real-time virus scans while also featuring a brand new Anti-theft, powerful Game Speeder, Battery Saver, Call Blocker, App Manager, Task Killer, Privacy Locker, Privacy Advisor and Cloud Backup. Remember the world famous Advanced System care which take of your PC? Which clean, tweak, optimize and secure your PC? Advanced Mobile care is its Android version! A well trusted utility suit for Android.</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Evernote for Linux : How to Use Evernote as a Normal Linux Desktop App]]></title>
-    <link href="http://techhamlet.com/2013/06/evernote-for-linux/"/>
-    <updated>2013-06-03T20:14:50+05:30</updated>
-    <id>http://techhamlet.com/2013/06/evernote-for-linux</id>
-    <content type="html"><![CDATA[<p>Evernote is the king in online note taking apps. It&rsquo;s loved and used by many people around the world every day. Its full of features. You can use it to take simple notes, add to-do lists, save stuff to read leader and read them in a distraction free reader, clip items from the web, save important moments of your life, etc, etc, etc&hellip; Evernote stands out from the rest of the note taking apps because of its ease of use, huge number of features, many number of applications, killer unique features like searching words in the images you upload and the availability in almost any platform. You have Windows, Mac, Android, iOS, Blackberry, Windows Phone and Web apps built by Evernote. Unfortunately, there is no Evernote for Linux ! Linux users need to use the web client. But it can be painful to always go to the browser, enter the url, and then enter the log in information to use the service. But there&rsquo;s a shortcut&hellip;</p>
-
-<p>There are some third-party apps like Everpad which bring Evernote for Linux. But there is a way to get to the official Evernote app right from your OS (With a desktop shortcut or through the system menu). It&rsquo;s a simple trick. But it works for many&hellip;</p>
-
-<h3>How To add Evernote for Linux :</h3>
-
-<p>Before proceeding, I should tell you that this is only a small trick. Sometimes, you might already know this trick. But haven&rsquo;t used it for real. But it will work&hellip;</p>
-
-<p>What we are going to do is, install the Evernote Chrome web app. This will give you a full Evernote experience in Google Chrome. After log in in once, you don&rsquo;t need to log in again. One problem solved. Now we need a way to access it right from the desktop or through the menu without going through the browser. For this, Chrome have a solution! Here&rsquo;s how to get Evernote for Linux &hellip;</p>
-
-<ul>
-<li><p>First, open Google Chrome and install the <a href="https://chrome.google.com/webstore/detail/evernote-web/lbfehkoinhhcknnbdgnnmjhiladcgbol">Evernote web app</a></p></li>
-<li><p>Now open a new tab and go to the web apps</p></li>
-<li><p>Right click on Evernote (you can do this to any app) and select &ldquo;Create Shortcut&rdquo;</p></li>
-</ul>
-
-
-<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/chrome-web-apps-550x312.jpg" alt="Evernote for Linux" /></p>
-
-<ul>
-<li><p>Now tick the places you need the shortcut to be added &ldquo;Desktop&rdquo; or &ldquo;Application Menu&rdquo; and click OK</p></li>
-<li><p>Now you will get an Evernote icon on your desktop. You can use this to go directly to Evernote</p></li>
-</ul>
-
-
-<p>The shortcut will take you to a separate browser window which will open the Evernote web app. You have installed Evernote for Linux ! But this browser window won&rsquo;t have an address bar. Only Evernote. It&rsquo;s like an Evernote native app. But the only issue you will face is the absence of offline access. You need be connected to the Internet in order to use this. But today most of us always have a connection. So, for many this won&rsquo;t be a problem.</p>
-
-<p>This might be the only way to get official app of Evernote for Linux. Lets hope that they&rsquo;ll understand the power of Linux in the future and create a native Linux app. Until then, this might work for you.</p>
 ]]></content>
   </entry>
   
