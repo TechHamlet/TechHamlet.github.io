@@ -259,6 +259,32 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install nvidia-331</span></code></pre></td></tr></table></div></figure>
 
 
+<p>If you run into any issues. You can simply remove the proprietary drivers with the following commands :</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get remove nvidia-331
+</span><span class='line'>sudo apt-get autoremove
+</span><span class='line'>sudo apt-get install ppa-purge
+</span><span class='line'>sudo ppa-purge xorg-edgers</span></code></pre></td></tr></table></div></figure>
+
+
+<p>Still, if you need to try proprietary drivers even if the latest one failed, you can try installing the old packages that come with Ubuntu :</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install nvidia-current</span></code></pre></td></tr></table></div></figure>
+
+
+<p>If that also failed, here&rsquo;s how to remove it :</p>
+
+<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get remove nvidia-current
+</span><span class='line'>sudo apt-get autoremove</span></code></pre></td></tr></table></div></figure>
+
+
 <p><em>Image source : <a href="http://www.flickr.com/photos/djandywdotcom/10641625834">djandyw.com</a></em></p>
 </div>
 

@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | Tech Hamlet]]></title>
   <link href="http://techhamlet.com/categories/linux/atom.xml" rel="self"/>
   <link href="http://techhamlet.com/"/>
-  <updated>2013-12-08T20:30:12+05:30</updated>
+  <updated>2013-12-09T06:39:48+05:30</updated>
   <id>http://techhamlet.com/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
@@ -49,6 +49,29 @@
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install nvidia-331</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>If you run into any issues. You can simply remove the proprietary drivers with the following commands :</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get remove nvidia-331
+</span><span class='line'>sudo apt-get autoremove
+</span><span class='line'>sudo apt-get install ppa-purge
+</span><span class='line'>sudo ppa-purge xorg-edgers</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>Still, if you need to try proprietary drivers even if the latest one failed, you can try installing the old packages that come with Ubuntu :</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install nvidia-current</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+
+<p>If that also failed, here&rsquo;s how to remove it :</p>
+
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get remove nvidia-current
+</span><span class='line'>sudo apt-get autoremove</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p><em>Image source : <a href="http://www.flickr.com/photos/djandywdotcom/10641625834">djandyw.com</a></em></p>
 ]]></content>
