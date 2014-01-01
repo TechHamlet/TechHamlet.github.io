@@ -228,25 +228,25 @@
 
 <p>If you own a new Laptop and if you tried to install Linux on it, you might face a big problem. You might notice that your machine gets overheated madly. Some of you can even boil some water with your laptop! Why is this happening? Is it a problem with the hardware or is it a bug in Linux? Can we fix it? If we can, how to fix it?<!-- more --></p>
 
-<p>This is a huge problem which affects most of the Linux users who use mobile devices. Some say that the biggest problem is with the <a href="http://www.phoronix.com/scan.php?page=article&amp;item=linux_2638_aspm&amp;num=1">Power Management in the Linux kernel</a>. ASPM (Active State Power Management) is used to save power in PCI Express links by setting a lower power state for idle devices. In Linux kernel 2.6.38, ASPM will be switched off if the BIOS reports that it doesn&rsquo;t support it. But, unfortunately, many BIOSes have misconfigured these settings so, even though the system support ASPM, it will be switched off! So, your machine draws a lot of power and runs at full speed even when it&rsquo;s not required. This is not good for mobile devices&hellip;</p>
+<p>This is a huge problem which affects most of the Linux users who use mobile devices. Some say that the biggest problem is with the <a href="http://www.phoronix.com/scan.php?page=article&amp;item=linux_2638_aspm&amp;num=1">Power Management in the Linux kernel</a>. ASPM (Active State Power Management) is used to save power in PCI Express links by setting a lower power state for idle devices. In Linux kernel 2.6.38, ASPM will be switched off if the BIOS reports that it doesn&#8217;t support it. But, unfortunately, many BIOSes have misconfigured these settings so, even though the system support ASPM, it will be switched off! So, your machine draws a lot of power and runs at full speed even when it&#8217;s not required. This is not good for mobile devices&#8230;</p>
 
-<p>Now, lets see how to fix this problem&hellip; I won&rsquo;t tell you how to fix it step by step (Things are not that easy this time). There are a lot of articles around the web which gives you several solutions for this problem. Lets see whether they can help us.</p>
+<p>Now, lets see how to fix this problem&#8230; I won&#8217;t tell you how to fix it step by step (Things are not that easy this time). There are a lot of articles around the web which gives you several solutions for this problem. Lets see whether they can help us.</p>
 
 <p>I have a Core i7 HP Pavilion DV6 Laptop. In Windows, the normal CPU temperature stays between 55 and 58. But, when I install Linux (I tried Ubuntu), the temperature stays between 78 to 80! A few more and I can boil some water. Today I tried various things to fix this problem :</p>
 
-<p><strong>1)</strong> Recently, <a href="https://lkml.org/lkml/2011/11/10/467">Matthew Garrett</a> have created a kernel patch which might fix the ASPM issue. So, our developers at Ubuntu have compiled a <a href="https://wiki.ubuntu.com/Kernel/PowerManagement">special kernel</a> with this patch. First, I installed this kernel on my system. It took down the temperature a little bit but it&rsquo;s not enough for me. So, I kept searching&hellip;</p>
+<p><strong>1)</strong> Recently, <a href="https://lkml.org/lkml/2011/11/10/467">Matthew Garrett</a> have created a kernel patch which might fix the ASPM issue. So, our developers at Ubuntu have compiled a <a href="https://wiki.ubuntu.com/Kernel/PowerManagement">special kernel</a> with this patch. First, I installed this kernel on my system. It took down the temperature a little bit but it&#8217;s not enough for me. So, I kept searching&#8230;</p>
 
-<p><strong>2)</strong> Next, I found a small app called <a href="http://www.webupd8.org/2011/04/jupiter-0050-released-fixes-restore.html">Jupiter</a> which can control your power management settings specially for the CPU. I installed it and (you need to reboot after installing) set the &ldquo;Performance Mode&rdquo; to &ldquo;Power Saver&rdquo; (Click on the lightning bolt icon at top panel to change these settings). This also helps me to bring down the heat a little more&hellip;</p>
+<p><strong>2)</strong> Next, I found a small app called <a href="http://www.webupd8.org/2011/04/jupiter-0050-released-fixes-restore.html">Jupiter</a> which can control your power management settings specially for the CPU. I installed it and (you need to reboot after installing) set the &#8220;Performance Mode&#8221; to &#8220;Power Saver&#8221; (Click on the lightning bolt icon at top panel to change these settings). This also helps me to bring down the heat a little more&#8230;</p>
 
-<p><strong>3)</strong> I&rsquo;m desperate, so I tried one more trick which is a workaround for the ASPM issue. It&rsquo;s a fix which you apply to the boot loader which will allow you to force ASPM. Try it : <a href="http://www.webupd8.org/2011/06/linux-kernel-power-issue-fix.html">LINUX KERNEL POWER ISSUE / OVERHEAT WORKAROUND</a></p>
+<p><strong>3)</strong> I&#8217;m desperate, so I tried one more trick which is a workaround for the ASPM issue. It&#8217;s a fix which you apply to the boot loader which will allow you to force ASPM. Try it : <a href="http://www.webupd8.org/2011/06/linux-kernel-power-issue-fix.html">LINUX KERNEL POWER ISSUE / OVERHEAT WORKAROUND</a></p>
 
 <p><a href="http://techhamlet.com/wp-content/uploads/2011/11/ubuntu-laptop-heat.jpg"><img src="http://techhamlet.com/wp-content/uploads/2011/11/ubuntu-laptop-heat-340x191.jpg" alt="A heating Laptop" /></a></p>
 
-<p>After applying all these settings, I managed to get down the CPU heat to nearly 60 C. The VGA temperature also stays at 61 C. But, that&rsquo;s when the machine idle. When I start my work (Normal browsing), the heat goes up to about 65 and 70!</p>
+<p>After applying all these settings, I managed to get down the CPU heat to nearly 60 C. The VGA temperature also stays at 61 C. But, that&#8217;s when the machine idle. When I start my work (Normal browsing), the heat goes up to about 65 and 70!</p>
 
-<p>So, did it fix the issue? Only a little. Still we don&rsquo;t have an exact fix for this problem. Still Windows handles the heat better than Linux. But we can&rsquo;t ditch Linux and go for Windows! Some say that a fix will be included in the Linux kernel 3.2. But still we don&rsquo;t have any confirmation&hellip; I think they better fix it soon. Already a lot of people face this problem!</p>
+<p>So, did it fix the issue? Only a little. Still we don&#8217;t have an exact fix for this problem. Still Windows handles the heat better than Linux. But we can&#8217;t ditch Linux and go for Windows! Some say that a fix will be included in the Linux kernel 3.2. But still we don&#8217;t have any confirmation&#8230; I think they better fix it soon. Already a lot of people face this problem!</p>
 
-<p>PS : Don&rsquo;t worry your laptop won&rsquo;t burn like the one showed in the top photo. But from the inside it can do a lot of damage if it keeps getting over heated!</p>
+<p>PS : Don&#8217;t worry your laptop won&#8217;t burn like the one showed in the top photo. But from the inside it can do a lot of damage if it keeps getting over heated!</p>
 
 <p><em>-Image by <a href="http://www.flickr.com/photos/wlef70/5676015247/in/photostream/">wlef70</a> (the original photo is taken by <a href="http://www.flickr.com/photos/js_c/3792225255/">js.c</a>)</em></p>
 </div>
@@ -382,6 +382,20 @@
 
 
 
+          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/new-year-2014.jpg" alt="Wish You all a Very Happy New Year! How Did You Spent it?"></div>
+
+
+
+
+        <a href="/2014/01/happy-new-year-2014/">Wish You All a Very Happy New Year! How Did You Spent It?</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
           <div class="post-image"><img width="32" height="32" src="/images/post-images/2013/12/amazon-drone.jpg" alt="Amazon is Going to Deliver Your Packages using Drones... Or Rockets!"></div>
 
 
@@ -432,20 +446,6 @@
         <a href="/2013/08/simple-colors-android-home/">Killer Android Home Screens : Simple Colors</a>
       </li>
     
-      <li class="post">
-
-
-
-
-
-          <div class="post-image"><img width="32" height="32" src="/images/post-images/2013/08/elementary-os-luna-thumb.jpg" alt="Elementary OS Luna is Released! Fast, Beautiful, Clean and its Linux!"></div>
-
-
-
-
-        <a href="/2013/08/elementary-os-luna/">Elementary OS Luna Is Released! Fast, Beautiful, Clean and Its Linux!</a>
-      </li>
-    
   </ul>
 </section><section>
   <h1>Recent Comments</h1>
@@ -469,7 +469,7 @@
 		</p>
 
 		<p>
-		  Copyright &copy; 2009 - 2013 - Tech Hamlet Site Content (All post and page content) -
+		  Copyright &copy; 2009 - 2014 - Tech Hamlet Site Content (All post and page content) -
 		  Sri Lanka (All rights reserved)
 		</p>
 	</div>

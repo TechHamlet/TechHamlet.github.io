@@ -224,17 +224,17 @@
 
 
 
-<div class="entry-content"><p>In <a href="http://techhamlet.com/tag/ubuntu/">Ubuntu</a>, if you want to get a package which is not in the official repository, if you want to get the latest version of a package from another repository, we can use PPAs. A lot of third-party users have created their own repositories in Launchpad and we can add these PPA&rsquo;s to easily get those packages through our package manager.</p>
+<div class="entry-content"><p>In <a href="http://techhamlet.com/tag/ubuntu/">Ubuntu</a>, if you want to get a package which is not in the official repository, if you want to get the latest version of a package from another repository, we can use PPAs. A lot of third-party users have created their own repositories in Launchpad and we can add these PPA&#8217;s to easily get those packages through our package manager.</p>
 
-<p>In <a href="http://techhamlet.com/tag/arch-linux/">Arch Linux</a>, we don&rsquo;t want to go for third-party repos to get the latest versions. They always keep their repository updated. But what if the package is not available in this repository? Then we have to check the <a href="http://aur.archlinux.org/">Arch User Repository</a> (AUR) which contain packages maintained by third-party developers.</p>
+<p>In <a href="http://techhamlet.com/tag/arch-linux/">Arch Linux</a>, we don&#8217;t want to go for third-party repos to get the latest versions. They always keep their repository updated. But what if the package is not available in this repository? Then we have to check the <a href="http://aur.archlinux.org/">Arch User Repository</a> (AUR) which contain packages maintained by third-party developers.</p>
 
-<p>If we want to install a package from the AUR, we can&rsquo;t just add the source and use our default package manager <strong>pacman</strong> to install them. We have to manually download the package, build it, resolve any dependencies and then install it. If that package have many dependencies that we have to get from the AUR, then you&rsquo;ll get really frustrated trying to install all of them. But, things will be much easier if we had a package manager for AUR right? That&rsquo;s why we have Yaourt!</p>
+<p>If we want to install a package from the AUR, we can&#8217;t just add the source and use our default package manager <strong>pacman</strong> to install them. We have to manually download the package, build it, resolve any dependencies and then install it. If that package have many dependencies that we have to get from the AUR, then you&#8217;ll get really frustrated trying to install all of them. But, things will be much easier if we had a package manager for AUR right? That&#8217;s why we have Yaourt!</p>
 
-<p><a href="https://wiki.archlinux.org/index.php/Yaourt">Yaourt</a> is a package manager just like pacman. Actually it adds more functionality to pacman. Now, to install a package from the AUR, you don&rsquo;t have to download the tarballs and resolve dependencies manually. Yaourt will do it for you. If you want to use this tool, you don&rsquo;t have to learn any extra syntax. It have the same syntax of pacman. Cool isn&rsquo;t it?</p>
+<p><a href="https://wiki.archlinux.org/index.php/Yaourt">Yaourt</a> is a package manager just like pacman. Actually it adds more functionality to pacman. Now, to install a package from the AUR, you don&#8217;t have to download the tarballs and resolve dependencies manually. Yaourt will do it for you. If you want to use this tool, you don&#8217;t have to learn any extra syntax. It have the same syntax of pacman. Cool isn&#8217;t it?</p>
 
 <h3>How to Install Yaourt?</h3>
 
-<p>This is the last time you are downloading a tarball from AUR&hellip;</p>
+<p>This is the last time you are downloading a tarball from AUR&#8230;</p>
 
 <p><strong>Yaourt depends on another AUR package called Package Query which we need to install first :</strong></p>
 
@@ -260,7 +260,7 @@
 </span><span class='line'>makepkg -s</span></code></pre></td></tr></table></div></figure>
 
 
-<p><em>&ndash; Note : You have to adjust the first line to match your download folder. If you use a normal browser, it will be downloaded to the Downloads folder in your home directory. If you used <strong>wget</strong>, then you know what to do&hellip;</em></p>
+<p><em>- Note : You have to adjust the first line to match your download folder. If you use a normal browser, it will be downloaded to the Downloads folder in your home directory. If you used <strong>wget</strong>, then you know what to do&#8230;</em></p>
 
 <ul>
 <li>Now, to install the tar.xz package you just built, simply, issue the following command :</li>
@@ -271,7 +271,7 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo pacman -U package-query-1.0.1-1-x86_64.pkg.tar.xz</span></code></pre></td></tr></table></div></figure>
 
 
-<p><em>&ndash; Note : When you are trying, remember to change the version number according to the one you downloaded. Also remember that you have to use the <strong>tar.xz</strong> package and not the <strong>tar.gz</strong> package.</em></p>
+<p><em>- Note : When you are trying, remember to change the version number according to the one you downloaded. Also remember that you have to use the <strong>tar.xz</strong> package and not the <strong>tar.gz</strong> package.</em></p>
 
 <p><strong>Now that we have installed Package Query, lets install Yaourt. The same steps we followed above :</strong></p>
 
@@ -291,7 +291,7 @@
 </span><span class='line'>makepkg -s</span></code></pre></td></tr></table></div></figure>
 
 
-<p><em>&ndash; Note : You have to adjust the first line to match your download folder. If you use a normal browser, it will be downloaded to the Downloads folder in your home directory. If you used <strong>wget</strong>, then you know what to do&hellip;</em></p>
+<p><em>- Note : You have to adjust the first line to match your download folder. If you use a normal browser, it will be downloaded to the Downloads folder in your home directory. If you used <strong>wget</strong>, then you know what to do&#8230;</em></p>
 
 <ul>
 <li>To install the tar.xz package you just built, issue the following command :</li>
@@ -302,14 +302,14 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo pacman -U yaourt-1.0.1-1-any.pkg.tar.xz</span></code></pre></td></tr></table></div></figure>
 
 
-<p><em>&ndash; Note : When you are trying, remember to change the version number according to the one you downloaded. Also remember that you have to use the <strong>tar.xz</strong> package and not the <strong>tar.gz</strong> package.</em></p>
+<p><em>- Note : When you are trying, remember to change the version number according to the one you downloaded. Also remember that you have to use the <strong>tar.xz</strong> package and not the <strong>tar.gz</strong> package.</em></p>
 
 <ul>
 <li>Now you should have Yaourt installed!</li>
 </ul>
 
 
-<p>Locate a package from the <a href="http://aur.archlinux.org/">AUR</a> site and install it by issuing the command <strong>yaourt </strong><strong>.</strong> To learn more on how to use this new tool, please refer to the <a href="https://wiki.archlinux.org/index.php/Yaourt">Wiki</a>. If you faced any problems during the installation, please post them on our <a href="http://techhamlet.com/forum/">forum</a> and we&rsquo;ll be happy to help!</p>
+<p>Locate a package from the <a href="http://aur.archlinux.org/">AUR</a> site and install it by issuing the command <strong>yaourt </strong><strong>.</strong> To learn more on how to use this new tool, please refer to the <a href="https://wiki.archlinux.org/index.php/Yaourt">Wiki</a>. If you faced any problems during the installation, please post them on our <a href="http://techhamlet.com/forum/">forum</a> and we&#8217;ll be happy to help!</p>
 </div>
 
   
@@ -443,6 +443,20 @@
 
 
 
+          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/new-year-2014.jpg" alt="Wish You all a Very Happy New Year! How Did You Spent it?"></div>
+
+
+
+
+        <a href="/2014/01/happy-new-year-2014/">Wish You All a Very Happy New Year! How Did You Spent It?</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
           <div class="post-image"><img width="32" height="32" src="/images/post-images/2013/12/amazon-drone.jpg" alt="Amazon is Going to Deliver Your Packages using Drones... Or Rockets!"></div>
 
 
@@ -493,20 +507,6 @@
         <a href="/2013/08/simple-colors-android-home/">Killer Android Home Screens : Simple Colors</a>
       </li>
     
-      <li class="post">
-
-
-
-
-
-          <div class="post-image"><img width="32" height="32" src="/images/post-images/2013/08/elementary-os-luna-thumb.jpg" alt="Elementary OS Luna is Released! Fast, Beautiful, Clean and its Linux!"></div>
-
-
-
-
-        <a href="/2013/08/elementary-os-luna/">Elementary OS Luna Is Released! Fast, Beautiful, Clean and Its Linux!</a>
-      </li>
-    
   </ul>
 </section><section>
   <h1>Recent Comments</h1>
@@ -530,7 +530,7 @@
 		</p>
 
 		<p>
-		  Copyright &copy; 2009 - 2013 - Tech Hamlet Site Content (All post and page content) -
+		  Copyright &copy; 2009 - 2014 - Tech Hamlet Site Content (All post and page content) -
 		  Sri Lanka (All rights reserved)
 		</p>
 	</div>

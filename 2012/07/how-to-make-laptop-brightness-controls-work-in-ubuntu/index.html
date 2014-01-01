@@ -9,7 +9,7 @@
   <meta name="author" content="Pubudu Kodikara">
 
   
-  <meta name="description" content="If you have a new laptop most probably you&rsquo;ll run into a lot of problems while installing Linux like the over heating issue. The latest Ubuntu &hellip;">
+  <meta name="description" content="If you have a new laptop most probably you&#8217;ll run into a lot of problems while installing Linux like the over heating issue. The latest Ubuntu &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -226,15 +226,15 @@
 
 <div class="entry-content"><p><img src="http://techhamlet.com/wp-content/uploads/2012/07/bright-550x385.jpg" alt="Brightness" /></p>
 
-<p>If you have a new laptop most probably you&rsquo;ll run into a lot of problems while installing Linux like the over heating issue. The latest Ubuntu 12.04 and other Linux distributions with the kernel 3.4 have fixed most of these heating issues and we showed you how to fix the remaining issue which caused due to <a href="http://techhamlet.com/2012/05/ubuntu-how-to-fix-over-heating-of-laptops-with-switchable-graphics/">switchable graphics</a>. Apart from that, there&rsquo;s another issue that we need to fix. The screen brightness!</p>
+<p>If you have a new laptop most probably you&#8217;ll run into a lot of problems while installing Linux like the over heating issue. The latest Ubuntu 12.04 and other Linux distributions with the kernel 3.4 have fixed most of these heating issues and we showed you how to fix the remaining issue which caused due to <a href="http://techhamlet.com/2012/05/ubuntu-how-to-fix-over-heating-of-laptops-with-switchable-graphics/">switchable graphics</a>. Apart from that, there&#8217;s another issue that we need to fix. The screen brightness!</p>
 
-<p>Normally, you can adjust the brightness through your keyboard shortcuts or through &ldquo;Brightness and Lock&rdquo; settings. But for some people, this won&rsquo;t work! Specially for people with switchable graphics.</p>
+<p>Normally, you can adjust the brightness through your keyboard shortcuts or through &#8220;Brightness and Lock&#8221; settings. But for some people, this won&#8217;t work! Specially for people with switchable graphics.</p>
 
 <p>Earlier, I used to fix this by giving the brightness value I need during the startup (using the rc.local file). But this is a workaround and you need to restart every time you need to adjust the brightness.</p>
 
-<p>Trying to fix the issues, I just looked at the &ldquo;cd /sys/class/backlight/&rdquo; folder and there we have a problem. There are several VGAs in this folder and the system is not editing the right &ldquo;brightness&rdquo; file!</p>
+<p>Trying to fix the issues, I just looked at the &#8220;cd /sys/class/backlight/&#8221; folder and there we have a problem. There are several VGAs in this folder and the system is not editing the right &#8220;brightness&#8221; file!</p>
 
-<p>To fix this, we need to add a simple option to GRUB which will prevent the ACPI backlight driver from starting and letting the laptop specific drivers to handle the job. How to do it? Here&rsquo;s how&hellip;</p>
+<p>To fix this, we need to add a simple option to GRUB which will prevent the ACPI backlight driver from starting and letting the laptop specific drivers to handle the job. How to do it? Here&#8217;s how&#8230;</p>
 
 <ul>
 <li>Open the grub configuration file using Gedit (If you are familiar with nano you can use it) (Run the command on a terminal)</li>
@@ -246,7 +246,7 @@
 
 
 <ul>
-<li> Now, add <strong>acpi_backlight=vendor</strong> to the line <strong>GRUB_CMDLINE_LINUX=&ldquo;&#8221; </strong>like this :</li>
+<li> Now, add <strong>acpi_backlight=vendor</strong> to the line <strong>GRUB_CMDLINE_LINUX=&#8221;&#8220; </strong>like this :</li>
 </ul>
 
 
@@ -397,6 +397,20 @@
 
 
 
+          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/new-year-2014.jpg" alt="Wish You all a Very Happy New Year! How Did You Spent it?"></div>
+
+
+
+
+        <a href="/2014/01/happy-new-year-2014/">Wish You All a Very Happy New Year! How Did You Spent It?</a>
+      </li>
+    
+      <li class="post">
+
+
+
+
+
           <div class="post-image"><img width="32" height="32" src="/images/post-images/2013/12/amazon-drone.jpg" alt="Amazon is Going to Deliver Your Packages using Drones... Or Rockets!"></div>
 
 
@@ -447,20 +461,6 @@
         <a href="/2013/08/simple-colors-android-home/">Killer Android Home Screens : Simple Colors</a>
       </li>
     
-      <li class="post">
-
-
-
-
-
-          <div class="post-image"><img width="32" height="32" src="/images/post-images/2013/08/elementary-os-luna-thumb.jpg" alt="Elementary OS Luna is Released! Fast, Beautiful, Clean and its Linux!"></div>
-
-
-
-
-        <a href="/2013/08/elementary-os-luna/">Elementary OS Luna Is Released! Fast, Beautiful, Clean and Its Linux!</a>
-      </li>
-    
   </ul>
 </section><section>
   <h1>Recent Comments</h1>
@@ -484,7 +484,7 @@
 		</p>
 
 		<p>
-		  Copyright &copy; 2009 - 2013 - Tech Hamlet Site Content (All post and page content) -
+		  Copyright &copy; 2009 - 2014 - Tech Hamlet Site Content (All post and page content) -
 		  Sri Lanka (All rights reserved)
 		</p>
 	</div>

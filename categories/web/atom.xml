@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Web | Tech Hamlet]]></title>
   <link href="http://techhamlet.com/categories/web/atom.xml" rel="self"/>
   <link href="http://techhamlet.com/"/>
-  <updated>2013-12-09T14:52:30+05:30</updated>
+  <updated>2014-01-01T18:38:04+05:30</updated>
   <id>http://techhamlet.com/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
@@ -18,16 +18,16 @@
     <link href="http://techhamlet.com/2013/12/amazon-drones-and-rockets/"/>
     <updated>2013-12-08T18:48:00+05:30</updated>
     <id>http://techhamlet.com/2013/12/amazon-drones-and-rockets</id>
-    <content type="html"><![CDATA[<p>Recently Amazon made an announcements about their latest delivery method. Drones! That&rsquo;s right&hellip; Drones&hellip; Small unmanned air crafts! Most of you might heard of middle East drone killings. Well Amazon will not use those drones! Phew&hellip;</p>
+    <content type="html"><![CDATA[<p>Recently Amazon made an announcements about their latest delivery method. Drones! That's right... Drones... Small unmanned air crafts! Most of you might heard of middle East drone killings. Well Amazon will not use those drones! Phew...</p>
 
 <iframe width="640" height="360" src="http://techhamlet.com//www.youtube.com/embed/98BIu9dpwHU" frameborder="0" allowfullscreen></iframe>
 
 
-<p>Amazon&rsquo;s main target is to deliver the goods faster than ever. Why? The biggest issue that make the normal delivery times long and totally unpredictable is traffic! No matter wherever you live, some one have to use the public roads to reach you. You&rsquo;ll never know how long will it take to reach you. But drones are coming from above. No traffic jams no crazy pedestrians no cops&hellip; They have the sky for themselves!</p>
+<p>Amazon's main target is to deliver the goods faster than ever. Why? The biggest issue that make the normal delivery times long and totally unpredictable is traffic! No matter wherever you live, some one have to use the public roads to reach you. You'll never know how long will it take to reach you. But drones are coming from above. No traffic jams no crazy pedestrians no cops... They have the sky for themselves!</p>
 
-<p>But drones are not always the best method. If you think about weather they are totally unpredictable. If Amazon is going to use small drones as shown in their video they are going to face a big problem. I&rsquo;m not sure how they will face harsh weather conditions. You don&rsquo;t want your package to get lost in a storm aren&rsquo;t you? There&rsquo;s another problem&hellip;. If we get used to drones hovering over our heads, it will give terrorist groups a good excuse to use their own drones to have a peak inside the white house! A major security issue! Another problem&hellip; You can&rsquo;t say there&rsquo;s no traffic at all&hellip; What about thousands of manned aircrafts flying everyday? OK they fly in a very high altitude so the drones won&rsquo;t meet them unless they decide to pass an airport! The other traffic issue come from birds! Rarely birds hit air crafts and take them down completely (like the famous <a href="http://en.wikipedia.org/wiki/US_Airways_Flight_1549">Hudson river crash</a>). But when they climb to their cruising altitude they are safe. But drones might not go that high. So there&rsquo;s a big threat from nature!</p>
+<p>But drones are not always the best method. If you think about weather they are totally unpredictable. If Amazon is going to use small drones as shown in their video they are going to face a big problem. I'm not sure how they will face harsh weather conditions. You don't want your package to get lost in a storm aren't you? There's another problem.... If we get used to drones hovering over our heads, it will give terrorist groups a good excuse to use their own drones to have a peak inside the white house! A major security issue! Another problem... You can't say there's no traffic at all... What about thousands of manned aircrafts flying everyday? OK they fly in a very high altitude so the drones won't meet them unless they decide to pass an airport! The other traffic issue come from birds! Rarely birds hit air crafts and take them down completely (like the famous <a href="http://en.wikipedia.org/wiki/US_Airways_Flight_1549">Hudson river crash</a>). But when they climb to their cruising altitude they are safe. But drones might not go that high. So there's a big threat from nature!</p>
 
-<p>Drones have their advantages and disadvantages. Hope Amazon have considered about all the issues before they made the announcement. Let&rsquo;s put these drones aside for a sec. What do you think about rocket delivery? They can be faster than drones! See for yourself :</p>
+<p>Drones have their advantages and disadvantages. Hope Amazon have considered about all the issues before they made the announcement. Let's put these drones aside for a sec. What do you think about rocket delivery? They can be faster than drones! See for yourself :</p>
 
 <iframe width="640" height="360" src="http://techhamlet.com//www.youtube.com/embed/jHrngvEok9M" frameborder="0" allowfullscreen></iframe>
 
@@ -39,19 +39,19 @@
     <link href="http://techhamlet.com/2013/08/techhamlet-15/"/>
     <updated>2013-08-04T21:40:00+05:30</updated>
     <id>http://techhamlet.com/2013/08/techhamlet-15</id>
-    <content type="html"><![CDATA[<p>After a very long time of inactivity, we are coming back again! Everyone&hellip; Say hello to Tech Hamlet 15.0! This not just a simple redesign&hellip; The platform have changed&hellip;  The server have changed&hellip;  The policies have changed&hellip;  The way we work have changed&hellip; The layout have changed
-&hellip; What we write have changed&hellip;  The design have changed&hellip;  The core code have changed&hellip;  Everything have changed in Tech Hamlet!</p>
+    <content type="html"><![CDATA[<p>After a very long time of inactivity, we are coming back again! Everyone... Say hello to Tech Hamlet 15.0! This not just a simple redesign... The platform have changed...  The server have changed...  The policies have changed...  The way we work have changed... The layout have changed
+... What we write have changed...  The design have changed...  The core code have changed...  Everything have changed in Tech Hamlet!</p>
 
 <p><img src="/images/post-images/2013/08/techhamlet-15.jpg" alt="Tech Hamlet 15" /></p>
 
 <h2>Problems with the old site :</h2>
 
 <ul>
-<li><p><strong>WordPress</strong> : Yep&hellip;  <a href="http://wordpress.org/">WordPress</a> became a problem to us! Its one of the most popular and the most powerful blogging platforms on earth.  But its getting too heavy.  There are a lot of unwanted features.  We can&rsquo;t  blame WordPress.  Now that platform is used for a lot of applications.  It&rsquo;s not just a blogging platform.  Now it&rsquo;s used for blogging, marketing sites, portfolios, and as a CMS for many different kinds of sites. It&rsquo;s a mess. Unless you do a full optimization of the server,  the theme and the WordPress core itself,  you might have to spend a huge amount of money to find a good host for it. That&rsquo;s the same thing that happened to me. A Web site need to load really fast.  But WordPress have a lot of code to be generated before showing the site to the user. It&rsquo;s a big problem!</p></li>
-<li><p><strong>Ads</strong> : The first major problem we had is with Advertisements and Paid links! That&rsquo;s what drive most of the blogging community. People sell links and place ads on their websites without focusing on the contents. I hated this. But I also had to sell links and ads to keep the blog running.  I spent a lot of money for the host because I wanted to make things a lot faster. But recently I did a small survey and found out that a lot of people hate ads.  They draw the attention of the users.  That&rsquo;s what we want.  But that&rsquo;s not what our readers want.  They come here for valuable content.  Not for ads. Selling links is the other problem. Too many links = bad SEO. We even received a penalty from good old Google!</p></li>
-<li><p><strong>Guest posts</strong> : You will be amazed to see how many guest posts we receive. It always give me head aches when trying to go through all these emails. Sometimes, Tech Hamlet publish many irrelevant guest posts than relevant articles from us. Most of the guest posts we receive are off topic and doesn&rsquo;t even make sense! With them, we get links. A lot of linking from the guest posts. This is also a major reason that made Google award us a cool penalty!</p></li>
-<li><p><strong>Clutter</strong> : The old Tech Hamlet had too much clutter. A lot of sidebar widgets, a lot of bits and pieces in a post page. All of them steal away the reader&rsquo;s attention. That&rsquo;s not good. It started as a simple design but later turned into a cluttered porcupine!</p></li>
-<li><p><strong>The design and the layout</strong> : I made that old design and it looked really good to me. But there were some problems. Too much white in the design made it hard for some people to read. The font is not good. Actually every-time I tried to put a completely new design, WordPress stopped me. Its hard to change the WordPress layout. We can do it but it will be reverted back to defaults when we update. That&rsquo;s not good. The other problem with the design is that its old. Many blogs have already upgraded to modern designs!</p></li>
+<li><p><strong>WordPress</strong> : Yep...  <a href="http://wordpress.org/">WordPress</a> became a problem to us! Its one of the most popular and the most powerful blogging platforms on earth.  But its getting too heavy.  There are a lot of unwanted features.  We can't  blame WordPress.  Now that platform is used for a lot of applications.  It's not just a blogging platform.  Now it's used for blogging, marketing sites, portfolios, and as a CMS for many different kinds of sites. It's a mess. Unless you do a full optimization of the server,  the theme and the WordPress core itself,  you might have to spend a huge amount of money to find a good host for it. That's the same thing that happened to me. A Web site need to load really fast.  But WordPress have a lot of code to be generated before showing the site to the user. It's a big problem!</p></li>
+<li><p><strong>Ads</strong> : The first major problem we had is with Advertisements and Paid links! That's what drive most of the blogging community. People sell links and place ads on their websites without focusing on the contents. I hated this. But I also had to sell links and ads to keep the blog running.  I spent a lot of money for the host because I wanted to make things a lot faster. But recently I did a small survey and found out that a lot of people hate ads.  They draw the attention of the users.  That's what we want.  But that's not what our readers want.  They come here for valuable content.  Not for ads. Selling links is the other problem. Too many links = bad SEO. We even received a penalty from good old Google!</p></li>
+<li><p><strong>Guest posts</strong> : You will be amazed to see how many guest posts we receive. It always give me head aches when trying to go through all these emails. Sometimes, Tech Hamlet publish many irrelevant guest posts than relevant articles from us. Most of the guest posts we receive are off topic and doesn't even make sense! With them, we get links. A lot of linking from the guest posts. This is also a major reason that made Google award us a cool penalty!</p></li>
+<li><p><strong>Clutter</strong> : The old Tech Hamlet had too much clutter. A lot of sidebar widgets, a lot of bits and pieces in a post page. All of them steal away the reader's attention. That's not good. It started as a simple design but later turned into a cluttered porcupine!</p></li>
+<li><p><strong>The design and the layout</strong> : I made that old design and it looked really good to me. But there were some problems. Too much white in the design made it hard for some people to read. The font is not good. Actually every-time I tried to put a completely new design, WordPress stopped me. Its hard to change the WordPress layout. We can do it but it will be reverted back to defaults when we update. That's not good. The other problem with the design is that its old. Many blogs have already upgraded to modern designs!</p></li>
 <li><p><strong>Categories</strong> : Most of the categories were added back in 2009. I wanted to add as much categories as I can but later it turned out to be a disaster. If we use a wider category model, then it only keep growing. We had to add more categories and it became a bit out of control! Categories should simply tell the reader what we have. But our categories told them that we are making a fruit salad!</p></li>
 <li><p><strong>WordPress plugins and speed</strong> : In order to get the right functionality, I had to add a lot of plugins. Several times I tried to prune the plugins but that list never shrieked. Those plugins and the dynamic nature of WordPress made the blog slow. That will make the readers sad too!</p></li>
 <li><p><strong>Hosting</strong> : If I need to pay for WordPress hosting, then I need a lot of ads and get my hands dirty. The site need a very powerful server so I had to spend a lot for a good VPS.</p></li>
@@ -64,12 +64,12 @@
 
 <p><img src="http://techhamlet.com/wp-content/uploads/2013/06/octopress-550x385.jpg" alt="Octopress" /></p>
 
-<p>WordPress is dead. We have just moved away from that platform to Octopress. Its all about static blogging. The <a href="http://octopress.org/">Octopress</a> framework is built on Jekyll and Ruby. The source code for the website resides in your machine and in a remote git repository (if you need backups). There&rsquo;s a default minimal and responsive design added by Octopress. But you are free to change it. I have done a lot of customization to the default Octopress layout. You can&rsquo;t say its a Octopress site by just looking at it! I have added the following features to make it more powerful :</p>
+<p>WordPress is dead. We have just moved away from that platform to Octopress. Its all about static blogging. The <a href="http://octopress.org/">Octopress</a> framework is built on Jekyll and Ruby. The source code for the website resides in your machine and in a remote git repository (if you need backups). There's a default minimal and responsive design added by Octopress. But you are free to change it. I have done a lot of customization to the default Octopress layout. You can't say its a Octopress site by just looking at it! I have added the following features to make it more powerful :</p>
 
 <ul>
 <li>Featured images for posts. Every post will have a <code>fimage</code> tag. The site will pull the image path from this tag and use it to display a post image in the index and in the sidebar recent posts.</li>
 <li>Featured posts. If the <code>featured</code> tag is set to true in a post, the blog index will style that post differently. (For example, add a bigger image to it)</li>
-<li>Auto excerpts. Octopress have excerpts. The only thing is you have to add the <code>&lt;!--more--&gt;</code> tag manually. I imported nearly 1,500 posts from my old WordPress setup. I can&rsquo;t go through all these posts and add the more tag manually! So, I used the <code>truncatewords</code> method in Liquid Templates like this :</li>
+<li>Auto excerpts. Octopress have excerpts. The only thing is you have to add the <code>&lt;!--more--&gt;</code> tag manually. I imported nearly 1,500 posts from my old WordPress setup. I can't go through all these posts and add the more tag manually! So, I used the <code>truncatewords</code> method in Liquid Templates like this :</li>
 </ul>
 
 
@@ -77,49 +77,49 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>post.content | strip_html | truncatewords: 30</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ul>
-<li>One of the best things about Octopress is that you can get free hosting on Github. But there&rsquo;s a problem&hellip; If you upload the source to Github (Free account), anyone can get your posts easily (Thats what I think. Im not sure). You can push the source to a different place like Bitbucket. But it won&rsquo;t make the source open. So, I pushed the posts, pages and their images to my private repository in Bitbucket and left the source in Github. This bring another problem. You need to push the source, pages, posts and images separately to their own origins which can become a big headache. But, I created two scripts to <strong>commit</strong> and <strong>push</strong>. To take care of all the repositories from one script. I will write about it in <a href="http://techhamlet.com/">Tech Hamlet</a> in the near future. (They are not included in the source).</li>
+<li>One of the best things about Octopress is that you can get free hosting on Github. But there's a problem... If you upload the source to Github (Free account), anyone can get your posts easily (Thats what I think. Im not sure). You can push the source to a different place like Bitbucket. But it won't make the source open. So, I pushed the posts, pages and their images to my private repository in Bitbucket and left the source in Github. This bring another problem. You need to push the source, pages, posts and images separately to their own origins which can become a big headache. But, I created two scripts to <strong>commit</strong> and <strong>push</strong>. To take care of all the repositories from one script. I will write about it in <a href="http://techhamlet.com/">Tech Hamlet</a> in the near future. (They are not included in the source).</li>
 <li>Auto generated open graph meta tags for each and every page</li>
-<li>And there are some more tiny things I added&hellip;</li>
+<li>And there are some more tiny things I added...</li>
 </ul>
 
 
 <p>If you want to use these features on your own site, you can check the <a href="https://github.com/TechHamlet/TechHamlet.github.io">source code of Tech Hamlet</a>. Now its open sourced!</p>
 
-<p>After you setup the layouts, you are ready to go. Then you write the posts. After that, with two commands, Octopress will generate a static HTML version of your site and automatically push it to the server. You are done! In the future, I will write some posts about Octopress so you also can follow. Because its static HTML, Tech Hamlet is now a lot faster than before. The web server doesn&rsquo;t have to generate any heavy php before sending it to you. Its already built.</p>
+<p>After you setup the layouts, you are ready to go. Then you write the posts. After that, with two commands, Octopress will generate a static HTML version of your site and automatically push it to the server. You are done! In the future, I will write some posts about Octopress so you also can follow. Because its static HTML, Tech Hamlet is now a lot faster than before. The web server doesn't have to generate any heavy php before sending it to you. Its already built.</p>
 
 <h3>Almost NO ADS!</h3>
 
-<p>Tech Hamlet 15.0 doesn&rsquo;t have any adsense ads&hellip; No links will be sold from both the blogroll and from posts. We will only have two 125x125 ads in the sidebar. Only two small ads for the whole site. It will be enough to keep the ship afloat. It will also please our readers. No ads mean less clutter. Now things are more organized and clean. When designing the previous versions of Tech Hamlet, first it looked like a very nice design. But after I inserted the ads to the template I got sad :( . They made everything look ugly. There&rsquo;s no way I can tell what ad Google will place on my site. So it posed a major problem. Now we don&rsquo;t have them! Cool isn&rsquo;t it?</p>
+<p>Tech Hamlet 15.0 doesn't have any adsense ads... No links will be sold from both the blogroll and from posts. We will only have two 125x125 ads in the sidebar. Only two small ads for the whole site. It will be enough to keep the ship afloat. It will also please our readers. No ads mean less clutter. Now things are more organized and clean. When designing the previous versions of Tech Hamlet, first it looked like a very nice design. But after I inserted the ads to the template I got sad :( . They made everything look ugly. There's no way I can tell what ad Google will place on my site. So it posed a major problem. Now we don't have them! Cool isn't it?</p>
 
 <h3>No more irrelevant guest posts</h3>
 
-<p>The <a href="http://techhamlet.com/contact/">guest posts rules</a> are tightened. If you are here just to get a link to your product or to get a link for your client, no matter how much money you are willing to pay, we won&rsquo;t accept your gust post. If you are willing to write a quality article that is related to our site, we will let you write. We will also let you link to your own blog. Not to a product. People who link to products mostly write rubbish!</p>
+<p>The <a href="http://techhamlet.com/contact/">guest posts rules</a> are tightened. If you are here just to get a link to your product or to get a link for your client, no matter how much money you are willing to pay, we won't accept your gust post. If you are willing to write a quality article that is related to our site, we will let you write. We will also let you link to your own blog. Not to a product. People who link to products mostly write rubbish!</p>
 
 <h3>No more clutter!</h3>
 
-<p>Many things have been removed from the site. There&rsquo;s nothing much in the sidebar. Its cleaned. The post pages are also clean. No big author bios and multiple social share buttons. You can find three popular share buttons at the bottom. That&rsquo;s all!</p>
+<p>Many things have been removed from the site. There's nothing much in the sidebar. Its cleaned. The post pages are also clean. No big author bios and multiple social share buttons. You can find three popular share buttons at the bottom. That's all!</p>
 
-<h3>A more cleaner and a unique design&hellip;</h3>
+<h3>A more cleaner and a unique design...</h3>
 
 <p>Unlike WordPress, the Octopress layout can be easily changed. I did a lot of customization to the default layout and then added my own theme. I tried to make something unique. For example, the way I added the category links in the header is a bit crazy. But I think it will work.</p>
 
-<h3>Less categories&hellip;</h3>
+<h3>Less categories...</h3>
 
 <p>As I mentioned before, adding more categories made the site look like a fruit salad. But now I have reduced it to 5. 5 main categories to group every thing. Now our goal is clear. Its not a fruit salad any more!</p>
 
 <h3>Hosting</h3>
 
-<p>Since I use Octopress and generate a static HTML site, I can get free hosting on <a href="https://github.com">Github</a>! Some people doesn&rsquo;t go for free hosting because most of those hosting providers cannot be trusted and some even put ads on our sites. But Github is the world&rsquo;s number one source code host! Millions of developers use it every day. So, there&rsquo;s no question about their quality. Both the source code and the website can be hosted in Github.</p>
+<p>Since I use Octopress and generate a static HTML site, I can get free hosting on <a href="https://github.com">Github</a>! Some people doesn't go for free hosting because most of those hosting providers cannot be trusted and some even put ads on our sites. But Github is the world's number one source code host! Millions of developers use it every day. So, there's no question about their quality. Both the source code and the website can be hosted in Github.</p>
 
-<h3>There are more&hellip;</h3>
+<h3>There are more...</h3>
 
-<p>Apart from that, there are more changes to our site. For example, we will now reduce the amount of news posts we add. There are a lot of websites out there which does the job better than us. So, if there&rsquo;s some big news topic, then I&rsquo;ll write about it. Mostly, we will focus on tutorials and reviews.</p>
+<p>Apart from that, there are more changes to our site. For example, we will now reduce the amount of news posts we add. There are a lot of websites out there which does the job better than us. So, if there's some big news topic, then I'll write about it. Mostly, we will focus on tutorials and reviews.</p>
 
-<p>Earlier, our markup didn&rsquo;t pass W3 validations. Even-though I managed to make the site&rsquo;s design W3 valid, after adding WordPress plugins, the validations failed. But now, the site is W3 valid!</p>
+<p>Earlier, our markup didn't pass W3 validations. Even-though I managed to make the site's design W3 valid, after adding WordPress plugins, the validations failed. But now, the site is W3 valid!</p>
 
-<p>Today we placed a big milestone for our blog. Many things have changed and will be changed in the future. I didn&rsquo;t got time and interest to update the blog in the past few weeks. I&rsquo;m turning into a developer. Octopress is extremely developer friendly. It use the tools we use every day like Git and Markdown. I like it! First I converted my other site <a href="http://youarecurio.us/">YouAreCurio.us</a> into Octopress and immediately felt its power.</p>
+<p>Today we placed a big milestone for our blog. Many things have changed and will be changed in the future. I didn't got time and interest to update the blog in the past few weeks. I'm turning into a developer. Octopress is extremely developer friendly. It use the tools we use every day like Git and Markdown. I like it! First I converted my other site <a href="http://youarecurio.us/">YouAreCurio.us</a> into Octopress and immediately felt its power.</p>
 
-<p>I think Tech Hamlet will have a very bight future with these new changes. In a way, we have joined the open source developer community! Cool! So, what do you think about our new changes? Please let us know as comments below&hellip;</p>
+<p>I think Tech Hamlet will have a very bight future with these new changes. In a way, we have joined the open source developer community! Cool! So, what do you think about our new changes? Please let us know as comments below...</p>
 ]]></content>
   </entry>
   
@@ -128,11 +128,11 @@
     <link href="http://techhamlet.com/2013/06/a-better-understanding-of-software-as-a-service/"/>
     <updated>2013-06-26T10:23:50+05:30</updated>
     <id>http://techhamlet.com/2013/06/a-better-understanding-of-software-as-a-service</id>
-    <content type="html"><![CDATA[<p>For most of us, it&rsquo;s easy to think of software as a product. After all, you can purchase it in a shop and, for the most part, it works in a similar fashion.</p>
+    <content type="html"><![CDATA[<p>For most of us, it's easy to think of software as a product. After all, you can purchase it in a shop and, for the most part, it works in a similar fashion.</p>
 
 <p>The truth is, however, that we do not own the software we use. Anything you purchase is not yours. Instead you only own a licence; this is a common business model known as “Software as a Service” or SaaS for short.</p>
 
-<p>To help understand this, here&rsquo;s a quick look at how this approach actually works and why, in cases where the software is rather important to you or your work, you may want to look into <a href="http://www.nccgroup.com/en/our-services/software-escrow-verification">software escrow</a> to further protect yourself.</p>
+<p>To help understand this, here's a quick look at how this approach actually works and why, in cases where the software is rather important to you or your work, you may want to look into <a href="http://www.nccgroup.com/en/our-services/software-escrow-verification">software escrow</a> to further protect yourself.</p>
 
 <p><img src="http://techhamlet.com/wp-content/uploads/2013/07/app_saas_img2.jpg" alt="Software as a Service" /> Software as a Service</p>
 
@@ -140,15 +140,15 @@
 
 <p>At its simplest, software is typically a licence, not a product. This is why you have to agree and enter into an end user agreement for most software products as this enters you into a SaaS agreement with the software provider.</p>
 
-<p>The drawback to this is that you don&rsquo;t have access to the software&rsquo;s inner workings or source code. The advantage, however, is that it&rsquo;s not up to you to maintain the software. As your only leasing it, it’s up to the provider to offer a working product throughout this time. Should that fail to happen, disputes can happen and this is where escrow can become important.</p>
+<p>The drawback to this is that you don't have access to the software's inner workings or source code. The advantage, however, is that it's not up to you to maintain the software. As your only leasing it, it’s up to the provider to offer a working product throughout this time. Should that fail to happen, disputes can happen and this is where escrow can become important.</p>
 
 <h3>Verifying perspective</h3>
 
-<p>In any dispute, it&rsquo;s easy to get drawn out into a longer disagreement. When you need software fast, such as when you rely or depend upon it for work, this isn&rsquo;t the best option. A lot of disagreements come around due to both sides being unable to agree on a solution. Instead, you should look to <a href="http://www.nccgroup.com/en/our-services/software-escrow-verification">escrow</a> to provide a neutral perspective from a legal stand point.</p>
+<p>In any dispute, it's easy to get drawn out into a longer disagreement. When you need software fast, such as when you rely or depend upon it for work, this isn't the best option. A lot of disagreements come around due to both sides being unable to agree on a solution. Instead, you should look to <a href="http://www.nccgroup.com/en/our-services/software-escrow-verification">escrow</a> to provide a neutral perspective from a legal stand point.</p>
 
 <p>Escrow companies can verify software and make the right actions in accordance with the law. This should keep both sides happy but the simple act of putting the software in escrow ensures that the provider is serious about keeping their product in working order.</p>
 
-<p>In many cases, it can be a simple sign of trust or added security. Developers design their software, as a product, to work, but having the added security layer of escrow support means both sides just want a working product. Should it come to it, the use of escrow will ensure, in cases where the agreement has been broken, you&rsquo;re given what you&rsquo;re legally entitled to.</p>
+<p>In many cases, it can be a simple sign of trust or added security. Developers design their software, as a product, to work, but having the added security layer of escrow support means both sides just want a working product. Should it come to it, the use of escrow will ensure, in cases where the agreement has been broken, you're given what you're legally entitled to.</p>
 ]]></content>
   </entry>
   
@@ -159,17 +159,17 @@
     <id>http://techhamlet.com/2013/06/firefox-beats-chrome</id>
     <content type="html"><![CDATA[<p><img src="http://techhamlet.com/wp-content/uploads/2012/05/browser-war-550x385.jpg" alt="Firefox vs Chrome" /> <em>Image Source : <a href="http://www.flickr.com/photos/50186930@N00/5948520195/">JUDEE</a></em></p>
 
-<p>Yesterday I had a good chuckle at my friends words &lsquo;Chrome never ceases to amaze me&rsquo; Personally, I find lots of problems with Google&rsquo;s so called wonder browser Chrome and although I do use it sometimes to try new add-ons that sound interesting, I prefer to stick with Firefox.</p>
+<p>Yesterday I had a good chuckle at my friends words 'Chrome never ceases to amaze me' Personally, I find lots of problems with Google's so called wonder browser Chrome and although I do use it sometimes to try new add-ons that sound interesting, I prefer to stick with Firefox.</p>
 
-<p>Here&rsquo;s what annoys me most about Chrome: firstly, it uses tons of memory; a lot more, in fact, than Firefox, which people accuse of being slower. Just bring up your Task Manager when you&rsquo;re running Chrome to see how many different processes it has open &ndash; one for each tab &ndash; and how much memory it&rsquo;s using. I guarantee you&rsquo;ll be surprised.</p>
+<p>Here's what annoys me most about Chrome: firstly, it uses tons of memory; a lot more, in fact, than Firefox, which people accuse of being slower. Just bring up your Task Manager when you're running Chrome to see how many different processes it has open - one for each tab - and how much memory it's using. I guarantee you'll be surprised.</p>
 
-<p>Secondly, its always crashing and showing that stupid &lsquo;He&rsquo;s dead Jim&rsquo; message as if the inconvenience were supposed to be funny. And you can bet that when your PC hangs on shutdown because a program needs to be closed the culprit is Chrome. LOL.</p>
+<p>Secondly, its always crashing and showing that stupid 'He's dead Jim' message as if the inconvenience were supposed to be funny. And you can bet that when your PC hangs on shutdown because a program needs to be closed the culprit is Chrome. LOL.</p>
 
-<p>I also dislike the often scary list of permissions, you need to agree to when installing certain extensions, giving them access to your data on all websites, as well as your tabs, bookmarks and browsing activity. Given Google&rsquo;s notoriety for storing personal info, these permissions make me paranoid, no matter how harmless they may be. Firefox add-ons don&rsquo;t make these demands so why would Chrome get away with it?</p>
+<p>I also dislike the often scary list of permissions, you need to agree to when installing certain extensions, giving them access to your data on all websites, as well as your tabs, bookmarks and browsing activity. Given Google's notoriety for storing personal info, these permissions make me paranoid, no matter how harmless they may be. Firefox add-ons don't make these demands so why would Chrome get away with it?</p>
 
 <h3>Firefox vs Chrome, who is the winner?</h3>
 
-<p>If you ask me, Chrome is very overrated, especially compared to more innovative browsers such as Opera, Maxthon and yes Firefox. I also prefer Mozilla&rsquo;s non-profit ethos to Google&rsquo;s sneaky tax-avoiding tricks, and find bookmarks much easier to manage in Firefox. My friend is entitled to his views, bit look closer at Chrome and you&rsquo;ll see the cracks.</p>
+<p>If you ask me, Chrome is very overrated, especially compared to more innovative browsers such as Opera, Maxthon and yes Firefox. I also prefer Mozilla's non-profit ethos to Google's sneaky tax-avoiding tricks, and find bookmarks much easier to manage in Firefox. My friend is entitled to his views, bit look closer at Chrome and you'll see the cracks.</p>
 ]]></content>
   </entry>
   
@@ -180,15 +180,15 @@
     <id>http://techhamlet.com/2013/06/wordpress-to-octopress</id>
     <content type="html"><![CDATA[<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/octopress-550x385.jpg" alt="Octopress" /> Octopress</p>
 
-<p>I always felt Wordpress is too much for me. I wanted something simple, something more customizable and something really fast! So, why not go with Octopress? It&rsquo;s a blogging platform that runs on your own machine. It generate static HTML files and upload them to the server. No dynamic content. That means the website is extremely fast! You have a local copy and Git is already used by the framework which you can use to send backups to remote servers like Github and Bitbucket. Its fast, reliable and extremely customizable!</p>
+<p>I always felt Wordpress is too much for me. I wanted something simple, something more customizable and something really fast! So, why not go with Octopress? It's a blogging platform that runs on your own machine. It generate static HTML files and upload them to the server. No dynamic content. That means the website is extremely fast! You have a local copy and Git is already used by the framework which you can use to send backups to remote servers like Github and Bitbucket. Its fast, reliable and extremely customizable!</p>
 
-<p>Octopress is a platform built on Jekyll which use Ruby to generate static HTML blogs. You write your posts in Markdown and place them in a separate folder. When generating the website, Octopress will use these markdown files and the layouts you defined to generate your website. Its a bit geeky but you can learn it. Octopress have a very good documentation which will guide you through all the steps. After generating, you just have to push it to the web server. If you need to move to a new server, you don&rsquo;t have to run complex scripts and setup databases. Just push to the new address and the website will work.</p>
+<p>Octopress is a platform built on Jekyll which use Ruby to generate static HTML blogs. You write your posts in Markdown and place them in a separate folder. When generating the website, Octopress will use these markdown files and the layouts you defined to generate your website. Its a bit geeky but you can learn it. Octopress have a very good documentation which will guide you through all the steps. After generating, you just have to push it to the web server. If you need to move to a new server, you don't have to run complex scripts and setup databases. Just push to the new address and the website will work.</p>
 
 <p>You might think that we need dynamic stuff for comments. Actually, I already use Disqus. Octopress have built in Disqus integration which can be used for comments. I just moved my site without loosing any of the existing comments!</p>
 
-<p>For hosting, you can use any simple web server. Any server can serve simple static HTML files. You also don&rsquo;t need a big server because there are no server-side scripting used in Octopress. You can even host the site in GitHub for free! I used that option. The website&rsquo;s code is now open sourced!</p>
+<p>For hosting, you can use any simple web server. Any server can serve simple static HTML files. You also don't need a big server because there are no server-side scripting used in Octopress. You can even host the site in GitHub for free! I used that option. The website's code is now open sourced!</p>
 
-<h3>Read more about Octopress &hellip;</h3>
+<h3>Read more about Octopress ...</h3>
 
 <p>What do you think? Octopress have all the thing I need. No extra stuff to slow down the site. You can read more about Octopress and even enjoy my new site if you go there now : <a href="http://youarecurio.us/2013/06/wordpress-to-octopress/">Moved From Wordpress to Octopress! Simple, Faster and More Reliable!</a></p>
 
