@@ -5,7 +5,7 @@
   <link href="http://techhamlet.com/atom.xml" rel="self"/>
   <link href="http://techhamlet.com/"/>
   <link href="http://techhamlet.superfeedr.com/" rel="hub"/>
-  <updated>2014-01-02T17:01:45+05:30</updated>
+  <updated>2014-01-02T18:19:51+05:30</updated>
   <id>http://techhamlet.com/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
@@ -13,6 +13,23 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Drippler : The Best Way to Learn All About Your Android Device!]]></title>
+    <link href="http://techhamlet.com/2014/01/drippler/"/>
+    <updated>2014-01-02T17:58:00+05:30</updated>
+    <id>http://techhamlet.com/2014/01/drippler</id>
+    <content type="html"><![CDATA[<p>If you have an Android device, trust me when I say this&#8230; You still have a lot to learn about your little device! Android is not like any other smart phone OS. It&#8217;s full of cool features. There are a lot of cool apps for you to discover&#8230; Everyday something new and exiting happen in the Android community which you should know! So, how to keep track of all these things?</p>
+
+<p>There are many news reading apps for <a href="http://techhamlet.com/categories/android/">Android</a> but <a href="http://drippler.com/">Drippler</a> is different. It only give you Android stuff! It will give  you top Android news everyday&#8230; Top or newly discovered cool Android apps for you to try&#8230; Articles with tips and tricks&#8230; And many more&#8230;</p>
+
+<p><img src="http://techhamlet.com/images/post-images/2014/01/drippler-shot.jpg" alt="Drippler" /></p>
+
+<p>On the first run, Drippler will detect your device and let you change it if it&#8217;s wrong. So, thereafter you will get most of the stuff targeting your own device!</p>
+
+<p>Drippler is unique. It&#8217;s not built as another news reading app. It&#8217;s soul purpose is to help you discover more about your device and the Android world. The tech world is changing every second so you should have an app like this to keep up with it!</p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[SLT Will Increase Download Limits in 2014! But There's Some Bad News!]]></title>
@@ -994,31 +1011,6 @@
 
 
 <p>Got it fixed? Working perfectly? Great! Now, before thanking me, thank <a href="http://www.sudo-juice.com/lightdm-resolution/">sudo-juice.com</a> for coming up with a solution. In the script he used, he only fixed the resolution of the primary monitor. This will work for some but for people like me, it won&#8217;t. I  had to fix the second monitor as well. The script I have given here can be used for any number of monitors! Hope it fixed your issues. If not, please leave a comment and let us know. We will try our best to fix it!</p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[I Just Showed Windows 8 to a Friend : "Oh.. This is Not User Friendly"]]></title>
-    <link href="http://techhamlet.com/2013/06/windows-8-is-not-user-friendly/"/>
-    <updated>2013-06-08T20:59:42+05:30</updated>
-    <id>http://techhamlet.com/2013/06/windows-8-is-not-user-friendly</id>
-    <content type="html"><![CDATA[<p>When Microsoft first released Windows 8, I had my own doubts. I love new stuff but can I get used to Windows 8? I used it and thought I might be able to get used to it. I thought I liked it. But that&#8217;s not the truth! I found out how I really felt about Windows 8 when I showed it to a friend today. As soon as he saw the new start screen, he said &#8221;Oh.. This is Not User Friendly. Windows 7 is way better!&#8221;&#8230;</p>
-
-<p>If I get a response like this from a novice user, it won&#8217;t be a problem. It&#8217;s really hard to find your way through Windows 8. But my friend is an Engineering student. He&#8217;s not into IT much but still he know his stuff. He work with the computer everyday. He said its a mess. Full screen apps are ugly for him and problematic. Desktop without the start button is also a problem to him (Recently, Microsoft have confirmed that Windows 8.1 will have this start button back). I didn&#8217;t told him that Windows 8 is also built for tablets. But he immediately said &#8220;This is built like a tablet!&#8221;.</p>
-
-<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/windows-8-550x309.jpg" alt="Windows 8" /> Windows 8</p>
-
-<h3>It also became hard for him to find his way through Windows 8&#8230;</h3>
-
-<p>Earlier we posted a video in our forum showing how a group of people presented <a href="http://techhamlet.com/forum/topic/66-it-took-this-mom-5-minutes-to-find-how-to-shutdown-windows-8-video/">Windows 8 to a novice user</a> and asked her to shut it down. It took a very long time for this novice user to find the shutdown button. When introducing Windows 8 to my friend, I showed him that there&#8217;s a black bar that can be brought up by moving the mouse to the bottom right corner. I told him it have the shutdown option. But when I gave him my laptop, he again asked me where is the shutdown button? When I looked at the machine, he was pointing the mouse to the bottom right corner but there is no black bar! For a second, I was also stunned. Then when I did it my self I realized that we have to move the mouse to the corner and drag it upwards in-order to get the black bar. I&#8217;m used to it so I didn&#8217;t realize the problem. My friend used the new OS for some minutes and kept it aside saying &#8220;Windows 7 is way better!&#8221;.</p>
-
-<h3>I realized that I also don&#8217;t like the new Windows 8 that much&#8230;</h3>
-
-<p>I thought I liked the new Windows 8. But I was wrong. When my friend asked me how I managed to live with it, I said, I&#8217;m not using it that much! That&#8217;s not my main OS! When Microsoft released Windows 7, I was using Linux as the main choise. But Windows 7 made me switch. I picked Windows 7 as my main OS. But after several years, I went back to Linux. With the release of Windows 8, again I switched and this time I was confident that I will make it my main OS. But actually, I didn&#8217;t use it for long. I came back to Linux! Later, my Linux installation got extremely buggy and crashed all the time. Usually, I move to Windows in a time like this. But this time, I stayed with <a href="http://www.youtube.com/watch?v=uGzjjqHGAk8">Linux</a>.</p>
-
-<p>Earlier I didn&#8217;t realize that I don&#8217;t like Windows 8 much. When thinking about my friend&#8217;s review on 8, I started to think about what I really think about 8. Recently, people started to dump BIOS in favor of UEFI. I upgraded my PC and got a new Laptop. Both have UEFI now. In these systems, If I install Linux, it won&#8217;t bring up the boot loader (once I wrote a post on <a href="http://techhamlet.com/2013/05/no-boot-loader-after-installing-ubuntu/">how to bring back the boot-loader</a> and <a href="http://techhamlet.com/2013/05/add-windows-to-grub/">add Windows 8</a>). Once I fixed this because I thought I wanted to switch operating systems daily like I did before. But later I ignored this. Of -course I can use the UEFI interface to switch OS. But its not easy. I had to press Esc or F10 every-time the system boot. If I mess up the timing, I have to reboot! But why did I ignored the boot loader issue? I didn&#8217;t feel like going back to Windows. I had everything I wanted in Linux!</p>
-
-<p>It&#8217;s not hating Windows 8&#8230; It&#8217;s because there are better options than 8. For my friend, he have Windows 7. For me, I have Linux! Can Windows 8 beat these two? I don&#8217;t think so! What do you think?</p>
 ]]></content>
   </entry>
   
