@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Linux | Tech Hamlet]]></title>
-  <link href="http://techhamlet.com/categories/linux/atom.xml" rel="self"/>
-  <link href="http://techhamlet.com/"/>
-  <updated>2014-06-06T16:05:48+00:00</updated>
-  <id>http://techhamlet.com/</id>
+  <link href="http://TechHamlet.github.io/categories/linux/atom.xml" rel="self"/>
+  <link href="http://TechHamlet.github.io/"/>
+  <updated>2014-06-06T17:02:28+00:00</updated>
+  <id>http://TechHamlet.github.io/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Ubuntu Won't Detect My Nvidia GPU! How To Install Proprietary Driver? ]]></title>
-    <link href="http://techhamlet.com/2013/12/ubuntu-wont-detect-nvidia/"/>
+    <link href="http://TechHamlet.github.io/2013/12/ubuntu-wont-detect-nvidia/"/>
     <updated>2013-12-08T18:10:00+00:00</updated>
-    <id>http://techhamlet.com/2013/12/ubuntu-wont-detect-nvidia</id>
+    <id>http://TechHamlet.github.io/2013/12/ubuntu-wont-detect-nvidia</id>
     <content type="html"><![CDATA[<p>I just bought a new GT640 Nvidia card. I&rsquo;m running the latest Ubuntu 13.10.  So I thought it will detect my new GPU without any issues. The system booted up and worked fine but unfortunately it didn&rsquo;t detect the card to let me install proprietary Nvidia drivers. So, can we install proper drivers without Ubuntu&rsquo;s support?</p>
 
 <p><img src="/images/post-images/2013/12/nvidia.jpg" alt="Nvidia" /></p>
@@ -79,9 +79,9 @@
   
   <entry>
     <title type="html"><![CDATA[3 Cool Ubuntu Plymouth (Boot) Themes : OS X, PAW Ubuntu and PAW Gnome]]></title>
-    <link href="http://techhamlet.com/2013/09/how-to-install-ubuntu-plymouth-themes/"/>
+    <link href="http://TechHamlet.github.io/2013/09/how-to-install-ubuntu-plymouth-themes/"/>
     <updated>2013-09-04T11:54:00+00:00</updated>
-    <id>http://techhamlet.com/2013/09/how-to-install-ubuntu-plymouth-themes</id>
+    <id>http://TechHamlet.github.io/2013/09/how-to-install-ubuntu-plymouth-themes</id>
     <content type="html"><![CDATA[<p>Ubuntu already have a sleek boot screen. Sometimes you might want to change it to something different. If you are an OS X or a <a href="http://techhamlet.com/categories/windows/">Windows</a> user, you have to put aside your feelings and accept what they give to you. But you are a <a href="http://techhamlet.com/categories/linux/">Linux</a> user&hellip; You can do anything you want! So, why can&rsquo;t we change the boot screen into one of these&hellip;?</p>
 
 <p><img src="/images/post-images/2013/09/paw-ubuntu-plymouth-themes.jpg" alt="Ubuntu Plymouth Themes" /></p>
@@ -211,9 +211,9 @@
   
   <entry>
     <title type="html"><![CDATA[Elementary OS Luna is Released! Fast, Beautiful, Clean and its Linux!]]></title>
-    <link href="http://techhamlet.com/2013/08/elementary-os-luna/"/>
+    <link href="http://TechHamlet.github.io/2013/08/elementary-os-luna/"/>
     <updated>2013-08-14T21:04:00+00:00</updated>
-    <id>http://techhamlet.com/2013/08/elementary-os-luna</id>
+    <id>http://TechHamlet.github.io/2013/08/elementary-os-luna</id>
     <content type="html"><![CDATA[<p>After nearly 2 years of development, they have just released the final stable version of Elementary OS Luna ! Its main aim is to build a more beautiful, elegant, consistent, fast, and a stable Linux operating system. I think they have succeeded! Many Linux fans waited anxiously for the release of Elementary OS Luna&hellip;</p>
 
 <p><img src="/images/post-images/2013/08/elementary-os-luna.jpg" alt="My Elementary OS Luna Desktop" /></p>
@@ -224,7 +224,7 @@
 
 <h2>It is really fast&hellip;</h2>
 
-<iframe width="640" height="480" src="http://techhamlet.com//www.youtube.com/embed/3kvmyDR7FCo?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="480" src="http://TechHamlet.github.io//www.youtube.com/embed/3kvmyDR7FCo?rel=0" frameborder="0" allowfullscreen></iframe>
 
 
 <p>See? How fast it can get? This is only a beta version. The latest stable version they just released is much better. Elementary team have done a lot of optimizations to bring up the speeds. They did this by their own code and by using several programs like <code>preload</code>. Preload will load your most used programs into the memory so they will load quickly. But there&rsquo;s a catch&hellip; Sometimes your previous work will or will not be saved. The browser might sometimes keep your previous settings but the Terminal sometimes loose them. It even loose the history and the preferences. But you can simply disable preload and things will still work fast!</p>
@@ -243,7 +243,7 @@
 
 <h2>Final thoughts&hellip;</h2>
 
-<iframe width="640" height="360" src="http://techhamlet.com//www.youtube.com/embed/pWoo4xv-qoA?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="http://TechHamlet.github.io//www.youtube.com/embed/pWoo4xv-qoA?rel=0" frameborder="0" allowfullscreen></iframe>
 
 
 <p>Elementary OS Luna is a great OS and its a new beginning. A new branch in Linux. Many Linux branches focus on areas like Security, Stability, Being Bleeding edge, Customizeability, etc&hellip; But less people have done so much for the UI&hellip; The design&hellip; Linux is not a developer only OS. Even the most novice users use it because its more user friendly than any other OS in the planet. But many distros doesn&rsquo;t focus on them. Elementary OS Luna is built for both developers and novice users. Out-of the box you&rsquo;ll get what you want. A developer also need an out of the box solution sometimes. Many need them because they don&rsquo;t have time to custom build their systems. They need something that work. Not to spend time hacking! You can hack Elementary OS if you want to&hellip; There&rsquo;s no restriction. So I think its suited for everyone! Here&rsquo;s a quick roundup of Elementary OS Luna :</p>
@@ -273,16 +273,16 @@
 
 <p><strong>I think you must watch this Elementary review created by <a href="http://www.youtube.com/user/OhHeyItsLou?feature=watch">Lou</a> :</strong></p>
 
-<iframe width="640" height="360" src="http://techhamlet.com//www.youtube.com/embed/_cia_8OVESA?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="http://TechHamlet.github.io//www.youtube.com/embed/_cia_8OVESA?rel=0" frameborder="0" allowfullscreen></iframe>
 
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Get High Quality Font Rendering in Linux with Infinality!]]></title>
-    <link href="http://techhamlet.com/2013/08/infinality-linux-font-rendering/"/>
+    <link href="http://TechHamlet.github.io/2013/08/infinality-linux-font-rendering/"/>
     <updated>2013-08-07T20:52:00+00:00</updated>
-    <id>http://techhamlet.com/2013/08/infinality-linux-font-rendering</id>
+    <id>http://TechHamlet.github.io/2013/08/infinality-linux-font-rendering</id>
     <content type="html"><![CDATA[<p>Several years ago when I was trying Linux for the first time, I faced a hard time staring at the default system fonts. When compare to Windows, they were ugly! I even tried installing Windows fonts on Linux and replacing the default system fonts with the exact same versions used in Windows. But still it looked bad! Then I fiddled with other font settings like font Hinting, Aliasing&hellip; But nothing helped! Why? The problem is not with the fonts, its with the font rendering!</p>
 
 <p><img src="/images/post-images/2013/08/fonts.jpg" alt="Fonts" /></p>
@@ -378,9 +378,9 @@
   
   <entry>
     <title type="html"><![CDATA[Mac OS X vs Linux : What is The Best Windows Alternative? Mac or Linux]]></title>
-    <link href="http://techhamlet.com/2013/06/mac-os-x-vs-linux/"/>
+    <link href="http://TechHamlet.github.io/2013/06/mac-os-x-vs-linux/"/>
     <updated>2013-06-22T13:53:20+00:00</updated>
-    <id>http://techhamlet.com/2013/06/mac-os-x-vs-linux</id>
+    <id>http://TechHamlet.github.io/2013/06/mac-os-x-vs-linux</id>
     <content type="html"><![CDATA[<p><img src="http://techhamlet.com/wp-content/uploads/2012/12/update_for_your_computer.jpg" alt="Mac OS X vs Linux" /> Mac OS X vs Linux <em>Image source : <a href="http://www.stickycomics.com/computer-update/">Sticky Comics</a></em></p>
 
 <p>Mac OS X vs Linux, this is not an easy debate. Most of us start with Windows because it&rsquo;s the most commonly used OS. But that doesn&rsquo;t mean its the best. Many migrate to other alternatives according to their needs. But the recent the Windows 8 release made some users to <a href="http://techhamlet.com/2013/06/windows-8-is-not-user-friendly/">leave Windows</a>. For some its really good but for some it&rsquo;s not. Windows now have a problem. So, if you ever decide to ditch Windows, what will you pick? Mac or Linux?</p>

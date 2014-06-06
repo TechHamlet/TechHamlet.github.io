@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 
-Sitemap: http://techhamlet.com/sitemap.xml 
+Sitemap: http://TechHamlet.github.io/sitemap.xml 

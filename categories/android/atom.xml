@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: android | Tech Hamlet]]></title>
-  <link href="http://techhamlet.com/categories/android/atom.xml" rel="self"/>
-  <link href="http://techhamlet.com/"/>
-  <updated>2014-06-06T16:05:48+00:00</updated>
-  <id>http://techhamlet.com/</id>
+  <link href="http://TechHamlet.github.io/categories/android/atom.xml" rel="self"/>
+  <link href="http://TechHamlet.github.io/"/>
+  <updated>2014-06-06T17:02:28+00:00</updated>
+  <id>http://TechHamlet.github.io/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Drippler : The Best Way to Learn All About Your Android Device!]]></title>
-    <link href="http://techhamlet.com/2014/01/drippler/"/>
+    <link href="http://TechHamlet.github.io/2014/01/drippler/"/>
     <updated>2014-01-02T17:58:00+00:00</updated>
-    <id>http://techhamlet.com/2014/01/drippler</id>
+    <id>http://TechHamlet.github.io/2014/01/drippler</id>
     <content type="html"><![CDATA[<p>If you have an Android device, trust me when I say this&hellip; You still have a lot to learn about your little device! Android is not like any other smart phone OS. It&rsquo;s full of cool features. There are a lot of cool apps for you to discover&hellip; Everyday something new and exiting happen in the Android community which you should know! So, how to keep track of all these things?</p>
 
 <p>There are many news reading apps for <a href="http://techhamlet.com/categories/android/">Android</a> but <a href="http://drippler.com/">Drippler</a> is different. It only give you Android stuff! It will give  you top Android news everyday&hellip; Top or newly discovered cool Android apps for you to try&hellip; Articles with tips and tricks&hellip; And many more&hellip;</p>

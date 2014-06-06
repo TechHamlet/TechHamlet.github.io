@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: Windows | Tech Hamlet]]></title>
-  <link href="http://techhamlet.com/categories/windows/atom.xml" rel="self"/>
-  <link href="http://techhamlet.com/"/>
-  <updated>2014-06-06T16:05:48+00:00</updated>
-  <id>http://techhamlet.com/</id>
+  <link href="http://TechHamlet.github.io/categories/windows/atom.xml" rel="self"/>
+  <link href="http://TechHamlet.github.io/"/>
+  <updated>2014-06-06T17:02:28+00:00</updated>
+  <id>http://TechHamlet.github.io/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[Bitdefender 2014 is Released! Its Faster, Lighter and More Secure!]]></title>
-    <link href="http://techhamlet.com/2013/06/bitdefender-2014-released/"/>
+    <link href="http://TechHamlet.github.io/2013/06/bitdefender-2014-released/"/>
     <updated>2013-06-26T15:52:14+00:00</updated>
-    <id>http://techhamlet.com/2013/06/bitdefender-2014-released</id>
+    <id>http://TechHamlet.github.io/2013/06/bitdefender-2014-released</id>
     <content type="html"><![CDATA[<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/bitdefender2014-550x385.jpg" alt="Bitdefender 2014" /> Bitdefender 2014</p>
 
 <p>Folks at Bitdefender have just released a major upgrade to their security suits! The new Bitdefender 2014 is now available for everyone! Bitdefender started to test this new version a bit earlier than in the previous years. They released the first <a href="http://techhamlet.com/2013/03/bitdefender-2014-beta/">public beta</a> version on March. After testing for about 4 months, they have just released the new security suit today.</p>
@@ -34,9 +34,9 @@
   
   <entry>
     <title type="html"><![CDATA[Bitdefender Safepay : A More Secure Browser for Your Critical Work!]]></title>
-    <link href="http://techhamlet.com/2013/06/bitdefender-safepay/"/>
+    <link href="http://TechHamlet.github.io/2013/06/bitdefender-safepay/"/>
     <updated>2013-06-17T15:11:28+00:00</updated>
-    <id>http://techhamlet.com/2013/06/bitdefender-safepay</id>
+    <id>http://TechHamlet.github.io/2013/06/bitdefender-safepay</id>
     <content type="html"><![CDATA[<p><img src="http://techhamlet.com/wp-content/uploads/2013/06/safepay-550x412.jpg" alt="Bitdefender Safepay" /> Bitdefender Safepay</p>
 
 <p>If you are banking online, buying things from an online store or doing other critical stuff like this, many people will try their best to get their hand on your details. Your credit card information, the passwords, user names, emails, these stuff can ruin your life if they go to the wrong hands. But, the problem is, the Internet is full of these hands trying to grab your data. Is there a way to get rid of them? You can&rsquo;t get rid of every threat, but Bitdefender Safepay will help you stay away from most of them!</p>
@@ -53,9 +53,9 @@
   
   <entry>
     <title type="html"><![CDATA[I Just Showed Windows 8 to a Friend : "Oh.. This is Not User Friendly"]]></title>
-    <link href="http://techhamlet.com/2013/06/windows-8-is-not-user-friendly/"/>
+    <link href="http://TechHamlet.github.io/2013/06/windows-8-is-not-user-friendly/"/>
     <updated>2013-06-08T15:29:42+00:00</updated>
-    <id>http://techhamlet.com/2013/06/windows-8-is-not-user-friendly</id>
+    <id>http://TechHamlet.github.io/2013/06/windows-8-is-not-user-friendly</id>
     <content type="html"><![CDATA[<p>When Microsoft first released Windows 8, I had my own doubts. I love new stuff but can I get used to Windows 8? I used it and thought I might be able to get used to it. I thought I liked it. But that&rsquo;s not the truth! I found out how I really felt about Windows 8 when I showed it to a friend today. As soon as he saw the new start screen, he said "Oh.. This is Not User Friendly. Windows 7 is way better!&ldquo;&hellip;</p>
 
 <p>If I get a response like this from a novice user, it won&rsquo;t be a problem. It&rsquo;s really hard to find your way through Windows 8. But my friend is an Engineering student. He&rsquo;s not into IT much but still he know his stuff. He work with the computer everyday. He said its a mess. Full screen apps are ugly for him and problematic. Desktop without the start button is also a problem to him (Recently, Microsoft have confirmed that Windows 8.1 will have this start button back). I didn&rsquo;t told him that Windows 8 is also built for tablets. But he immediately said &ldquo;This is built like a tablet!&rdquo;.</p>
@@ -78,9 +78,9 @@
   
   <entry>
     <title type="html"><![CDATA[Discover Windows 8 App Sizes]]></title>
-    <link href="http://techhamlet.com/2013/05/discover-windows-8-app-sizes/"/>
+    <link href="http://TechHamlet.github.io/2013/05/discover-windows-8-app-sizes/"/>
     <updated>2013-05-09T14:34:06+00:00</updated>
-    <id>http://techhamlet.com/2013/05/discover-windows-8-app-sizes</id>
+    <id>http://TechHamlet.github.io/2013/05/discover-windows-8-app-sizes</id>
     <content type="html"><![CDATA[<p><img src="http://techhamlet.com/wp-content/uploads/2012/12/windows8-550x309.jpg" alt="Windows 8" /></p>
 
 <p>Everyone using Windows 8 might have thought to themselves at least for once and might have put that thought away &ldquo;Wonder where are the App Sizes&rdquo;. Don&rsquo;t worry peeps this problem can be solved and you are on the right track reading this article.</p>
@@ -97,9 +97,9 @@
   
   <entry>
     <title type="html"><![CDATA[Microsoft Musn't Neglect Windows 7 Users]]></title>
-    <link href="http://techhamlet.com/2013/04/microsoft-neglect-windows-7/"/>
+    <link href="http://TechHamlet.github.io/2013/04/microsoft-neglect-windows-7/"/>
     <updated>2013-04-22T14:30:36+00:00</updated>
-    <id>http://techhamlet.com/2013/04/microsoft-neglect-windows-7</id>
+    <id>http://TechHamlet.github.io/2013/04/microsoft-neglect-windows-7</id>
     <content type="html"><![CDATA[<p><img src="http://techhamlet.com/wp-content/uploads/2013/04/windows7-550x385.jpg" alt="Windows 7" /> <em>Image Source : <a href="http://www.flickr.com/photos/pixelydixel/4033946329/">Jonan Basterra</a></em></p>
 
 <p>So after just 6 months Microsoft is planning to update 8, even though most people have barely got used to its pretty colored tiles and where&rsquo;s the Start Menu interface. Thats all very well for those who use Windows 8 and whose only desire is to have the most cutting-edge PC possible, but Microsoft seems to forget that millions of us are there who don&rsquo;t.</p>

@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Category: web | Tech Hamlet]]></title>
-  <link href="http://techhamlet.com/categories/web/atom.xml" rel="self"/>
-  <link href="http://techhamlet.com/"/>
-  <updated>2014-06-06T16:05:48+00:00</updated>
-  <id>http://techhamlet.com/</id>
+  <link href="http://TechHamlet.github.io/categories/web/atom.xml" rel="self"/>
+  <link href="http://TechHamlet.github.io/"/>
+  <updated>2014-06-06T17:02:28+00:00</updated>
+  <id>http://TechHamlet.github.io/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[SLT Will Increase Download Limits in 2014! But There's Some Bad News!]]></title>
-    <link href="http://techhamlet.com/2014/01/new-slt-packages-for-2014/"/>
+    <link href="http://TechHamlet.github.io/2014/01/new-slt-packages-for-2014/"/>
     <updated>2014-01-02T10:25:00+00:00</updated>
-    <id>http://techhamlet.com/2014/01/new-slt-packages-for-2014</id>
+    <id>http://TechHamlet.github.io/2014/01/new-slt-packages-for-2014</id>
     <content type="html"><![CDATA[<p>If you are living in <a href="http://en.wikipedia.org/wiki/Sri_Lanka">Sri Lanka</a> just like me, most probably you might be using Sri Lanka Telecom&rsquo;s broadband services. If you do, here&rsquo;s some good news for you&hellip; Starting from January 1 2014, <strong>SLT will add extra GBs to your broadband package!</strong> Now that&rsquo;s big news! A big gift from SLT! Here are the new package details :</p>
 
 <p><img src="/images/post-images/2014/01/slt-new-packages.jpg" alt="SLT's New Packages" /></p>
