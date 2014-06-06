@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | Tech Hamlet]]></title>
   <link href="http://techhamlet.com/categories/linux/atom.xml" rel="self"/>
   <link href="http://techhamlet.com/"/>
-  <updated>2014-01-05T11:14:20+05:30</updated>
+  <updated>2014-06-06T16:05:48+00:00</updated>
   <id>http://techhamlet.com/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
@@ -16,13 +16,13 @@
   <entry>
     <title type="html"><![CDATA[Ubuntu Won't Detect My Nvidia GPU! How To Install Proprietary Driver? ]]></title>
     <link href="http://techhamlet.com/2013/12/ubuntu-wont-detect-nvidia/"/>
-    <updated>2013-12-08T18:10:00+05:30</updated>
+    <updated>2013-12-08T18:10:00+00:00</updated>
     <id>http://techhamlet.com/2013/12/ubuntu-wont-detect-nvidia</id>
-    <content type="html"><![CDATA[<p>I just bought a new GT640 Nvidia card. I'm running the latest Ubuntu 13.10.  So I thought it will detect my new GPU without any issues. The system booted up and worked fine but unfortunately it didn't detect the card to let me install proprietary Nvidia drivers. So, can we install proper drivers without Ubuntu's support?</p>
+    <content type="html"><![CDATA[<p>I just bought a new GT640 Nvidia card. I&rsquo;m running the latest Ubuntu 13.10.  So I thought it will detect my new GPU without any issues. The system booted up and worked fine but unfortunately it didn&rsquo;t detect the card to let me install proprietary Nvidia drivers. So, can we install proper drivers without Ubuntu&rsquo;s support?</p>
 
 <p><img src="/images/post-images/2013/12/nvidia.jpg" alt="Nvidia" /></p>
 
-<p>Its easy. But first of all, you need to make sure that you have an Nvidia card on your machine. I'm serious! We are going to add <a href="https://launchpad.net/~xorg-edgers/+archive/ppa">xorg-edgers ppa</a> and install the latest Nvidia graphic drivers. Since these are new and still considered as testing, there's a slight chance of breaking things. So, be careful ! I'm using these drivers and they work just fine for me! So let's get started...</p>
+<p>Its easy. But first of all, you need to make sure that you have an Nvidia card on your machine. I&rsquo;m serious! We are going to add <a href="https://launchpad.net/~xorg-edgers/+archive/ppa">xorg-edgers ppa</a> and install the latest Nvidia graphic drivers. Since these are new and still considered as testing, there&rsquo;s a slight chance of breaking things. So, be careful ! I&rsquo;m using these drivers and they work just fine for me! So let&rsquo;s get started&hellip;</p>
 
 <ul>
 <li>First add the xorg-edgers ppa and update the sources with the following command :</li>
@@ -66,7 +66,7 @@
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install nvidia-current</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p>If that also failed, here's how to remove it :</p>
+<p>If that also failed, here&rsquo;s how to remove it :</p>
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
@@ -80,13 +80,13 @@
   <entry>
     <title type="html"><![CDATA[3 Cool Ubuntu Plymouth (Boot) Themes : OS X, PAW Ubuntu and PAW Gnome]]></title>
     <link href="http://techhamlet.com/2013/09/how-to-install-ubuntu-plymouth-themes/"/>
-    <updated>2013-09-04T11:54:00+05:30</updated>
+    <updated>2013-09-04T11:54:00+00:00</updated>
     <id>http://techhamlet.com/2013/09/how-to-install-ubuntu-plymouth-themes</id>
-    <content type="html"><![CDATA[<p>Ubuntu already have a sleek boot screen. Sometimes you might want to change it to something different. If you are an OS X or a <a href="http://techhamlet.com/categories/windows/">Windows</a> user, you have to put aside your feelings and accept what they give to you. But you are a <a href="http://techhamlet.com/categories/linux/">Linux</a> user... You can do anything you want! So, why can't we change the boot screen into one of these...?</p>
+    <content type="html"><![CDATA[<p>Ubuntu already have a sleek boot screen. Sometimes you might want to change it to something different. If you are an OS X or a <a href="http://techhamlet.com/categories/windows/">Windows</a> user, you have to put aside your feelings and accept what they give to you. But you are a <a href="http://techhamlet.com/categories/linux/">Linux</a> user&hellip; You can do anything you want! So, why can&rsquo;t we change the boot screen into one of these&hellip;?</p>
 
 <p><img src="/images/post-images/2013/09/paw-ubuntu-plymouth-themes.jpg" alt="Ubuntu Plymouth Themes" /></p>
 
-<p>Today I'm going to show you how to install three simple Plymouth (boot) themes on Ubuntu. You can install most of the other plymouth themes out there in the same way. So, stick with us...</p>
+<p>Today I&rsquo;m going to show you how to install three simple Plymouth (boot) themes on Ubuntu. You can install most of the other plymouth themes out there in the same way. So, stick with us&hellip;</p>
 
 <h2>First, Download the Plymouth Themes :</h2>
 
@@ -96,9 +96,9 @@
 
 <p><a href="http://gnome-look.org/content/show.php/?content=158162">Ubuntu Gnome Paw Plymouth Theme</a></p>
 
-<h2>Before Installing...</h2>
+<h2>Before Installing&hellip;</h2>
 
-<p>Before installing the themes, we need to make sure they will be displayed correctly. For that...</p>
+<p>Before installing the themes, we need to make sure they will be displayed correctly. For that&hellip;</p>
 
 <ul>
 <li>Open the Terminal <code>Ctrl+ALT+T</code> and enter the following commands to create a file called <strong>splash</strong> in <strong>/etc/initramfs-tools/conf.d/</strong> :</li>
@@ -122,7 +122,7 @@
 
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-initramfs -u;sudo update-alternatives --config default.plymouth</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-initramfs -u;sudo update-alternatives &mdash;config default.plymouth</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>How To Install OS X and PAW-Ubuntu themes :</h2>
 
@@ -155,8 +155,8 @@
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-alternatives --install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/Paw-OSX/paw-osx.plymouth 100
-</span><span class='line'>sudo update-alternatives --install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/Paw-Ubuntu/paw-ubuntu.plymouth 100</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-alternatives &mdash;install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/Paw-OSX/paw-osx.plymouth 100
+</span><span class='line'>sudo update-alternatives &mdash;install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/Paw-Ubuntu/paw-ubuntu.plymouth 100</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ul>
 <li>After that, you have to select which plymouth theme you need to use. For that, first issue the following command to bring up the default plymouth chooser :</li>
@@ -164,7 +164,7 @@
 
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-alternatives --config default.plymouth</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-alternatives &mdash;config default.plymouth</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ul>
 <li>Next, enter the number of the plymouth theme you need to use. In my case, its 1 for OS X theme and 3 for PAW-Ubuntu</li>
@@ -183,7 +183,7 @@
 
 <h2>How To Install PAW Gnome theme :</h2>
 
-<p>Installing this theme is fairly easy. When downloading, you might have noticed that it comes as a .deb file. We just have to install it and select the theme in the plymouth chooser...</p>
+<p>Installing this theme is fairly easy. When downloading, you might have noticed that it comes as a .deb file. We just have to install it and select the theme in the plymouth chooser&hellip;</p>
 
 <ul>
 <li>First, navigate to the download folder and double click on the <code>158162-plymouth-theme-paw_13.04_all.deb</code> file which you just downloaded and install it</li>
@@ -192,7 +192,7 @@
 
 
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-alternatives --config default.plymouth</span></code></pre></td></tr></table></div></figure></notextile></div></p>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-alternatives &mdash;config default.plymouth</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ul>
 <li><p>Next select the number of the <code>/lib/plymouth/themes/paw/paw.plymouth</code> theme. (Refer to the screenshot above. In my case its 4 according to the screenshot)</p></li>
@@ -203,18 +203,18 @@
 <p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 </pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-initramfs -u</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
-<p>Enjoyed? These are the two popular methods of plymouth theme installation. You can use these methods to install most of the boot themes out there. There were also GUI apps to do this job but they are outdated. But still, it won't kill you if you use the Terminal! Common, its better than the GUI apps!</p>
+<p>Enjoyed? These are the two popular methods of plymouth theme installation. You can use these methods to install most of the boot themes out there. There were also GUI apps to do this job but they are outdated. But still, it won&rsquo;t kill you if you use the Terminal! Common, its better than the GUI apps!</p>
 
-<p><em>- Special thanks should go to <a href="http://www.noobslab.com/2013/05/mac-os-x-theme-for-ubuntu-1304-raring.html">noobslab.com</a> for introducing the OS X splash screen</em></p>
+<p><em>&ndash; Special thanks should go to <a href="http://www.noobslab.com/2013/05/mac-os-x-theme-for-ubuntu-1304-raring.html">noobslab.com</a> for introducing the OS X splash screen</em></p>
 ]]></content>
   </entry>
   
   <entry>
     <title type="html"><![CDATA[Elementary OS Luna is Released! Fast, Beautiful, Clean and its Linux!]]></title>
     <link href="http://techhamlet.com/2013/08/elementary-os-luna/"/>
-    <updated>2013-08-14T21:04:00+05:30</updated>
+    <updated>2013-08-14T21:04:00+00:00</updated>
     <id>http://techhamlet.com/2013/08/elementary-os-luna</id>
-    <content type="html"><![CDATA[<p>After nearly 2 years of development, they have just released the final stable version of Elementary OS Luna ! Its main aim is to build a more beautiful, elegant, consistent, fast, and a stable Linux operating system. I think they have succeeded! Many Linux fans waited anxiously for the release of Elementary OS Luna...</p>
+    <content type="html"><![CDATA[<p>After nearly 2 years of development, they have just released the final stable version of Elementary OS Luna ! Its main aim is to build a more beautiful, elegant, consistent, fast, and a stable Linux operating system. I think they have succeeded! Many Linux fans waited anxiously for the release of Elementary OS Luna&hellip;</p>
 
 <p><img src="/images/post-images/2013/08/elementary-os-luna.jpg" alt="My Elementary OS Luna Desktop" /></p>
 
@@ -222,31 +222,31 @@
 
 <p>Elementary team built Luna on Ubuntu 12.04. Why 12.04 and not the latest 13.04? The 12.04 version of Ubuntu is the LTS version. LTS (Long Term Support) releases are the most stable releases of Ubuntu and they are supported for a very long time than the others. Others are considered as experimental builds used by the developers to test new features. The Elementary OS team wanted to make their OS extremely stable. So, they picked <a href="http://techhamlet.com/2012/04/things-to-do-after-installing-ubuntu-12-04-the-start/">Ubuntu 12.04</a>. This will make them very stable but it also have a down side! Ubuntu 12.04 was released on April 2012. Its older than a year and it have pretty old software. Those software receive security updates and bug fixes. But no new features.</p>
 
-<h2>It is really fast...</h2>
+<h2>It is really fast&hellip;</h2>
 
 <iframe width="640" height="480" src="http://techhamlet.com//www.youtube.com/embed/3kvmyDR7FCo?rel=0" frameborder="0" allowfullscreen></iframe>
 
 
-<p>See? How fast it can get? This is only a beta version. The latest stable version they just released is much better. Elementary team have done a lot of optimizations to bring up the speeds. They did this by their own code and by using several programs like <code>preload</code>. Preload will load your most used programs into the memory so they will load quickly. But there's a catch... Sometimes your previous work will or will not be saved. The browser might sometimes keep your previous settings but the Terminal sometimes loose them. It even loose the history and the preferences. But you can simply disable preload and things will still work fast!</p>
+<p>See? How fast it can get? This is only a beta version. The latest stable version they just released is much better. Elementary team have done a lot of optimizations to bring up the speeds. They did this by their own code and by using several programs like <code>preload</code>. Preload will load your most used programs into the memory so they will load quickly. But there&rsquo;s a catch&hellip; Sometimes your previous work will or will not be saved. The browser might sometimes keep your previous settings but the Terminal sometimes loose them. It even loose the history and the preferences. But you can simply disable preload and things will still work fast!</p>
 
-<h2>Elementary OS Luna have custom built apps...</h2>
+<h2>Elementary OS Luna have custom built apps&hellip;</h2>
 
-<p>They have a lot of custom built apps to replace the existing ones. For example, there's no Gedit, they use their own app Scratch for note editing. They use their own shell Pantheon, their own dock Plank which is based on Docky, their own settings panel Switchboard, Wing Panel as the top panel, Pantheon Greeter will replace the login screen, their own Pantheon file manager and many more... These custom apps are more lighter than their counterparts. But sometimes they might lack some important features that we are used to. For example, I like clean and simple apps. Elementary OS Luna 's text editor is also elegant and I like it. But still it doesn't have the features I need and I went back to Sublime. I also like their music app Music (Formerly Noise) but I went back to Clementine. But most of the other apps are really cool. Because they are so good, some of them have been already ported to work on other distributions like <a href="http://techhamlet.com/2012/03/install-arch-linux-on-your-machine/">Arch</a> and on latest versions of Ubuntu.</p>
+<p>They have a lot of custom built apps to replace the existing ones. For example, there&rsquo;s no Gedit, they use their own app Scratch for note editing. They use their own shell Pantheon, their own dock Plank which is based on Docky, their own settings panel Switchboard, Wing Panel as the top panel, Pantheon Greeter will replace the login screen, their own Pantheon file manager and many more&hellip; These custom apps are more lighter than their counterparts. But sometimes they might lack some important features that we are used to. For example, I like clean and simple apps. Elementary OS Luna &rsquo;s text editor is also elegant and I like it. But still it doesn&rsquo;t have the features I need and I went back to Sublime. I also like their music app Music (Formerly Noise) but I went back to Clementine. But most of the other apps are really cool. Because they are so good, some of them have been already ported to work on other distributions like <a href="http://techhamlet.com/2012/03/install-arch-linux-on-your-machine/">Arch</a> and on latest versions of Ubuntu.</p>
 
 <h2>Great consistent design and a guide for developers on how to keep the consistency!</h2>
 
-<p>Elementary OS Luna have a very consistent design. I think its even better than Apple's consistency (I'm not saying Apple have better looks. <a href="http://techhamlet.com/2013/06/mac-os-x-vs-linux/">Mac have old looks</a>). The Elementary team doesn't stop there... They also want every one who build apps for their OS to follow their designs. They have special guidelines for developers on how to make their user interfaces. But the problem is, many people won't develop apps specifically for Elementary. Its not that popular yet and there are many more popular <a href="http://techhamlet.com/categories/linux/">Linux</a> distributions they have to pass. If they come to the top, their guideline might become a standard. Even without that I think its a good idea if all major Linux distributions get together and define a specific set of UI guidelines. Things are scattered in Linux. Elementary OS Luna is a very good start!</p>
+<p>Elementary OS Luna have a very consistent design. I think its even better than Apple&rsquo;s consistency (I&rsquo;m not saying Apple have better looks. <a href="http://techhamlet.com/2013/06/mac-os-x-vs-linux/">Mac have old looks</a>). The Elementary team doesn&rsquo;t stop there&hellip; They also want every one who build apps for their OS to follow their designs. They have special guidelines for developers on how to make their user interfaces. But the problem is, many people won&rsquo;t develop apps specifically for Elementary. Its not that popular yet and there are many more popular <a href="http://techhamlet.com/categories/linux/">Linux</a> distributions they have to pass. If they come to the top, their guideline might become a standard. Even without that I think its a good idea if all major Linux distributions get together and define a specific set of UI guidelines. Things are scattered in Linux. Elementary OS Luna is a very good start!</p>
 
-<h2>Less customizeability...</h2>
+<h2>Less customizeability&hellip;</h2>
 
-<p>Luna is well built and have a very good design. Some people won't need anything beyond it. But some need customization. If we doesn't want customizations and want the same old look, feel, ways, we all might use Mac. But Linux is meant for adventurous people who need innovation and a system built for their own tastes. But Elementary OS Luna is a bit less customizeable. No many settings to change things. You can use the conf editors (<code>dconf</code> or <code>gconf</code>) but its not enough. Elementary is not completely like Mac. Even though they restrict customization, they encourage third-party plugins to do this job. I think its not bad. But since the OS is still new, there are no many plugins available. I think it might be solved soon.</p>
+<p>Luna is well built and have a very good design. Some people won&rsquo;t need anything beyond it. But some need customization. If we doesn&rsquo;t want customizations and want the same old look, feel, ways, we all might use Mac. But Linux is meant for adventurous people who need innovation and a system built for their own tastes. But Elementary OS Luna is a bit less customizeable. No many settings to change things. You can use the conf editors (<code>dconf</code> or <code>gconf</code>) but its not enough. Elementary is not completely like Mac. Even though they restrict customization, they encourage third-party plugins to do this job. I think its not bad. But since the OS is still new, there are no many plugins available. I think it might be solved soon.</p>
 
-<h2>Final thoughts...</h2>
+<h2>Final thoughts&hellip;</h2>
 
 <iframe width="640" height="360" src="http://techhamlet.com//www.youtube.com/embed/pWoo4xv-qoA?rel=0" frameborder="0" allowfullscreen></iframe>
 
 
-<p>Elementary OS Luna is a great OS and its a new beginning. A new branch in Linux. Many Linux branches focus on areas like Security, Stability, Being Bleeding edge, Customizeability, etc... But less people have done so much for the UI... The design... Linux is not a developer only OS. Even the most novice users use it because its more user friendly than any other OS in the planet. But many distros doesn't focus on them. Elementary OS Luna is built for both developers and novice users. Out-of the box you'll get what you want. A developer also need an out of the box solution sometimes. Many need them because they don't have time to custom build their systems. They need something that work. Not to spend time hacking! You can hack Elementary OS if you want to... There's no restriction. So I think its suited for everyone! Here's a quick roundup of Elementary OS Luna :</p>
+<p>Elementary OS Luna is a great OS and its a new beginning. A new branch in Linux. Many Linux branches focus on areas like Security, Stability, Being Bleeding edge, Customizeability, etc&hellip; But less people have done so much for the UI&hellip; The design&hellip; Linux is not a developer only OS. Even the most novice users use it because its more user friendly than any other OS in the planet. But many distros doesn&rsquo;t focus on them. Elementary OS Luna is built for both developers and novice users. Out-of the box you&rsquo;ll get what you want. A developer also need an out of the box solution sometimes. Many need them because they don&rsquo;t have time to custom build their systems. They need something that work. Not to spend time hacking! You can hack Elementary OS if you want to&hellip; There&rsquo;s no restriction. So I think its suited for everyone! Here&rsquo;s a quick roundup of Elementary OS Luna :</p>
 
 <p><strong>Pros :</strong></p>
 
@@ -269,7 +269,7 @@
 </ul>
 
 
-<p>Impressed? Then try it, head over to <a href="http://elementaryos.org/">Elementary</a> website and download the stable ISO. Don't let the website fool you. It might show a price tag but its only a donation tag. You can get the OS for free. If you like Elementary OS Luna , leave a comment below and if the demand is good, I might write some tutorials for it!</p>
+<p>Impressed? Then try it, head over to <a href="http://elementaryos.org/">Elementary</a> website and download the stable ISO. Don&rsquo;t let the website fool you. It might show a price tag but its only a donation tag. You can get the OS for free. If you like Elementary OS Luna , leave a comment below and if the demand is good, I might write some tutorials for it!</p>
 
 <p><strong>I think you must watch this Elementary review created by <a href="http://www.youtube.com/user/OhHeyItsLou?feature=watch">Lou</a> :</strong></p>
 
@@ -281,23 +281,23 @@
   <entry>
     <title type="html"><![CDATA[Get High Quality Font Rendering in Linux with Infinality!]]></title>
     <link href="http://techhamlet.com/2013/08/infinality-linux-font-rendering/"/>
-    <updated>2013-08-07T20:52:00+05:30</updated>
+    <updated>2013-08-07T20:52:00+00:00</updated>
     <id>http://techhamlet.com/2013/08/infinality-linux-font-rendering</id>
-    <content type="html"><![CDATA[<p>Several years ago when I was trying Linux for the first time, I faced a hard time staring at the default system fonts. When compare to Windows, they were ugly! I even tried installing Windows fonts on Linux and replacing the default system fonts with the exact same versions used in Windows. But still it looked bad! Then I fiddled with other font settings like font Hinting, Aliasing... But nothing helped! Why? The problem is not with the fonts, its with the font rendering!</p>
+    <content type="html"><![CDATA[<p>Several years ago when I was trying Linux for the first time, I faced a hard time staring at the default system fonts. When compare to Windows, they were ugly! I even tried installing Windows fonts on Linux and replacing the default system fonts with the exact same versions used in Windows. But still it looked bad! Then I fiddled with other font settings like font Hinting, Aliasing&hellip; But nothing helped! Why? The problem is not with the fonts, its with the font rendering!</p>
 
 <p><img src="/images/post-images/2013/08/fonts.jpg" alt="Fonts" /></p>
 
-<p>Our operating systems use a separate module to render fonts. Its duty is to get the font file and display it to the user. In many Linux distributions, by default the system doesn't handle font rendering well. We see jagged low quality fonts. If you are coming from Windows, you'll clearly see the difference. If you are coming from Mac, you'll know the difference on the first look! Mac and Windows have very good font rendering systems and.. Linux have solutions for almost any problem!</p>
+<p>Our operating systems use a separate module to render fonts. Its duty is to get the font file and display it to the user. In many Linux distributions, by default the system doesn&rsquo;t handle font rendering well. We see jagged low quality fonts. If you are coming from Windows, you&rsquo;ll clearly see the difference. If you are coming from Mac, you&rsquo;ll know the difference on the first look! Mac and Windows have very good font rendering systems and.. Linux have solutions for almost any problem!</p>
 
-<p>If you are using Ubuntu or any other distribution base on Ubuntu (like Linux Mint and Elementary OS), you won't feel the difference. Ubuntu apply their own patches to the default font rendering system so their fonts look extremely good. But if you want to improve it further or if you are coming from another Linux distribution, here's a solution...</p>
+<p>If you are using Ubuntu or any other distribution base on Ubuntu (like Linux Mint and Elementary OS), you won&rsquo;t feel the difference. Ubuntu apply their own patches to the default font rendering system so their fonts look extremely good. But if you want to improve it further or if you are coming from another Linux distribution, here&rsquo;s a solution&hellip;</p>
 
-<h2>Infinality ...</h2>
+<h2>Infinality &hellip;</h2>
 
 <p><a href="http://www.infinality.net/blog/">Infinality</a> is a set of patches made to improve freetype2 font rendering in Linux. It automatically adjust settings like hinting and subpixel rendering to give the best quality fonts for you.</p>
 
 <blockquote><p>The purpose of these patches is to freely provide the nicest font rendering of any operating system. The second goal is to provide customization so that the end user is able to adjust the settings to his or her taste.</p></blockquote>
 
-<h2>How to install Infinality ...</h2>
+<h2>How to install Infinality &hellip;</h2>
 
 <h3>On Arch Linux :</h3>
 
@@ -363,7 +363,7 @@
 </ul>
 
 
-<h3>On all systems...</h3>
+<h3>On all systems&hellip;</h3>
 
 <ul>
 <li>After you are done installing, log off and login for the changes to take effect.</li>
@@ -379,19 +379,19 @@
   <entry>
     <title type="html"><![CDATA[Mac OS X vs Linux : What is The Best Windows Alternative? Mac or Linux]]></title>
     <link href="http://techhamlet.com/2013/06/mac-os-x-vs-linux/"/>
-    <updated>2013-06-22T19:23:20+05:30</updated>
+    <updated>2013-06-22T13:53:20+00:00</updated>
     <id>http://techhamlet.com/2013/06/mac-os-x-vs-linux</id>
     <content type="html"><![CDATA[<p><img src="http://techhamlet.com/wp-content/uploads/2012/12/update_for_your_computer.jpg" alt="Mac OS X vs Linux" /> Mac OS X vs Linux <em>Image source : <a href="http://www.stickycomics.com/computer-update/">Sticky Comics</a></em></p>
 
-<p>Mac OS X vs Linux, this is not an easy debate. Most of us start with Windows because it's the most commonly used OS. But that doesn't mean its the best. Many migrate to other alternatives according to their needs. But the recent the Windows 8 release made some users to <a href="http://techhamlet.com/2013/06/windows-8-is-not-user-friendly/">leave Windows</a>. For some its really good but for some it's not. Windows now have a problem. So, if you ever decide to ditch Windows, what will you pick? Mac or Linux?</p>
+<p>Mac OS X vs Linux, this is not an easy debate. Most of us start with Windows because it&rsquo;s the most commonly used OS. But that doesn&rsquo;t mean its the best. Many migrate to other alternatives according to their needs. But the recent the Windows 8 release made some users to <a href="http://techhamlet.com/2013/06/windows-8-is-not-user-friendly/">leave Windows</a>. For some its really good but for some it&rsquo;s not. Windows now have a problem. So, if you ever decide to ditch Windows, what will you pick? Mac or Linux?</p>
 
 <h3>Why Windows is more popular?</h3>
 
-<p>The biggest reason for Windows's popularity is the support from manufacturers! Most of the PCs and Notebooks come with Windows pre-installed! Only an experienced user who have already used a different OS will try to change it. People like Dell and HP have already started to ship Linux pre-installed machines. But still it's not enough to beat Windows. Mac also have their own machines. So, they both stay ahead of Linux. Not good for Mac OS X vs Linux battle.</p>
+<p>The biggest reason for Windows&rsquo;s popularity is the support from manufacturers! Most of the PCs and Notebooks come with Windows pre-installed! Only an experienced user who have already used a different OS will try to change it. People like Dell and HP have already started to ship Linux pre-installed machines. But still it&rsquo;s not enough to beat Windows. Mac also have their own machines. So, they both stay ahead of Linux. Not good for Mac OS X vs Linux battle.</p>
 
-<h3>Mac and Linux have some similarities...</h3>
+<h3>Mac and Linux have some similarities&hellip;</h3>
 
-<p>Mac OS X is based on Unix. They take Unix and add their own GUI to it. GNU/Linux is like Unix but it's not Unix. Richard Stalleman wanted to build a free, open sourced and a better system than Unix. So, he built his own system from scratch by looking at Unix. He called it GNU. GNU means, <strong>G</strong>nu <strong>I</strong>s <strong>N</strong>ot <strong>U</strong>nix! After adding the Linux kernel to it, we dropped the word GNU and used Linux. But the OS is GNU.</p>
+<p>Mac OS X is based on Unix. They take Unix and add their own GUI to it. GNU/Linux is like Unix but it&rsquo;s not Unix. Richard Stalleman wanted to build a free, open sourced and a better system than Unix. So, he built his own system from scratch by looking at Unix. He called it GNU. GNU means, <strong>G</strong>nu <strong>I</strong>s <strong>N</strong>ot <strong>U</strong>nix! After adding the Linux kernel to it, we dropped the word GNU and used Linux. But the OS is GNU.</p>
 
 <h3>They have a lot of differences! So, lets start the debate, Mac OS X vs Linux :</h3>
 
@@ -401,45 +401,45 @@
 
 <p>Mac is completely closed sourced. They take full revenge from those who copy at least a single word from their system. They take patents for every thing including every curve and line in their designs. If anyone copy them, they will go directly to the court.</p>
 
-<p>Linux is completely free. If some one ask to pay you to get a Linux distribution, you can sue him. According to their license, you can't sell it and make profits. You can get money for the service you provide, but can't make a profit.</p>
+<p>Linux is completely free. If some one ask to pay you to get a Linux distribution, you can sue him. According to their license, you can&rsquo;t sell it and make profits. You can get money for the service you provide, but can&rsquo;t make a profit.</p>
 
 <p>The Linux code is completely open sourced. You can get it and customize it in any way you want, add your name to it and distribute it to the world.</p>
 
-<h4>Mac OS X won't let you customize their OS... You can customize every corner of Linux!</h4>
+<h4>Mac OS X won&rsquo;t let you customize their OS&hellip; You can customize every corner of Linux!</h4>
 
-<p>In OS X, you can't customize much. You have to do things in their way. Apple will decide how your desktop will look like and how you will work with it. You must obey them. There's no other choice! If you are a newbie who don't do much with the computer, then OS X will be ok for you!</p>
+<p>In OS X, you can&rsquo;t customize much. You have to do things in their way. Apple will decide how your desktop will look like and how you will work with it. You must obey them. There&rsquo;s no other choice! If you are a newbie who don&rsquo;t do much with the computer, then OS X will be ok for you!</p>
 
-<p>Linux is open sourced. You can customize every single bit of the OS if you know how to do it. Unlike other operating systems, Linux is built to support third party themes. There are high quality themes that you can use. No hacking needed. It's originally supported. You will also get a lot of options. A lot of different desktop environments, Gnome, XFC, Cinnamon, Unity, KDE, etc... A lot of different themes... A lot of different gadgets like docks, widgets, desk lets, etc</p>
+<p>Linux is open sourced. You can customize every single bit of the OS if you know how to do it. Unlike other operating systems, Linux is built to support third party themes. There are high quality themes that you can use. No hacking needed. It&rsquo;s originally supported. You will also get a lot of options. A lot of different desktop environments, Gnome, XFC, Cinnamon, Unity, KDE, etc&hellip; A lot of different themes&hellip; A lot of different gadgets like docks, widgets, desk lets, etc</p>
 
-<h4>Mac OS X vs Linux Performance...</h4>
+<h4>Mac OS X vs Linux Performance&hellip;</h4>
 
-<p>A recent study have revealed that Ubuntu in a Mac can outperform OS X! Beating OS X in its own grounds! The clear winner is Linux...</p>
+<p>A recent study have revealed that Ubuntu in a Mac can outperform OS X! Beating OS X in its own grounds! The clear winner is Linux&hellip;</p>
 
-<h4>Ease of use, ease of learning and ease of migrating from Windows...</h4>
+<h4>Ease of use, ease of learning and ease of migrating from Windows&hellip;</h4>
 
-<p>I have tried Mac... If you are moving from Windows to OS X, you might get into trouble. Some shortcuts might not work, it will scroll in the opposite direction, more weird things will happen... Linux is also different. It have a lot of differences. But its easy to move from Windows. and its easy to learn.<a href="http://www.youtube.com/user/OsFirstTimer?feature=watch"> OsFirstTimer</a> have released several videos on this issues. In these videos, a completely new user will face different operating systems and review them. From the systems she used, she picked Linux as the best :</p>
+<p>I have tried Mac&hellip; If you are moving from Windows to OS X, you might get into trouble. Some shortcuts might not work, it will scroll in the opposite direction, more weird things will happen&hellip; Linux is also different. It have a lot of differences. But its easy to move from Windows. and its easy to learn.<a href="http://www.youtube.com/user/OsFirstTimer?feature=watch"> OsFirstTimer</a> have released several videos on this issues. In these videos, a completely new user will face different operating systems and review them. From the systems she used, she picked Linux as the best :</p>
 
-<h4>Support...</h4>
+<h4>Support&hellip;</h4>
 
-<p>When we take support, it's a tie. Apple provide a really good support for their products. Linux have a really good support from thousands of people in the community. So, both have good support.</p>
+<p>When we take support, it&rsquo;s a tie. Apple provide a really good support for their products. Linux have a really good support from thousands of people in the community. So, both have good support.</p>
 
-<h4>Security...</h4>
+<h4>Security&hellip;</h4>
 
-<p>Earlier Apple said OS X is completely impenetrable. But recently, a mass malware attack took down thousands of Mac users. It's not completely secure. Same goes to Linux. No mass malware attack took down Linux but still it's not completely secure. It's a tie. But both are better than Windows.</p>
+<p>Earlier Apple said OS X is completely impenetrable. But recently, a mass malware attack took down thousands of Mac users. It&rsquo;s not completely secure. Same goes to Linux. No mass malware attack took down Linux but still it&rsquo;s not completely secure. It&rsquo;s a tie. But both are better than Windows.</p>
 
-<h4>Mac is boring... No innovation...</h4>
+<h4>Mac is boring&hellip; No innovation&hellip;</h4>
 
-<p>People say Apple is innovative. Yes they are innovative. They release completely new awesome products. But after the initial release of the product, no major updates. No major features... No much changes... The same boring old thing will get minor updates and bug fixes for the rest of its life. Its old stuff. Boring...</p>
+<p>People say Apple is innovative. Yes they are innovative. They release completely new awesome products. But after the initial release of the product, no major updates. No major features&hellip; No much changes&hellip; The same boring old thing will get minor updates and bug fixes for the rest of its life. Its old stuff. Boring&hellip;</p>
 
 <p>Linux and Windows do complete re-designs occasionally. Linux know how to do their redesigns without killing the user. It have innovation! Mac OS X vs Linux, who is the best?</p>
 
 <h3>What is the most widely used OS?</h3>
 
-<p>You might say its Windows but it's not. The most widely used OS is Linux! The mobile world is dominated by Android and Android is a Linux distribution. Almost 90% of web servers run Linux. Many embedded systems have Linux, Super computers run on Linux. Linux is the king...</p>
+<p>You might say its Windows but it&rsquo;s not. The most widely used OS is Linux! The mobile world is dominated by Android and Android is a Linux distribution. Almost 90% of web servers run Linux. Many embedded systems have Linux, Super computers run on Linux. Linux is the king&hellip;</p>
 
-<h3>Mac OS X vs Linux... What is the best?</h3>
+<h3>Mac OS X vs Linux&hellip; What is the best?</h3>
 
-<p>Clearly, Linux is the better option. Mac users will fire at me but this is the truth. Many people buy Apple products to show that they are rich. Trust me, that's the truth. If not, why spend a lot of money just to buy a boring old product? Their support is extremely good. Is it worth it? Once I tried to buy a new notebook and considered Mac. I was unable to find a powerful enough Mac to replace my existing old notebook! A Mac can't replace its power. You might say you're going for the OS X. But isn't Linux better than OS X? If you want the OS X look, it won't take 30 minutes to transform your Linux desktop into a Mac. But you can never transform Mac into a Linux! That's the difference! Mac users are trapped inside Apple's prison while Linux people are free to do anything! The clear winner in the battle of Mac OS X vs Linux is Linux!</p>
+<p>Clearly, Linux is the better option. Mac users will fire at me but this is the truth. Many people buy Apple products to show that they are rich. Trust me, that&rsquo;s the truth. If not, why spend a lot of money just to buy a boring old product? Their support is extremely good. Is it worth it? Once I tried to buy a new notebook and considered Mac. I was unable to find a powerful enough Mac to replace my existing old notebook! A Mac can&rsquo;t replace its power. You might say you&rsquo;re going for the OS X. But isn&rsquo;t Linux better than OS X? If you want the OS X look, it won&rsquo;t take 30 minutes to transform your Linux desktop into a Mac. But you can never transform Mac into a Linux! That&rsquo;s the difference! Mac users are trapped inside Apple&rsquo;s prison while Linux people are free to do anything! The clear winner in the battle of Mac OS X vs Linux is Linux!</p>
 ]]></content>
   </entry>
   

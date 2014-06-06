@@ -28,7 +28,7 @@
   <link rel="canonical" href="http://techhamlet.com/2012/02/ubuntu-whats-the-difference-between-upgrade-and-dist-upgrade">
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <link href="/feed.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
 
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -208,7 +208,7 @@
   
 
 
-<time datetime="2012-02-01T23:00:42+05:30"  data-updated="true">Feb 1<span>st</span>, 2012</time>
+<time datetime="2012-02-01T17:30:42+00:00"  data-updated="true">Feb 1<span>st</span>, 2012</time>
 
 
         
@@ -226,21 +226,21 @@
 
 <div class="entry-content"><p><img src="http://techhamlet.com/wp-content/uploads/2012/02/deb-175x156.jpg" alt="upgrade vs dist-upgrade" /></p>
 
-<p>Whats the Difference Between upgrade and dist-upgrade? What should I use? Whats the best? Is there a risk if I use dist-upgrade? Is it only used to upgrade the distribution? Whats the recommended command to update the system? Like this, there are many questions regarding these two commands. I think its time to clear out the myths and learn the truth&#8230;<!-- more --></p>
+<p>Whats the Difference Between upgrade and dist-upgrade? What should I use? Whats the best? Is there a risk if I use dist-upgrade? Is it only used to upgrade the distribution? Whats the recommended command to update the system? Like this, there are many questions regarding these two commands. I think its time to clear out the myths and learn the truth&hellip;<!-- more --></p>
 
-<p>One of our readers asked this question after reading one of our earlier posts&#8230; When updating the packages in <a href="http://techhamlet.com/tag/ubuntu/">Ubuntu</a>, we have two commands, <strong>apt-get upgrade</strong> and <strong>apt-get dist-upgrade</strong>. Many people only use <strong>apt-get upgrade</strong>. Some are afraid to use the <strong>dist-upgrade</strong> saying that it&#8217;s used to upgrade the distributions and it&#8217;s not safe! This is a myth! First, I also had doubts about this command but I used it a lot. Recently, I did some research and also asked it in the <a href="http://ubuntuforums.org/showthread.php?p=11644432#post11644432">Ubuntu Forum</a> and in <a href="http://askubuntu.com/questions/99033/what-is-the-difference-between-apt-get-upgrade-and-apt-get-dist-upgrade">AskUbuntu</a>. Here&#8217;s what I learnt :</p>
+<p>One of our readers asked this question after reading one of our earlier posts&hellip; When updating the packages in <a href="http://techhamlet.com/tag/ubuntu/">Ubuntu</a>, we have two commands, <strong>apt-get upgrade</strong> and <strong>apt-get dist-upgrade</strong>. Many people only use <strong>apt-get upgrade</strong>. Some are afraid to use the <strong>dist-upgrade</strong> saying that it&rsquo;s used to upgrade the distributions and it&rsquo;s not safe! This is a myth! First, I also had doubts about this command but I used it a lot. Recently, I did some research and also asked it in the <a href="http://ubuntuforums.org/showthread.php?p=11644432#post11644432">Ubuntu Forum</a> and in <a href="http://askubuntu.com/questions/99033/what-is-the-difference-between-apt-get-upgrade-and-apt-get-dist-upgrade">AskUbuntu</a>. Here&rsquo;s what I learnt :</p>
 
 <h2>apt-get update :</h2>
 
-<p>If we need to update the packages of our Ubuntu system, we mostly use this command. This command will update the currently installed packages to their latest versions. But, some packages have dependencies. If the new updated version need to add or remove any of these dependencies, then apt-get update won&#8217;t handle it. Simply, it won&#8217;t handle any upgrades if that new package need to remove or add any other packages.</p>
+<p>If we need to update the packages of our Ubuntu system, we mostly use this command. This command will update the currently installed packages to their latest versions. But, some packages have dependencies. If the new updated version need to add or remove any of these dependencies, then apt-get update won&rsquo;t handle it. Simply, it won&rsquo;t handle any upgrades if that new package need to remove or add any other packages.</p>
 
 <h2>apt-get dist-upgrade :</h2>
 
-<p>If a new updated package need to remove or add any other packages, it might affect some other packages which are already installed. They might also be depending on those removing packages. What if we remove them? The updated package will work but the others might break. That&#8217;s why apt-get upgrade won&#8217;t handle these updates. The person who can handle them is apt-get dist-upgrade. dist-upgrade is smart. It can check for these kinds of conflicts and avoid breaking the system while upgrading. But some say that its not 100% perfect!</p>
+<p>If a new updated package need to remove or add any other packages, it might affect some other packages which are already installed. They might also be depending on those removing packages. What if we remove them? The updated package will work but the others might break. That&rsquo;s why apt-get upgrade won&rsquo;t handle these updates. The person who can handle them is apt-get dist-upgrade. dist-upgrade is smart. It can check for these kinds of conflicts and avoid breaking the system while upgrading. But some say that its not 100% perfect!</p>
 
 <h2>What will the graphical update manager do?</h2>
 
-<p>Normally, it does the work of apt-get upgrade and it can also add packages. But it won&#8217;t remove. If it need to remove packages, it calls the partial upgrade tool which will do the removing.</p>
+<p>Normally, it does the work of apt-get upgrade and it can also add packages. But it won&rsquo;t remove. If it need to remove packages, it calls the partial upgrade tool which will do the removing.</p>
 
 <h2>Whats the recommended command?</h2>
 
@@ -250,13 +250,13 @@
 <li><p>First, do an <strong>apt-get upgrade</strong> and see whether it keeps back any packages</p></li>
 <li><p>If it keeps any packages, run <strong>apt-get dist-upgrade</strong></p></li>
 <li><p>Be careful when using this on critical situations like in a web server</p></li>
-<li><p>Always read what it say before hitting &#8216;Y&#8217;! That&#8217;s the key to keep the system from breaking!</p></li>
+<li><p>Always read what it say before hitting &lsquo;Y&rsquo;! That&rsquo;s the key to keep the system from breaking!</p></li>
 </ul>
 
 
-<p>Special thanks should go to <a href="http://askubuntu.com/users/35341/pablomme">Pablomme</a> (AskUbuntu) and <a href="http://ubuntuforums.org/member.php?u=479885">Snowpine</a> (Ubuntu Forum) for answering my questions and making things clear. If you have any questions&#8230; Please leave a comment!</p>
+<p>Special thanks should go to <a href="http://askubuntu.com/users/35341/pablomme">Pablomme</a> (AskUbuntu) and <a href="http://ubuntuforums.org/member.php?u=479885">Snowpine</a> (Ubuntu Forum) for answering my questions and making things clear. If you have any questions&hellip; Please leave a comment!</p>
 
-<p><em><strong>- Image</strong> : <a href="http://www.softicons.com/free-icons/system-icons/hycons-icon-theme-by-gomez-hyuuga/mimetypes-application-x-deb-icon">Gomez Hyuuga</a></em></p>
+<p><em><strong>&ndash; Image</strong> : <a href="http://www.softicons.com/free-icons/system-icons/hycons-icon-theme-by-gomez-hyuuga/mimetypes-application-x-deb-icon">Gomez Hyuuga</a></em></p>
 </div>
 
   
@@ -390,7 +390,7 @@
 
 
 
-          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/computer-store.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
+          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/shop.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
 
 
 

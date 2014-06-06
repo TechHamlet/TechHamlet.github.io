@@ -9,7 +9,7 @@
   <meta name="author" content="Pubudu Kodikara">
 
   
-  <meta name="description" content="When booting and shutting down the computer, Ubuntu displays a very clean, nice splash screen like the one we see in the above image (Without the &# &hellip;">
+  <meta name="description" content="When booting and shutting down the computer, Ubuntu displays a very clean, nice splash screen like the one we see in the above image (Without the & &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -28,7 +28,7 @@
   <link rel="canonical" href="http://techhamlet.com/2012/11/ubuntu-fix-ugly-splash-screen-after-installing-nvidia">
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <link href="/feed.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
 
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -208,7 +208,7 @@
   
 
 
-<time datetime="2012-11-15T21:50:40+05:30"  data-updated="true">Nov 15<span>th</span>, 2012</time>
+<time datetime="2012-11-15T16:20:40+00:00"  data-updated="true">Nov 15<span>th</span>, 2012</time>
 
 
         
@@ -226,14 +226,14 @@
 
 <div class="entry-content"><p><img src="http://techhamlet.com/wp-content/uploads/2012/11/ubuntu-boot-550x385.jpg" alt="The Ubuntu Boot Screen" /></p>
 
-<p>When booting and shutting down the computer, <a href="http://techhamlet.com/tag/ubuntu/">Ubuntu</a> displays a very clean, nice splash screen like the one we see in the above image (Without the &#8220;Hello, world,&#8221; thing). But, after <a href="http://techhamlet.com/2012/10/install-nvidia-drivers-in-ubuntu-12-10/">installing the Nvidia</a> proprietary drivers, most of us will loose that nice splash screen. Instead, we&#8217;ll start to see some terminal outputs. I have tried this with two different <a href="http://techhamlet.com/tag/nvidia/">Nvidia</a> cards and both of them have the issue.</p>
+<p>When booting and shutting down the computer, <a href="http://techhamlet.com/tag/ubuntu/">Ubuntu</a> displays a very clean, nice splash screen like the one we see in the above image (Without the &ldquo;Hello, world,&rdquo; thing). But, after <a href="http://techhamlet.com/2012/10/install-nvidia-drivers-in-ubuntu-12-10/">installing the Nvidia</a> proprietary drivers, most of us will loose that nice splash screen. Instead, we&rsquo;ll start to see some terminal outputs. I have tried this with two different <a href="http://techhamlet.com/tag/nvidia/">Nvidia</a> cards and both of them have the issue.</p>
 
-<p>Some people say that the real issue lies within the boot order. According to them, the Nvidia drivers are loaded after Ubuntu finish displaying the boot splash. Normally, it should be the other way round. But still, we can fix this&#8230;</p>
+<p>Some people say that the real issue lies within the boot order. According to them, the Nvidia drivers are loaded after Ubuntu finish displaying the boot splash. Normally, it should be the other way round. But still, we can fix this&hellip;</p>
 
 <h3>How To Fix the Ugly Ubuntu <a href="https://wiki.ubuntu.com/Plymouth">Plymouth</a> Splash Screen :</h3>
 
 <ul>
-<li>First, open the terminal (ctrl+alt+t) and enter the following commands to install &#8220;hwinfo&#8221; and get a list of supported resolutions :</li>
+<li>First, open the terminal (ctrl+alt+t) and enter the following commands to install &ldquo;hwinfo&rdquo; and get a list of supported resolutions :</li>
 </ul>
 
 
@@ -243,7 +243,7 @@
 </span><span class='line'>sudo hwinfo --framebuffer</span></code></pre></td></tr></table></div></figure>
 
 
-<p><strong>Note</strong> : If you can&#8217;t see a supported resolution list, check this answer : <a href="http://askubuntu.com/a/6074/20700">http://askubuntu.com/a/6074/20700</a></p>
+<p><strong>Note</strong> : If you can&rsquo;t see a supported resolution list, check this answer : <a href="http://askubuntu.com/a/6074/20700">http://askubuntu.com/a/6074/20700</a></p>
 
 <ul>
 <li>Next, open the grub configuration file using this command :</li>
@@ -255,14 +255,14 @@
 
 
 <ul>
-<li>In that file, search for the line &#8220;GRUB_GFXMODE=&#8221; (Shown in yellow in the image below) (Press ctrl+f in the editor to get the search box) and paste the line &#8220;GRUB_GFXPAYLOAD_LINUX=<strong>1024x768</strong>&#8221; (Without the double quotes) right below it (Shown in orange color in the image below). <strong>Note</strong> : Change the resolution (1024x768 (the bolded value)) to a resolution supported by your system. (You got a list of supported resolutions in the first step). Don&#8217;t go too high. Pick an average one.</li>
+<li>In that file, search for the line &ldquo;GRUB_GFXMODE=&rdquo; (Shown in yellow in the image below) (Press ctrl+f in the editor to get the search box) and paste the line &ldquo;GRUB_GFXPAYLOAD_LINUX=<strong>1024x768</strong>&rdquo; (Without the double quotes) right below it (Shown in orange color in the image below). <strong>Note</strong> : Change the resolution (1024x768 (the bolded value)) to a resolution supported by your system. (You got a list of supported resolutions in the first step). Don&rsquo;t go too high. Pick an average one.</li>
 </ul>
 
 
 <p><img src="http://techhamlet.com/wp-content/uploads/2012/11/grub-gedit-550x444.jpg" alt="Edit Grub" /> Edit Grub</p>
 
 <ul>
-<li>Next, issue the following command to set the FRAMEBUFFER to &#8216;y&#8217; in the splash configuration file :</li>
+<li>Next, issue the following command to set the FRAMEBUFFER to &lsquo;y&rsquo; in the splash configuration file :</li>
 </ul>
 
 
@@ -281,7 +281,7 @@
 </span><span class='line'>sudo update-initramfs -u</span></code></pre></td></tr></table></div></figure>
 
 
-<p>After following the above steps, reboot and be greeted by the nice Ubuntu splash screen again! Did it work? If not, please let us know! We&#8217;ll try our best to get it solved. Special thanks should go for the Ask Ubuntu <a href="http://askubuntu.com/a/6040/20700">user3243 for solving</a> this issue.</p>
+<p>After following the above steps, reboot and be greeted by the nice Ubuntu splash screen again! Did it work? If not, please let us know! We&rsquo;ll try our best to get it solved. Special thanks should go for the Ask Ubuntu <a href="http://askubuntu.com/a/6040/20700">user3243 for solving</a> this issue.</p>
 </div>
 
   
@@ -415,7 +415,7 @@
 
 
 
-          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/computer-store.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
+          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/shop.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
 
 
 

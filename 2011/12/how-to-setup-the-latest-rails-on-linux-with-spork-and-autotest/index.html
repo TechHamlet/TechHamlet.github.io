@@ -28,7 +28,7 @@
   <link rel="canonical" href="http://techhamlet.com/2011/12/how-to-setup-the-latest-rails-on-linux-with-spork-and-autotest">
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <link href="/feed.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
 
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -208,7 +208,7 @@
   
 
 
-<time datetime="2011-12-08T22:35:25+05:30"  data-updated="true">Dec 8<span>th</span>, 2011</time>
+<time datetime="2011-12-08T17:05:25+00:00"  data-updated="true">Dec 8<span>th</span>, 2011</time>
 
 
         
@@ -224,15 +224,15 @@
 
 
 
-<div class="entry-content"><p><img src="http://techhamlet.com/wp-content/uploads/2011/12/rubyonrails-175x125.jpg" alt="Ruby on Rails" />Recently, I started learning Ruby on Rails and faced several problems while setting it up (Specially while setting up Sport and Autotest). After doing some Googling, I found that many people have the same problem. But, non of the solutions worked on my system. Some of them are out of date. So, I did some more research and prepared my own guide&#8230;<!-- more --></p>
+<div class="entry-content"><p><img src="http://techhamlet.com/wp-content/uploads/2011/12/rubyonrails-175x125.jpg" alt="Ruby on Rails" />Recently, I started learning Ruby on Rails and faced several problems while setting it up (Specially while setting up Sport and Autotest). After doing some Googling, I found that many people have the same problem. But, non of the solutions worked on my system. Some of them are out of date. So, I did some more research and prepared my own guide&hellip;<!-- more --></p>
 
-<p>I&#8217;m following <a href="http://ruby.railstutorial.org/">Ruby on Rails Tutorial</a> written by Michael Hartl. Michael is using a Mac and have setup Spork and Autotest. <strong>Autotest</strong> will run in the background and help you to test your application in the real-time. So, you don&#8217;t have to execute rspec  every-time you do a change. Autospec will automatically do the testing and show a nice notification! If you have used Rspec, you might have noticed that it takes some time to load. <strong>Spork</strong> can make it load faster by caching some of the required files in the memory.</p>
+<p>I&#8217;m following <a href="http://ruby.railstutorial.org/">Ruby on Rails Tutorial</a> written by Michael Hartl. Michael is using a Mac and have setup Spork and Autotest. <strong>Autotest</strong> will run in the background and help you to test your application in the real-time. So, you don&rsquo;t have to execute rspec  every-time you do a change. Autospec will automatically do the testing and show a nice notification! If you have used Rspec, you might have noticed that it takes some time to load. <strong>Spork</strong> can make it load faster by caching some of the required files in the memory.</p>
 
-<p>I&#8217;m using <a href="http://techhamlet.com/tag/ubuntu/">Ubuntu</a> and the latest version of <a href="http://rubyonrails.org/">Rails</a>. Unfortunately, his guide won&#8217;t work for me when setting up Spork and Autotest. I think it might be because I&#8217;m using the latest version of Rails. But fortunately, I managed to set them up. Here&#8217;s how I did it (<strong>A complete guide to setting up Ruby on Rails</strong>) :</p>
+<p>I&#8217;m using <a href="http://techhamlet.com/tag/ubuntu/">Ubuntu</a> and the latest version of <a href="http://rubyonrails.org/">Rails</a>. Unfortunately, his guide won&rsquo;t work for me when setting up Spork and Autotest. I think it might be because I&rsquo;m using the latest version of Rails. But fortunately, I managed to set them up. Here&rsquo;s how I did it (<strong>A complete guide to setting up Ruby on Rails</strong>) :</p>
 
 <h2>Install <a href="http://www.ruby-lang.org/en/">Ruby</a> :</h2>
 
-<p>Ubuntu doesn&#8217;t come with the latest version of Ruby which we need to run Rails 3.1. So, we have to use <a href="http://beginrescueend.com/">RVM</a> to install it :</p>
+<p>Ubuntu doesn&rsquo;t come with the latest version of Ruby which we need to run Rails 3.1. So, we have to use <a href="http://beginrescueend.com/">RVM</a> to install it :</p>
 
 <ul>
 <li>Open the terminal and issue the following commands to install curl and nodejs :</li>
@@ -263,7 +263,7 @@
 
 
 <ul>
-<li>In some Linux distributions, this might fail because they don&#8217;t have a .bashrc file. In my Linux Mint system it failed. To make it work, create a file named <strong>.bashrc</strong> on your home folder and add the following line to it :</li>
+<li>In some Linux distributions, this might fail because they don&rsquo;t have a .bashrc file. In my Linux Mint system it failed. To make it work, create a file named <strong>.bashrc</strong> on your home folder and add the following line to it :</li>
 </ul>
 
 
@@ -282,7 +282,7 @@
 
 
 <ul>
-<li>Finally, tell RVM to use 1.9.2 as the default version. I don&#8217;t think its necessary if you are installing only one version.</li>
+<li>Finally, tell RVM to use 1.9.2 as the default version. I don&rsquo;t think its necessary if you are installing only one version.</li>
 </ul>
 
 
@@ -617,11 +617,11 @@
 </ul>
 
 
-<p>Now you are done and ready to go. I first prepared these steps for my self while installing it on Mint. Next, I formated my PC and tried it again. The commands worked. So, if you face any problem, please leave a comment and we&#8217;ll fix it together!</p>
+<p>Now you are done and ready to go. I first prepared these steps for my self while installing it on Mint. Next, I formated my PC and tried it again. The commands worked. So, if you face any problem, please leave a comment and we&rsquo;ll fix it together!</p>
 
-<p>If you are a beginner, buy the <a href="http://ruby.railstutorial.org/">Ruby on Rails Tutorial</a> screencast and follow it. But if you don&#8217;t like to spend, that complete guide is also avilable on that site free of charge. I have tried several other books and screencasts and some of them doesn&#8217;t explain much and some explain too much. There are some books which contain huge essays! I don&#8217;t like reading much&#8230; They go around your head to catch the nose while you can do it directly. This guide talked to the point! But your taste might be different. So, try some books before you actually spend your money!</p>
+<p>If you are a beginner, buy the <a href="http://ruby.railstutorial.org/">Ruby on Rails Tutorial</a> screencast and follow it. But if you don&rsquo;t like to spend, that complete guide is also avilable on that site free of charge. I have tried several other books and screencasts and some of them doesn&rsquo;t explain much and some explain too much. There are some books which contain huge essays! I don&rsquo;t like reading much&hellip; They go around your head to catch the nose while you can do it directly. This guide talked to the point! But your taste might be different. So, try some books before you actually spend your money!</p>
 
-<p>Hmm&#8230; A long guide after a long time :)</p>
+<p>Hmm&hellip; A long guide after a long time :)</p>
 </div>
 
   
@@ -755,7 +755,7 @@
 
 
 
-          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/computer-store.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
+          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/shop.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
 
 
 

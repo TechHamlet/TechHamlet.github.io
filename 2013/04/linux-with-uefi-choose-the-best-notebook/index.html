@@ -28,7 +28,7 @@
   <link rel="canonical" href="http://techhamlet.com/2013/04/linux-with-uefi-choose-the-best-notebook">
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <link href="/feed.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
 
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -208,7 +208,7 @@
   
 
 
-<time datetime="2013-04-24T20:00:10+05:30"  data-updated="true">Apr 24<span>th</span>, 2013</time>
+<time datetime="2013-04-24T14:30:10+00:00"  data-updated="true">Apr 24<span>th</span>, 2013</time>
 
 
         
@@ -224,17 +224,17 @@
 
 
 
-<div class="entry-content"><p>When Microsoft announced that they are going to use UEFI and secure boot by default, the Linux community thought Microsoft is going to crush them by making it difficult to dual-boot in Windows 8 pre-installed machines. Then, some popular distributions like Fedora and Ubuntu accepted Microsoft&#8217;s move and said its good for security. They also came up with their own solutions to use Linux with UEFI.</p>
+<div class="entry-content"><p>When Microsoft announced that they are going to use UEFI and secure boot by default, the Linux community thought Microsoft is going to crush them by making it difficult to dual-boot in Windows 8 pre-installed machines. Then, some popular distributions like Fedora and Ubuntu accepted Microsoft&rsquo;s move and said its good for security. They also came up with their own solutions to use Linux with UEFI.</p>
 
-<p>Last year, Microsoft released Windows 8 and vendors started to ship new Desktop and Notebook models with Windows 8 and UEFI. Did we managed to install Linux on these machines without any problems? Did we managed to tie Linux with UEFI? No! In some machines, even creating partitions will make them un-bootable. Some machines won&#8217;t even switch on if you install Linux. I also faced a lot of issues when I bought an HP machine with Windows 8 and tried to install Linux on it! Whats going on? Secure Boot will make it hard to boot a third-party OS. But according to the book, disabling Secure Boot should allow us to install Linux. But why didn&#8217;t it work? Is it a problem with UEFI? Is it a problem with Microsoft? Is it a problem with the vendors?</p>
+<p>Last year, Microsoft released Windows 8 and vendors started to ship new Desktop and Notebook models with Windows 8 and UEFI. Did we managed to install Linux on these machines without any problems? Did we managed to tie Linux with UEFI? No! In some machines, even creating partitions will make them un-bootable. Some machines won&rsquo;t even switch on if you install Linux. I also faced a lot of issues when I bought an HP machine with Windows 8 and tried to install Linux on it! Whats going on? Secure Boot will make it hard to boot a third-party OS. But according to the book, disabling Secure Boot should allow us to install Linux. But why didn&rsquo;t it work? Is it a problem with UEFI? Is it a problem with Microsoft? Is it a problem with the vendors?</p>
 
 <h3>First of all, lets learn a bit about UEFI before pairing Linux with UEFI :</h3>
 
 <p><img src="http://techhamlet.com/wp-content/uploads/2013/04/uefi-550x385.jpg" alt="Linux with UEFI" /></p>
 
-<p>Some people think that UEFI is a new addition to BIOS or a new version of BIOS. But the truth is, UEFI is not BIOS and BIOS is not UEFI. BIOS will make your PC ready to boot the OS. BIOS have about 1024 KB of space and it can&#8217;t initialize all your devices and ports. It also can&#8217;t read your filesystem. What it does is, initialize some of your hardware and execute the boot code located in the first 440 bytes in your hard drive.</p>
+<p>Some people think that UEFI is a new addition to BIOS or a new version of BIOS. But the truth is, UEFI is not BIOS and BIOS is not UEFI. BIOS will make your PC ready to boot the OS. BIOS have about 1024 KB of space and it can&rsquo;t initialize all your devices and ports. It also can&rsquo;t read your filesystem. What it does is, initialize some of your hardware and execute the boot code located in the first 440 bytes in your hard drive.</p>
 
-<p>UEFI is a replacement for the BIOS system. It can read and understand your partitions and the file-system  The BIOS will blindly execute the first bytes of the hard drive. But UEFI will load the boot programs from the data stored in a special FAT32 partition known as the EFI SYSTEM PARTITION. In a BIOS system, if we install Linux over Windows, it will overwrite Windows boot data and write its own data. But in the UEFI system, each OS can store their boot data in a separate folder in the EFI partition. Now no one will rewrite other operating system&#8217;s boot data. You can even choose what OS to load from the UEFI system (Some still call it the BIOS) just like we choose what device to boot (CD or Hard Drive) from the BIOS.</p>
+<p>UEFI is a replacement for the BIOS system. It can read and understand your partitions and the file-system  The BIOS will blindly execute the first bytes of the hard drive. But UEFI will load the boot programs from the data stored in a special FAT32 partition known as the EFI SYSTEM PARTITION. In a BIOS system, if we install Linux over Windows, it will overwrite Windows boot data and write its own data. But in the UEFI system, each OS can store their boot data in a separate folder in the EFI partition. Now no one will rewrite other operating system&rsquo;s boot data. You can even choose what OS to load from the UEFI system (Some still call it the BIOS) just like we choose what device to boot (CD or Hard Drive) from the BIOS.</p>
 
 <p><em>To learn more about UEFI check <a href="https://wiki.archlinux.org/index.php/Unified_Extensible_Firmware_Interface">this article</a> from ArchWiki.</em></p>
 
@@ -242,19 +242,19 @@
 
 <p><img src="http://techhamlet.com/wp-content/uploads/2013/04/secure-boot-550x385.jpg" alt="Secure Boot" /> <em>Image Source : <a href="http://www.flickr.com/photos/schlummiguch/8566357452/">Adrian Ulrich</a></em></p>
 
-<p>Secure boot is a mechanism  where the UEFI firmware will check whether the boot loader is signed with a key stored in its database. According to what we understood, only OEMs can add keys to this database. So for Linux, it will be difficult to force the OEMs to add the Linux keys to pair Linux with UEFI. Ubuntu and Fedora have come up with their own methods to deal with this issue but sometimes they won&#8217;t work. The Spanish free software development group Hispalinux have already filed a case against Microsoft in the European Commission stating that the Secure Boot is &#8221;obstructive&#8221; and anti-competitive. But, if you want to use Linux with UEFI, you can always disable the Secure Boot feature. Pairing Linux with UEFI is possible but pairing with Secure Boot is a lot difficult!</p>
+<p>Secure boot is a mechanism  where the UEFI firmware will check whether the boot loader is signed with a key stored in its database. According to what we understood, only OEMs can add keys to this database. So for Linux, it will be difficult to force the OEMs to add the Linux keys to pair Linux with UEFI. Ubuntu and Fedora have come up with their own methods to deal with this issue but sometimes they won&rsquo;t work. The Spanish free software development group Hispalinux have already filed a case against Microsoft in the European Commission stating that the Secure Boot is &#8221;obstructive&#8221; and anti-competitive. But, if you want to use Linux with UEFI, you can always disable the Secure Boot feature. Pairing Linux with UEFI is possible but pairing with Secure Boot is a lot difficult!</p>
 
-<h3>If UEFI is built to make dual booting more easier and if we can disable secure boot, why can&#8217;t we pair Linux with UEFI?</h3>
+<h3>If UEFI is built to make dual booting more easier and if we can disable secure boot, why can&rsquo;t we pair Linux with UEFI?</h3>
 
-<p>What I think is that the problem is with the OEMs. HP implement UEFI in a different way, Asus does it in another way and Samsung also use a different technique. There&#8217;s no standard mechanism to implement the UEFI firmware. In HP, you won&#8217;t be able to recover your system if you install Linux. You have to send it to HP in-order to fix things. But they also took nearly a month to figure out how to fix my old laptop. That&#8217;s right&#8230; <a href="http://techhamlet.com/2013/03/stay-away-from-hp/">I bought an HP Windows 8 notebook</a> on December and gave it back! In some Asus machines, you won&#8217;t be able to boot into Windows if you partition them. Some Samsung machines will completely die if you install Linux on them.</p>
+<p>What I think is that the problem is with the OEMs. HP implement UEFI in a different way, Asus does it in another way and Samsung also use a different technique. There&rsquo;s no standard mechanism to implement the UEFI firmware. In HP, you won&rsquo;t be able to recover your system if you install Linux. You have to send it to HP in-order to fix things. But they also took nearly a month to figure out how to fix my old laptop. That&rsquo;s right&hellip; <a href="http://techhamlet.com/2013/03/stay-away-from-hp/">I bought an HP Windows 8 notebook</a> on December and gave it back! In some Asus machines, you won&rsquo;t be able to boot into Windows if you partition them. Some Samsung machines will completely die if you install Linux on them.</p>
 
-<p>According to<a href="http://www.zdnet.com/more-experiments-with-linux-only-uefi-secure-boot-installation-7000014095/"> ZDnet&#8217;s latest experiments</a>, HP seems to be favoring Windows 8 even if Linux is at the top of the boot list! I don&#8217;t think there&#8217;s anything wrong with UEFI. It&#8217;s a good thing. But the problem is with secure boot and in the way vendors implement UEFI!</p>
+<p>According to<a href="http://www.zdnet.com/more-experiments-with-linux-only-uefi-secure-boot-installation-7000014095/"> ZDnet&rsquo;s latest experiments</a>, HP seems to be favoring Windows 8 even if Linux is at the top of the boot list! I don&rsquo;t think there&rsquo;s anything wrong with UEFI. It&rsquo;s a good thing. But the problem is with secure boot and in the way vendors implement UEFI!</p>
 
 <h2>So, if I need to dual-boot Windows 8 and Linux, what is the best Notebook to buy?</h2>
 
-<p>Earlier, if you need to dual-boot with Windows, you will pick a Windows pre-installed notebook and install Linux on it. Everything will work fine. But now you can&#8217;t do this. You have to pair Linux with UEFI ! Because some vendors favor Windows, you need to buy a notebook without any OS. They are cheaper so you can buy Windows 8 separately from the money you save.</p>
+<p>Earlier, if you need to dual-boot with Windows, you will pick a Windows pre-installed notebook and install Linux on it. Everything will work fine. But now you can&rsquo;t do this. You have to pair Linux with UEFI ! Because some vendors favor Windows, you need to buy a notebook without any OS. They are cheaper so you can buy Windows 8 separately from the money you save.</p>
 
-<p>Next, do not go for HP! They have a completely messed up way of dealing with UEFI. I had enough of them. Even their technicians don&#8217;t know how to deal with UEFI. So, better stay away from them. Go for a much respected brand like Asus, Lenovo and Dell.</p>
+<p>Next, do not go for HP! They have a completely messed up way of dealing with UEFI. I had enough of them. Even their technicians don&rsquo;t know how to deal with UEFI. So, better stay away from them. Go for a much respected brand like Asus, Lenovo and Dell.</p>
 
 <p>You also need to check whether you can manually disable secure boot. If that feature is not implemented on your machine, then its much better.</p>
 
@@ -264,13 +264,13 @@
 
 <ul>
 <li><p>Do not buy a Windows 8 pre-installed machine. Always go for a machine with DOS. Buy Windows 8 separately.</p></li>
-<li><p>Stay away from HP because they don&#8217;t know what they are doing.</p></li>
+<li><p>Stay away from HP because they don&rsquo;t know what they are doing.</p></li>
 <li><p>Check whether you can disable secure boot.</p></li>
 <li><p>Ask whether you can install Linux alongside Windows 8 from the salesperson.</p></li>
 </ul>
 
 
-<p>If you are wise enough, you will be able to get a good notebook which will allow you to pair Linux with UEFI! Some of you might need to follow some steps in order to dual-boot in your new machine. Stay with us and we&#8217;ll tell you how to do this in our next post!</p>
+<p>If you are wise enough, you will be able to get a good notebook which will allow you to pair Linux with UEFI! Some of you might need to follow some steps in order to dual-boot in your new machine. Stay with us and we&rsquo;ll tell you how to do this in our next post!</p>
 </div>
 
   
@@ -404,7 +404,7 @@
 
 
 
-          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/computer-store.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
+          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/shop.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
 
 
 

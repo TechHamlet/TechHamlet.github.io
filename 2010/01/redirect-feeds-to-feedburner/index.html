@@ -28,7 +28,7 @@
   <link rel="canonical" href="http://techhamlet.com/2010/01/redirect-feeds-to-feedburner">
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <link href="/feed.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
 
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -208,7 +208,7 @@
   
 
 
-<time datetime="2010-01-28T12:00:07+05:30"  data-updated="true">Jan 28<span>th</span>, 2010</time>
+<time datetime="2010-01-28T06:30:07+00:00"  data-updated="true">Jan 28<span>th</span>, 2010</time>
 
 
         
@@ -224,9 +224,9 @@
 
 
 
-<div class="entry-content"><p><a href="http://www.techhamlet.com/wp-content/uploads/2010/01/feedburner.png"><img src="http://www.techhamlet.com/wp-content/uploads/2010/01/feedburner-100x100.png" alt="FeedBurner" /></a>Most of us bloggers use Feedburner to burn our feeds. The main reason to do this is, that Feedburner have lots of features than the normal <a href="http://en.wikipedia.org/wiki/RSS">RSS feeds</a>. Just sending our feeds through Feedburner won&#8217;t help us. We need to tell our readers that we use the service! But, still people prefer to use the original feeds which appear on the <a href="http://en.wikipedia.org/wiki/Address_bar">address bar</a> of their <a href="http://en.wikipedia.org/wiki/Web_browser">browser</a>! So, how to tell these people that we use Feedburner?<!-- more --></p>
+<div class="entry-content"><p><a href="http://www.techhamlet.com/wp-content/uploads/2010/01/feedburner.png"><img src="http://www.techhamlet.com/wp-content/uploads/2010/01/feedburner-100x100.png" alt="FeedBurner" /></a>Most of us bloggers use Feedburner to burn our feeds. The main reason to do this is, that Feedburner have lots of features than the normal <a href="http://en.wikipedia.org/wiki/RSS">RSS feeds</a>. Just sending our feeds through Feedburner won&rsquo;t help us. We need to tell our readers that we use the service! But, still people prefer to use the original feeds which appear on the <a href="http://en.wikipedia.org/wiki/Address_bar">address bar</a> of their <a href="http://en.wikipedia.org/wiki/Web_browser">browser</a>! So, how to tell these people that we use Feedburner?<!-- more --></p>
 
-<p>What most of us does is, just burn our feeds from feedburner and then add a big button on our sidebar saying &#8220;Subscribe to our feeds&#8221;. Will this help us? Not completely&#8230; As I said earlier, still most of the users prefer to use the <a href="http://en.wikipedia.org/wiki/Sparkling_wine_production">traditional method</a> (Use the icon that appears on the address bar) to subscribe to the feeds.</p>
+<p>What most of us does is, just burn our feeds from feedburner and then add a big button on our sidebar saying &ldquo;Subscribe to our feeds&rdquo;. Will this help us? Not completely&hellip; As I said earlier, still most of the users prefer to use the <a href="http://en.wikipedia.org/wiki/Sparkling_wine_production">traditional method</a> (Use the icon that appears on the address bar) to subscribe to the feeds.</p>
 
 <p>So, to send those visitors to feedburner, we need to redirect our original feeds. Now, how to do this? There are two methods:</p>
 
@@ -237,7 +237,7 @@
 <p><strong>.htaccess method (<a href="http://ajaydsouza.com/archives/2006/08/04/how-to-use-htaccess-to-redirect-your-blog-feed-to-your-feedburner-feed/">Source</a>) :</strong></p>
 
 <ul>
-<li>To use this method, open you .htaccess file and add the following code before the code added by wordpress (Before the line &#8220;# BEGIN <a href="http://wordpress.org">WordPress</a>&#8221;)</li>
+<li>To use this method, open you .htaccess file and add the following code before the code added by wordpress (Before the line &ldquo;# BEGIN <a href="http://wordpress.org">WordPress</a>&rdquo;)</li>
 </ul>
 
 
@@ -249,7 +249,7 @@
 
 <p><strong>RewriteCond %{HTTP_USER_AGENT} !FeedBurner</strong></p>
 
-<p><strong>RewriteRule ^feed/?([_0-9a-z-]+)?/?$ http://feeds.feedburner.com/ur-url [R,L]</strong></p>
+<p><strong>RewriteRule ^feed/?([_0-9a-z-]+)?/?$ <a href="http://feeds.feedburner.com/ur-url">http://feeds.feedburner.com/ur-url</a> [R,L]</strong></p>
 
 <p><strong></IfModule></strong></p></blockquote>
 
@@ -396,7 +396,7 @@
 
 
 
-          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/computer-store.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
+          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/shop.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
 
 
 

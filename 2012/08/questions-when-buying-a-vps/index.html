@@ -28,7 +28,7 @@
   <link rel="canonical" href="http://techhamlet.com/2012/08/questions-when-buying-a-vps">
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <link href="/feed.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
 
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -208,7 +208,7 @@
   
 
 
-<time datetime="2012-08-20T21:38:06+05:30"  data-updated="true">Aug 20<span>th</span>, 2012</time>
+<time datetime="2012-08-20T16:08:06+00:00"  data-updated="true">Aug 20<span>th</span>, 2012</time>
 
 
         
@@ -226,7 +226,7 @@
 
 <div class="entry-content"><p><img src="http://techhamlet.com/wp-content/uploads/2012/08/servers-550x385.jpg" alt="VPS Servers" /> <em><strong>Image Source :</strong> <a href="http://www.flickr.com/photos/getbutterfly/6317955134/">Ciprian Popescu</a></em></p>
 
-<p>If your site is growing fast and if its taking too many resources from your host, you might want to move to a VPS. If you are a <a href="http://www.dudamobile.com/duda-reseller-program">website reseller</a>, then also you might want to go for a VPS. There are many reasons to make this move. But if this is the first tie you are going for a VPS, you might have several questions&#8230;</p>
+<p>If your site is growing fast and if its taking too many resources from your host, you might want to move to a VPS. If you are a <a href="http://www.dudamobile.com/duda-reseller-program">website reseller</a>, then also you might want to go for a VPS. There are many reasons to make this move. But if this is the first tie you are going for a VPS, you might have several questions&hellip;</p>
 
 <h3>Do I need to know <a href="http://techhamlet.com/tag/linux/">Linux</a>?</h3>
 
@@ -234,25 +234,25 @@
 
 <h3>Do I need a control panel like CPanel, Plesk and Webmin?</h3>
 
-<p>If you don&#8217;t know how to work with a Linux server, you definitely need a control panel. Most of the managed VPS providers will install a control panel by default. It will make things easy for you. It will do all the hard work for you.</p>
+<p>If you don&rsquo;t know how to work with a Linux server, you definitely need a control panel. Most of the managed VPS providers will install a control panel by default. It will make things easy for you. It will do all the hard work for you.</p>
 
-<p>But if you know Linux. If you know how to set up your own server, then you don&#8217;t need a panel. A control panel takes a lot of resources and most of them comes with an additional price. When I bought my first VPS, I searched for hosts which offered CPanel based servers. I couldn&#8217;t help it. But in the past few months, I didn&#8217;t used any control panel to manage my server. It&#8217;s not that hard. Try it!</p>
+<p>But if you know Linux. If you know how to set up your own server, then you don&rsquo;t need a panel. A control panel takes a lot of resources and most of them comes with an additional price. When I bought my first VPS, I searched for hosts which offered CPanel based servers. I couldn&rsquo;t help it. But in the past few months, I didn&rsquo;t used any control panel to manage my server. It&rsquo;s not that hard. Try it!</p>
 
 <h3>How much RAM do I need for my VPS?</h3>
 
-<p>It depends. For example, we have two WordPress sites (Not my sites&#8230; Examples&#8230;). One get nearly 3K visits per day. The other get nearly 8K visits per day. Sometimes, the 8K site might work with just 2GB of ram while the 3K site might want more. It depends on what plugins you use, whats the software, what server you use (Nginx or Apache), and how you configure your server. You can install Nginx with PHP-FPM and tune it to work in low amounts of resources. So the best way to find it out is, buy a server and see. You&#8217;ll never know until you try it. Most of the <a href="http://techhamlet.com/tag/vps/">VPS</a> providers let you increase the RAM without re-installing the system. So, check it first.</p>
+<p>It depends. For example, we have two WordPress sites (Not my sites&hellip; Examples&hellip;). One get nearly 3K visits per day. The other get nearly 8K visits per day. Sometimes, the 8K site might work with just 2GB of ram while the 3K site might want more. It depends on what plugins you use, whats the software, what server you use (Nginx or Apache), and how you configure your server. You can install Nginx with PHP-FPM and tune it to work in low amounts of resources. So the best way to find it out is, buy a server and see. You&rsquo;ll never know until you try it. Most of the <a href="http://techhamlet.com/tag/vps/">VPS</a> providers let you increase the RAM without re-installing the system. So, check it first.</p>
 
-<h3>Xen, OpenVZ, KVM&#8230; What is this?</h3>
+<h3>Xen, OpenVZ, KVM&hellip; What is this?</h3>
 
 <p>A VPS means a virtual machine. You can use Virtual Box or VMWare Player to run another operating system within your desktop as a virtual machine. Just like that, we use Xen, OpenVZ and KVM to create virtual machines inside a big dedicated server.</p>
 
-<p>OpenVZ is the cheapest. It doesn&#8217;t give you a full virtualized environment. All the machines in an OpenVZ virtual machine will share the kernel of the host and if there&#8217;s a problem with that kernel everything will fail. You won&#8217;t get fully reserved resources. But if others are not using their shares, you can get some from them. For example, if you exceed the memory amount given to you, you can safely get some small amount of extra ram as burstable memory. It&#8217;s close to a shared server.</p>
+<p>OpenVZ is the cheapest. It doesn&rsquo;t give you a full virtualized environment. All the machines in an OpenVZ virtual machine will share the kernel of the host and if there&rsquo;s a problem with that kernel everything will fail. You won&rsquo;t get fully reserved resources. But if others are not using their shares, you can get some from them. For example, if you exceed the memory amount given to you, you can safely get some small amount of extra ram as burstable memory. It&rsquo;s close to a shared server.</p>
 
-<p>Xen and KVM gives you the experience of a full dedicated machine. It reserves the resources just for you. But no burstable ram. They are more stable and fast. That means, they are a bit more expensive. Currently, Xen is the king and people have been using it for years. But recently, KVM (Kernel Virtual Machine) was introduced and currently, it&#8217;s getting a lot of attention. KVM is now maintained by Red Hat and its their official virtualization technology. It doesn&#8217;t need any kernel modifications. The Linux kernel supports it by default. So, I think KVM have a bright future. But its new!</p>
+<p>Xen and KVM gives you the experience of a full dedicated machine. It reserves the resources just for you. But no burstable ram. They are more stable and fast. That means, they are a bit more expensive. Currently, Xen is the king and people have been using it for years. But recently, KVM (Kernel Virtual Machine) was introduced and currently, it&rsquo;s getting a lot of attention. KVM is now maintained by Red Hat and its their official virtualization technology. It doesn&rsquo;t need any kernel modifications. The Linux kernel supports it by default. So, I think KVM have a bright future. But its new!</p>
 
 <h3>Any more questions?</h3>
 
-<p>Actually, I bought my first VPS a long time ago and now I can&#8217;t remember what questions I had at that time. Only now I fully understand some of the those problems. So, have I missed anything? Just ask!</p>
+<p>Actually, I bought my first VPS a long time ago and now I can&rsquo;t remember what questions I had at that time. Only now I fully understand some of the those problems. So, have I missed anything? Just ask!</p>
 </div>
 
   
@@ -386,7 +386,7 @@
 
 
 
-          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/computer-store.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
+          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/shop.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
 
 
 

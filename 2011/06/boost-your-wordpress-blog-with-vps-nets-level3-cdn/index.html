@@ -28,7 +28,7 @@
   <link rel="canonical" href="http://techhamlet.com/2011/06/boost-your-wordpress-blog-with-vps-nets-level3-cdn">
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <link href="/feed.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
 
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -208,7 +208,7 @@
   
 
 
-<time datetime="2011-06-17T09:43:52+05:30"  data-updated="true">Jun 17<span>th</span>, 2011</time>
+<time datetime="2011-06-17T04:13:52+00:00"  data-updated="true">Jun 17<span>th</span>, 2011</time>
 
 
         
@@ -226,13 +226,13 @@
 
 <div class="entry-content"><p><a href="http://techhamlet.com/wp-content/uploads/2011/06/level3-vpsnet-cdn.jpg"><img src="http://techhamlet.com/wp-content/uploads/2011/06/level3-vpsnet-cdn-175x116.jpg" alt="VPS.net &amp; Level3" /></a></p>
 
-<p>As a webmaster, one of our main targets is to make sure that our website loads before the user gets tired! Not only the user, now even search engines check the speed of our sites before they rank them! So, I think now its time we consider more about this &#8220;speed&#8221;. Most of you might have already tried various techniques like minifying javascrips and css, adding css sprites to your images, squeezing your <a href="http://techhamlet.com/2011/03/review-lets-here-about-the-6-vps-servers-which-i-have-checked/">server</a>, blaming your host&#8230; But, did you try adding a CDN?<!-- more --></p>
+<p>As a webmaster, one of our main targets is to make sure that our website loads before the user gets tired! Not only the user, now even search engines check the speed of our sites before they rank them! So, I think now its time we consider more about this &ldquo;speed&rdquo;. Most of you might have already tried various techniques like minifying javascrips and css, adding css sprites to your images, squeezing your <a href="http://techhamlet.com/2011/03/review-lets-here-about-the-6-vps-servers-which-i-have-checked/">server</a>, blaming your host&hellip; But, did you try adding a CDN?<!-- more --></p>
 
 <p>A CDN? In simple terms, A CDN (Content Delivery Network) is a place where you offload the static parts of your site. Then, when a user visit your site, those static content will be served from the closest <a href="http://techhamlet.com/2011/03/choose-the-best-vps/">server</a> to that user making things faster than loading from your own server.</p>
 
-<p>One of the biggest myths we have about CDNs is about its cost. Services like Rackspace and Amazon charge as we go and we have to pay at the end of the month. For a normal site, you won&#8217;t have to pay more than 2 dollars! It depends on the size of your site. But, on VPS.net, they charge at first. On the first look, people might think that they are expensive. But, they are not!</p>
+<p>One of the biggest myths we have about CDNs is about its cost. Services like Rackspace and Amazon charge as we go and we have to pay at the end of the month. For a normal site, you won&rsquo;t have to pay more than 2 dollars! It depends on the size of your site. But, on VPS.net, they charge at first. On the first look, people might think that they are expensive. But, they are not!</p>
 
-<p>After signing up, you might think that it&#8217;s really hard to set up the CDN on your site because there&#8217;s no guide on how to do it. I spent several days writing emails to the plugin developers, sending emails to VPS.net and even posting on Wordpress for help. But at the end, Level3 CDN turned to be the easiest CDN to set up!</p>
+<p>After signing up, you might think that it&rsquo;s really hard to set up the CDN on your site because there&rsquo;s no guide on how to do it. I spent several days writing emails to the plugin developers, sending emails to VPS.net and even posting on Wordpress for help. But at the end, Level3 CDN turned to be the easiest CDN to set up!</p>
 
 <p>On March, I wrote and article on how to integrate Rackspace CDN to your Wordpress blog on <a href="http://www.shoutmeloud.com/how-to-boost-your-wordpress-blog-with-rackspace-cloud-files.html">ShoutmeLoud</a>. Today, Lets see how to setup Level3 CDN :</p>
 
@@ -240,21 +240,21 @@
 
 <ul>
 <li><p>First, go to the <a href="http://www.vps.net/product/cdn">VPS.net</a> site and signup for the CDN service (At first, signup for 1TB only. For most of you, its more than enough. Some might be able to use it even for a year!)</p></li>
-<li><p>Next, go to their dashboard and click scroll down to the section named &#8220;Manage CDN&#8221;. Now, click on the link &#8221;<strong>Level3 CDN</strong>&#8221; as shown below :</p></li>
+<li><p>Next, go to their dashboard and click scroll down to the section named &ldquo;Manage CDN&rdquo;. Now, click on the link &ldquo;<strong>Level3 CDN</strong>&rdquo; as shown below :</p></li>
 </ul>
 
 
 <p><a href="http://techhamlet.com/wp-content/uploads/2011/06/vps-dashboard.jpg"><img src="http://techhamlet.com/wp-content/uploads/2011/06/vps-dashboard-340x222.jpg" alt="VPS.net Dashboard" /></a></p>
 
 <ul>
-<li><p>Next, go to the &#8221;<strong>Caching</strong>&#8221; link under &#8220;New Property&#8221;</p></li>
-<li><p>In here, you&#8217;ll get a very long form to fill! (Most of the fields are useless)</p></li>
+<li><p>Next, go to the &ldquo;<strong>Caching</strong>&rdquo; link under &ldquo;New Property&rdquo;</p></li>
+<li><p>In here, you&rsquo;ll get a very long form to fill! (Most of the fields are useless)</p></li>
 </ul>
 
 
 <p>Filling the form :</p>
 
-<p><strong>Origin Server : </strong>In here, the most important point is the origin server&#8230; In here, you have to give the address of your site without http://  If you are using www (for example www.techhamlet.com is the main address), then, give the origin server as <strong>www.yoursite.com</strong>. If you are not using www.. (For example, techhamlet.com) give <strong>yoursite.com</strong>. If you mess this up, your CDN won&#8217;t work!</p>
+<p><strong>Origin Server : </strong>In here, the most important point is the origin server&hellip; In here, you have to give the address of your site without <a href="http://">http://</a>  If you are using www (for example www.techhamlet.com is the main address), then, give the origin server as <strong>www.yoursite.com</strong>. If you are not using www.. (For example, techhamlet.com) give <strong>yoursite.com</strong>. If you mess this up, your CDN won&rsquo;t work!</p>
 
 <p><strong>CDN host name :</strong> In here, give the CNAME you are going to use for the CDN. For example, cdn.yoursite.com (give the full address)</p>
 
@@ -270,7 +270,7 @@
 <h2>Now, head over to your domain registrar :</h2>
 
 <ul>
-<li>At your domain registrar, add a CNAME (Use the CNAME you gave in the above form. If you gave cdn.yoursite.com&#8230; The CNAME is cdn) pointing to cdn.vps.net.c.footprint.net (Add any TTL value. Better use 3600). In here, I con&#8217;t give you any guides because it depends on the registrar you are using. If you are not use what you are doing, open a support ticket and ask your domain registrar.</li>
+<li>At your domain registrar, add a CNAME (Use the CNAME you gave in the above form. If you gave cdn.yoursite.com&hellip; The CNAME is cdn) pointing to cdn.vps.net.c.footprint.net (Add any TTL value. Better use 3600). In here, I con&rsquo;t give you any guides because it depends on the registrar you are using. If you are not use what you are doing, open a support ticket and ask your domain registrar.</li>
 </ul>
 
 
@@ -278,24 +278,24 @@
 
 <ul>
 <li><p>First, install the <a href="http://wordpress.org/extend/plugins/w3-total-cache/">W3TotalCache</a> plugin</p></li>
-<li><p>Now, in your site&#8217;s admin panel (left side of the admin panel), go to &#8221;<strong>General Settings</strong>&#8221; under &#8220;Performance&#8221;</p></li>
-<li><p>Scroll down until you see the section named &#8220;Content Delivery Network&#8221;</p></li>
+<li><p>Now, in your site&rsquo;s admin panel (left side of the admin panel), go to &ldquo;<strong>General Settings</strong>&rdquo; under &ldquo;Performance&rdquo;</p></li>
+<li><p>Scroll down until you see the section named &ldquo;Content Delivery Network&rdquo;</p></li>
 </ul>
 
 
 <p><a href="http://techhamlet.com/wp-content/uploads/2011/06/general-settings.jpg"><img src="http://techhamlet.com/wp-content/uploads/2011/06/general-settings-340x197.jpg" alt="General Settings" /></a></p>
 
 <ul>
-<li><p>In here, select &#8221;<strong>Mirror</strong>&#8221; as the CDN Type. But, do not enable the CDN! (In the screenshot, its enabled)</p></li>
-<li><p>Now, under the same &#8220;Performance&#8221; menu, go to the &#8221;<strong>CDN</strong>&#8221; link</p></li>
-<li><p>Under the &#8220;General&#8221; section, select the parts of your site which you need to place in the CDN</p></li>
-<li><p>Now, under the &#8220;Configuration&#8221; section, give the full CNAME of your CDN (for example cdn.yoursite.com) in the field &#8221;<strong>Replace site&#8217;s hostname with</strong>&#8221;</p></li>
-<li><p>In here, when you click the &#8220;Test Mirror&#8221;. It might fail&#8230; Ignore it!</p></li>
-<li><p>Now, go back to the &#8220;General Settings&#8221; and enable the CDN</p></li>
+<li><p>In here, select &ldquo;<strong>Mirror</strong>&rdquo; as the CDN Type. But, do not enable the CDN! (In the screenshot, its enabled)</p></li>
+<li><p>Now, under the same &ldquo;Performance&rdquo; menu, go to the &ldquo;<strong>CDN</strong>&rdquo; link</p></li>
+<li><p>Under the &ldquo;General&rdquo; section, select the parts of your site which you need to place in the CDN</p></li>
+<li><p>Now, under the &ldquo;Configuration&rdquo; section, give the full CNAME of your CDN (for example cdn.yoursite.com) in the field &ldquo;<strong>Replace site&rsquo;s hostname with</strong>&rdquo;</p></li>
+<li><p>In here, when you click the &ldquo;Test Mirror&rdquo;. It might fail&hellip; Ignore it!</p></li>
+<li><p>Now, go back to the &ldquo;General Settings&rdquo; and enable the CDN</p></li>
 </ul>
 
 
-<p>Now, head over to your site and see whether everything is fine. Since this is an origin pull CDN, the content from your site will be loaded to the CDN at your first visit. Next, they will be served from one of the servers in the CDN. Don&#8217;t worry, this won&#8217;t break your site! So, what do you think about your new CDN?</p>
+<p>Now, head over to your site and see whether everything is fine. Since this is an origin pull CDN, the content from your site will be loaded to the CDN at your first visit. Next, they will be served from one of the servers in the CDN. Don&rsquo;t worry, this won&rsquo;t break your site! So, what do you think about your new CDN?</p>
 </div>
 
   
@@ -429,7 +429,7 @@
 
 
 
-          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/computer-store.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
+          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/shop.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
 
 
 

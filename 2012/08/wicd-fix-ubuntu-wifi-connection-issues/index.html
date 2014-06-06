@@ -9,7 +9,7 @@
   <meta name="author" content="Pubudu Kodikara">
 
   
-  <meta name="description" content="Image Source : Shibainu If you use Wifi in your Ubuntu machine, you might have faced several issues like&#8230; Inability to connect to a Wifi &hellip;">
+  <meta name="description" content="Image Source : Shibainu If you use Wifi in your Ubuntu machine, you might have faced several issues like&hellip; Inability to connect to a Wifi &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -28,7 +28,7 @@
   <link rel="canonical" href="http://techhamlet.com/2012/08/wicd-fix-ubuntu-wifi-connection-issues">
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <link href="/feed.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
 
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -208,7 +208,7 @@
   
 
 
-<time datetime="2012-08-23T22:14:22+05:30"  data-updated="true">Aug 23<span>rd</span>, 2012</time>
+<time datetime="2012-08-23T16:44:22+00:00"  data-updated="true">Aug 23<span>rd</span>, 2012</time>
 
 
         
@@ -226,20 +226,20 @@
 
 <div class="entry-content"><p><img src="http://techhamlet.com/wp-content/uploads/2012/08/wifi-550x385.jpg" alt="Wifi" /> <em><strong>Image Source :</strong> <a href="http://www.flickr.com/photos/shibainu/4611443548/">Shibainu</a></em></p>
 
-<p>If you use Wifi in your <a href="http://techhamlet.com/tag/ubuntu/">Ubuntu</a> machine, you might have faced several issues like&#8230; Inability to connect to a Wifi network&#8230; Asking for the security key every time you login&#8230; Slow connections&#8230; etc. It&#8217;s really irritating. Until now I managed to work with these issues because I also have a cable connection in my desk. But today I wanted to fix the issue once and for all with Wicd&#8230;</p>
+<p>If you use Wifi in your <a href="http://techhamlet.com/tag/ubuntu/">Ubuntu</a> machine, you might have faced several issues like&hellip; Inability to connect to a Wifi network&hellip; Asking for the security key every time you login&hellip; Slow connections&hellip; etc. It&rsquo;s really irritating. Until now I managed to work with these issues because I also have a cable connection in my desk. But today I wanted to fix the issue once and for all with Wicd&hellip;</p>
 
-<p>After searching through the web, I got to know that the source of the problem lies in the wireless network drivers. That&#8217;s the cause for most of these problems. Unfortunately, there&#8217;s no direct solution for it (I was unable to find one in the web). But there&#8217;s a workaround&#8230;</p>
+<p>After searching through the web, I got to know that the source of the problem lies in the wireless network drivers. That&rsquo;s the cause for most of these problems. Unfortunately, there&rsquo;s no direct solution for it (I was unable to find one in the web). But there&rsquo;s a workaround&hellip;</p>
 
 <p>I saw that many people solved this problem by replacing the default network manager with <a href="https://help.ubuntu.com/community/WICD">Wicd</a> network manager. Originally, Wicd was built for wireless devices (<strong>W</strong>ireless <strong>I</strong>nterface <strong>C</strong>onnection <strong>D</strong>aemon). But now, it supports both wireless and wired connections. The point is, Wicd handles Wireless connections better than the default network manager. Actually, not better, in a different manner. Fortunately, it can solve most of our problems.</p>
 
-<p>One of the biggest problems I faced is the security key issue. Every-time I login, the network manager will ask me to enter the Wifi security key. It&#8217;ll ask several times before finally connecting. Wicd fixed this issue. It connects to the network as soon as I login to the system. So, I think it might also solve your own problems.</p>
+<p>One of the biggest problems I faced is the security key issue. Every-time I login, the network manager will ask me to enter the Wifi security key. It&rsquo;ll ask several times before finally connecting. Wicd fixed this issue. It connects to the network as soon as I login to the system. So, I think it might also solve your own problems.</p>
 
-<p>Before you do anything, remember this&#8230; The default network manager have more features. Wicd still doesn&#8217;t support VPNs, DSL, 3G and CDMA connections. So, be-careful. If you don&#8217;t have any real issues, stick with the network manager&#8230;</p>
+<p>Before you do anything, remember this&hellip; The default network manager have more features. Wicd still doesn&rsquo;t support VPNs, DSL, 3G and CDMA connections. So, be-careful. If you don&rsquo;t have any real issues, stick with the network manager&hellip;</p>
 
 <h3>Now, lets see how to install Wicd :</h3>
 
 <ul>
-<li>First, open the terminal and enter the following two commands (The first one will install Wicd and the second one will remove the network manager) (<strong>Warning :</strong> Do not remove the network manager first. You&#8217;ll lose your connection and won&#8217;t be able to install Wicd) :</li>
+<li>First, open the terminal and enter the following two commands (The first one will install Wicd and the second one will remove the network manager) (<strong>Warning :</strong> Do not remove the network manager first. You&rsquo;ll lose your connection and won&rsquo;t be able to install Wicd) :</li>
 </ul>
 
 
@@ -250,20 +250,20 @@
 
 
 <ul>
-<li> Now open Wicd and you&#8217;ll see your Wifi network. Go to <strong>Properties</strong> and set the network key and the encryption type (if its protected) and connect to the network.</li>
+<li> Now open Wicd and you&rsquo;ll see your Wifi network. Go to <strong>Properties</strong> and set the network key and the encryption type (if its protected) and connect to the network.</li>
 </ul>
 
 
 <p><img src="http://techhamlet.com/wp-content/uploads/2012/08/wicd-550x491.jpg" alt="Wicd" /> Wicd</p>
 
 <ul>
-<li>Finally, tick &#8220;Automatically connect to this network&#8221;.</li>
+<li>Finally, tick &ldquo;Automatically connect to this network&rdquo;.</li>
 </ul>
 
 
-<p>Unfortunately, if you are using <a href="http://techhamlet.com/tag/unity/">Unity</a>, the network notification icon on the top right corner will disappear. In <a href="http://techhamlet.com/tag/gnome-shell/">Gnome Shell</a>, you&#8217;ll find Wicd in the bottom right corner. Hope there&#8217;s a fix for this issue.</p>
+<p>Unfortunately, if you are using <a href="http://techhamlet.com/tag/unity/">Unity</a>, the network notification icon on the top right corner will disappear. In <a href="http://techhamlet.com/tag/gnome-shell/">Gnome Shell</a>, you&rsquo;ll find Wicd in the bottom right corner. Hope there&rsquo;s a fix for this issue.</p>
 
-<p>Now, restart your machine and see whether it connects without asking for network keys. I don&#8217;t know about you, but it worked really well for me. Try it and tell us what happened. If you fixed the issue in a different way or if you have questions, please post them in our forum : <a href="http://techhamlet.com/forum/">http://techhamlet.com/forum/</a></p>
+<p>Now, restart your machine and see whether it connects without asking for network keys. I don&rsquo;t know about you, but it worked really well for me. Try it and tell us what happened. If you fixed the issue in a different way or if you have questions, please post them in our forum : <a href="http://techhamlet.com/forum/">http://techhamlet.com/forum/</a></p>
 </div>
 
   
@@ -397,7 +397,7 @@
 
 
 
-          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/computer-store.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
+          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/shop.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
 
 
 

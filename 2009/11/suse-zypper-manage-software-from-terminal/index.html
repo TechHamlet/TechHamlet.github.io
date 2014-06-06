@@ -28,7 +28,7 @@
   <link rel="canonical" href="http://techhamlet.com/2009/11/suse-zypper-manage-software-from-terminal">
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <link href="/feed.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
 
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -208,7 +208,7 @@
   
 
 
-<time datetime="2009-11-29T14:30:13+05:30"  data-updated="true">Nov 29<span>th</span>, 2009</time>
+<time datetime="2009-11-29T09:00:13+00:00"  data-updated="true">Nov 29<span>th</span>, 2009</time>
 
 
         
@@ -224,7 +224,7 @@
 
 
 
-<div class="entry-content"><p><img src="http://www.techhamlet.com/wp-content/uploads/2009/11/command-line-100x100.png" alt="command-line" />In <a href="http://www.debian.org/">Debian</a> systems we use <a href="http://wiki.debian.org/Apt">apt-get</a> to manage our software from the <a href="http://en.wikipedia.org/wiki/Command-line_interface">command line</a>, sometimes this method is easier than installing them through a GUI based <a href="http://en.wikipedia.org/wiki/Software_package_%28installation%29">package</a> manager. But, apt-get is only for Debian based systems&#8230;. then what about others? Yesterday I installed SUSE linux on my system and felt the need of a tool like apt very badly&#8230; So I did some research and found out that SUSE have an alternative to apt already installed in it!<!-- more --></p>
+<div class="entry-content"><p><img src="http://www.techhamlet.com/wp-content/uploads/2009/11/command-line-100x100.png" alt="command-line" />In <a href="http://www.debian.org/">Debian</a> systems we use <a href="http://wiki.debian.org/Apt">apt-get</a> to manage our software from the <a href="http://en.wikipedia.org/wiki/Command-line_interface">command line</a>, sometimes this method is easier than installing them through a GUI based <a href="http://en.wikipedia.org/wiki/Software_package_%28installation%29">package</a> manager. But, apt-get is only for Debian based systems&hellip;. then what about others? Yesterday I installed SUSE linux on my system and felt the need of a tool like apt very badly&hellip; So I did some research and found out that SUSE have an alternative to apt already installed in it!<!-- more --></p>
 
 <p><strong>What is Zypper?</strong></p>
 
@@ -233,7 +233,7 @@
 <p><strong>How to Use It?</strong></p>
 
 <ul>
-<li>Open the terminal (in the bottom panel : Computer > More Applications > (Under &#8220;System&#8221; group) GNOME Terminal) and type &#8221;<strong>sudo zypper</strong>&#8221; followed by the options as shown in the image below :</li>
+<li>Open the terminal (in the bottom panel : Computer > More Applications > (Under &ldquo;System&rdquo; group) GNOME Terminal) and type &ldquo;<strong>sudo zypper</strong>&rdquo; followed by the options as shown in the image below :</li>
 </ul>
 
 
@@ -245,55 +245,55 @@
 
 <blockquote><p>Usage:</p></blockquote>
 
-<p>zypper [&#8211;global-options] <command> [&#8211;command-options] [arguments]</p>
+<p>zypper [&mdash;global-options] <command> [&mdash;command-options] [arguments]</p>
 
 <p>Global Options:</p>
 
-<p>&#8211;<strong>help, -h</strong> Help.</p>
+<p>&mdash;<strong>help, -h</strong> Help.</p>
 
-<p>&#8211;<strong>version, -V</strong> Output the version number.</p>
+<p>&mdash;<strong>version, -V</strong> Output the version number.</p>
 
-<p>&#8211;<strong>config, -c <file></strong> Use specified config file instead of the default.</p>
+<p>&mdash;<strong>config, -c <file></strong> Use specified config file instead of the default.</p>
 
-<p>&#8211;<strong>quiet, -q</strong> Suppress normal output, print only error messages.</p>
+<p>&mdash;<strong>quiet, -q</strong> Suppress normal output, print only error messages.</p>
 
-<p>&#8211;<strong>verbose, -v</strong> Increase verbosity.</p>
+<p>&mdash;<strong>verbose, -v</strong> Increase verbosity.</p>
 
-<p>&#8211;<strong>no-abbrev, -A</strong> Do not abbreviate text in tables.</p>
+<p>&mdash;<strong>no-abbrev, -A</strong> Do not abbreviate text in tables.</p>
 
-<p>&#8211;<strong>table-style, -s</strong> Table style (integer).</p>
+<p>&mdash;<strong>table-style, -s</strong> Table style (integer).</p>
 
-<p>&#8211;<strong>rug-compatible, -r</strong> Turn on rug compatibility.</p>
+<p>&mdash;<strong>rug-compatible, -r</strong> Turn on rug compatibility.</p>
 
-<p>&#8211;<strong>non-interactive, -n</strong> Do not ask anything, use default answers automatically.</p>
+<p>&mdash;<strong>non-interactive, -n</strong> Do not ask anything, use default answers automatically.</p>
 
-<p>&#8211;<strong>xmlout, -x</strong> Switch to <a href="http://en.wikipedia.org/wiki/XML">XML</a> output.</p>
+<p>&mdash;<strong>xmlout, -x</strong> Switch to <a href="http://en.wikipedia.org/wiki/XML">XML</a> output.</p>
 
-<p>&#8211;<strong>reposd-dir, -D <dir></strong> Use alternative repository definition files directory.</p>
+<p>&mdash;<strong>reposd-dir, -D <dir></strong> Use alternative repository definition files directory.</p>
 
-<p>&#8211;<strong>cache-dir, -C <dir></strong> Use alternative meta-data cache directory.</p>
+<p>&mdash;<strong>cache-dir, -C <dir></strong> Use alternative meta-data cache directory.</p>
 
-<p>&#8211;<strong>raw-cache-dir <dir></strong> Use alternative raw meta-data cache directory.</p>
+<p>&mdash;<strong>raw-cache-dir <dir></strong> Use alternative raw meta-data cache directory.</p>
 
 <p>Repository Options:</p>
 
-<p>&#8211;<strong>no-gpg-checks</strong> Ignore GPG check failures and continue.</p>
+<p>&mdash;<strong>no-gpg-checks</strong> Ignore GPG check failures and continue.</p>
 
-<p>&#8211;<strong>plus-repo, -p <URI> </strong>Use an additional repository.</p>
+<p>&mdash;<strong>plus-repo, -p <URI> </strong>Use an additional repository.</p>
 
-<p>&#8211;<strong>disable-repositories</strong> Do not read meta-data from repositories.</p>
+<p>&mdash;<strong>disable-repositories</strong> Do not read meta-data from repositories.</p>
 
-<p>&#8211;<strong>no-refresh</strong> Do not refresh the repositories.</p>
+<p>&mdash;<strong>no-refresh</strong> Do not refresh the repositories.</p>
 
-<p>&#8211;<strong>no-cd</strong> Ignore CD/DVD repositories.</p>
+<p>&mdash;<strong>no-cd</strong> Ignore CD/DVD repositories.</p>
 
-<p>&#8211;<strong>no-remote</strong> Ignore remote repositories.</p>
+<p>&mdash;<strong>no-remote</strong> Ignore remote repositories.</p>
 
 <p>Target Options:</p>
 
-<p>&#8211;<strong>root, -R <dir></strong> Operate on a different <a href="http://en.wikipedia.org/wiki/Root_directory">root directory</a>.</p>
+<p>&mdash;<strong>root, -R <dir></strong> Operate on a different <a href="http://en.wikipedia.org/wiki/Root_directory">root directory</a>.</p>
 
-<p>&#8211;<strong>disable-system-resolvables</strong> Do not read installed packages.</p>
+<p>&mdash;<strong>disable-system-resolvables</strong> Do not read installed packages.</p>
 
 <p>Commands:</p>
 
@@ -395,7 +395,7 @@
 
 <p><strong>licenses</strong> Print report about licenses and EULAs of installed packages.</p>
 
-<p>Type &#8216;zypper help <command>&#8217; to get command-specific help.</p>
+<p>Type &lsquo;zypper help <command>&rsquo; to get command-specific help.</p>
 
 <p>Do you know anymore tools like apt-get and zypper, which can be used with other Linux distributions? If you do, please feel free to comment about it!</p>
 </div>
@@ -531,7 +531,7 @@
 
 
 
-          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/computer-store.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
+          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/shop.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
 
 
 

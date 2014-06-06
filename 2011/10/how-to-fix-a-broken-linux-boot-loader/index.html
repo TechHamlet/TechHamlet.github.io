@@ -9,7 +9,7 @@
   <meta name="author" content="Pubudu Kodikara">
 
   
-  <meta name="description" content="Haven&#8217;t you faced a corrupted boot loader yet? Mostly if you are doing dual booting, you might face such a scenario (specially while &hellip;">
+  <meta name="description" content="Haven&rsquo;t you faced a corrupted boot loader yet? Mostly if you are doing dual booting, you might face such a scenario (specially while &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -28,7 +28,7 @@
   <link rel="canonical" href="http://techhamlet.com/2011/10/how-to-fix-a-broken-linux-boot-loader">
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <link href="/feed.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
 
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -208,7 +208,7 @@
   
 
 
-<time datetime="2011-10-24T20:47:00+05:30"  data-updated="true">Oct 24<span>th</span>, 2011</time>
+<time datetime="2011-10-24T15:17:00+00:00"  data-updated="true">Oct 24<span>th</span>, 2011</time>
 
 
         
@@ -226,13 +226,13 @@
 
 <div class="entry-content"><p><a href="http://techhamlet.com/wp-content/uploads/2010/01/corrupted-grub.jpg"><img src="http://techhamlet.com/wp-content/uploads/2010/01/corrupted-grub-152x84.jpg" alt="Corrupted Grub" /></a></p>
 
-<p>Haven&#8217;t you faced a corrupted boot loader yet? Mostly if you are doing dual booting, you might face such a scenario (specially while installing Windows over Linux). The boot loader which loads your favourite operating system gets damaged or have been removed from the MBR preventing you from booting up your machine! A big problem!<!-- more --></p>
+<p>Haven&rsquo;t you faced a corrupted boot loader yet? Mostly if you are doing dual booting, you might face such a scenario (specially while installing Windows over Linux). The boot loader which loads your favourite operating system gets damaged or have been removed from the MBR preventing you from booting up your machine! A big problem!<!-- more --></p>
 
-<p>Earlier, I wrote about this same problem and gave a nice solution for it. According to <a href="http://techhamlet.com/2011/09/fix-grub/">that article</a>, you can use a <a href="http://techhamlet.com/tag/linux/">Linux</a> live CD to fix your boot loader. But it requires you to have an active Internet connection. The commands will download a small software which can fix the boot loader&#8230;</p>
+<p>Earlier, I wrote about this same problem and gave a nice solution for it. According to <a href="http://techhamlet.com/2011/09/fix-grub/">that article</a>, you can use a <a href="http://techhamlet.com/tag/linux/">Linux</a> live CD to fix your boot loader. But it requires you to have an active Internet connection. The commands will download a small software which can fix the boot loader&hellip;</p>
 
-<p>But, what if we don&#8217;t have any connection? Now that&#8217;s a big problem! Don&#8217;t worry, we have a solution! I just learnt a good solution from my Linux teacher <a href="http://www.turnkey.lk/">Mr.Manjula</a> (He showed this fix as an answer to another student&#8217;s question). According to him, you can use the live CD to re-install Grub on the first hard drive.</p>
+<p>But, what if we don&rsquo;t have any connection? Now that&#8217;s a big problem! Don&rsquo;t worry, we have a solution! I just learnt a good solution from my Linux teacher <a href="http://www.turnkey.lk/">Mr.Manjula</a> (He showed this fix as an answer to another student&rsquo;s question). According to him, you can use the live CD to re-install Grub on the first hard drive.</p>
 
-<p>It&#8217;s not easy as our previous method, but if you don&#8217;t have internet, then you don&#8217;t have any other choice! Lets see how to do this :</p>
+<p>It&rsquo;s not easy as our previous method, but if you don&rsquo;t have internet, then you don&rsquo;t have any other choice! Lets see how to do this :</p>
 
 <ul>
 <li><p>First boot with your Linux live CD (we used an Ubuntu CD)</p></li>
@@ -254,7 +254,7 @@
 
 
 <ul>
-<li>Now, you need to find the root partition of your Linux system. If you already know it, then skip this step. But, if you don&#8217;t know, issue the following three commands for each partition. <strong>The first command</strong> will make a folder to mount the partition (you can put any name in here. You need to create a different folder for each partition). <strong>The second command</strong> will mount the partition (replace &#8220;/dev/sda1&#8221; with the partition you want (See the results of the previous command &#8220;fdisk -l&#8221; and check the section named &#8220;Device Boot&#8221; (Also make sure that you choose partitions which shows &#8220;Linux&#8221; under System in those results)) and replace &#8220;hdd&#8221; with the folder you created). <strong>The third command</strong> will list the files in that partition. If it have the folders of a normal Linux root partition (like boot,bin,etc,home,usr,sys,proc,var,etc and lib) then that&#8217;s the guy you are looking for. If not, keep searching and repeat the 3 commands!</li>
+<li>Now, you need to find the root partition of your Linux system. If you already know it, then skip this step. But, if you don&rsquo;t know, issue the following three commands for each partition. <strong>The first command</strong> will make a folder to mount the partition (you can put any name in here. You need to create a different folder for each partition). <strong>The second command</strong> will mount the partition (replace &ldquo;/dev/sda1&rdquo; with the partition you want (See the results of the previous command &ldquo;fdisk -l&rdquo; and check the section named &ldquo;Device Boot&rdquo; (Also make sure that you choose partitions which shows &ldquo;Linux&rdquo; under System in those results)) and replace &ldquo;hdd&rdquo; with the folder you created). <strong>The third command</strong> will list the files in that partition. If it have the folders of a normal Linux root partition (like boot,bin,etc,home,usr,sys,proc,var,etc and lib) then that&rsquo;s the guy you are looking for. If not, keep searching and repeat the 3 commands!</li>
 </ul>
 
 
@@ -275,7 +275,7 @@
 
 
 <ul>
-<li>Now, go to the mounted root partition (Replace &#8220;hdd&#8221; with the mount point of your own root partition (The folder you created earlier&#8230;))</li>
+<li>Now, go to the mounted root partition (Replace &ldquo;hdd&rdquo; with the mount point of your own root partition (The folder you created earlier&hellip;))</li>
 </ul>
 
 
@@ -307,7 +307,7 @@
 </pre></td><td class='code'><pre><code class=''><span class='line'>grub-install /dev/sda</span></code></pre></td></tr></table></div></figure>
 
 
-<p>Now, reboot your machine and you&#8217;ll be greeted by a new working boot loader! Didn&#8217;t fix your problem? Then leave a comment and we&#8217;ll look at it. This is a very tricky topic so sometimes it might not work for you! If it worked, say thank you to my teacher!</p>
+<p>Now, reboot your machine and you&rsquo;ll be greeted by a new working boot loader! Didn&rsquo;t fix your problem? Then leave a comment and we&rsquo;ll look at it. This is a very tricky topic so sometimes it might not work for you! If it worked, say thank you to my teacher!</p>
 </div>
 
   
@@ -441,7 +441,7 @@
 
 
 
-          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/computer-store.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
+          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/shop.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
 
 
 

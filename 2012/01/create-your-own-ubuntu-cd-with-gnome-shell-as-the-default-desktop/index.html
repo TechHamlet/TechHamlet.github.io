@@ -9,7 +9,7 @@
   <meta name="author" content="Pubudu Kodikara">
 
   
-  <meta name="description" content="Now everyone knows that Ubuntu comes with their own desktop named Unity. You also know that its hard to tame and many people don&#8217;t like how it &hellip;">
+  <meta name="description" content="Now everyone knows that Ubuntu comes with their own desktop named Unity. You also know that its hard to tame and many people don&rsquo;t like how it &hellip;">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -28,7 +28,7 @@
   <link rel="canonical" href="http://techhamlet.com/2012/01/create-your-own-ubuntu-cd-with-gnome-shell-as-the-default-desktop">
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <link href="/feed.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
 
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -208,7 +208,7 @@
   
 
 
-<time datetime="2012-01-12T21:21:05+05:30"  data-updated="true">Jan 12<span>th</span>, 2012</time>
+<time datetime="2012-01-12T15:51:05+00:00"  data-updated="true">Jan 12<span>th</span>, 2012</time>
 
 
         
@@ -226,11 +226,11 @@
 
 <div class="entry-content"><p><a href="http://techhamlet.com/wp-content/uploads/2012/01/ubuntu-with-gnome-shell.jpg"><img src="http://techhamlet.com/wp-content/uploads/2012/01/ubuntu-with-gnome-shell-175x88.jpg" alt="Ubuntu With Gnome Shell" /></a></p>
 
-<p>Now everyone knows that Ubuntu comes with their own desktop named <a href="http://techhamlet.com/tag/unity/">Unity</a>. You also know that its hard to tame and many people don&#8217;t like how it behaves. You also know how to <a href="http://techhamlet.com/2011/10/install-gnome-shell-in-ubuntu-11-10/">install Gnome Shell in Ubuntu</a> and forget about Unity. But what if you don&#8217;t need to install Gnome Shell every time you install Ubuntu in a computer? What if you want to show your friends that you are a geek?<!-- more --></p>
+<p>Now everyone knows that Ubuntu comes with their own desktop named <a href="http://techhamlet.com/tag/unity/">Unity</a>. You also know that its hard to tame and many people don&rsquo;t like how it behaves. You also know how to <a href="http://techhamlet.com/2011/10/install-gnome-shell-in-ubuntu-11-10/">install Gnome Shell in Ubuntu</a> and forget about Unity. But what if you don&rsquo;t need to install Gnome Shell every time you install Ubuntu in a computer? What if you want to show your friends that you are a geek?<!-- more --></p>
 
-<p>If you want to install Ubuntu in several machines and if you are a system admin, then it will be taking a lot of time to install Gnome shell in every PC. What if they don&#8217;t have a net connection? Not only that, installing all the updates will also take a lot of time.</p>
+<p>If you want to install Ubuntu in several machines and if you are a system admin, then it will be taking a lot of time to install Gnome shell in every PC. What if they don&rsquo;t have a net connection? Not only that, installing all the updates will also take a lot of time.</p>
 
-<p>To solve this, we can prepare our own Ubuntu installation disk which will install Gnome shell by default. We will use the <a href="http://uck.sourceforge.net/">Ubuntu Customization Kit</a> to do this trick. We will see how to customize the Ubuntu live CD image and install Gnome Shell and update all the software in it. We&#8217;ll also see how to set <a href="http://techhamlet.com/tag/gnome-shell/">Gnome Shell</a> as the default desktop which greet you after you install Ubuntu. But, it won&#8217;t set Gnome Shell for the live boot environment&#8230; (If you know how to do this&#8230; please leave a comment!) So, are you ready?</p>
+<p>To solve this, we can prepare our own Ubuntu installation disk which will install Gnome shell by default. We will use the <a href="http://uck.sourceforge.net/">Ubuntu Customization Kit</a> to do this trick. We will see how to customize the Ubuntu live CD image and install Gnome Shell and update all the software in it. We&rsquo;ll also see how to set <a href="http://techhamlet.com/tag/gnome-shell/">Gnome Shell</a> as the default desktop which greet you after you install Ubuntu. But, it won&rsquo;t set Gnome Shell for the live boot environment&hellip; (If you know how to do this&hellip; please leave a comment!) So, are you ready?</p>
 
 <h2>Things You need :</h2>
 
@@ -242,7 +242,7 @@
 
 <h2>Install Ubuntu Customization Kit :</h2>
 
-<p>First, lets install the UCK in our systems&#8230;</p>
+<p>First, lets install the UCK in our systems&hellip;</p>
 
 <ul>
 <li>Open a <strong>Terminal</strong> and enter the following commands to install UCK :</li>
@@ -257,30 +257,30 @@
 </span><span class='line'>sudo apt-get install uck</span></code></pre></td></tr></table></div></figure>
 
 
-<h2>Lets Start Building&#8230;</h2>
+<h2>Lets Start Building&hellip;</h2>
 
-<p>Now lets start the real work&#8230;</p>
+<p>Now lets start the real work&hellip;</p>
 
 <ul>
 <li><p>Go to the menu (Or the Unity dash) and launch the <strong>Ubuntu Customization Kit</strong></p></li>
-<li><p>At first, it will show you a friendly<strong> Welcome</strong> screen. Click &#8220;OK&#8221; to continue</p></li>
+<li><p>At first, it will show you a friendly<strong> Welcome</strong> screen. Click &ldquo;OK&rdquo; to continue</p></li>
 <li><p>Now, it will ask which language packs you need to install. These are not the language packs which will be there in the setup wizard. The packs you select here will be installed in the system</p></li>
 <li><p>Next, select the language packs you need to be included in the live CD. These will be there in the setup wizard</p></li>
 <li><p>Again, select the language which you need to be selected by default in the setup wizard. (Normally its English (en))</p></li>
 <li><p>Next, select the desktop environment you want to be included in the CD. We are going to install Gnome Shell, so, select <strong>gnome</strong></p></li>
-<li><p>After that, select the ISO image of the original Ubuntu CD (Download it from the link I added in the &#8220;Things You Need&#8221; section)</p></li>
+<li><p>After that, select the ISO image of the original Ubuntu CD (Download it from the link I added in the &ldquo;Things You Need&rdquo; section)</p></li>
 <li><p>Now, give a name to your new CD</p></li>
-<li><p>Next they&#8217;ll ask whether you want to customize the CD manually while building. Yes we want to do that. Select <strong>yes</strong> and click &#8220;OK&#8221;</p></li>
-<li><p>Next they&#8217;ll ask whether we need to delete all the Windows related files. Remember Wubi which will allow you to install Ubuntu as an application in Windows? They are asking to remove it. If you don&#8217;t need it, you are free to select <strong>yes.</strong> Selecting <strong>no</strong> won&#8217;t do any damage.</p></li>
+<li><p>Next they&rsquo;ll ask whether you want to customize the CD manually while building. Yes we want to do that. Select <strong>yes</strong> and click &ldquo;OK&rdquo;</p></li>
+<li><p>Next they&rsquo;ll ask whether we need to delete all the Windows related files. Remember Wubi which will allow you to install Ubuntu as an application in Windows? They are asking to remove it. If you don&rsquo;t need it, you are free to select <strong>yes.</strong> Selecting <strong>no</strong> won&rsquo;t do any damage.</p></li>
 <li><p>If you also want to put this image in a USB device and boot, then select <strong>yes</strong> in the next step. Otherwise, select <strong>no</strong></p></li>
-<li><p>Now, you are ready to build. Note where they&#8217;ll create your live CD and click <strong>OK</strong> in this screen</p></li>
+<li><p>Now, you are ready to build. Note where they&rsquo;ll create your live CD and click <strong>OK</strong> in this screen</p></li>
 </ul>
 
 
 <p><a href="http://techhamlet.com/wp-content/uploads/2012/01/ready-to-build.jpg"><img src="http://techhamlet.com/wp-content/uploads/2012/01/ready-to-build-340x236.jpg" alt="Ready to Build" /></a></p>
 
 <ul>
-<li>After that, you&#8217;ll see a terminal window as shown below. Some of you might think that we don&#8217;t have to do anything just like me&#8230; But, we have to give our password and hit enter :</li>
+<li>After that, you&rsquo;ll see a terminal window as shown below. Some of you might think that we don&rsquo;t have to do anything just like me&hellip; But, we have to give our password and hit enter :</li>
 </ul>
 
 
@@ -337,10 +337,10 @@
 
 
 <ul>
-<li><p>Now, close that terminal (Only the one which you just worked with&#8230; Don&#8217;t close both of them)</p></li>
+<li><p>Now, close that terminal (Only the one which you just worked with&hellip; Don&rsquo;t close both of them)</p></li>
 <li><p>After that, select <strong>Continue Building</strong> and click <strong>OK</strong></p></li>
 <li><p>Finally, read the summary screen and click <strong>OK</strong></p></li>
-<li><p>If you didn&#8217;t change the path, you can find the new live CD image under <strong>/home/you-user-name/tmp/remaster-new-files/livecd.iso</strong></p></li>
+<li><p>If you didn&rsquo;t change the path, you can find the new live CD image under <strong>/home/you-user-name/tmp/remaster-new-files/livecd.iso</strong></p></li>
 </ul>
 
 
@@ -348,7 +348,7 @@
 
 <p>Now install Ubuntu with your new live CD. You can also distribute it among your friends and be a geek (not a hero, a geek)! Learn some more tricks and try to customize more stuff in the CD.</p>
 
-<p>What else do you need to learn? Tell us and we&#8217;ll try our best to make a tutorial like this to solve your problems! Enjoy!</p>
+<p>What else do you need to learn? Tell us and we&rsquo;ll try our best to make a tutorial like this to solve your problems! Enjoy!</p>
 </div>
 
   
@@ -482,7 +482,7 @@
 
 
 
-          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/computer-store.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
+          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/shop.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
 
 
 

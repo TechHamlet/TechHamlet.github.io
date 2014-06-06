@@ -28,7 +28,7 @@
   <link rel="canonical" href="http://techhamlet.com/2013/05/add-windows-to-grub">
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <link href="/feed.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
 
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -208,7 +208,7 @@
   
 
 
-<time datetime="2013-05-17T20:25:39+05:30"  data-updated="true">May 17<span>th</span>, 2013</time>
+<time datetime="2013-05-17T14:55:39+00:00"  data-updated="true">May 17<span>th</span>, 2013</time>
 
 
         
@@ -226,13 +226,13 @@
 
 <div class="entry-content"><p><img src="http://techhamlet.com/wp-content/uploads/2012/11/linux-win8-550x385.jpg" alt="Add Windows to Grub" /></p>
 
-<p>At the moment, people are moving away from the old BIOS system to the new UEFI firmware. If its done correctly, it will be much easier to dual-boot multiple operating systems. But unfortunately, Microsoft and some hardware vendors try to break the UEFI system and tie us to Windows 8. But in our previous posts, we saw how not to get caught to their tricks and <a href="http://techhamlet.com/2013/04/linux-with-uefi-choose-the-best-notebook/">pick the best machine</a>. Then we saw how to <a href="http://techhamlet.com/2013/05/no-boot-loader-after-installing-ubuntu/">get back the boot loader</a> after installing Linux. But still, you won&#8217;t have Windows in it. So, here&#8217;s how to add Windows to Grub boot loader&#8230;</p>
+<p>At the moment, people are moving away from the old BIOS system to the new UEFI firmware. If its done correctly, it will be much easier to dual-boot multiple operating systems. But unfortunately, Microsoft and some hardware vendors try to break the UEFI system and tie us to Windows 8. But in our previous posts, we saw how not to get caught to their tricks and <a href="http://techhamlet.com/2013/04/linux-with-uefi-choose-the-best-notebook/">pick the best machine</a>. Then we saw how to <a href="http://techhamlet.com/2013/05/no-boot-loader-after-installing-ubuntu/">get back the boot loader</a> after installing Linux. But still, you won&rsquo;t have Windows in it. So, here&rsquo;s how to add Windows to Grub boot loader&hellip;</p>
 
-<p>Because the UEFI firmware enables you to boot into multiple operating systems directly through its boot menu (people still call it the BIOS), Linux won&#8217;t show the Grub boot loader by default. Because of this, Linux doesn&#8217;t even add Window to Grub boot-loader. So, if you have a machine with both Linux and Windows, you might want to add it into the Grub boot menu instead of going to the UEFI system every time the machine boots. So here&#8217;s&#8230;</p>
+<p>Because the UEFI firmware enables you to boot into multiple operating systems directly through its boot menu (people still call it the BIOS), Linux won&rsquo;t show the Grub boot loader by default. Because of this, Linux doesn&rsquo;t even add Window to Grub boot-loader. So, if you have a machine with both Linux and Windows, you might want to add it into the Grub boot menu instead of going to the UEFI system every time the machine boots. So here&rsquo;s&hellip;</p>
 
 <h3>How To Add Windows to Grub :</h3>
 
-<p><em>Only for systems with UEFI enabled and with a GPT partition table. Use <strong>fdisk -l</strong> to learn whether you have a gpt disk. If the output doesn&#8217;t show GPT, then you are not using it! For none UEFI and GPT people, you don&#8217;t have to add Windows to Grub. It should be there. Otherwise, there should be something wrong!</em></p>
+<p><em>Only for systems with UEFI enabled and with a GPT partition table. Use <strong>fdisk -l</strong> to learn whether you have a gpt disk. If the output doesn&rsquo;t show GPT, then you are not using it! For none UEFI and GPT people, you don&rsquo;t have to add Windows to Grub. It should be there. Otherwise, there should be something wrong!</em></p>
 
 <ul>
 <li>First, run the following command and determine the ID of the EFI partition :</li>
@@ -248,7 +248,7 @@
 <p><img src="http://techhamlet.com/wp-content/uploads/2013/05/efi-system-550x209.jpg" alt="EFI Partition" /> EFI Partition</p>
 
 <ul>
-<li><p>Check the above image. Check the line that say &#8220;EFI system partition&#8221; and note the Number. In my case, its <strong>2</strong></p></li>
+<li><p>Check the above image. Check the line that say &ldquo;EFI system partition&rdquo; and note the Number. In my case, its <strong>2</strong></p></li>
 <li><p>Now, type <strong>quit</strong> to exit Parted</p></li>
 <li><p>Next open the custom grub file :</p></li>
 </ul>
@@ -284,7 +284,7 @@
 
 <p>Now, reboot the system and you are done. You have just added Windows to Grub! If you face any issues while following these steps, please tell us. We will try our best to figure out how to fix it!</p>
 
-<p><em>- Special thanks to <a href="http://askubuntu.com/questions/210914/grub-does-not-show-a-windows-8-option-after-dual-boot">Rod Smith</a></em></p>
+<p><em>&ndash; Special thanks to <a href="http://askubuntu.com/questions/210914/grub-does-not-show-a-windows-8-option-after-dual-boot">Rod Smith</a></em></p>
 </div>
 
   
@@ -418,7 +418,7 @@
 
 
 
-          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/computer-store.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
+          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/shop.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
 
 
 

@@ -28,7 +28,7 @@
   <link rel="canonical" href="http://techhamlet.com/2012/09/how-to-fix-over-heating-and-vga-switching-in-ubuntu">
   <link href="/favicon.ico" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
-  <link href="/atom.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
+  <link href="/feed.xml" rel="alternate" title="Tech Hamlet" type="application/atom+xml">
 
   <script src="/javascripts/modernizr-2.0.js"></script>
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
@@ -208,7 +208,7 @@
   
 
 
-<time datetime="2012-09-08T22:21:03+05:30"  data-updated="true">Sep 8<span>th</span>, 2012</time>
+<time datetime="2012-09-08T16:51:03+00:00"  data-updated="true">Sep 8<span>th</span>, 2012</time>
 
 
         
@@ -231,24 +231,24 @@
 <h3>Here are the problems we faced :</h3>
 
 <ul>
-<li><p>Can&#8217;t use the open source driver coming in <a href="http://techhamlet.com/tag/ubuntu/">Ubuntu</a>. It over heats the GPU.</p></li>
-<li><p>Can&#8217;t enable proprietary drivers. It always failed.</p></li>
-<li><p>Can&#8217;t use the temporary fix it have some side effects.</p></li>
+<li><p>Can&rsquo;t use the open source driver coming in <a href="http://techhamlet.com/tag/ubuntu/">Ubuntu</a>. It over heats the GPU.</p></li>
+<li><p>Can&rsquo;t enable proprietary drivers. It always failed.</p></li>
+<li><p>Can&rsquo;t use the temporary fix it have some side effects.</p></li>
 </ul>
 
 
-<p>So, don&#8217;t we have any solution? Yes we do. First, we should thank <a href="http://ubuntuforums.org/member.php?u=1138228">Alexislavie</a> for preparing a guide which clearly showed us how to install the proprietary drivers and make VGA switching work in our systems. <strong>But Wait!</strong> I followed those steps and made some modifications to it. For example, it asks you to download and install the latest drivers from AMD. But I think the latest driver have some bugs. It hangs when I try to switch the GPUs. You can simply use Ubuntu&#8217;s &#8220;Additional Drivers&#8221; to install these drivers&#8230; But you have to do some extra work to make it work.</p>
+<p>So, don&rsquo;t we have any solution? Yes we do. First, we should thank <a href="http://ubuntuforums.org/member.php?u=1138228">Alexislavie</a> for preparing a guide which clearly showed us how to install the proprietary drivers and make VGA switching work in our systems. <strong>But Wait!</strong> I followed those steps and made some modifications to it. For example, it asks you to download and install the latest drivers from AMD. But I think the latest driver have some bugs. It hangs when I try to switch the GPUs. You can simply use Ubuntu&rsquo;s &ldquo;Additional Drivers&rdquo; to install these drivers&hellip; But you have to do some extra work to make it work.</p>
 
-<h3>Here&#8217;s how to install proprietary ATI drivers in Ubuntu :</h3>
+<h3>Here&rsquo;s how to install proprietary ATI drivers in Ubuntu :</h3>
 
 <ul>
 <li><p>First, make sure your system is fully updated.</p></li>
-<li><p>Next, go to the dash and open &#8220;Additional Drivers&#8221;.</p></li>
-<li><p>Now select &#8220;ATI/AMD proprietary FGLRX graphic driver&#8221; and click &#8220;Activate&#8221;.</p></li>
+<li><p>Next, go to the dash and open &ldquo;Additional Drivers&rdquo;.</p></li>
+<li><p>Now select &ldquo;ATI/AMD proprietary FGLRX graphic driver&rdquo; and click &ldquo;Activate&rdquo;.</p></li>
 </ul>
 
 
-<p><strong>Warning</strong>: Do not select &#8220;post-release updates&#8221; because it throws and error during the installation.</p>
+<p><strong>Warning</strong>: Do not select &ldquo;post-release updates&rdquo; because it throws and error during the installation.</p>
 
 <p><img src="http://techhamlet.com/wp-content/uploads/2012/09/additional-drivers-550x493.jpg" alt="Additional Drivers" /> Additional Drivers</p>
 
@@ -263,15 +263,15 @@
 
 <ul>
 <li><p>Now reboot.</p></li>
-<li><p>Next, go to the original guide and follow the <strong>Step 2</strong> : <a href="http://ubuntuforums.org/showthread.php?t=1930450">http://ubuntuforums.org/showthread.php?t=1930450</a> (If you are like me, you&#8217;ll try to check whether direct rendering is working or not before following this step. Don&#8217;t be such an idiot&#8230; Read the step first. Its trying to fix the direct rendering issue in the Intel GPU. After rebooting, you&#8217;ll be using the ATI GPU. If you try to switch to the Intel GPU without following the second step, Unity won&#8217;t load. It took me several hours to figure out what I did wrong. So, don&#8217;t do the same mistake!)</p></li>
-<li><p>Now <strong>if you want to switch the GPUs</strong>, open the dash and type &#8220;AMD&#8221; and you&#8217;ll see two apps with the name &#8220;AMD Catalyst Control Center&#8221;. Pick the one which say (Administrative). Now you can use this control center (shown in the top screenshot) to switch your VGA.</p></li>
+<li><p>Next, go to the original guide and follow the <strong>Step 2</strong> : <a href="http://ubuntuforums.org/showthread.php?t=1930450">http://ubuntuforums.org/showthread.php?t=1930450</a> (If you are like me, you&rsquo;ll try to check whether direct rendering is working or not before following this step. Don&rsquo;t be such an idiot&hellip; Read the step first. Its trying to fix the direct rendering issue in the Intel GPU. After rebooting, you&rsquo;ll be using the ATI GPU. If you try to switch to the Intel GPU without following the second step, Unity won&rsquo;t load. It took me several hours to figure out what I did wrong. So, don&rsquo;t do the same mistake!)</p></li>
+<li><p>Now <strong>if you want to switch the GPUs</strong>, open the dash and type &ldquo;AMD&rdquo; and you&rsquo;ll see two apps with the name &ldquo;AMD Catalyst Control Center&rdquo;. Pick the one which say (Administrative). Now you can use this control center (shown in the top screenshot) to switch your VGA.</p></li>
 <li><p>Finally, you better follow this guide and fix the brightness controls if they are not working : <a href="http://techhamlet.com/2012/07/how-to-make-laptop-brightness-controls-work-in-ubuntu/">How To Make Laptop Brightness Controls Work in Ubuntu</a> (Keep the machine in a low brightness level to keep the heat down)</p></li>
 </ul>
 
 
-<p>As I said earlier, if you switch the VGA without installing this driver, you&#8217;ll face some slowdowns and lags. But after installing the VGA, those problems are gone. I just installed these drivers and now using the Intel GPU. My heat is really low and there are no lags and slowdowns. Everything works really fine. I don&#8217;t think I wont to go back to Windows! All hail Ubuntu!</p>
+<p>As I said earlier, if you switch the VGA without installing this driver, you&rsquo;ll face some slowdowns and lags. But after installing the VGA, those problems are gone. I just installed these drivers and now using the Intel GPU. My heat is really low and there are no lags and slowdowns. Everything works really fine. I don&rsquo;t think I wont to go back to Windows! All hail Ubuntu!</p>
 
-<p>If this guide worked for you, please head over to the <a href="http://ubuntuforums.org/showthread.php?t=1930450">original guide</a> and thank Alexislavie. If it didn&#8217;t, head over to our forum and tell us what happened : <a href="http://techhamlet.com/forum/forum/17-linux-unix/">http://techhamlet.com/forum/forum/17-linux-unix/</a></p>
+<p>If this guide worked for you, please head over to the <a href="http://ubuntuforums.org/showthread.php?t=1930450">original guide</a> and thank Alexislavie. If it didn&rsquo;t, head over to our forum and tell us what happened : <a href="http://techhamlet.com/forum/forum/17-linux-unix/">http://techhamlet.com/forum/forum/17-linux-unix/</a></p>
 </div>
 
   
@@ -405,7 +405,7 @@
 
 
 
-          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/computer-store.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
+          <div class="post-image"><img width="32" height="32" src="/images/post-images/2014/01/shop.jpg" alt="Best and the Worst Sri Lankan Computer Stores of 2013"></div>
 
 
 
