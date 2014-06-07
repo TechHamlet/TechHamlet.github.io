@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Linux | Tech Hamlet]]></title>
   <link href="http://TechHamlet.github.io/categories/linux/atom.xml" rel="self"/>
   <link href="http://TechHamlet.github.io/"/>
-  <updated>2014-06-07T09:01:39+00:00</updated>
+  <updated>2014-06-07T09:31:15+00:00</updated>
   <id>http://TechHamlet.github.io/</id>
   <author>
     <name><![CDATA[Pubudu Kodikara]]></name>
@@ -29,50 +29,49 @@
 </ul>
 
 
-<p>{% codeblock %}
-sudo add-apt-repository ppa:xorg-edgers/ppa
-sudo apt-get update
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo add-apt-repository ppa:xorg-edgers/ppa
+</span><span class='line'>sudo apt-get update</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ul>
 <li>Next upgrade your system to make sure everything is up-to-date (The new PPA might have some updated xorg packages):</li>
 </ul>
 
 
-<p>{% codeblock %}
-sudo apt-get dist-upgrade
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get dist-upgrade</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ul>
 <li>Finally install the latest drivers :</li>
 </ul>
 
 
-<p>{% codeblock %}
-sudo apt-get install nvidia-331
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install nvidia-331</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>If you run into any issues. You can simply remove the proprietary drivers with the following commands :</p>
 
-<p>{% codeblock %}
-sudo apt-get remove nvidia-331
-sudo apt-get autoremove
-sudo apt-get install ppa-purge
-sudo ppa-purge xorg-edgers
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get remove nvidia-331
+</span><span class='line'>sudo apt-get autoremove
+</span><span class='line'>sudo apt-get install ppa-purge
+</span><span class='line'>sudo ppa-purge xorg-edgers</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Still, if you need to try proprietary drivers even if the latest one failed, you can try installing the old packages that come with Ubuntu :</p>
 
-<p>{% codeblock %}
-sudo apt-get install nvidia-current
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get install nvidia-current</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>If that also failed, here&rsquo;s how to remove it :</p>
 
-<p>{% codeblock %}
-sudo apt-get remove nvidia-current
-sudo apt-get autoremove
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo apt-get remove nvidia-current
+</span><span class='line'>sudo apt-get autoremove</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p><em>Image source : <a href="http://www.flickr.com/photos/djandywdotcom/10641625834">djandyw.com</a></em></p>
 ]]></content>
@@ -106,27 +105,24 @@ sudo apt-get autoremove
 </ul>
 
 
-<p>{% codeblock %}
-sudo gedit /etc/initramfs-tools/conf.d/splash
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo gedit /etc/initramfs-tools/conf.d/splash</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ul>
 <li>Next, place the following line in that file and save it :</li>
 </ul>
 
 
-<p>{% codeblock %}
-FRAMEBUFFER=y
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>FRAMEBUFFER=y</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ul>
 <li>Now run the following commands to update the system :</li>
 </ul>
 
 
-<p>{% codeblock %}
-sudo update-initramfs -u;sudo update-alternatives &mdash;config default.plymouth
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-initramfs -u;sudo update-alternatives &mdash;config default.plymouth</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>How To Install OS X and PAW-Ubuntu themes :</h2>
 
@@ -135,40 +131,40 @@ sudo update-initramfs -u;sudo update-alternatives &mdash;config default.plymouth
 </ul>
 
 
-<p>{% codeblock %}
-cd ~/Downloads/
-unzip Paw-OSX.zip
-unzip PAW_OS_X_Plymouth_Theme_by_love2spooge.zip
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>cd ~/Downloads/
+</span><span class='line'>unzip Paw-OSX.zip
+</span><span class='line'>unzip PAW_OS_X_Plymouth_Theme_by_love2spooge.zip</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ul>
 <li>Now move the files to the Plymouth Themes directory :</li>
 </ul>
 
 
-<p>{% codeblock %}
-sudo mv Paw-OSX/ /lib/plymouth/themes
-sudo mv Paw-Ubuntu/ /lib/plymouth/themes
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo mv Paw-OSX/ /lib/plymouth/themes
+</span><span class='line'>sudo mv Paw-Ubuntu/ /lib/plymouth/themes</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ul>
 <li>Next, install the newly added themes :</li>
 </ul>
 
 
-<p>{% codeblock %}
-sudo update-alternatives &mdash;install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/Paw-OSX/paw-osx.plymouth 100
-sudo update-alternatives &mdash;install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/Paw-Ubuntu/paw-ubuntu.plymouth 100
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-alternatives &mdash;install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/Paw-OSX/paw-osx.plymouth 100
+</span><span class='line'>sudo update-alternatives &mdash;install /lib/plymouth/themes/default.plymouth default.plymouth /lib/plymouth/themes/Paw-Ubuntu/paw-ubuntu.plymouth 100</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ul>
 <li>After that, you have to select which plymouth theme you need to use. For that, first issue the following command to bring up the default plymouth chooser :</li>
 </ul>
 
 
-<p>{% codeblock %}
-sudo update-alternatives &mdash;config default.plymouth
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-alternatives &mdash;config default.plymouth</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ul>
 <li>Next, enter the number of the plymouth theme you need to use. In my case, its 1 for OS X theme and 3 for PAW-Ubuntu</li>
@@ -182,9 +178,8 @@ sudo update-alternatives &mdash;config default.plymouth
 </ul>
 
 
-<p>{% codeblock %}
-sudo update-initramfs -u
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-initramfs -u</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h2>How To Install PAW Gnome theme :</h2>
 
@@ -196,9 +191,8 @@ sudo update-initramfs -u
 </ul>
 
 
-<p>{% codeblock %}
-sudo update-alternatives &mdash;config default.plymouth
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-alternatives &mdash;config default.plymouth</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ul>
 <li><p>Next select the number of the <code>/lib/plymouth/themes/paw/paw.plymouth</code> theme. (Refer to the screenshot above. In my case its 4 according to the screenshot)</p></li>
@@ -206,9 +200,8 @@ sudo update-alternatives &mdash;config default.plymouth
 </ul>
 
 
-<p>{% codeblock %}
-sudo update-initramfs -u
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo update-initramfs -u</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>Enjoyed? These are the two popular methods of plymouth theme installation. You can use these methods to install most of the boot themes out there. There were also GUI apps to do this job but they are outdated. But still, it won&rsquo;t kill you if you use the Terminal! Common, its better than the GUI apps!</p>
 
@@ -314,25 +307,23 @@ sudo update-initramfs -u
 </ul>
 
 
-<p>{% codeblock %}
-sudo yaourt freetype2-git-infinality
-sudo yaourt fontconfig-infinality-git
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo yaourt freetype2-git-infinality
+</span><span class='line'>sudo yaourt fontconfig-infinality-git</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <p>**If you have a 64bit system, you also have to install this :</p>
 
-<p>{% codeblock %}
-sudo yaourt lib32-freetype2-git-infinality
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo yaourt lib32-freetype2-git-infinality</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ul>
 <li>Finally, use this command to choose what style you need (choose from debug, Linux, OSx2, OSx, Win98, WinXP, Win7 and Infinality) :</li>
 </ul>
 
 
-<p>{% codeblock %}
-sudo infctl setstyle
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo infctl setstyle</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h3>On Ubuntu :</h3>
 
@@ -341,21 +332,22 @@ sudo infctl setstyle
 </ul>
 
 
-<p>{% codeblock %}
-sudo add-apt-repository ppa:no1wantdthisname/ppa
-sudo apt-get update
-sudo apt-get upgrade
-sudo apt-get install fontconfig-infinality
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo add-apt-repository ppa:no1wantdthisname/ppa
+</span><span class='line'>sudo apt-get update
+</span><span class='line'>sudo apt-get upgrade
+</span><span class='line'>sudo apt-get install fontconfig-infinality</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <ul>
 <li>Finally, use this command to select a style :</li>
 </ul>
 
 
-<p>{% codeblock %}
-sudo bash /etc/fonts/infinality/infctl.sh setstyle
-{% endcodeblock %}</p>
+<p><div class='bogus-wrapper'><notextile><figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+</pre></td><td class='code'><pre><code class=''><span class='line'>sudo bash /etc/fonts/infinality/infctl.sh setstyle</span></code></pre></td></tr></table></div></figure></notextile></div></p>
 
 <h3>On Fedora :</h3>
 
